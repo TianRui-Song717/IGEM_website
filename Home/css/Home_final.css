@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    font-family:Helvetica, Arial, sans-serif;
+    color: black;
+    background-color: #aaaaaa;
+}
+
+/*Bootstrap*/
+.container{
+    position: relative;
+    background-color: #aaaaaa;
+    width: 100%;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+
+    overflow: hidden;
+}
+.row{
+    margin:0px;
+    padding: 0px;
+}
+
+/****************************************************/
+/*导航栏有关*/
+.navbar{
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    margin:0;
+    padding:0;
+    z-index:100;
+    width:100%;
+    text-align: center;
+
+    background-color: rgba(48,48,48,0.3);
+    box-shadow: 0px 7px 8px 7px rgba(0,0,0,0.1);
+}
+
+.navbar-logo{
+    display: inline-block;
+    width: 100px;
+    text-decoration: none;
+    color:gray;
+
+    line-height: 50px;
+}
+
+.navbar-button{
+    display: none;
+}
+
+.navbar_nav{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    /*flex-basis: 100%;不换行*/
+    padding: 0px;
+    margin: 0px;
+    width:900px;
+
+    list-style: none;
+}
+
+.nav_item{
+    position:relative;
+    margin: 0px 16px;
+    padding: 0px .5rem;
+    min-width:95px;
+
+    line-height: 50px;
+    /*下拉图标后的文字*/
+    color: white;
+    font-size: 1em;
+}
+
+.nav_item span{
+    color: rgba(255,255,255,0.8);
+    text-decoration:none;
+    transition: 0.7s;
+    padding: 0px 5px;
+}
+
+.nav_item span:hover{
+    color: rgba(255,255,255,1)
+}
+
+#home_button span{
+    color:white;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    padding: 10px 0px;
+    top:100%;
+    left:0;
+    text-align: center;
+
+    list-style: none;
+    background-color: rgba(100,100,100,1);
+}
+
+.dropdown-item{
+    display: block;
+    padding: 0;
+
+    color:white;
+    text-decoration: none;
+}
+
+.dropdown-item:hover{
+    text-decoration: none;
+    background-color:rgba(255,255,255,0.8);
+    color: black;
+    transition: 0.7s;
+}
+
+/*用于toggle class*/
+.nav_color_change{
+    background-color:rgba(40,40,40,1);
+}
+
+.show_dropdown{
+    display: block;
+}
+
+.show_dropdown_color{
+    color: white;
+}
+
+/********************************************************/
+/*视频页面设置*/
+.video_container{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 0px;/*两个部分之间无空格*/
+
+  overflow: hidden;
+}
+
+.path_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+/*第一个图片页面*/
+#home_first_page{
+  background-image:url("../image/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}

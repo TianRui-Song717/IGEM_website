@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    font-family:sans-serif;
+    color: black;
+    background-color: #aaaaaa;
+}
+
+/*Bootstrap*/
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    z-index: 0;
+
+    overflow: hidden;
+}
+
+.row{
+    margin:0px;
+    padding: 0px;
+
+}
+
+/****************************************************/
+/*导航栏有关*/
+.navbar{
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    margin:0;
+    padding:0;
+    z-index:100;
+    width:100%;
+    text-align: center;
+
+    background-color: rgba(48,48,48,0.3);
+    box-shadow: 0px 7px 8px 7px rgba(0,0,0,0.1);
+}
+
+.navbar-logo{
+    display: inline-block;
+    width: 100px;
+    text-decoration: none;
+    color:gray;
+
+    line-height: 50px;
+}
+
+.navbar-button{
+    display: none;
+}
+
+.navbar_nav{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    /*flex-basis: 100%;不换行*/
+    padding: 0px;
+    margin: 0px;
+    width:900px;
+
+    list-style: none;
+}
+
+.nav_item{
+    position:relative;
+    margin: 0px 16px;
+    padding: 0px .5rem;
+    min-width:95px;
+
+    line-height: 50px;
+    /*下拉图标后的文字*/
+    color: white;
+    font-size: 1em;
+}
+
+.nav_item span{
+    color: rgba(255,255,255,0.8);
+    text-decoration:none;
+    transition: 0.7s;
+    padding: 0px 5px;
+}
+
+.nav_item span:hover{
+    color: rgba(255,255,255,1)
+}
+
+#home_button span{
+    color:white;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    padding: 10px 0px;
+    top:100%;
+    left:0;
+    text-align: center;
+
+    list-style: none;
+    background-color: rgba(100,100,100,1);
+}
+
+.dropdown-item{
+    display: block;
+    padding: 0;
+
+    color:white;
+    text-decoration: none;
+}
+
+.dropdown-item:hover{
+    text-decoration: none;
+    background-color:rgba(255,255,255,0.8);
+    color: black;
+    transition: 0.7s;
+}
+
+/*用于toggle class*/
+.nav_color_change{
+    background-color:rgba(40,40,40,1);
+}
+
+.show_dropdown{
+    display: block;
+}
+
+.show_dropdown_color{
+    color: white;
+}
+
+/********************************/
+/*固定图片页*/
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/1.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*******************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-image:url('../img/General.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+
+/*******************************/
+/*详细信息界面*/
+.info_section{
+  background-color: white;
+}
+
+.general_info{
+  background-color: rgba(255,255,255,0.85);
+}
+
+#general_info_contain{
+  height: 300vh;
+}
+
+/****************************************/
+/*详细信息-侧边导航*/
+.general_left_nav{
+  padding: 0;
+  height: 100%;
+  background-color:rgba(255,255,255,1);
+}
+
+.left_nav{
+  margin-top:20vh;
+  top:0;
+  width: 100%;
+  height: 30vh;
+  background-color:
+}
+
+.left_nav_after{/*侧边导航效果*/
+  position:fixed;
+  width:16.66666666%;
+}
+
+.left_nav h4, .left_nav ul{
+  color:black;
+  text-decoration: none;
+  text-align-last: left;
+  padding-left:20%;
+}
+
+.left_nav ul{
+  background-color: #f3f3f3;
+  margin: 20px;
+  border-radius:5px;
+}
+
+.general_sidenav_li{
+  line-height: 2.5em;
+}
+
+
+.general_sidenav_a{
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5em 0px;
+  text-decoration: none;
+  color: black;
+}
+
+.general_sidenav_a:hover{
+  text-decoration: none;
+  color: rgba(0,0,0,0.5);
+}
+
+/******************************************/
+/*详细信息-右边信息*/
+.general_right_info{
+  padding: 10vh 5vw;
+}
+
+.general_info_element{
+  margin: 80px 0px;
+  text-align: center;
+}
+
+.general_info_element h3{
+  margin: 50px 0px;
+  font-size: 3em;
+}
+
+.general_info_element div video{
+  width: 100%;
+  height: 100%;
+}
+
+.general_info_element div img{
+  width: 100%;
+  height: 80%;
+}
+
+.col-md-8 h4{
+  margin: 10px 0px;
+  color: rgba(0,0,0,0.8);
+  font-size:1.5em;
+}
