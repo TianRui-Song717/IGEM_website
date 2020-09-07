@@ -274,16 +274,15 @@ body{
 
 .home_first_pic_1{
   position: absolute;
+  height:80%;
   width: 80%;
-  height:90%;
-  top: 10%;
+  bottom: 10%;
   left: 10%;
   z-index: 10;
 
-  /*background-color: rgba(50,50,50,0.5);*/
-  background-image: url("../image/home/1.png");
-  background-position: bottom;
-  background-size: 100%;
+  background-image: url("../image/home/home1.png");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
