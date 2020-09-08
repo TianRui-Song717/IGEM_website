@@ -71,17 +71,16 @@
     <!--图片页面-->
     <div id="background_box">
         <!--第一个页面-->
-        <div class="container" id="home_page_1" style="background-color: gray;">
+        <div class="container" id="home_page_1" >
             <!--移动图层-->
             <div class="path_container">
-                <div class="home_first_pic_1">
-                    <div class="home_first_path_1">
-                        <div id="home_first_move_icon_1"></div>
-                    </div>
-                    <div class="home_first_path_2">
-                        <div id="home_first_move_icon_2"></div>
-                    </div>
+                <div class="home_background" id="home_first_back">
+                  <div class="home_back_path" id="home_first_back_path_1">
+                    <div class="home_move_icon" id="home_first_move_icon"></div>
+                  </div>
+                  <div class="home_back_path" id="home_first_back_path_2"></div>
                 </div>
+                <div class="home_background" id="home_first_front"></div>
             </div>
             <!-- 真正界面 -->
             <div class="row">
@@ -102,11 +101,12 @@
         <!--第二个页面-->
         <div class="container" id="home_page_2">
             <div class="path_container">
-                <div class="home_second_pic_1"></div>
-                <div class="home_second_pic_2">
-                  <div class="home_tube_ball" id="tube_ball_1"></div>
-                  <div class="home_front_tube"></div>
+                <div class="home_background" id="home_second_back">
+                  <div class="home_back_path" id="home_second_back_path_1">
+                    <div class="home_move_icon" id="home_second_move_icon"></div>
+                  </div>
                 </div>
+                <div class="home_background" id="home_second_front"></div>
             </div>
             <div class="row"><!-- 真正界面 -->
                 <div class="col-md-8  home_info" id="home_second_info">
@@ -126,11 +126,13 @@
         <!--第三个页面-->
         <div class="container" id="home_page_2">
             <div class="path_container">
-                <div class="home_third_pic_1"></div>
+               <!--  <div class="home_third_pic_1"></div>
                 <div class="home_third_pic_2">
                   <div class="home_tube_ball" id="tube_ball_2"></div>
                   <div class="home_front_tube"></div>
-                </div>
+                </div> -->
+                <div class="home_background" id="home_third_back"></div>
+                <div class="home_background" id="home_third_front"></div>
             </div>
             <div class="row"><!-- 真正界面 -->
                 <div class="col-md-4">
@@ -150,11 +152,12 @@
         <!--第四个页面-->
         <div class="container" id="home_page_2">
             <div class="path_container">
-                <div class="home_fourth_pic_2">
+                <!-- <div class="home_fourth_pic_2">
                   <div class="home_tube_ball" id="tube_ball_3"></div>
                   <div class="home_front_tube"></div>
                 </div>
-                <div class="home_fourth_pic_1"></div>
+                <div class="home_fourth_pic_1"></div> -->
+                <div class="home_background" id="home_fourth_front"></div>
             </div>
             <div class="row"><!-- 真正界面 -->
                 <div class="col-md-8 home_info" id="home_fourth_info">
