@@ -16,7 +16,7 @@ body{
     padding:0;
     z-index: 0;
 
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .row{
@@ -150,10 +150,10 @@ body{
 /********************************************************/
 /*图片页面设置*/
 #background_box{/*整个图片界面背景*/
+  position:relative;
   width: 100%;
-  height:400vh;
 
-  background-color: gray;/*#5d4517;*/
+  background-color: #2A2F40;/*#5d4517;*/
   /*background-image: url("../image/home_background.jpg");
   background-position: left top;
   background-repeat: no-repeat;
@@ -169,189 +169,86 @@ body{
   height: 100%;
 }
 
+.svg_layer{/*svg居中*/
+  margin:0 auto;
+  display:block;
+}
+
+/*切换页面按钮*/
+#turn_page_button_list{
+  position:fixed;
+  right:5vw;
+  bottom:10vh;
+  height:8vw;
+  width:8vw;
+
+
+  text-align: center;
+  line-height: 60px;
+  background-image:url("../image/next.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+#turn_page_button_list:hover{/*点击切换页面图标*/
+  bottom:11vh;
+}
+
+
 .home_background{/*各个页面的背景图*/
   position: absolute;
   width:100%;
   height: 100vh;
 }
 
-
-.home_back_path{
-  position:absolute;
-}
-
-.home_move_icon{
-  position: absolute;
-}
-
-
 .home_info{/*各页面文字展示*/
   display: block;
   margin-top:5%;
   padding: 0px;
 
-  text-align: center;
-  font-size: 2em;
+  text-align:center;
   color: white;
 }
 
 .home_info h2{
-  font-size: 2em;
+  font-size: 4em;
   font-family: sans-serif;
 }
 
 .home_info p{
-  margin-top: 5%;
+  margin-top:5%;
   width: 70%;
   height: 50%;
   line-height:200%;
 
-  text-align: right;
-  font-size: 0.5em;
+  text-align: center;
+  font-size: 1.5em;
 }
 
-.home_front_tube{/*各个页面的小球与管道*/
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-
-  background-image: url("../image/home/front1.png");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+#home_first_info p{
+  margin-left:20%;
+  text-align:left;
 }
-
-.home_tube_ball{
-  position:absolute;
-  top: 0px;
-  left:5%;
-  width: 100%;
-  height:10%;
-  min-width:40px;
-  min-height: 40px;
-
-  background-image:url("../image/home/roll.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/*第一个图片页面*/
-#home_page_1{
-  background-color: black;
-}
-
-#home_first_back_path_1{
-  bottom:10vh;
-  left:45%;
-  width: 26%;
-  height:22%;
-
-  min-width: 400px;
-  min-height: 80px;
-}
-
-#home_first_move_icon{
-  top: 0px;
-/*  left: 90%;*/
-  height:100%;
-  width:25%;
-
-  background-image:url("../image/right_direction.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#home_first_back{
-  background-image: url("../image/home1_back.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#home_first_front{
-  background-image: url("../image/home1_front.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-
-
-/*第二个图片页面*/
-/*****useless***/
-#home_page_2{
-  background-color: black;
-}
-
-#home_second_move_icon{
-  top: 0px;
-  /*left: 100%;*/
-  height:100%;
-  width:25%;
-
-  background-image:url("../image/left_direction.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#home_second_back{
-  background-image: url("../image/home2_back.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#home_second_front{
-  background-image: url("../image/home2_front.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 
 #home_second_info p{
-  margin-left: 20%;
-  text-align: left;
+  width:80%;
+  margin-left:6%;
+  margin-right:14%;
+  text-align:right;
 }
 
-
-/*第三个图片页面*/
-#home_page_3{
-  background-color: black;
-}
-
-#home_third_back{
-  background-image: url("../image/home3_back.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#home_third_front{
-  background-image: url("../image/home3_front.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-
-/*第四个图片页面*/
-#home_page_4{
-  background-color: black;
-}
-
-#home_fourth_front{
-  background-image: url("../image/home4.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+#home_third_info p{
+  margin-right:20%;
+  margin-left:20%;
+  width: 60%;
+  text-align:center;
 }
 
 #home_fourth_info p{
-  margin-left: 20%;
-  text-align: left;
+  margin-right:25%;
+  margin-left:15%;
+  width: 60%;
+  text-align:center;
 }
+

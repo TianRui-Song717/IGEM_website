@@ -11,6 +11,7 @@ $(function(){
             $(".navbar").addClass("nav_color_change");
         }
         //主页动画效果
+        //设置各个页面动画开始位置
         var first_page_move = $("#home_page_1").offset().top;
         var second_page_move = $("#home_page_2").offset().top;
         var third_page_move = $("#home_page_3").offset().top;
@@ -18,36 +19,103 @@ $(function(){
         //所有页面文字信息
         var screen_height = window.screen.height;
         var screen_width = window.screen.width;
+        var window_width = $(window).width();
         if(curTop <first_page_move - 300){
           $("#home_first_info").fadeOut(1000);
-        }else{/*结束点 = 改变距离 + 变化点 */
+        }else{
           $("#home_first_info").fadeIn(1500);
         }
         if(curTop <second_page_move - 300){
           $("#home_second_info").fadeOut(1000);
-        }else{/*结束点 = 改变距离 + 变化点 */
+        }else{
           $("#home_second_info").fadeIn(1500);
         }
         if(curTop <third_page_move - 300){
           $("#home_third_info").fadeOut(1000);
-        }else{/*结束点 = 改变距离 + 变化点 */
+        }else{
           $("#home_third_info").fadeIn(1500);
         }
-        if(curTop <fourth_page_move - 300){
+        if(curTop <fourth_page_move - 400){
           $("#home_fourth_info").fadeOut(1000);
-        }else{/*结束点 = 改变距离 + 变化点 */
+        }else{
           $("#home_fourth_info").fadeIn(1500);
         }
-        //第一个页面上小人的移动
-        var first_page_move_dis = 300;
-        var first_page_move_postion = (curTop - first_page_move) / first_page_move_dis * 100;
-        if(curTop < first_page_move){
-          $("#home_first_move_icon").css("left","0px");
-        }else if(curTop >= first_page_move && curTop <= first_page_move_dis + first_page_move){
-          $("#home_first_move_icon").css("left",first_page_move_postion+"%");
+        //所有页面小人的掉落消失
+        if(curTop <second_page_move - 300){
+          $("#svg-doc-1 #moving_man").fadeIn(200);
         }else{
-          $("home_first_move_icon").css("left","100%");
+          $("#svg-doc-1 #moving_man").fadeOut(1000);
         }
+        if(curTop <third_page_move - 100){
+          $("#svg-doc-2 #moving_man_2").fadeIn(200);
+        }else{
+          $("#svg-doc-2 #moving_man_2").fadeOut(1000);
+        }
+        if(curTop <fourth_page_move - 350){
+          $("#svg-doc-3 #moving_man_3").fadeIn(200);
+        }else{
+          $("#svg-doc-3 #moving_man_3").fadeOut(700);
+        }
+        if(curTop <fourth_page_move + screen_height){
+          $("#svg-doc-4 #moving_man_4").fadeIn(200);
+        }else{
+          $("#svg-doc-4 #moving_man_4").fadeOut(700);
+        }
+        //所有页面灯光的消失和出现
+        if(curTop >= (first_page_move-100) && curTop <= (first_page_move + 100)){
+          $("#light_1").fadeIn(500);
+        }else{/*结束点 = 改变距离 + 变化点 */
+          $("#light_1").fadeOut(1000);
+        }
+        if(curTop >= (second_page_move-100) &&curTop <= (second_page_move + 100)){
+          $("#light_2").fadeIn(500);
+        }else{/*结束点 = 改变距离 + 变化点 */
+          $("#light_2").fadeOut(1000);
+        }
+        if(curTop >= (third_page_move-100) &&curTop <= (third_page_move + 100)){
+          $("#light_3").fadeIn(500);
+        }else{/*结束点 = 改变距离 + 变化点 */
+          $("#light_3").fadeOut(1000);
+        }
+        if(curTop >= (fourth_page_move-100) &&curTop <= (fourth_page_move + 100)){
+          $("#light_4").fadeIn(500);
+        }else{/*结束点 = 改变距离 + 变化点 */
+          $("#light_4").fadeOut(1000);
+        }
+        //切换页面的按钮的出现和消失和变化
+        if(curTop < video_height - 100){
+          $("#turn_page_button_list").fadeOut(1000);
+        }else{
+          $("#turn_page_button_list").fadeIn(1000);
+        }
+        if(curTop >= $("#home_page_4").offset().top - 100){
+          $("#turn_page_button_list").css({"background-image":"url('../image/top.png')","width":"10vw","height":"10vw","right":"3vw"});
+        }else{
+          $("#turn_page_button_list").css({"background-image":"url('../image/next.png')","width":"8vw","height":"8vw","right":"5vw"});
+        }
+        // //页面舞台灯光de出现和消失和变化
+        // if(curTop >= first_page_move){
+        //   $("#stage_light").fadeIn(500);
+        // }else if(curTop == second_page_move){
+        //   alert("second")
+        //   $("#stage_light").fadeIn(500);
+        // }else if(curTop == third_page_move){
+        //   $("#stage_light").fadeIn(500);
+        // }else if(curTop == fourth_page_move){
+        //   $("#stage_light").fadeIn(500);
+        // }else{
+        //   $("#stage_light").css("display","none");
+        // }
+        // //第一个页面上小人的移动
+        // var first_page_move_dis = 300;
+        // var first_page_move_postion = (curTop - first_page_move) / first_page_move_dis * 100;
+        // if(curTop < first_page_move){
+        //   $("#home_first_move_icon").css("left","0px");
+        // }else if(curTop >= first_page_move && curTop <= first_page_move_dis + first_page_move){
+        //   $("#home_first_move_icon").css("left",first_page_move_postion+"%");
+        // }else{
+        //   $("home_first_move_icon").css("left","100%");
+        // }
         //第一个页面小球掉落
         // var fir_ball_begin = 50 + video_height;
         // var fir_ball_dis = 300;
@@ -67,49 +135,7 @@ $(function(){
         // }else{
         //   $("#home_first_move_icon_2").css("display","block");
         // }
-        //第二个页面竖直小球的路径
-        //var sec_ball_begin = $("#home_page_2").offset().top - $("#home_page_2").height() + 400;
-        var sec_ball_begin = butterfly_begin + screen_height;
-        var sec_ball_dis = 400;
-        var sec_ball_top_position = (curTop - sec_ball_begin) / sec_ball_dis * 100;
-        if(curTop <sec_ball_begin){
-          $("#tube_ball_1").css("display","none");
-          $("#tube_ball_1").css("top","-15%");
-        }else if(curTop >= sec_ball_begin && curTop < sec_ball_begin + sec_ball_dis){/*结束点 = 改变距离 + 变化点 */
-          $("#tube_ball_1").css("top",sec_ball_top_position - 15 +"%");
-          $("#tube_ball_1").css("display","block");
-        }else if(curTop >= sec_ball_begin + sec_ball_dis){/*结束点 = 改变距离 + 变化点 */
-          $("#tube_ball_1").css("top","85%");
-          $("#tube_ball_1").css("display","none");
-        }
-        //第三个页面小球的路径
-        var thir_ball_begin = butterfly_begin + 2 * screen_height -150;
-        var thir_ball_dis = 300;
-        var thir_ball_top_position = (curTop - thir_ball_begin) / thir_ball_dis * 100;
-        if(curTop < thir_ball_begin){
-          $("#tube_ball_2").css("display","none");
-          $("#tube_ball_2").css("top","0%");
-        }else if(curTop >= thir_ball_begin && curTop < thir_ball_begin + thir_ball_dis){/*结束点 = 改变距离 + 变化点 */
-          $("#tube_ball_2").css("top",thir_ball_top_position+"%");
-          $("#tube_ball_2").css("display","block");
-        }else if(curTop >= thir_ball_begin + thir_ball_dis){/*结束点 = 改变距离 + 变化点 */
-          $("#tube_ball_2").css("top","100%");
-          // $("#tube_ball_2").css("display","none");
-        }
-        //第四个页面小球的路径
-        var four_ball_begin = butterfly_begin + 3 * screen_height -200;
-        var four_ball_dis = 300;
-        var four_ball_top_position = (curTop - four_ball_begin) / four_ball_dis * 100;
-        if(curTop < four_ball_begin){
-          $("#tube_ball_3").css("display","none");
-          $("#tube_ball_3").css("top","0%");
-        }else if(curTop >= four_ball_begin && curTop < four_ball_begin + four_ball_dis){/*结束点 = 改变距离 + 变化点 */
-          $("#tube_ball_3").css("top",four_ball_top_position+"%");
-          $("#tube_ball_3").css("display","block");
-        }else if(curTop >= four_ball_begin + four_ball_dis){/*结束点 = 改变距离 + 变化点 */
-          $("#tube_ball_3").css("top","100%");
-          // $("#tube_ball_3").css("display","none");
-        }
+        // 全部舍弃，使用svg
         //增加其他部分
     })
 })
@@ -165,6 +191,30 @@ $(".nav_item").click(function(){
     }
 })
 })
+
+//HOME切换页面按钮点击切换
+//以及舞台灯光的显示
+$(function(){
+  $("#turn_page_button_list").click(function(){
+    var first_page_move = $("#home_page_1").offset().top;
+    var second_page_move = $("#home_page_2").offset().top;
+    var third_page_move = $("#home_page_3").offset().top;
+    var fourth_page_move = $("#home_page_4").offset().top;
+    var curTop=$(window).scrollTop();
+    if(curTop < first_page_move - 1){
+      $("html,body").animate({scrollTop:first_page_move},1000);
+    }else if(curTop < second_page_move - 1){
+      $("html,body").animate({scrollTop:second_page_move},1000);
+    }else if(curTop < third_page_move - 1 && curTop >= second_page_move - 1){
+      $("html,body").animate({scrollTop:third_page_move},1000);
+    }else if(curTop < fourth_page_move -1 && curTop >= third_page_move - 1){
+      $("html,body").animate({scrollTop:fourth_page_move},1000);
+    }else{
+      $("html,body").animate({scrollTop:0},1000);
+    }
+  })
+})
+
 
 
 // 隐藏式菜单按钮

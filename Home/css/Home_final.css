@@ -4,13 +4,12 @@ body{
     font-size: small;
     font-family:Helvetica, Arial, sans-serif;
     color: black;
-    background-color: #aaaaaa;
+    background-color:#2A2F40;
 }
 
 /*Bootstrap*/
 .container{
     position: relative;
-    background-color: #aaaaaa;
     width: 100%;
     min-height: 100vh;
     margin:0;
@@ -29,20 +28,21 @@ body{
     position:fixed;
     display: flex;
     flex-direction: row;
-    /*flex-wrap: wrap;*/
+    flex-wrap:wrap;
     margin:0;
     padding:0;
     z-index:100;
     width:100%;
-    text-align: center;
+    text-align: left;
 
-    background-color: rgba(48,48,48,0.3);
+    background-color: rgba(48,48,48,1);
     box-shadow: 0px 7px 8px 7px rgba(0,0,0,0.1);
 }
 
 .navbar-logo{
     display: inline-block;
-    width: 100px;
+    width:200px;
+    height: 50px;
     text-decoration: none;
     color:gray;
 
@@ -50,18 +50,31 @@ body{
 }
 
 .navbar-button{
-    display: none;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 12px;
+
+    color: white;
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,0);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(200,200,200,0.6);
+    border-radius: 4px;
 }
 
 .navbar_nav{
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction:row;
-    flex-direction:row;
-    /*flex-basis: 100%;不换行*/
+    display: none;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    flex-basis: 100%;
+    position: relative;
     padding: 0px;
     margin: 0px;
-    width:900px;
+    width:500px;
 
     list-style: none;
 }
@@ -73,16 +86,15 @@ body{
     min-width:95px;
 
     line-height: 50px;
-    /*下拉图标后的文字*/
+    /*为了下拉图标后的文字*/
     color: white;
-    font-size: 1em;
 }
 
 .nav_item span{
     color: rgba(255,255,255,0.8);
     text-decoration:none;
-    transition: 0.7s;
     padding: 0px 5px;
+    transition: 0.7s;
 }
 
 .nav_item span:hover{
@@ -95,12 +107,13 @@ body{
 
 
 .dropdown-menu{
-    position: absolute;
+    position: relative;
     display: none;
     padding: 10px 0px;
-    top:100%;
+    top:0;
     left:0;
-    text-align: center;
+    text-align: left;
+    width: 100%;
 
     list-style: none;
     background-color: rgba(100,100,100,1);
@@ -108,7 +121,8 @@ body{
 
 .dropdown-item{
     display: block;
-    padding: 0;
+    padding-left:30px;
+    line-height: 25px;
 
     color:white;
     text-decoration: none;
@@ -130,8 +144,8 @@ body{
     display: block;
 }
 
-.show_dropdown_color{
-    color: white;
+.show_hide_nav{ /*一级菜单显示*/
+    display: block;
 }
 
 /********************************************************/
@@ -146,19 +160,65 @@ body{
   overflow: hidden;
 }
 
-.path_container{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
+/*******************************************/
+/*图片页面设置*/
+.svg_layer{/*svg居中*/
+  margin:0 auto;
+  display:block;
 }
 
-/*第一个图片页面*/
-#home_first_page{
-  background-image:url("../image/1.jpg");
+#turn_page_button_list{
+  position:fixed;
+  right:7%;
+  bottom:50vh;
+  height:60px;
+  width:60px;
+
+
+  text-align: center;
+  line-height: 60px;
+  background-image:url("../image/button.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
+}
+
+#turn_page_button_list:hover{/*点击切换页面图标*/
+  bottom:51vh;
+}
+
+.home_info{/*各页面文字展示*/
+  display: block;
+  width: 100%
+  margin-top:5%;
+  padding: 0px;
+
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+.home_info p{
+  padding:20px;
+  font-size:0.6em;
+}
+
+#home_page_1{
+  border-bottom-style: solid;
+  border-color:#333;
+}
+
+#home_page_2{
+  border-bottom-style: solid;
+  border-color:#333;
+}
+
+#home_page_3{
+  border-bottom-style: solid;
+  border-color:#333;
+}
+
+#home_page_4{
+  border-bottom-style: solid;
+  border-color:#333;
 }
