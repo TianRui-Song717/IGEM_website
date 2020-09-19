@@ -174,23 +174,23 @@ body{
 }
 
 #general_info_contain{
-  height: 300vh;
+  height: auto;
 }
 
 /****************************************/
 /*详细信息-侧边导航*/
 .general_left_nav{
   padding: 0;
-  height: 100%;
+  height: 100vh;
   background-color:rgba(255,255,255,1);
 }
 
 .left_nav{
-  margin-top:20vh;
+  padding-top:20vh;
   top:0;
   width: 100%;
-  height: 30vh;
-  background-color:
+  height: 100vh;
+  background-color: rgb(255,255,255);
 }
 
 .left_nav_after{/*侧边导航效果*/
