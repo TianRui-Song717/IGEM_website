@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: small;
-    font-family:Lato,sans-serif;
+    font-family:sans-serif;
     color: black;
     background-color: #aaaaaa;
 }
@@ -79,7 +79,7 @@ body{
 
 
 .logo_container{
-  width: 70px;
+  width: 74px;
 }
 
 #slim_logo{
@@ -128,7 +128,7 @@ body{
 }
 
 
-/*****************************************************/
+/********************************/
 /*固定图片页*/
 .general_background_image{
   position: fixed;
@@ -136,53 +136,60 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/1.jpg");
+  background-image: url("../img/1.jpg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover
 }
 
-/*********************************************************/
+/*******************************/
 /*覆盖第一页文字图片*/
 .general_cover_image{
   display: block;
   height: 100vh;
   width: 100%;
-  background-image:url('img/General.png');
+  background-image:url('../img/General.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0);
 }
 
-/*******************************************************/
+/*******************************/
 /*详细信息界面*/
 .info_section{
   background-color: white;
 }
 
 .general_info{
-  background-color: rgba(255,255,255,0.85);
+  /*background-color: rgba(255,255,255,0.85);*/
+  background-color: rgba(255,255,255,1);
 }
 
 #general_info_contain{
-  height: auto;
+  /*height: 500vh;*/
 }
 
 /****************************************/
 /*详细信息-侧边导航*/
 .general_left_nav{
   padding: 0;
-  height: 100vh;
+  height: 100%;
   background-color:rgba(255,255,255,1);
+}
+
+.left_nav_back{
+  height:100vh;
+  background-color: black;
+  width: 100%;
 }
 
 .left_nav{
   padding-top:20vh;
   top:0;
   width: 100%;
-  height: 100vh;
-  background-color: rgb(255,255,255);
+  height:100vh;
+  background-color:white;
 }
 
 .left_nav_after{/*侧边导航效果*/
@@ -235,6 +242,12 @@ body{
   font-weight:bold;
 }
 
+@media screen and (max-width: 767px){/*媒体查询*/
+  .general_left_nav{
+    display: none;
+  }
+}
+
 /******************************************/
 /*详细信息-右边信息*/
 .general_right_info{
@@ -280,7 +293,6 @@ body{
   font-size: 2em;
   letter-spacing:0.1em;
   color:#68b0ab;
-  float: left;
   width: 100%;
 }
 
@@ -301,9 +313,9 @@ body{
 
 .general_info_element p{
   text-align:justify;
-  font-size: 16px !important;
-  line-height: 1.7em !important;
-  margin: 1em 0px;
+  font-size: 1.0em;
+  line-height: 2.0em;
+  margin: 15px 0px;
   padding:0px 15px;
 }
 
@@ -328,19 +340,125 @@ body{
 .general_info_element div p{
   padding-left:0px;
 }
+/***************One health***********/
+.thumbnail{
+  width: 96%;
+  margin: 1.5em 2%;
+  border-radius:10px;
+  min-height:50vh;
+  box-shadow: 0px 0px 30px #aaaaaa;
+}
 
-/**************************************************/
-/*媒体查询*/
-@media screen and (max-width: 767px){
-  body{
-    font-size:medium;
-  }
+.general_info_element .thumbnail img{
+  width: 45%;
+  margin:0px 5% 0px 0px;
+  display: inline-block;
+  float: left;
+  border-radius: 10px;
+}
 
-  .general_left_nav{
-    display: none;
-  }
+.thumbnail .caption{
+    min-height:35vh;
+}
 
-  .general_info_element h3, .general_info_element h4, .general_info_element h5, .general_info_element h6{
-    letter-spacing:0.05em;
-  }
+.thumbnail .caption p{
+  padding:0PX 5%;
+  margin:0px;
+  text-align: left;
+}
+
+
+.thumbnail h4{
+  text-align: center;
+  margin: 30px 0px 15px 0px;
+}
+
+.well{
+  background-color: white;
+  width: 96%;
+  margin: 0px 2%;
+}
+
+
+/*****************教授信息**************/
+.nav-pills li a{
+  border-radius: 25px;
+  color: #4f8a8b;
+}
+
+.each_sec_pro{
+  margin-top:5%;
+}
+
+.HP_professor_intro{
+  padding: 5% 5%;
+  background-color: rgb(255,255,255);
+  border-radius: 10px;
+}
+
+.HP_professor_intro div{
+  vertical-align: middle;
+}
+
+.HP_professor_intro div img{
+  width: 80%;
+  margin-top:5%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.HP_professor_intro h5{
+  color:rgb(100,100,100);
+  font-size:bold;
+}
+
+#fourth_part{
+  min-height:0px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  background-color: #68b0ab;
+  color:white;
+}
+
+/******************CREATE 部分******************/
+#general_info_ele_3 ul li{
+  list-style: circle;
+  text-align: left;
+  padding-left:1em;
+  line-height:2.0em;
+}
+
+
+/**************************************/
+/*六个图片弹出文字框*/
+.hp_six_pic_box{
+  position: relative;
+  width:100%;
+  margin:10vh 0px;
+}
+
+/*******************IMPLEMENT******************/
+.my_btn{
+  display: block;
+  position: relative;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  width:60%;
+  height:7vh;
+  line-height:7vh;
+  margin:2em 20%;
+
+  background-color:#3b83c9;
+  font-weight:bold;
+  text-decoration: none;
+  color: white;
+  border-radius:5px;
+}
+
+.my_btn:hover{
+  text-decoration: none;
+  color: white;
+  position:relative;
+  top:-5px;
 }
