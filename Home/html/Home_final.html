@@ -3,9 +3,9 @@
 <head>
     <title>Home Team:</title>
     <meta charset="utf-8">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
-    <link rel="stylesheet" type="text/css" href="../css/Home_final_wide.css" media="screen and (min-width:950px)">
-    <link rel="stylesheet" type="text/css" href="../css/Home_final.css" media="screen and (max-width:950px)">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/Home_final_wide.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/Home_final.css" media="screen and (max-width:767px)"> -->
     <script src="../js/snap.svg-min.js"></script>
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -247,59 +247,106 @@
 </head>
 <body>
     <!--导航栏-->
-    <nav class="navbar">
-        <a class="navbar-logo" href="main.html"><img src="#" alt="The Logo"></a>
-        <button type="button" class="navbar-button">
-            <span class="glyphicon glyphicon-align-justify"></span>
-        </button>
-        <ul class="navbar_nav">
-            <li id="home_button" class="nav_item">
-                <span>HOME</span>
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="../image/logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="../image/logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
             </li>
-            <li id="team_button" class="nav_item">
-                <span class="glyphicon glyphicon-chevron-down"></span>TEAM
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Members</a>
-                    <a class="dropdown-item" href="">Collaborations</a>
-                    <a class="dropdown-item" href="">Attributions</a>
-                </div>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
             </li>
-            <li id="project_button" class="nav_item">
-                <span class="glyphicon glyphicon-chevron-down"></span>PROJECT
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Description</a>
-                    <a class="dropdown-item" href="">Design</a>
-                    <a class="dropdown-item" href="">Notebook</a>
-                    <a class="dropdown-item" href="">Demonstration</a>
-                    <a class="dropdown-item" href="">Contribution</a>
-                    <a class="dropdown-item" href="">Results</a>
-                    <a class="dropdown-item" href="">Engineering</a>
-                    <a class="dropdown-item" href="">Safety</a>
-                    <a class="dropdown-item" href="">Partnership</a>
-                </div>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
             </li>
-            <li id="part_button" class="nav_item">
-              <span class="glyphicon glyphicon-chevron-down"></span>PARTS
-              <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Overview</a>
-                  <a class="dropdown-item" href="">Basic Part</a>
-                  <a class="dropdown-item" href="">Composite Part</a>
-                  <a class="dropdown-item" href="">Part Collection</a>
-                  <a class="dropdown-item" href="">Improvements</a>
-              </div>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
             </li>
-            <li class="nav_item"><span>MODEL</span></li>
-            <li id="hp_button" class="nav_item">
-              <span class="glyphicon glyphicon-chevron-down"></span>HUMAN PRACTISES
-              <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Human Practises</a>
-                  <a class="dropdown-item" href="">Engagement</a>
-                  <a class="dropdown-item" href="">Implementation</a>
-                  <a class="dropdown-item" href="">Education</a><!--science communcation-->
-              </div>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
             </li>
-            <!-- <li class="nav_item"><span>ABOUT</span></li> -->
-        </ul>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
     <!-- 视频页面 -->
     <div class="video_container">
@@ -771,7 +818,7 @@
                 </div>
                 <div class="col-sm-8 home_info" id="home_first_info">
                     <h2>FIRST PAGE SUB TITLE</h2>
-                    <p>some information, some information, some information, some information, some information, some information
+                    <p>Lead pollution in soil has brought great losses to agricultural production and posed a huge threat to people’s health. Every year, tens of millions of people are impacted by lead contamination.
                     </p>
                 </div>
             </div>
@@ -1108,8 +1155,7 @@
             <div class="row"><!-- 真正界面 -->
                 <div class="col-md-8  home_info" id="home_second_info">
                     <h2>SECOND SUB TITLE</h2>
-                    <p>some information, some information, some information, some information, some information, some information,
-                        some information, some information, some information, some information, some information, some information
+                    <p>However, traditional approaches such as physicochemical repair and plant enrichment will cause other environmental hazards and have lower efficiency and limited processing area, respectively. Therefore, it is urgent to develop a new strategy for lead pollution treatment.
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -1338,8 +1384,7 @@
             <div class="row"><!-- 真正界面 -->
                 <div class="col-md-12 home_info" id="home_third_info">
                     <h2>THIRD SUB TITLE</h2>
-                    <p>some information, some information, some information, some information, some information, some information,
-                        some information, some information, some information, some information, some information, some information
+                    <p>This year, to make up for the deficiency of traditional methods, NAU-CHINA team used synthetic biology to combine earthworms (Eisenia foetida) and bacteria (Bacillus subtilis) to immobilize soil lead. Earthworms was used as carriers of bacteria, and we engineered bacteria to secrete phytase specifically by using oxygen-regulated switch to hydrolyze phytate in the intestinal tract of earthworms. Lead ions can be precipitated into refractory state by combining with phosphate and chloride ions, thus achieving the immobilization of lead.
                     </p>
                 </div>
             </div>
@@ -1612,8 +1657,7 @@
             <div class="row"><!-- 真正界面 -->
                 <div class="col-md-12 home_info" id="home_fourth_info">
                     <h2>FOURTH SUB TITLE</h2>
-                    <p>some information, some information, some information, some information, some information, some information,
-                        some information, some information, some information, some information, some information, some information
+                    <p>Meanwhile, we also added a suicide module considering the biosafety implications of using genetically modified organisms (GMOs) in the environment. Affected by the COVID-19, we cannot do our wet lab experiments. So we collected proof and concept from literature and constructed mathematical models to predict results and feasibility.
                     </p>
                 </div>
             </div>

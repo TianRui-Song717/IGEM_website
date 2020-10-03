@@ -6,10 +6,14 @@ $(function(){
         video_height = $(".video_container").height();
         //导航部分的响应
         if(curTop<nav_change_color_height){
-            $(".navbar").removeClass("nav_color_change");
+            $(".navbar-default").css("background-color","rgba(48,48,48,0.3)");//改变背景色
+            $("#slim_logo").attr("src","../image/logo_pic.png");
         }else{
-            $(".navbar").addClass("nav_color_change");
+            $(".navbar-default").css("background-color","rgba(40,40,40,1)");
+            $("#slim_logo").attr("src","../image/logo_pic.png");
         }
+        //滚动屏幕时，把导航选项折叠起来
+        $("#navbar").collapse('hide')
         //主页动画效果
         //设置各个页面动画开始位置
         var first_page_move = $("#home_page_1").offset().top;

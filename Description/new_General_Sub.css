@@ -303,7 +303,7 @@ body{
   text-align:justify;
   font-size: 1.2em !important;
   line-height: 1.7em !important;
-  margin:2em 0px;
+  margin: 2em 0px;
   /*padding-left: 2em;*/
 }
 
@@ -358,4 +358,9 @@ body{
   .general_info_element h3, .general_info_element h4, .general_info_element h5, .general_info_element h6{
     letter-spacing:0.05em;
   }
+}
+
+/*****Description*****/
+i{
+  color:#85aa41;/**二级标题颜色**/
 }

@@ -23,142 +23,107 @@ body{
 }
 
 /****************************************************/
-/*导航栏有关*/
+/***********nav_bootstrap************/
+.nav_color_change{
+  background-color: rgba(40,40,40,1);
+}
+
+.navbar-default{
+  background-color: rgba(48,48,48,0.3);
+  border:none;
+}
+
 .navbar{
-    position:fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    margin:0;
-    padding:0;
-    z-index:100;
-    width:100%;
-    text-align: left;
-
-    background-color: rgba(48,48,48,1);
-    box-shadow: 0px 7px 8px 7px rgba(0,0,0,0.1);
+  margin: 0px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.175);
 }
 
-.navbar-logo{
-    display: inline-block;
-    width:200px;
-    height: 50px;
-    text-decoration: none;
-    color:gray;
-
-    line-height: 50px;
+.navbar-default .navbar-nav>li>a{
+  font-size:0.9em;
+  color:white;
 }
 
-.navbar-button{
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 4px 12px;
-
-    color: white;
-    font-size: 1.2em;
-    background-color: rgba(0,0,0,0);
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(200,200,200,0.6);
-    border-radius: 4px;
+.nav_text{
+  line-height: 50px;
 }
-
-.navbar_nav{
-    display: -ms-flexbox;
-    display: none;
-    -ms-flex-direction:column;
-    flex-direction:column;
-    flex-basis: 100%;
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    width:500px;
-
-    list-style: none;
-}
-
-.nav_item{
-    position:relative;
-    margin: 0px 16px;
-    padding: 0px .5rem;
-    min-width:95px;
-
-    line-height: 50px;
-    /*为了下拉图标后的文字*/
-    color: white;
-}
-
-.nav_item span{
-    color: rgba(255,255,255,0.8);
-    text-decoration:none;
-    padding: 0px 5px;
-    transition: 0.7s;
-}
-
-.nav_item span:hover{
-    color: rgba(255,255,255,1)
-}
-
-#home_button span{
-    color:white;
-}
-
 
 .dropdown-menu{
-    position: relative;
-    display: none;
-    padding: 10px 0px;
-    top:0;
-    left:0;
-    text-align: left;
-    width: 100%;
+  background-color: rgba(100,100,100,1);
 
-    list-style: none;
-    background-color: rgba(100,100,100,1);
+  padding-bottom:15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-.dropdown-item{
-    display: block;
-    padding-left:30px;
-    line-height: 25px;
-
-    color:white;
-    text-decoration: none;
+.dropdown-menu li{
+  height: 2.5em;
+  line-height:2.5em;
 }
 
-.dropdown-item:hover{
-    text-decoration: none;
-    background-color:rgba(255,255,255,0.8);
-    color: black;
-    transition: 0.7s;
+.dropdown-menu li a{
+  color: white;
+  font-weight: 100;
 }
 
-/*用于toggle class*/
-.nav_color_change{
-    background-color:rgba(40,40,40,1);
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: rgba(255,255,255,0.7);
 }
 
-.show_dropdown{
-    display: block;
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background-color:rgba(40,40,40,0);
+  color: rgba(255,255,255,0.7);
 }
 
-.show_hide_nav{ /*一级菜单显示*/
-    display: block;
+
+.logo_container{
+  width: 74px;
 }
 
-/********************************************************/
-/*视频页面设置*/
-.video_container{
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 100%;
-  font-size: 0px;/*两个部分之间无空格*/
-
-  overflow: hidden;
+#slim_logo{
+  margin-right:15px;
 }
+
+@media screen and (max-width: 768px){
+  #slim_logo{
+    width: 45px;
+  }
+
+  .dropdown-menu li{
+    height: 1.7em;
+    line-height:1.7em;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    color: white;
+    font-weight: 100;
+  }
+
+  .navbar-nav .open .dropdown-menu{
+    background-color:rgba(100,100,100,1);
+    border-radius: 5px;
+  }
+}
+
+.nav_bar_logo{
+  line-height: 50px;
+  float: left;
+  height:50px;
+}
+
+.navbar-fixed-top .navbar-collapse{
+  max-height: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color:white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+  transition:0.5s;
+  color: rgba(48,48,48,0.8);
+  background-color:rgba(240,240,240);
+}
+
 
 /*******************************************/
 /*图片页面设置*/

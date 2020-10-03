@@ -86,7 +86,7 @@ body{
   margin-right:15px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 772px){
   #slim_logo{
     width: 45px;
   }
