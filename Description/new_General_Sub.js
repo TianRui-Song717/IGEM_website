@@ -74,6 +74,7 @@ $(function(){
     }else{
       $("#sidenav_5").removeClass("general_side_nav_color");
     }
+
     //Description_roadmap
     var half_window = $(window).height()/2;
     var circle_1 = $("#map_circle_1").offset().top - half_window;

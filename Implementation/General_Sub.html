@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">FINAL USERS</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">REAL WORLD APPLICATION</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">FURTURE APPLICATIONS</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">SAFETY</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">CHALLENGE</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">REFERENCE</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. Final Users-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3>Final Users：Agricultural Lands in Southern China</h3>
+              <p>
+                Our project hopes to inoculate the engineered bacteria into earthworms, and apply these earthworms to the farmland in southern China before the crops are planted in each season. So as to protect the agricultural soil from deteriorating associated with lead pollution. There are two reasons that our project is applied to agricultural lands in southern China.
+              </p>
+              <p>
+                First of all, in 2018 the Chinese government issued the soil risk control standards for agricultural lands, in which the quality and safety of edible agricultural products were taken as the standard to set the screening value and control value of soil pollution risk in agricultural land. When the lead content of cultivated land exceeds the screening value, the quality and safety of agricultural products may be at risk, while the risk is higher when the lead content exceeds the control value. Survey data shows that the problem of lead pollution in agricultural lands in China is widespread, and the lead concentration in polluted agricultural lands is mostly in the range above the screened value and the highest near the controlled value.
+              </p>
+              <img src="implementation_1_1.jpg">
+              <img src="implementation_1_2.jpg">
+              <p>
+                Secondly, Eisenia Fetida is widely used as Vermicomposting earthworm species, and it also shows good heavy metal tolerance in heavy metal contaminated sites，which ensures the normal growth of our earthworms and have a certain effect on the treatment of lead pollution in the soil at the same time.
+              </p>
+            </div>
+
+            <!--2 In real WORLD -->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>Application in The Real World</h3>
+              <p>
+                We imagine that when our project is applied in the real world, a closed loop can be formed between the laboratory, biotechnology and farm to promote mutual improvement.
+              </p>
+              <p>
+                After obtaining the engineered bacteria in the laboratory, we will register them for patents and sell them to biotechnologies and provide certain technical support. The biotechnologies will carry out further screening, expansion and freeze-drying preservation. Wash the artificially cultivated earthworms and put them in a turnover box with moist absorbent paper. Add the freeze-dried powder of engineered bacteria. Take out and wash them after one day, and sell them to farmers, while providing a certain assessment of heavy metal pollution in farmland. Before planting each season, farmers inoculate earthworms in the farmland with an amount of 60g/m <sup>2</sup> and supplement the inoculation according to the changes in the number of earthworms. At the same time, providing some real application feedback for the laboratory to make technical improvements.
+              </p>
+              <img src="img/implementation_2_1.png">
+            </div>
+
+            <!--3. Future Application-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>Furture Applications</h3>
+              <ul>
+                <li>
+                  <h4>Used in Vermicomposting</h4>
+                  <p>
+                    Earthworms eat a lot of manure and take advantage of the synergy of intestinal microbes. They can efficiently transform organic matter and accelerate fertilizer maturity. However, the lead in “farm manure” is also an important source of lead pollution on farmland. If earthworms inoculated with engineered bacteria are applied to Vermicomposting. They will greatly reduce the lead pollution in fertilizers entering the soil and avoid the use of chemical fertilizers, which will promote the development of Vermicomposting and contribute to the sustainable agriculture.
+                  </p>
+                </li>
+                <li>
+                  <h4>Multi-functional application</h4>
+                  <p>
+                    After the engineered bacteria have made progress in the treatment of lead pollution, we will design other recombinase to obtain free dissociative sulfur and phosphate groups to deal with other heavy metal pollution.
+                  </p>
+                </li>
+                <li>
+                  <h4>Sustainable application</h4>
+                  <p>
+                    After fully verifying the safety and security of the project, we plan to release the engineered bacteria directly into the soil environment to ensure that they can play a role in every generation, which will greatly reduce the cost of project implementation.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!--4. Safety-->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <h3>Safety</h3>
+              <p>
+                Due to the epidemic, we can not enter the laboratory for experiments this year, and we attach great importance to safety work. We learned lectures and regulations related to safety and ethics to ensure the safety of all parts of our project at the start of out project.
+              </p>
+              <h4>Security of project design</h4>
+
+              <ul>
+                <h5 style="text-align: left;">Overall biosafety</h5>
+                <li style="font-size:1.3em;">
+                  <p style="font-size: 0.95em !important">
+                    Our project envisages using Bacillus subtilis WB800N as the chassis organism, Bacillus subtilis YCD as the source of phytase, and Eisenia vulgaris as the engineering bacteria carrier. Bacillus subtilis is a very safe and commonly used strain in laboratories, and usually does not cause obvious risks to human health, the community or the environment. Eisenia Fetida is a widespread species in China and is widely used as a compost species in southern China. And our project will not release engineered bacteria and earthworms into the environment. Therefore, our project is very safe.
+                  </p>
+                </li>
+                <h5 style="text-align: left;">Gene safety</h5>
+                <li style="font-size:1.3em;">
+                  <p style="font-size: 0.95em !important">
+                    We designed a suicide switch in the gene pathway to initiate suicide when the engineered bacteria enter the environment, avoiding the risk of gene drift to the greatest extent.
+                  </p>
+                </li>
+              </ul>
+
+              <h4>Implement security</h4>
+              <p>
+                When we envision our project to play a role in the soil environment in the real world, we will follow the principle of gradual evaluation, gradually increase the release scale. We will evaluate each step of the implementation and reasonably optimize the implementation plan.
+              </p>
+
+              <h5>Laboratory safety</h5>
+              <p>
+                We will not enter the laboratory to conduct experiments, but we still have received laboratory safety training and passed the laboratory safety exam. We are familiar with laboratory safety operations and emergency measures.
+              </p>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/lab_1.jpg" alt="picture 1 of lab safety">
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/lab_2.jpg" alt="picture 2 of lab safety">
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/lab_3.jpg" alt="picture 3 of lab safety">
+              </div>
+            </div>
+
+            <!--5. Challenge-->
+            <div class="row general_info_element" id="general_info_ele_5">
+              <h3>CHALLENGE</h3>
+              <h4>How to ensure the activity of earthworms and engineered bacteria？</h4>
+              <p>
+                Soil animals are sensitive to the toxicity of pesticides, and long-term use of pesticides has a great impact on the types, quantity, flora and respiratory intensity of soil animals. Relevant studies have shown that pesticide pollution will lead to the decline of soil microbial functional diversity, and also reduce the use of carbon substrates by microorganisms. Therefore the use of pesticides and chemical fertilizers on farmland may cause problems such as low activity of earthworms or engineered bacteria.
+              </p>
+              <p>
+                However the development of earthworm composting technology can improve the utilization efficiency of nutrients in organic fertilizer by plants. Therefore, if follow-up research can give full play to the synergistic effects of Vermicomposting and beneficial microorganisms, the use of pesticides and chemical fertilizers can be greatly reduced.
+              </p>
+              <h4>Wrong suicide</h4>
+              <p>
+                In addition, when the biological company feeds the freeze-dried powder to earthworms. The engineered bacteria can be recovered in the turnover box, which will lead to abnormal suicide of the engineered bacteria.
+              </p>
+              <p>
+                But this kind of wrong suicide requires two conditions. One is the leakage of the promoter that controls the expression of trigger RNA. The other is the recovery of the engineered bacteria in the turnover box. However, the relatively dry environment in the turnover box is not conducive to the recovery of the engineered bacteria. Therefore the possibility of wrong suicide is very little, and the loss caused is small as well.
+              </p>
+
+              <h4>Implement security</h4>
+              <p>
+                When we envision our project to play a role in the soil environment in the real world, we will follow the principle of gradual evaluation, gradually increase the release scale. We will evaluate each step of the implementation and reasonably optimize the implementation plan.
+              </p>
+
+              <h5>Laboratory safety</h5>
+              <p>
+                We will not enter the laboratory to conduct experiments, but we still have received laboratory safety training and passed the laboratory safety exam. We are familiar with laboratory safety operations and emergency measures.
+              </p>
+            </div>
+
+            <!--6. REFERENCE -->
+            <div class="row general_info_element" id="general_info_ele_6">
+              <h3>REFERENCE</h3>
+                <div class="col-md-12 col-sm-12 reference" style="margin-top: 40px">
+                  <ul>
+                    <li style="font-size: 1.3em;">
+                      <span>[1]</span>
+                      <a>
+                        Zhang W X，Shen Z F，Shao Y H，Shi L L，Liu S J，Shi N N，Fu S L．Soil biota and sustainable agriculture: A review． Acta Ecologica Sinica，2020，40 ( 10) : 3183-3206.
+                      </a>
+                    </li>
+                    <li style="font-size: 1.3em;">
+                      <span>[2]</span>
+                      <a>
+                        Xu Qin. An overview of the geographical distribution of terrestrial earthworms in China[J]. Journal of Beijing Institute of Education, 1996(03): 54-61.
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>

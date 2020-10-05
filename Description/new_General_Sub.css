@@ -360,7 +360,49 @@ body{
   }
 }
 
-/*****Description*****/
+/*********************************Description**********************************/
 i{
   color:#85aa41;/**二级标题颜色**/
+}
+
+/******* 参考文献部分 ******/
+.reference{
+  text-align:justify;
+  text-justify:inter-ideograph;
+}
+.reference ul{
+  list-style: none;
+}
+.reference ul li{
+  position: relative;
+}
+.reference ul li span{
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  display: inline-block;
+}
+.reference ul li a{
+  color: #68b0ab;
+  padding-left: 2em;
+  display: inline-block;
+}
+
+/***roadmap***/
+@media screen and (max-width: 767px){
+  svg{
+    width:80%;
+    font-size:0.8em;
+  }
+}
+
+
+#roadmap_img{
+   width:50%;
+}
+
+@media screen and (max-width: 1100px){
+  #roadmap_img{
+    width:80%;
+  }
 }
