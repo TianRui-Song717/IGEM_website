@@ -227,7 +227,7 @@ body{
 
 /*滚动到相应部分侧边栏颜色不同*/
 .general_side_nav_color{
-  background-color:#68b0ab;
+  background-color:#4f88ad;
   color: white;
   border-radius:5px;
   transition:0.2s;
@@ -271,7 +271,7 @@ body{
   letter-spacing:0.05em;
 
 /*  border-top:dashed 2px rgba(180,180,180,0.5);*/
-  color:#1d663d;/*#4f8a8b;*/
+  color:#145374;/*#4f8a8b;*/
 }
 
 .general_info_element h4{
@@ -279,7 +279,7 @@ body{
   margin: 1.5em 0px 1em 0px;
   font-size: 1.8em;
   letter-spacing:0.1em;
-  color:#85aa41;
+  color:#4f88ad;
   float: left;
   width: 100%;
 }
@@ -288,7 +288,7 @@ body{
   margin: 1.2em 0px;
   font-size: 1.5em;
   letter-spacing:0.1em;
-  color:#dbd072;
+  color:#83c2c7;
   font-weight: bolder;
 }
 
@@ -362,7 +362,7 @@ body{
 
 /*********************************Description**********************************/
 i{
-  color:#85aa41;/**二级标题颜色**/
+  color:#4f88ad;/**二级标题颜色**/
 }
 
 /******* 参考文献部分 ******/
@@ -383,7 +383,7 @@ i{
   display: inline-block;
 }
 .reference ul li a{
-  color: #68b0ab;
+  color: #83c2c7;
   padding-left: 2em;
   display: inline-block;
 }
