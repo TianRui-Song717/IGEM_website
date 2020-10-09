@@ -1,0 +1,12 @@
+https://2020.igem.org/Team:NAU-CHINA/test-Description.html
+-- test Description
+
+https://2020.igem.org/Team:NAU-CHINA/test-Description/description-js?action=raw&ctype=text/javascript
+-- test Desciption js file
+
+
+https://2020.igem.org/Template:NAU-CHINA/ALL/generalpage-css
+-- generAL PAGE CSS
+
+https://2020.igem.org/wiki/index.php?title=Template:NAU-CHINA/Description-css
+--description unique css

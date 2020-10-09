@@ -344,27 +344,6 @@ body{
   margin-top:1.7em;
 }
 
-/**************************************************/
-/*媒体查询*/
-@media screen and (max-width: 767px){
-  body{
-    font-size:medium;
-  }
-
-  .general_left_nav{
-    display: none;
-  }
-
-  .general_info_element h3, .general_info_element h4, .general_info_element h5, .general_info_element h6{
-    letter-spacing:0.05em;
-  }
-}
-
-/*********************************Description**********************************/
-i{
-  color:#4f88ad;/**二级标题颜色**/
-}
-
 /******* 参考文献部分 ******/
 .reference{
   text-align:justify;
@@ -387,6 +366,29 @@ i{
   padding-left: 2em;
   display: inline-block;
 }
+
+
+/**************************************************/
+/*媒体查询*/
+@media screen and (max-width: 767px){
+  body{
+    font-size:medium;
+  }
+
+  .general_left_nav{
+    display: none;
+  }
+
+  .general_info_element h3, .general_info_element h4, .general_info_element h5, .general_info_element h6{
+    letter-spacing:0.05em;
+  }
+}
+
+/*********************************Description**********************************/
+i{
+  color:#4f88ad;/**二级标题颜色**/
+}
+
 
 /***roadmap***/
 @media screen and (max-width: 767px){

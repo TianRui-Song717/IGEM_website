@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MODEL-Celllular Automaton Model</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">First</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Second</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Third</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Fourth</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Fifth</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. Q & A-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3>Q&A</h3>
+              <h4>1. What can Cellular Automaton do?</h4>
+              <p>
+                By setting up a series of rules, Cellular Automata can automatically simulate material diffusion at a certain probability. We use Cellular Automata to simulate earthworm movement. When earthworms move throughout the land, Cellular Automata can record their locations, which are related to soil lead purification.
+              </p>
+              <h4>2. What makes earthworms move?</h4>
+              <p>
+                The movement of earthworms is easily affected by the environment. We assess the attraction of different locations according to the factors such as humidity, organic matter content, geographical features and the real-time number of earthworms. Among them, the real-time number of earthworms is counter-acting to the attraction. In this way, attraction will be the key to the earthworm's movement, and earthworm's trajectory could be predicted.
+              </p>
+              <h4>3. What is the connection between earthworm movement and soil lead purification?</h4>
+              <p>
+                The engineered bacteria (Bacillus Subtilis) that earthworms carry enable them to deal with lead in the soil. Prior to the simulation, we will quantify the ability. Every time they eat they would use the ability, and every time they move they would expand the application of the ability.
+              </p>
+            </div>
+
+            <!--2. Abstract-->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>ABSTRACT</h3>
+              <p>
+                Our project is to address soil lead contamination by releasing earthworms carrying the redesigned <i>Bacillus subtilis</i>. To guide experiments and propose optimal earthworm release strategies, we constructed the Cellular Automaton Model to obtain the effects of different strategies. Based on its mechanism, the model could be used to deal with lead pollution of cultivated land in different regions around the world. In this paper, different release strategies are analyzed qualitatively, and some general results and release strategies are given. Under the best strategy, the number of earthworms to be released at a time should be about 1000 metres apart. In this way, we can purify the target farmland with the fastest speed.
+              </p>
+            </div>
+
+            <!--3. Model Assumptions -->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>MODEL ASSUMPTIONS</h3>
+              <ul>
+                <li><h6>Earthworm mortality is not considered during the soil lead purification.</h6></li>
+                <li><h6>Due to different terrains and other factors, each cell has different attractions.</h6></li>
+                <li><h6>Interval feeding is obviously better than centralized feeding, and we only search for the best interval earthworm feeding scheme.</h6></li>
+                <li><h6>The active time of earthworms is 8 hours in a day, and it is believed that earthworms are always eating during this time.</h6></li>
+              </ul>
+            </div>
+
+            <!--4.MDOEL -->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <h3>MODEL</h3>
+              <h4>INTRODUCTION TO CELLULAR AUTOMATON</h4>
+              <p>
+                By setting a series of model construction rules, the Cellular Automaton[1] can automatically simulate the diffusion of substances with a certain probability. In the dynamic system, Cellular Automaton can be divided into“homogeneous, periodic and chaotic structure”three types. In consideration of the aggregation and periodicity of insect activity and the complexity of boundary conditions caused by topography, the Cellular Automaton with periodic structure is obviously superior. In terms of algorithm complexity and accuracy, the Cellular Automaton also performs better than the partial differential equation.
+              </p>
+              <h4>BULIDING AN ENVIRONMENTAL MAP</h4>
+              <p>
+                Due to the range of earthworm activities and topographic features, we set the size of the hive at 500 m×500 m. In addition, considering the effective range, we set the number of cells to 100×100, so the entire environmental map represents a square area covering 2,500 square kilometers.
+              </p>
+              <div class="col-md-6 col-sm-12">
+                <img src="img/model_celluar_pic1.png">
+                <h6>Fig 3.2.1</h6>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <p>
+                  Considering that earthworm activity is easily affected by soil conditions and organic substances, we use matrix to simplify topographic map and classify the map according to topographic characteristics and soil conditions. Since it is difficult to obtain accurate topographic maps, we use random maps generated according to the topographic features of X City and the distribution of organic matter in the target cultivated land. The map is then reduced to a 100 by 100 (0,95) matrix where 95 represents the highest attractive region and 0 represents the lowest attractive region. The matrix is shown in Figure 3.2.1 beside.
+                </p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <h4>THE EARTHWORMS IN THE CELL</h4>
+              <ul>
+                <li style="line-height:1.5em;margin-top:2em;">
+                   In order to simulate the distribution of earthworms realistically, we abstracted the area into a three-dimensional figure.  We randomly set the initial value of each cell between 0 and 80, and the initial distribution of the Cellular Automaton is shown as Fig 3. 3.1 below.
+                </li>
+                <img style="width:70%;" src="img/model_celluar_pic2.png">
+                <li style="line-height:1.5em;margin-top:2em;">
+                  All earthworms in the cell have a certain probability of  P_move to migrate to the nearby cells. Earthworms are more likely to gravitate toward the "highly attractive" cells and stay away from the "lowly attractive" cells. Therefore, after the evolution of Cellular Automaton, the distribution of earthworms is shown as Fig 3.3.2 below.
+                </li>
+                <img style="width:70%;" src="img/1.jpg">
+              </ul>
+            </div>
+
+            <!--5.SIMULATION RESULTS AND ANALYSIS-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>SIMULATION RESULTS AND ANALYSIS</h3>
+              <p>
+                Based on the above model setting, various earthworm feeding schemes were simulated and analyzed, and the results were obtained as shown in Figure 4.1.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>
