@@ -359,33 +359,40 @@ body{
     letter-spacing:0.05em;
   }
 }
+
+
+
 /********************************************************/
 /*****Integrated HP 专属*******/
+b{
+  color:#1d663d;
+}
+
+img.img_float_left{
+  float: left;
+  width: 55%;
+  margin:2em 15px;
+}
+
+@media screen and (max-width: 767px){
+  img.img_float_left{
+    float: none;
+    width: 80%;
+  }
+}
 /***************One health***********/
 .thumbnail{
   width: 96%;
-  margin: 1.5em 2%;
   border-radius:10px;
-  min-height:50vh;
   box-shadow: 0px 0px 30px #aaaaaa;
 }
 
 .general_info_element .thumbnail img{
-  width: 45%;
+  width:45%;
   margin:0px 5% 0px 0px;
   display: inline-block;
   float: left;
   border-radius: 10px;
-}
-
-.thumbnail .caption{
-    min-height:35vh;
-}
-
-.thumbnail .caption p{
-  padding:0PX 5%;
-  margin:0px;
-  text-align: left;
 }
 
 
@@ -401,44 +408,99 @@ body{
   margin: 0px 2%;
 }
 
+.btn-primary_my{
+  padding:0px; width:80%; background-color:#68b0ab; border:none; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  outline: none;
+}
+
+.btn-primary_my:active{
+  background-color:#68b0ab;
+  outline: none;
+}
+
+.btn-primary_my:focus{
+  background-color:#68b0ab;
+  outline: none;
+}
+
+.btn-primary_my:hover{
+  background-color:#68b0ab;
+  outline: none;
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 /*****************教授信息**************/
+.HP_professor_part .nav-pills li{
+  margin:0px;
+}
+
 .nav-pills li a{
   border-radius: 25px;
   color: #4f8a8b;
   transition:0.5s;
 }
 
-.each_sec_pro{
-  margin-top:5%;
+.HP_professor_part .nav{
+  width:100%;
+  border-radius:40px;
+  padding-left:0px;
+  background-color:rgb(245,245,245);
+}
+
+.HP_professor_part .dropdown-menu{
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.HP_professor_part .dropdown-menu li{
+  margin:0px;
+  padding:0px;
+  font-size:1em;"
+}
+
+.HP_professor_part .dropdown{
+  margin:0px;
+  padding:0px;
+}
+
+.HP_professor_part .dropdown-toggle{
+  font-size: 0.8em;
+}
+
+.dropdown-menu{
+  background-color: white;
+}
+
+.dropdown-menu li a{
+  border-radius: 2px;
 }
 
 .HP_professor_intro{
-  padding: 5% 5%;
-  background-color: rgb(255,255,255);
-  border-radius: 10px;
+  width:100%;
+  margin-top:4em;
+  /*box-shadow: 0 5px 15px rgba(0,0,0,0.2);*/
+  border-radius:25px;"
 }
 
-.HP_professor_intro div{
-  vertical-align: middle;
+/*.tab-pane .row .row{
+  height: 75vh;
+}*/
+
+.HP_professor_info_scroll{
+  overflow-y: auto;
 }
 
-.HP_professor_intro div img{
-  width: 80%;
-  margin-top:5%;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 5px;
+.tab-pane .row div{
+  border-radius:10px 0px 0px 10px;background-size: cover; background-position: center;
+  margin:2em 0px;
 }
 
-.HP_professor_intro h5{
-  color:#1d663d;
-  font-weight:bold;
-  font-size:2em;
+.tab-pane .row ul li{
+  margin-bottom:0.5em;
 }
 
-#fourth_part{
-  min-height:0px;
+.tab-pane div p{
+  margin:1.5em 0px;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{

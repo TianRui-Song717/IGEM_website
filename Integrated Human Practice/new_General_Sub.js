@@ -25,6 +25,7 @@ $(function(){
     var element_2 = $("#general_info_ele_2").offset().top;
     var element_3 = $("#general_info_ele_3").offset().top;
     var element_4 = $("#general_info_ele_4").offset().top;
+    var element_5 = $("#general_info_ele_5").offset().top;
     if(curTop >= (element_1 - 10) && curTop < (element_2 - 10)){
       $("#sidenav_1").addClass("general_side_nav_color");
     }else{
@@ -35,15 +36,20 @@ $(function(){
     }else{
       $("#sidenav_2").removeClass("general_side_nav_color");
     }
-    if(curTop >= (element_3 - 10) && curTop < (element_4 - 200)){
+    if(curTop >= (element_3 - 10) && curTop < (element_4 - 10)){
       $("#sidenav_3").addClass("general_side_nav_color");
     }else{
       $("#sidenav_3").removeClass("general_side_nav_color");
     }
-    if(curTop >= (element_4 - 200)){
+    if(curTop >= (element_4 - 10) && curTop < (element_5 - 10)){
       $("#sidenav_4").addClass("general_side_nav_color");
     }else{
       $("#sidenav_4").removeClass("general_side_nav_color");
+    }
+    if(curTop >= (element_5 - 10)){
+      $("#sidenav_5").addClass("general_side_nav_color");
+    }else{
+      $("#sidenav_5").removeClass("general_side_nav_color");
     }
   })
 })
@@ -56,6 +62,7 @@ $(function(){
     var element_2 = $("#general_info_ele_2").offset().top;
     var element_3 = $("#general_info_ele_3").offset().top;
     var element_4 = $("#general_info_ele_4").offset().top;
+    var element_5 = $("#general_info_ele_5").offset().top;
     if($(this).attr("id") == "sidenav_1"){
       $("html,body").animate({scrollTop:element_1},1000);
     }else if($(this).attr("id") == "sidenav_2"){
@@ -64,6 +71,8 @@ $(function(){
       $("html,body").animate({scrollTop:element_3},1000);
     }else if($(this).attr("id") == "sidenav_4"){
       $("html,body").animate({scrollTop:element_4},1000);
+    }else if($(this).attr("id") == "sidenav_5"){
+      $("html,body").animate({scrollTop:element_5},1000);
     }
   })
 })
