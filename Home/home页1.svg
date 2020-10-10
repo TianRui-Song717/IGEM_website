@@ -41,11 +41,11 @@
 	.st35{fill:none;stroke:#8E725F;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <g id="灯光">
-	
-		<image style="display:none;overflow:visible;enable-background:new    ;" width="1920" height="1080" xlink:href="F:\Tencent Files\2746688976\3322035730\FileRecv\r-light.png"  transform="matrix(0.6076 0 0 1.0338 -46.6496 2.4235)">
+
+	<image style="display:none;overflow:visible;enable-background:new    ;" width="1920" height="1080" xlink:href="F:\Tencent Files\2746688976\3322035730\FileRecv\r-light.png"  transform="matrix(0.6076 0 0 1.0338 -46.6496 2.4235)">
 	</image>
-	
-		<image style="overflow:visible;enable-background:new    ;" width="1920" height="1080" xlink:href="F:\Tencent Files\2746688976\3322035730\FileRecv\l-light.png"  transform="matrix(0.609 0 0 1.0415 -66.7234 0)">
+
+	<image style="overflow:visible;enable-background:new;" width="1920" height="1080" xlink:href="F:\Tencent Files\2746688976\3322035730\FileRecv\l-light.png"  transform="matrix(0.609 0 0 1.0415 -66.7234 0)">
 	</image>
 </g>
 <g id="地">
@@ -144,11 +144,6 @@
 	<path class="st10" d="M236.4,853.5c-1.5,14.5-2.6,25.3,4.3,36.2c7.7,12.1,20.3,16.4,25.2,17.8c1.4,0.4,21.3,5,34.3-8
 		c11-11,9.1-26.8,8.3-33.5c-0.7-5.6-3.4-13.7-11.7-28.2c-12.5-22-14.6-27.6-20.8-30.7c-1.6-0.8-10-4.7-18.4-1.9
 		C240.9,811,238.1,838.2,236.4,853.5z"/>
-	<g>
-		
-			<image style="overflow:visible;enable-background:new    ;" width="197" height="250" xlink:href="7E150F76.png"  transform="matrix(0.6136 0 0 0.6136 216.2081 781.6974)">
-		</image>
-	</g>
 	<g id="图层_6">
 		<path class="st11" d="M249.1,702.2c-6.3,2-15.1,5.9-22.7,13.5c-8.3,8.3-11.4,17.3-12.9,21.4c-13.8,36.4-45.5,44.4-44.1,63.8
 			c1.5,20.6,39,34.3,57.7,38.6c45.4,10.5,89.7-8.9,112.9-35c5.9-6.6,14.9-17,13.5-29.5c-1.2-10.9-9.4-14.1-29.5-32.5
@@ -209,11 +204,6 @@
 								<clipPath id="SVGID_6_">
 									<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
 								</clipPath>
-								<g class="st14">
-									
-										<image style="overflow:visible;enable-background:new    ;" width="232" height="194" xlink:href="7E150F7A.png"  transform="matrix(0.6136 0 0 0.6136 240.1399 666.9479)">
-									</image>
-								</g>
 							</g>
 						</g>
 					</g>
@@ -603,11 +593,6 @@
 				</g>
 			</g>
 		</g>
-	</g>
-	<g>
-		
-			<image style="overflow:visible;enable-background:new    ;" width="295" height="131" xlink:href="7E150F7D.png"  transform="matrix(0.6136 0 0 0.6136 150.5494 527.653)">
-		</image>
 	</g>
 </g>
 <g id="路径">
