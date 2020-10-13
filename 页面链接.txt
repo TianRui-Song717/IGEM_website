@@ -1,12 +1,34 @@
-https://2020.igem.org/Team:NAU-CHINA/test-Description.html
--- test Description
+Description (非官方要求链接)
 
-https://2020.igem.org/Team:NAU-CHINA/test-Description/description-js?action=raw&ctype=text/javascript
--- test Desciption js file
+	https://2020.igem.org/Team:NAU-CHINA/test-Description.html
+	-- test Description
 
+	https://2020.igem.org/Team:NAU-CHINA/test-Description/description-js?action=raw&ctype=text/javascript
+	-- test Desciption unique js file
 
-https://2020.igem.org/Template:NAU-CHINA/ALL/generalpage-css
--- generAL PAGE CSS
+	https://2020.igem.org/wiki/index.php?title=Template:NAU-CHINA/Description-css
+	-- {{NAU-CHINA/Description-css}}
+	--description unique css
 
-https://2020.igem.org/wiki/index.php?title=Template:NAU-CHINA/Description-css
---description unique css
+Model Celluar(非官方要求链接)
+	https://2020.igem.org/Team:NAU-CHINA/test-Model_CA.html
+	-- test MODEL CA 
+	
+	https://2020.igem.org/wiki/index.php?title=Template:NAU-CHINA/Model_CA-css
+	{{NAU-CHINA/Model_CA-css}}
+	--model_CA unique css
+
+	https://2020.igem.org/Template:NAU-CHINA/Model/Model-CA-js?action=raw&ctype=text/javascript
+	-- model_CA unique js
+
+通用：
+	{{NAU-CHINA/oranjia-test-home.csschushihua}}
+	{{NAU-CHINA/ALL/bootstrap3.3.7}}
+		bootstrap css 文件
+	{{NAU-CHINA/ALL/generalpage-css}}
+		https://2020.igem.org/Template:NAU-CHINA/ALL/generalpage-css
+		-- generAL PAGE CSS（每个页面需要修改颜色和第一张大图还有第一张大图上的字）
+	<script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+		-- jquery js 文件
+	<script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		-- bootstrap js 文件（需要上传源文件）

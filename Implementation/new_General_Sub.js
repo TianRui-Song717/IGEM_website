@@ -56,6 +56,41 @@ $(function(){
     }else{
       $("#sidenav_6").removeClass("general_side_nav_color");
     }
+
+    //Implementation first pic
+    var half_window = $(window).height()/2;
+    var pd_ball = $("#_x31_").offset().top;
+    var pd_ball_2 = $("#_x32_").offset().top;
+    var pd_ball_3 = $("#_x33_").offset().top;
+    var pd_ball_4 = $("#_x34_").offset().top;
+    var pd_ball_5 = $("#_x35_").offset().top;
+
+    if(curTop >= (pd_ball - half_window)){
+      $("#_x31_").fadeIn(1000);
+    }else{
+      $("#_x31_").fadeOut(1000);
+    }
+    if(curTop >= (pd_ball_2 - half_window)){
+      $("#_x32_").fadeIn(1000);
+    }else{
+      $("#_x32_").fadeOut(1000);
+    }
+    if(curTop >= (pd_ball_3 - half_window)){
+      $("#_x33_").fadeIn(1000);
+    }else{
+      $("#_x33_").fadeOut(1000);
+    }
+    if(curTop >= (pd_ball_4 - half_window)){
+      $("#_x34_").fadeIn(1000);
+    }else{
+      $("#_x34_").fadeOut(1000);
+    }
+    if(curTop >= (pd_ball_5 - half_window)){
+      $("#_x35_").fadeIn(1000);
+    }else{
+      $("#_x35_").fadeOut(1000);
+    }
+
   })
 })
 

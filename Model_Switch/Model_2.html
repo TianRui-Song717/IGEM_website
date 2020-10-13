@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toehold Model</title>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+          <h1 style="text-align: center; color: white; font-size: 10em; line-height: 100vh; font-family:Times"></h1>
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-2 col-sm-2 general_left_nav">
+            <div class="left_nav">
+              <h4>Title</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">First</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Second</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Third</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Fourth</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Fifth</a></li>
+              </ul>
+            </div>
+          </div>
+            <!--右边的信息-->
+            <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. Q&A PART-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3 style="border: none;"><span>Q&</span>A</h3>
+              <ul>
+                <li class="Model_QandA">
+                  <h5>Is the rate of protein degradation controllable?</h5>
+                  <p>Yes. You can add degradation tag to change the degradation rate.</p>
+                </li>
+                <li class="Model_QandA">
+                  <h5>How do you explain the effectiveness of the suicide switch?</h5>
+                  <p>
+                    The Modified Bacillus subtilis does not suicide in laboratory and in the gut of earthworms because the Toehold Switch is blocked by the action of C1 repressor protein and the suicide switch can not be turned on. When Bacillus subtilis is excreted, the C1 protein and Trigger RNA are no longer produced, both of which degrade together. Only when the amount of C1 protein is reduced to the threshold, the Trigger RNA is still residual and could meet the standard of Toehold Switch, then the suicide switch can be switched on and it is considered effective.
+                  </p>
+                </li>
+                <li class="Model_QandA">
+                  <h5>What is the most effective suicide switch</h5>
+                  <p>
+                    Since the residual amount of Trigger RNA is the key, we thought that the maximum residual amount of Trigger RNA was the criterion to judge whether the suicide switch is the most effective when the amount of C1 protein fell to the threshold.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!--Abstract Part-->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>ABSTRACT</h3>
+              <p>
+                In order to make Bacillus subtilis capable of lead fixation, we modified the gene pathway of Bacillus subtilis by introducing a suicide switch to ensure that the engineered bacteria do not commit suicide in the intestinal tract of the earthworm, and then switch on the suicide mode after it was expelled from the body. To verify the effectiveness of the suicide switch, we built the Toehold model, which combined the degradation rate of C1 protein with different strength RBS. After quantitatively simulated the effect of the suicide switch under various combinations, the best degradation rate and the combination of RBS are given. By adding the tag and selecting RBS, the degradation rate of the C1 protein can be achieved, the translation rate can be achieved, and the suicide switch can operate effectively.
+              </p>
+            </div>
+            <!--Background Part-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>BACKGROUND</h3>
+              <p>
+                The Modified Bacillus subtilis secretes C1 repressor protein, the level of which determines whether the suicide switch is turned on or not, and the amount of C1 protein is influenced by the strength of RBS and the rate of its degradation. We focused on the amount of C1 in three stages.
+              </p>
+              <h4>Laboratory culture phase</h4>
+              <p class="indent_paragraph">
+                The addition of IPTG in the lab culture induced the production of C1 protein to reach a threshold that prevented the suicide switch from being turned on.
+              </p>
+              <h4>In the gut of an earthworm</h4>
+              <p class="indent_paragraph">
+                 The accumulated C1 protein induced in laboratory degraded, and in the absence of oxygen, Bacillus subtilis expressed C1 protein and Trigger RNA. The total amount of C1 protein reached the threshold that prevented the suicide switch from turning on.
+              </p>
+              <h4>External Environment</h4>
+              <p class="indent_paragraph">
+                With Bacillus subtilis was excreted in earthworm feces, C1 protein and Trigger RNA were no longer produced. When C1 degraded below the threshold, Trigger RNA remained and could bind to the Toehold Switch to turn on the suicide switch.
+              </p>
+            </div>
+            <!--MODEL HYPOTHESIS-->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <h3>MODEL HYPOTHESIS</h3>
+              <ul>
+                <li class="Model_QandA"><h5>The degradation rate of mRNA is a constant.</h5></li>
+                <li class="Model_QandA"><h5>The mRNA is generated at a constant constitutive transcription rate.</h5></li>
+                <li class="Model_QandA"><h5>The copy number of plasmids is kept as a constant.</h5></li>
+                <li class="Model_QandA"><h5>Other species such as RNAP polymerases and ribosomes are kept constant as well.</h5></li>
+                <li class="Model_QandA"><h5>Reactions are at equilibrium, steady state, or quasi-steady state<sup>[1]</sup>.</h5></li>
+                <li class="Model_QandA"><h5>Each RBS part has a native strength irrespective of the promoter and protein-coding part it can be used with, and the translation rate with same RBS has a linear relationship with the mRNA length<sup>[1]</sup>.</h5></li>
+              </ul>
+            </div>
+            <!--SYMBOLIC DESCRIPTION-->
+            <div class="row general_info_element" id="general_info_ele_5">
+              <h3>SYMBOLIC DESCRIPTION</h3>
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Variables</th>
+                    <th>Explanation</th>
+                    <th>Value</th>
+                    <th>Units</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">K</th>
+                    <td>--
+                    </td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">P</th>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D<sub>m</sub></th>
+                    <td>Small area</td>
+                    <td>High cost</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Y</th>
+                    <td>Small area</td>
+                    <td>High cost</td>
+                    <td>--</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">K<sub>max</sub></th>
+                    <td>Small area</td>
+                    <td>High cost</td>
+                    <td>--</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--MODEL-->
+            <div class="row general_info_element" id="general_info_ele_6">
+              <h3>MODEL</h3>
+              <div class="col-md-6 col-sm-12">
+                <p>
+                  Constitutive expression is not affected by time, place, or environment, has no spatiotemporal specificity, and the gene that encodes the protein is not dependent on any transcription factor, so it will continuously transcribe mRNA molecules, and then the translation of the protein will be out of control[2]. Our expression of C1 protein in the gut of earthworm can be easily illustrated in figure 5.1.1.
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img src="img/C1.png" alt="A picture of C1 protein">
+              </div>
+              <p>The C1 protein expression can be simply translated into the following biochemical reactions</p>
+              <ul>
+
+              </ul>
+            </div>
+
+            <div class="row general_info_element" id="general_info_ele_6">
+              <h3>MODEL</h3>
+              <div class="col-md-8 col-sm-12">
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+                <h4>Constitutive Expression Model</h4>
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <video src="../../video/home_OK.mp4" playsinline autoplay muted loop></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>

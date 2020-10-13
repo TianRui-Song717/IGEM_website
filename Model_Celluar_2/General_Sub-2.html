@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MODEL-Celllular Automaton Model</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	  MathJax.Hub.Config({ TeX: {
+	  extensions: ["extpfeil.js"]
+	  }});
+
+	MathJax.Hub.Config({
+	  "HTML-CSS": {
+	    preferredFont: "STIX",
+	    fonts: ["TeX", "STIX"]
+	  }
+	});
+	</script>
+	<script type="text/javascript"
+	  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+</head>
+
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">Q & A</a></li>
+								<li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Abstract</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Assumptions</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Symbols</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Model</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">Results & Analysis</a></li>
+								<li class="general_sidenav_li"><a href="#general_info_ele_7" class="general_sidenav_a" id="sidenav_7">Sensitivity Analysis</a></li>
+								<li class="general_sidenav_li"><a href="#general_info_ele_8" class="general_sidenav_a" id="sidenav_8">References</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. Q & A-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <img style="width:20%;display: block;" src="img/Q&A-1.png" align="left"/>
+              <h4>1. What can Cellular Automaton do?</h4>
+              <p style="float: left;">
+                As the carrier of engineered bacteria (<i> Bacillus Subtilis </i>) , earthworm can move freely and enrich the lead in the soil by eating during the movement. In this way, the range of movement is roughly equivalent to the range of soil purification by earthworms. By setting a series of model rules, Cellular Automata can automatically simulate material diffusion with certain probability. We hope to use Cellular Automata to simulate the movement of earthworms in soil and record the location of them. The range of soil purification by earthworms can be easily obtained after the movement track of earthworms is obtained.
+              </p>
+              <h4>2. What makes earthworms move?</h4>
+              <p style="float: left;">
+                The movement of earthworms is easily affected by the environment. We assess the attraction of different locations according to the factors such as humidity, organic matter content, geographical features and the real-time number of earthworms. Among them, the real-time number of earthworms had the opposite effect on attraction. In this way, attraction will be the key to the earthworm's movement, and earthworm's trajectory could be predicted.
+              </p>
+              <h4>3. What is the connection between earthworm feeding and soil lead purification?</h4>
+              <p style="float: left;">
+                The engineered bacteria that earthworms carry enable them to deal with lead in the soil. Before the simulation, we’d like to crystallize the ability of processing lead, similarly, the efficiency of soil lead purification by a single earthworm. Earthworms would use this ability to address soil lead pollution every time they feed.
+              </p>
+            </div>
+
+            <!--2. Abstract-->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>ABSTRACT</h3>
+              <p>
+                Our project is to address soil lead pollution by releasing earthworms carrying the redesigned <i>Bacillus subtilis</i>. To guide experiments and propose optimal earthworm release strategies, we constructed the Cellular Automaton Model to obtain the effects of different strategies. Based on its mechanism, the model could be used to deal with lead pollution of cultivated land in different regions around the world. In this project, different release strategies are analyzed qualitatively, and some general results and release strategies are given.
+              </p>
+            </div>
+
+            <!--3. Assumptions -->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>ASSUMPTIONS</h3>
+              <ul>
+                <li>Earthworm mortality is not considered during soil lead purification by earthworms due to the short treatment time of a single discharge.</li>
+                <li>Due to different terrains and other factors, we set different attractions for different regions.</li>
+                <li>Dispersive feeding is obviously better than centralized feeding, and our model only seek for the best interval earthworm feeding scheme.</li>
+                <li>The active time of earthworms is 8 hours in a day, and it is believed that earthworms are always eating during this time.</li>
+								<li>Since earthworms consume less food in one day, we assume that earthworms can process all the lead enriched by food in one day.</li>
+								<li>An earthworm eats as much as its own weight in a day.</li>
+              </ul>
+            </div>
+
+            <!--4. Symbol Description -->
+						<div class="row general_info_element" id="general_info_ele_4">
+						  <h3>SYMBOLS & EXPLANATION</h3>
+
+						  <!-- Table 1 List of Variables -->
+              <h5>List of Variables</h5>
+						  <table class="table" style="margin-top:2em;">
+						  	<thead>
+						      <tr>
+						        <th scope="col" style="text-align: center;">Name</th>
+						        <th scope="col" style="text-align: center;">Explanation</th>
+						        <th scope="col" style="text-align: center;">Unit</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td> $$ p\left ( i,j \right ) $$ </td>
+						        <td> Percentage of earthworms entering the target cell in the original cell </td>
+										<td> $$ - $$ </td>
+						      </tr>
+						      <tr>
+						        <td> $$ attract\left ( i,j \right ) $$ </td>
+						        <td> The attraction of the cell </td>
+						        <td> $$ - $$ </td>
+						      </tr>
+									<tr>
+										<td> $$ sum_{ew} $$ </td>
+										<td> The total number of earthworms in the hive </td>
+										<td> $$ - $$ </td>
+									</tr>
+									<tr>
+										<td> $$ now_{ew}\left ( i,j \right ) $$ </td>
+										<td> Real-time earthworm number in a cell </td>
+										<td> $$ - $$ </td>
+									</tr>
+									<tr>
+										<td> $$ now_{Pb}\left ( i,j \right ) $$ </td>
+										<td> Real-time lead content in one cell </td>
+										<td> $$ mg $$ </td>
+									</tr>
+									<tr>
+										<td> $$ \Delta Pb\left ( i,j \right ) $$ </td>
+										<td> The amount of lead in the cell decreased with each update </td>
+										<td> $$ mg $$ </td>
+									</tr>
+									<tr>
+										<td> $$ \alpha $$ </td>
+										<td> Probability coefficient of migration in and out </td>
+										<td> $$ - $$ </td>
+									</tr>
+									<tr>
+										<td> $$ \beta $$ </td>
+										<td> Coefficient of relation between food intake and earthworm weight </td>
+										<td> $$ - $$ </td>
+									</tr>
+						    </tbody>
+						  </table>
+						  <!-- Table 2 List of Constants -->
+						  <h5 style="margin-top:4em;">List of Constants</h5>
+              <table class="table">
+						  	<thead>
+						      <tr>
+						        <th scope="col" style="text-align: center;">Name</th>
+						        <th scope="col" style="text-align: center;">Explanation</th>
+										<th scope="col" style="text-align: center;">Value</th>
+						        <th scope="col" style="text-align: center;">Unit</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+										<td> $$ h $$ </td>
+						        <td> The height of the soil to be treated </td>
+						        <td> $$ 12 $$ </td>
+						        <td> $$ cm $$ </td>
+						      </tr>
+									<tr>
+										<td> $$ \rho_{soil} $$ </td>
+										<td> Soil density </td>
+										<td> $$ 1.5 $$ </td>
+										<td> $$ g/cm^{3} $$ </td>
+									</tr>
+									<tr>
+										<td> $$ \rho_{Pb_{0}} $$ </td>
+										<td> The amount of lead in the soil at the initial time </td>
+										<td> $$ 300\pm 20 ^{[1]}$$</td>
+										<td> $$ mg/kg $$ </td>
+									</tr>
+									<tr>
+										<td> $$ m_{ew} $$ </td>
+										<td> Weight of mature earthworm </td>
+										<td> $$ 1.2 $$ </td>
+										<td> $$ g $$ </td>
+									</tr>
+									<tr>
+										<td> $$ m_{soil} $$ </td>
+										<td> Weight of soil to be treated within each cell </td>
+										<td> $$ 3750 $$ </td>
+										<td> $$ kg $$ </td>
+									</tr>
+						    </tbody>
+						  </table>
+						</div>
+
+						<!--5.Model -->
+            <div class="row general_info_element" id="general_info_ele_5">
+              <h3>MODEL</h3>
+              <h4>INTRODUCTION TO CELLULAR AUTOMATON</h4>
+              <p>
+                By setting a series of model construction rules, the Cellular Automaton<sup>[2]</sup> can automatically simulate the diffusion of substances with a certain probability. In dynamic systems, cellular automata can be divided into three types: uniform, periodic and chaotic structure. With a view to the aggregation and periodicity of insect activity and the complexity of boundary conditions caused by topography, the Cellular Automaton with periodic structure is obviously superior. In terms of algorithm complexity and accuracy, the Cellular Automaton performs better than the partial differential equation.
+              </p>
+              <h4>BUILDING AN ENVIRONMENTAL MAP</h4>
+              <p>
+                Considering the range of earthworm activities and topographic features, we set the size of the hive at <b>500 m×500 m</b>. In addition, considering the effective range, we set the number of cells to <b>100×100</b>. So the entire environmental map represents a square area covering <b>2,500 m<sup>2</sup> </b>.
+              </p>
+							<p>
+                Considering that earthworm activity is easily affected by soil conditions and organic substances, we use matrix to simplify topographic map and classify the map according to topographic characteristics and soil conditions. Since it is difficult to obtain accurate topographic maps, we use random maps generated according to the topographic features of Jiangsu Nanjing Baima National Agricultural Science and Technology Zone, and the distribution of organic matter in the target cultivated land. The map is then reduced to a 100 by 100 <b>(0,80)</b> matrix where 80 represents the highest attractive region and 0 represents the lowest attractive region. The matrix is shown in <b>Figure 4.2.1</b>.
+              </p>
+              <img style="width:50%;" src="img/Model_CA_4.2.1.jpg">
+              <h6>Fig 4.2.1</h6>
+            </div>
+            <div class="row general_info_element">
+              <h4>THE EARTHWORMS IN THE CELL</h4>
+              <ul>
+                <!--1-->
+                <li>
+                  <p style="font-size: 1em!important;">
+                      In order to simulate the distribution of earthworms in the real life, we abstracted the area into a two-dimensional figure. We first simulated the situation when <b>the distance between earthworms was 50 meters</b> and <b>the number of earthworms in each pile was 10000</b>. The earthworm distribution in the initial state of cellular automata is shown in <b>Figure 4.3.1</b>.
+                  </p>
+                </li>
+                <div class="col-md-6 col-sm-12">
+                  <img src="img/Model_CA_4.3.1.jpg">
+  								<h6>Fig 4.3.1</h6>
+                </div>
+                <div class="col-md-6 col-sm-12">
+  								<img src="img/Model_CA_4.3.2.jpg">
+  								<h6>Fig 4.3.2</h6>
+                </div>
+                <!--2-->
+                <li>
+                  <p style="font-size: 1em!important;">
+                    All earthworms in the cell have a certain probability to migrate to the nearby cells. Earthworms are more likely to gravitate toward the "highly attractive" cells and stay away from the "less attractive" cells. Therefore, after <b>2 months</b> of cellular automata evolution, the distribution of earthworms is shown as <b>Figure 4.3.2.</b>
+                  </p>
+                </li>
+                <!--3-->
+                <li>
+                  <p style="font-size: 1em!important;">
+                    In order to record the movement status of earthworms, we set up some movement rules for earthworms.
+                  </p>
+                  <ul>
+                    <li style="font-size:1em;">
+                      <h6>
+                        Formula of earthworm migration in and out cellular probability.
+                      </h6>
+                      <!-- Formula-1 -->
+                      $$ p\left ( i,j \right )= \alpha \times attract\left ( i,j \right )\times \frac{1}{\frac{now_{ew}\left ( i,j \right )}{sum_{ew}}+1} $$
+                      <p style="font-size: 1em!important;">
+                        The probability of migration in and out is proportional to cellular attractiveness and inversely correlated with the number of earthworms in the target location. Here, in order to obtain the dimensionless quantity, we use the relative earthworm number and introduce α，the probability coefficient of migration in and out.
+                      </p>
+                    </li>
+                    <li style="font-size:1em;">
+                      <h6>
+                        Formula of real-time lead variation in a single cell.
+                      </h6>
+                      <!-- Formula-2 -->
+                      $$ \Delta Pb\left ( i,j \right )= m_{eat}\times \rho_{Pb}\left ( i,j \right )\times now_{ew}\left ( i,j \right ) $$
+                      <!-- Formula-3 -->
+                      $$ m_{eat}=\beta\times m_{ew} $$
+                      <!-- Formula-4 -->
+                      $$ \rho_{Pb}\left ( i,j \right )= \frac{now_{Pb}\left ( i,j \right )}{m_{soil}} $$
+                      <p style="font-size: 1em!important;">
+                        The change of soil lead concentration was mainly related to earthworm feeding, and we introduced β，a coefficient of relation between food intake and earthworm weight.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <!--6. Results & Analysis-->
+            <div class="row general_info_element" id="general_info_ele_6">
+              <h3>RESULTS & ANALYSIS</h3>
+              <p>
+                Based on the above model setting, when 10,000 earthworms were put into each pile at an interval of 50 meters, after two months, the lead residue of the target land was shown in <b>Figure 5.1</b> and <b>Figure 5.2</b>.
+              </p>
+              <div class="col-md-6 col-sm-12">
+							  <img src="img/Model_CA_5.1.1.jpg">
+							  <h6>Fig 5.1.1</h6>
+							</div>
+              <div class="col-md-6 col-sm-12">
+                <img src="img/Model_CA_5.1.2.gif">
+							  <h6>Fig 5.1.2</h6>
+							</div>
+              <p>
+								The results suggested that after two months of treatment, the lead concentration in the soil at the initial release point of earthworms decreased by about <b>10%</b> , and the earthworms had spread in a small area, but with a small distance. Based on this, we decided to adjust the scheme to seek more superior treatment effect.
+							</p>
+							<p>
+								After that, we carried out simulation analysis on other earthworm feeding schemes. The distance between earthworm feeding was expanded <b>from 1 meter to 100 meters</b>, and the number of earthworm each pile was expanded <b>from 500 to 10,000</b>. Finally, the treatment effects of different treatment combinations were obtained, as shown in <b>Figure 5.3</b>.
+							</p>
+							<img style="width:50%;" src="img/Model_CA_5.2.gif">
+							<h6>Fig 5.2</h6>
+            </div>
+
+						<!--7.Sensitivity Analysis-->
+						<div class="row general_info_element" id="general_info_ele_7">
+						  <h3>SENSITIVITY ANALYSIS</h3>
+						  <p style="text-align: center;">
+                <i>
+						      Sensitivity analysis could calculate the change range of the ultimate index caused by the change of one or more uncertain factors, and analyzes the impact of the change of each factor on the realization of the expected goal. Therefore, it helps to provide an important advice for project decision.
+						    </i>
+              </p>
+							<h4>Probability coefficient of migration in and out</h4>
+							<p>
+								Since it is difficult to determine the probability of earthworm migration in and out of cell, we calculated the parameters by function at the beginning of the model, and introduced the probability coefficients of migration in and out.
+							</p>
+							<p>
+								Here, we conduct sensitivity analysis on the probability coefficients of migration in and out. The results are as follows (<b>Figure 6.1</b>):
+							</p>
+							<img style="width:70%;" src="img/Model_CA_SA_1.1.jpg">
+							<h6>Fig 6.1</h6>
+
+							<h4>Coefficient of relation between food intake and earthworm weight.</h4>
+							<p>
+								The food intake of earthworms determines the lead enriched by earthworms, and the food intake is obviously related to the weight of earthworms. In the model, we added the coefficient of relation between food intake and the weight of earthworms, namely β, to describe the relationship.
+							</p>
+							<p>
+								Now, we carried out sensitivity analysis on the coefficient of relation between food intake and earthworm weight. The results are as follows(<b>Figure 6.2</b>):
+							</p>
+							<img style="width:70%;" src="img/Model_CA_SA_2.1.jpg">
+							<h6>Fig 6.2</h6>
+
+							<p>
+								The sensitivity analysis results showed that:
+							</p>
+							<ul>
+                <li>
+								  Within a certain range, probability coefficient of migration in and out has little influence on the degree of lead residue in soil. The probability coefficient fluctuation range of the model is about <b>0.0002-0.0013</b>.
+							 </li>
+							 <li>
+								  The coefficient of relation between food intake and earthworm weight has little influence on the degree of soil lead residue. The allowable fluctuation range is <b>0.0012-0.0084</b>.
+							 </li>
+						</div>
+
+						<!--8. REFEREMCE-->
+            <div class="row general_info_element" id="general_info_ele_8">
+               <h3>REFERENCE</h3>
+               <div class="col-md-12 col-sm-12 reference" style="margin-top: 40px">
+                  <ul>
+                    <li><span>[1]</span><a style="text-decoration: none;">Song Wei, Chen Baoming, Liu Lin. Research on soil and water conservation,2013,20(02):293-298.</a></li>
+                    <li><span>[2]</span><a style="text-decoration: none;">Ceccherini‐Silberstein T, Coornaert M. Cellular Automata and Groups[M]. 2010.</a></li>
+                  </ul>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>
