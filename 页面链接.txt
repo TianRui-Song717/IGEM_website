@@ -21,10 +21,35 @@ Model Celluar(非官方要求链接)
 	https://2020.igem.org/Template:NAU-CHINA/Model/Model-CA-js?action=raw&ctype=text/javascript
 	-- model_CA unique js
 
+Implementation(非官方要求链接)
+	https://2020.igem.org/Team:NAU-CHINA/test-Implementation.html
+	-- test Implementation
+
+	https://2020.igem.org/wiki/index.php?title=Template:NAU-CHINA/Implementation-css&action=edit
+	{{NAU-CHINA/Implementation-css}} 
+	--Implementation unique css	
+	
+	https://2020.igem.org/Template:NAU-CHINA/Human_Practices/Implementation-js?action=raw&ctype=text/javascript
+	-- Implementation unqiue js
+
+Integrated Human Practices(非官方要求链接)
+
+	https://2020.igem.org/Team:NAU-CHINA/test-Integrated_HP
+	-- test Integrated HP
+
+	https://2020.igem.org/Template:NAU-CHINA/HumanPractices/Integrated-HP-js?action=raw&ctype=text/javascript
+	-- Integrated Human Practices unqiue js
+	
+	{{NAU-CHINA/Integrated-HP-css}}
+	-- Integrated Human Practices unqiue css
+
+	
+	
+
 通用：
 	{{NAU-CHINA/oranjia-test-home.csschushihua}}
 	{{NAU-CHINA/ALL/bootstrap3.3.7}}
-		bootstrap css 文件
+		-- bootstrap css 文件
 	{{NAU-CHINA/ALL/generalpage-css}}
 		https://2020.igem.org/Template:NAU-CHINA/ALL/generalpage-css
 		-- generAL PAGE CSS（每个页面需要修改颜色和第一张大图还有第一张大图上的字）
