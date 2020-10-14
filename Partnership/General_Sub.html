@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Description</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="bootstrap.337.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">MARCH</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">APRIL</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">MAY</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">JUNE</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">JULY</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_6">AUGUST</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. BACKGROUND-->
+              <div class="row general_info_element">
+                <h3><span>Partnership with Nanjing-China</span></h3>
+                <p>
+                  <i>
+                    We formed and maintained a meaningful relationship with Nanjing-China iGEMers, exchanging ideas and shaping our projects in experimental design, modeling, Human Practices, wiki, art design through out the season.
+                  </i>
+                </p>
+              </div>
+
+              <!--2. March-->
+              <div class="row general_info_element" id="general_info_ele_1">
+                <h3><span>March</span></h3>
+                <p>
+                  We preliminary determined the direction of our subject and chatted with wet lab members of NJU-CHINA team.
+                </p>
+                <p>
+                  Our project was aimed to <b>handle the heavy metal polution of the soil</b>, because nowadays the methods, like plant treatment, physicochemical treatment, <b>couldn’t solve the problem completely </b>. These methods may also  <b>caused damage to soil </b>. Thus, we came up with a new method using  <b>synthetic biology </b> for restoring soil. We used  <b>earthworm-engineered bacteria combined carrier to secrete phosphate-solubilizing enzyme(PSE) </b> to make lead into  <b>precipitation complex </b>. By this way, the soil could plant the same time with treating heavy metal. NJU-CHINA members asked us if we have any ideas about the engineered bacteria. We discussed for a while and agreed that our engineered bacteria should  <b>be dominant in the environment and have strong secretory ability. </b> The next few weeks, we looked up information in this direction and decided to use <i>Bacillus subtilis</i> because it was gram-positive bacterium as well as the dominant bacteria both in the environment and earthworm intestinal tract. It also had powerful secretory ability that we needed.
+                </p>
+              </div>
+
+              <!--3. April-->
+              <div class="row general_info_element" id="general_info_ele_2">
+                <h3><span>April</span></h3>
+                <h4>Experimental design</h4>
+                <p>
+                  We exchanged ideas with NJU-CHINA members about our Bacillus subtilis playing its role of dissoving phosphorus in earthworm intestinal tract.
+                </p>
+                <p>
+                  We hoped our engineered bacteria secrete phosphate-solubilizing enzyme(PSE) and <b>kill itself outside the intestinal tract.</b> NAU-CHINA members asked for some questions about <b>intestinal environment of earthworm.</b> Then they considered that our PSE couldn’t work well because nowadays the <b>PSE are mostly acid phosphatase (ACP) and alkaline phosphatase</b> nevertheless the pH of earthworm <b>intestinal tract is form pH6 to Ph7.</b> So they thought the phosphate-solubilizing efficiency would be very low and recommended us to change enzyme. We took their advice and <b>searched for neutral enzyme.</b> Finally, we found the phytase, <b>phy(ycD).</b>
+                </p>
+                <h4>Human Practices</h4>
+                <p>
+                  Nanjing-China iGEMers advised us to focus on the development of agricultural economy, so we took part in a lecture about agricultural economy and had<b> a conversation with one of agricultural economists.</b>
+                </p>
+              </div>
+
+              <!--4.April-->
+              <div class="row general_info_element" id="general_info_ele_3">
+                <h3>May</h3>
+                <h4>Experimental design</h4>
+                <p>
+                  We had designed our circuit and <b>explained the mechanism of treating lead pollution to NJU-CHINA team:</b> when earthworm ate the soil, the engineered bacteria secreted enzyme in the intestinal tract and turned phosphorus into phosphate radical to form stable pyromorphite with lead. Then our engineered bacteria started kill switch when it was excreted outside so that no bio-pollution could be caused.
+                </p>
+                <p>
+                  NJU-CHINA members asked us <b>how to ensure adequate contact</b> of the converted phosphate with lead and how to <b>control the combination ratio</b>?
+                </p>
+                <p>
+                  We thought this problem was very important because we needed to take <b>ion product</b> and <b>Ksp</b> of the reaction into account the. So we needed to check the <b>concentration of phosphate, lead ion and chloride ion</b>, which also needed the relevant information provided by the mathematic model members. With the advice of some professors and our own calculations, we <b>solved the problem</b> by July: we calculated that the ion product of pyromorphite was between 10<sup>-20 </sup>~ 10<sup>-30</sup> and its Ksp is about 10<sup>-60 </sup>~10<sup>-80 </sup> which was far enough to meet the conditions for precipitation. Therefore, even if other ion existed, pyromorphite would still be generated in priority for its smaller Ksp.
+                </p>
+
+                <h4>Human Practices</h4>
+                <h5>Brainstorm of Stakeholders</h5>
+                <p>Frist, our team deeply thought about stakeholders and divided them into four parts:</p>
+                <ul>
+                  <li>Who will benefit from our program？</li>
+                  <li>Who will use our program?</li>
+                  <li>Who cares about it most?</li>
+                  <li>Who are the policy-makers?</li>
+                </ul>
+                <p>
+                  Then we shared our thoughts with NJU iGEMers and had a brainstorm of stakeholders. Nanjing-China iGEMers got new insight on stakeholders ---- <b>“Make a stakeholders’ circle to tie stakeholders closely ”.</b> After taking their, we decided to make a “Stakeholders Cycle”, that’s “For Health, For Earning”.
+                </p>
+              </div>
+
+
+              <!--5.June-->
+              <div class="row general_info_element" id="general_info_ele_4">
+                <h3>June</h3>
+                <h4>Experimental design</h4>
+                <p>
+                  We started to <b>optimize our circuit</b>, including the optimization of kill switch. We explained to NJU-CHINA how the engineered bacteria secreted phytase in earthworm intestinal tract and committed suicide after excretion of earthworm to prevent bio-pollution.
+                </p>
+                <p>
+                  NJU-CHINA asked us did <i>Bacillus subtilis</i> metabolites have an impact on soil quality or crop production after suicide?
+                </p>
+                <p>
+                  Because the <i>Bacillus subtilis</i> we selected was the <b>dominant bacteria</b> in the soil, earthworm intestinal tract and wormcast. So we didn't think it would affect the soil crops after the engineered bacteria commit suicide.
+                </p>
+
+                <h4>Human Practices</h4>
+                <h5>Exchanges of Science Communication</h5>
+                <p>
+                  Nanjing-China iGEMers publicize the knowledge of syenthetic biology to students with the school organization, that catched on. <b>They advised us to collaborate with school associations</b>, so we cooperate with NJAU Youth Association. Through online counseling and lectures, we opened the door of synthetic biology to chrildren who might not have learnt that before.
+                </p>
+                <p>
+                  They also figured out that audience of our children comic was not only <b>kids</b>, but also <b>young parents and educators, children literature writers.</b> We can also get feedback by distributing comic to them.
+                </p>
+              </div>
+
+
+              <!--6.July-->
+              <div class="row general_info_element" id="general_info_ele_5">
+                <h3>July</h3>
+                <p>
+                  We discussed with NJU-CHINA members to improve the circuit, and NJU-CHINA members asked <b>how to control the process of engineered bacteria in laboratory culture without committing suicide.</b>
+                </p>
+                <p>
+                  We had considered this problem before and designed the preliminary circuit. We designed the <b>Toehold Switch.</b>. Only when the transcribed Trigger RNA was accumulated in earthworm intestinal tract could open the transcribed Switch RNA in the aerobic environment and released the suicide gene.
+                </p>
+              </div>
+
+
+              <!--7.August-->
+              <div class="row general_info_element" id="general_info_ele_6">
+                <h3>August</h3>
+                <h4>Modeling</h4>
+                <p>
+                  Due to the lack of experiments, data acquisition has always been a problem for us, especially data such as DNA transcription rate and mRNA translation rate. Under the recommendation of NJU,<b> we applied De Novo DNA <i>https://www.denovodna.com/</i> to calculate relevant data</b>, which improved the accuracy of model data acquisition and laid a foundation for the later model establishment.
+                </p>
+
+                <h4>Wiki</h4>
+                <p>
+                  We had a communication with Nanjing-China, and discussed the issue of uploading the code to the official website. The main reason is that Nanjing-China wants to make vertical layout, and finally add <b>"Vertical- Align:Middle"</b>.The problem has been solved and the friendship between the two teams has been promoted on the basis of previous communication.
+                </p>
+
+                <h4>Art Designing</h4>
+                <div class="col-md-6 col-sm-12">
+                  <img style="float: left;margin-bottom:2em;" src="img/Logo.jpg" alt="Logo image">
+                </div>
+                <p>
+                  We exchanged some idea with NJU-China about the design of our logo, receiving some helpful suggestions. In the beginning, we designed two logo respectively with the theme of earthworm and engineering bacteria. When we were hesitating for which one to choose, Nanjing-China advised that we can choose the logo with soil element, giving that soil element can express the theme of our project——environment protection better.
+                </p>
+                <p>
+                  We designed the earthworm as a ring with a gap, and fill in a little bit of black to represents the clitellum of earthworm. Nanjing-China suggested that we can enhance the balance of design by adjusting the position of the gap and clitellum and the size of bud, and use more arcs to make the image of the earthworm three-dimensional. <b>With the help of NJU-China, we perfected our design of logo</b>, planning to make an animation of logo to emphasize the existence of earthworm.
+                </p>
+                 <img src="img/artcollab.png" alt="logo change image">
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>
