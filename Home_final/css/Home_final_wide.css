@@ -214,6 +214,9 @@ body{
   border-bottom:white solid 5px;
 }
 
+.home_page_right_svg{
+  float: right;
+}
 
 #home_third_info p{
   margin-right:20%;
@@ -273,5 +276,9 @@ body{
 #home_page_4{
   border-bottom-style: solid;
   border-color:#333;
+}
+
+.home_page_right_svg{
+  float: none;
 }
 }

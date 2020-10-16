@@ -14,7 +14,6 @@ $(function(){
         }
         //滚动屏幕时，把导航选项折叠起来
         $("#navbar").collapse('hide')
-        //主页动画效果
         //设置各个页面动画开始位置
         var first_page_move = $("#home_page_1").offset().top;
         var second_page_move = $("#home_page_2").offset().top;
@@ -96,6 +95,20 @@ $(function(){
           $("#turn_page_button_list").css({"background-image":"url('../image/top.png')","width":"10vw","height":"10vw","right":"3vw"});
         }else{
           $("#turn_page_button_list").css({"background-image":"url('../image/next.png')","width":"8vw","height":"8vw","right":"5vw"});
+        }
+        //判断第三个页面中小人和Pb的位置
+        var third_moving_man = $("#moving_man_3").offset().top;
+        var Pb_1 = $("#Pb_1").offset().top;
+        var Pb_2 = $("#Pb_2").offset().top;
+        if(third_moving_man >= Pb_1 -30){
+          $("#Pb_1").fadeOut(500);
+        }else{
+          $("#Pb_1").fadeIn(500);
+        }
+        if(third_moving_man >= Pb_2 - 40){
+          $("#Pb_2").fadeOut(500);
+        }else{
+          $("#Pb_2").fadeIn(500);
         }
         // //页面舞台灯光de出现和消失和变化
         // if(curTop >= first_page_move){
@@ -227,6 +240,16 @@ $(".navbar-button").click(function(){
     $(".navbar_nav").toggleClass("show_hide_nav");
 })
 })
+
+
+//星星闪烁
+function shine(){
+  $("#star1").fadeToggle(1000);
+  $("#star2").fadeToggle(1200);
+  $("#star3").fadeToggle(1400);
+}
+
+var time_star =  window.setInterval(shine,1000);
 
 
 //div高度随宽度变化
