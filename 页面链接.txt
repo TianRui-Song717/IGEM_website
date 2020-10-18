@@ -44,6 +44,17 @@ Integrated Human Practices(非官方要求链接)
 	-- Integrated Human Practices unqiue css
 
 
+HOME(非官方要求链接)
+	{{NAU-CHINA/HOME-css}}	
+
+	https://2020.igem.org/wiki/index.php?title=Team:NAU-CHINA/test-HOME
+	-- test HOME
+
+	https://2020.igem.org/Template:NAU-CHINA/test-Home/Home-js?action=raw&ctype=text/javascript
+	-- HOME uniqe js
+
+	https://2020.igem.org/Template:NAU-CHINA/test-Home/Home-snapsvg-js?action=raw&ctype=text/javascript
+	-- HOME snapsvg js
 	
 	
 
