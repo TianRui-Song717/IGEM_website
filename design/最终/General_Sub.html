@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">DESIGN OVERVIEW</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">ANAEROBIC REGULATORY ELEMENT</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">PHYTASE(ycD)</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">CⅠREPRESSOR</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">SELECTION OF CHASSIS</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">SELECTION OF CHASSIS</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_7" class="general_sidenav_a" id="sidenav_7">GENE CIRCUIT</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_8" class="general_sidenav_a" id="sidenav_8">APPLICATION (SIMULATION)</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+           <div class="row general_info_element" id="general_info_ele_1">
+           	<h3>DESIGN OVERVIEW</h3>
+           	<p>SLIM provides a new strategy to solve the problem of moderate and light lead pollution in cultivated lands. Considering the weakness of traditional methods in remedying soil lead pollution, we take advantage of synthetic biology to design the gene circuit, using earthworms as the mobile carrier of engineered bacteria and Bacillus subtilis as the chassises. Engineered bacteria in the intestines of earthworms transform lead ions into pyromorphite to purify the lead-contaminated soil. On the design page, we will focus on the four main parts of the gene circuit: anaerobic regulatory element, phytase, CⅠ repressor and Toehold-based kill switch: Toehold-mazF.</p>
+           </div>
+
+            <div class="row general_info_element" id="general_info_ele_2">
+            	<h3>ANAEROBIC REGULATORY ELEMENT</h3>
+            	<p>The expression of genes involved in aerobic and anaerobic respiration in Bacillus subtilis depends on the two-component regulatory system of ResD/E and the global regulator Nitrate Reductase Regulator (FNR). FNR controls genes that help to promote adaptive growth under oxygen limitation. Promoter pnar is activated by oxygen-free via the FNR. We rely on the promoter pnar to feel the change of external oxygen concentrations, so that the engineered bacteria can "distinguish" the anaerobic environment in the intestines from the aerobic environment in vitro.</p>
+        	 </div>
+
+            <div class="row general_info_element" id="general_info_ele_3">
+            	<h3>PHYTASE(ycD)</h3>
+            	<p>In order to obtain a large amount of phosphate, we selected the neutral phytase gene phy (ycD) from Bacillus sp. Phytase can hydrolyze phytic acid or phytate to produce phosphate [4] which can combine with lead ions and Cl-(or F-,OH-) to form insoluble compound pyromorphite (Pb5 (PO4) 3Cl (F, OH)). Pyromorphite is exceptionally stable, and the available state of lead cannot be extracted from it using TCLP (Toxicity Characteristic Leaching Procedure, TCLP, American EPA standard), so as to achieve the purpose of precipitating lead and purifying soil.</p>
+        	 </div>
+
+            <div class="row general_info_element" id="general_info_ele_4">
+             	<h3>CⅠREPRESSOR</h3>
+             	<p>CⅠis a repressor protein from lambda phage which can inhibit the transcription of downstream genes by interaction with the binding site of the promoter pCⅠ. As one of the regulatory elements in our gene circuit, we optimize the codon of part BBa_C0051 to make it more suitable to play a role in Bacillus subtilis</p>
+        	  </div>
+
+            <div class="row general_info_element" id="general_info_ele_5">
+            	<h3>TOEHOLD-BASED KILL SWITCH: TOEHOLD-mazF</h3>
+            	<p>Toehold switch system consists of two RNA chains, including switch RNA and trigger RNA. We added a 5’hairpin on trigger RNA to make it more stable. We employ MazF as our suicide protein, which can cleave a single strand of mRNA at a specific sequence site and cause cell death. We skillfully integrated    the two elements by adding the switch part to the upstream of the mazF gene as our kill switch. Meanwhile, the entire kill switch is regulated by the promoter CI. Therefore, we can regulate the expression of CI repressor protein and trigger RNA to specifically activate the kill switch of engineered bacteria.</p>
+       		  </div>
+
+            <div class="row general_info_element" id="general_info_ele_6">
+             	<h3>SELECTION OF CHASSIS</h3>
+             	<p>Bacillus subtilis is finally chosen as our chassis for its unique ecological advantages, among which some relatively important ones are shown below: </p>
+             	<ul>
+             		<li>It is thoroughly studied and widely used in factories and laboratories. </li>
+             		<li>As the dominant flora in earthworms, it has certain growth advantages.</li>
+             		<li>It is a type of beneficial bacteria widely distributed in soil. </li>
+             		<li>It is not a type of pathogenic bacteria, and can ensure biosafety.</li>
+             	</ul>
+        	  </div>
+
+            <div class="row general_info_element" id="general_info_ele_7">
+            	<h3>GENE CIRCUIT</h3>
+            	<p>From the cultivation of bacteria in laboratory to the immobilization of lead ions in the intestines of earthworms, our engineered bacteria go through three stages. Based on the design of the gene circuit, we hope that our engineered bacteria can perform functions effectively in three different stages:</p>
+            	<h4>Laboratory cultivation</h4>
+            	<p>In order to ensure the normal survival of bacteria, we use the medium adding IPTG to induce our bacteria to produce CⅠprotein so that kill gene expression can be inhibited. Meanwhile, oxygen switch turns off and phytase is not produced. More energy could be used for self-reproduction. </p>
+            	<h4>Earthworm intestine</h4>
+            	<p>In the intestines of earthworms, oxygen switch turns on to produce another CⅠ proteins and it can inhibit the expression of kill switch. At the same time, engineered bacteria accumulate Trigger RNA and secrete phytase to hydrolyze phytate, which is ingested by earthworms to obtain phosphate and promote the formation of pyromorphite. This part makes lead immobilization while ensuring the survival of bacteria.</p>
+            	<h4>External environment</h4>
+            	<p>Oxygen switch turns off, so Phytase, CⅠ protein and Trigger RNA will not be produced. With the degradation of CⅠ protein, there is still trigger RNA, which turns the toehold switch on to let the engineered bacteria commit suicide so as to maximally ensure biosafety.</p>
+        	  </div>
+
+            <div class="row general_info_element" id="general_info_ele_8">
+             	<h3>APPLICATION (SIMULATION)</h3>
+             	<p>Due to the isolation during the epidemic and consideration of the rules of biosafety and iGEM policies, we have not conducted actual experiments, nor do we intend to feed our earthworms with engineered bacteria. But we simulated the impact of the whole circuit based on mathematical models and a large number of literatures to collect experimental data. We established an improved cellular automata model to explore the best lead treatment effect and final earthworm releasing strategy. We also applied ordinary differential equations to verify the effect of kill switch. On the basis of the theoretical experimental design, a direction was given to further optimize the project design and the experimental focus.</p>
+              <p>Meanwhile, this year we pay significant attention to safety issues. Toehold-based kill switch is specially added to ensure that engineered bacteria will die within a short time after discharging to the natural environment and avoid potential risks caused by gene drift.</p>
+        	  </div>
+
+
+            <div class="col-md-12 col-sm-12 reference" style="margin-top: 40px">
+              <ul>
+                <li><span>[1]</span> <a href="#"> Nakano M M, Zuber P, Glaser P, Danchin A, Hulett F M. Two-component regulatory proteins ResD-ResE are required for transcriptional activation of fnr upon oxygen limitation in Bacillus subtilis[J]. Journal of bacteriology,1996,178(13):3796-3802.</a></li>
+                <li><span>[2]</span> <a href="#"> Michiko M Nakano, F.Marion Hulett. Adaptation of Bacillus subtilis to oxygen limitation[J]. FEMS Microbiology Letters,1997,157(1):1-7.</a></li>
+                <li><span>[3]</span> <a href="#">  Xi Wang, Wenliang Lu, Mingze Yao, et al. Heterologous expression and purification of Bacillus phytase phy (ycD) Gene in E.coli[J]. Chinese Journal of Applied and Environmental Biology, 2014, 20(02):295-299.</a></li>
+                <li><span>[4]</span> <a href="#"> Green Alexander A, Silver Pamela A, Collins James J, Yin Peng. Toehold switches: de-novo-designed regulators of gene expression[J]. Cell,2014,159(4):1-15.</a></li>
+                <li><span>[5]</span> <a href="#">  Wang Xi, Lu Wenliang, Yao Mingze, et al. Heterologous expression and purification of the phytase phy (ycD) gene from Bacillus subtilis in Escherichia coli[J]. Applied and Environmental Biology, 2014, 20(02):295-299.</a></li>
+                <li><span>[6]</span> <a href="#">  Yamaguchi Y, Inouye M. Regulation of growth and death in Escherichia coli by toxin-antitoxin systems[J]. Nature Reviews Microbiology, 2011, 9 (11) :779-790.</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>

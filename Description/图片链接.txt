@@ -1,7 +1,13 @@
-Logo:
+Team Logo:
 https://2020.igem.org/wiki/images/5/5e/T--NAU-CHINA--logo_chara.png
 
 https://2020.igem.org/wiki/images/e/ef/T--NAU-CHINA--logo_pic.png
+
+Description logo:
+https://2020.igem.org/wiki/images/1/1f/T--NAU-CHINA--Description_logo.png
+
+Description background:
+https://2020.igem.org/wiki/images/5/55/T--NAU-CHINA--Description-back.jpg
 
 Page:
 https://2020.igem.org/wiki/images/1/11/T--NAU-CHINA--Description_1_real.png

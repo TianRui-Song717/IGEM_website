@@ -1,4 +1,6 @@
-Description (非官方要求链接)
+Description 
+	https://2020.igem.org/Team:NAU-CHINA/Description
+	-- Final Description
 
 	https://2020.igem.org/Team:NAU-CHINA/test-Description.html
 	-- test Description
@@ -21,7 +23,10 @@ Model Celluar(非官方要求链接)
 	https://2020.igem.org/Template:NAU-CHINA/Model/Model-CA-js?action=raw&ctype=text/javascript
 	-- model_CA unique js
 
-Implementation(非官方要求链接)
+Implementation
+	https://2020.igem.org/Team:NAU-CHINA/Implementation
+	-- Implementation page
+
 	https://2020.igem.org/Team:NAU-CHINA/test-Implementation.html
 	-- test Implementation
 
@@ -32,7 +37,9 @@ Implementation(非官方要求链接)
 	https://2020.igem.org/Template:NAU-CHINA/Human_Practices/Implementation-js?action=raw&ctype=text/javascript
 	-- Implementation unqiue js
 
-Integrated Human Practices(非官方要求链接)
+Integrated Human Practices(差几个文件的说明）
+	https://2020.igem.org/Team:NAU-CHINA/Human_Practices
+	-- Final Description	
 
 	https://2020.igem.org/Team:NAU-CHINA/test-Integrated_HP
 	-- test Integrated HP
@@ -47,7 +54,7 @@ Integrated Human Practices(非官方要求链接)
 HOME(非官方要求链接)
 	{{NAU-CHINA/HOME-css}}	
 
-	https://2020.igem.org/wiki/index.php?title=Team:NAU-CHINA/test-HOME
+	https://2020.igem.org/Team:NAU-CHINA/test-HOME
 	-- test HOME
 
 	https://2020.igem.org/Template:NAU-CHINA/test-Home/Home-js?action=raw&ctype=text/javascript
