@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">First</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Second</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Third</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Fourth</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Fifth</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. PART-->
+            <!--peasant-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3>Part</h3>
+              <h4>PHYTASE(ycD)：BBa_K3408001</h4>
+              <p>
+                We selected the neutral phytase gene phy(ycD) from <i>Bacillus sp.</i> to obtain a large amount of phosphate as phytase could hydrolyze phytic acid or phytate to produce phosphate which could combine with lead ions and Cl-(or F-,OH-) to form insoluble compound pyromorphite (Pb5 (PO4) 3Cl (F, OH)). Pyromorphite is exceptionally stable, so we can achieve the purpose of precipitating lead and purifying soil.
+              </p>
+              <h4>TOEHOLD-mazF：BBa_K3408010</h4>
+              <p>
+                Toehold switch system consists of switch RNA and trigger RNA. We employed mazF as our suicide protein, which could cleave a single strand of mRNA at a specific sequence site and cause cell death. We skillfully integrated the two elements as our kill switch by adding the switch part to the upstream of the mazF gene. The entire kill switch is regulated by the promoter P<sub>CⅠ</sub>. A special hairpin structure was also added at the 5' end of trigger RNA to increase its stability. Therefore, we can regulate the expression of CⅠ repressor protein and trigger RNA to specifically activate the kill switch of engineered bacteria.
+              </p>
+            </div>
+
+            <!--2.Device-->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>SUB TITLE ONE</h3>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/1-1.jpg">
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+                <h4>sub sub title</h4>
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+              </div>
+            </div>
+
+            <!--3 System-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>System</h3>
+              <p>
+                After verifying and evaluating above six devices by designing experiments to achieve engineering success, we verified and evaluated the overall circuit by simulating three different stages of engineered bacteria: in the laboratory, in the intestine and in the excrement. As shown in the table below, the first stage is culturing with IPTG in the aerobic environment; the second stage is culturing without IPTG in the anaerobic environment and the third stage is culturing without IPTG in the aerobic environment.
+              </p>
+
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Experiment</th>
+                    <th>O<sub>2</sub></th>
+                    <th>IPTG</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>+</td>
+                    <td>+</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>+</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h6>Table.3. Simulating three different stages of engineered bacteria.</h6>
+              <p>
+                For the above experiments, our expected results are as follows:
+              </p>
+              <ul>
+                <li>
+                  In the laboratory: no phytase expression, engineered bacteria do not commit suicide.
+                </li>
+                <li>
+                  In the intestine: expressing phytase and engineered bacteria do not commit suicide.
+                </li>
+                <li>
+                  In the excrement: no phytase expression, engineered bacteria commit suicide.
+                </li>
+              </ul>
+              <img src="" alt="reuslt image">
+              <p>
+                In our project, phytase and kill switch, which are core parts, play important roles and may cause bad results if they are non-functional. We assumed unexpected results caused by them, speculated possible reasons and proposed treatments respectively.
+              </p>
+              <p>
+                So how can we find out possible reasons? Generally, we only can observe phenomena of experiments, such as fluorescence, hydrolysis circle. However, we know that every phenomenon is caused by corresponding proteins. For example, only if green fluorescence proteins are expressed, can we detect green fluorescence. In this perspective, we can speculate possible reasons according to the common process of producing protein: transcription of the relevant gene, translation of mRNA, proper protein folding and configuration, secretion from cells (if necessary) and enzyme activity.
+              </p>
+              <h4>PHYTASE(ycD)</h4>
+              <style type="text/css">
+                .table>tbody>tr>td{
+                  vertical-align:middle;
+                }
+              </style>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th colspan="2">Unexpected results</th>
+
+                    <th>Possible reasons</th>
+                    <th>Treatment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" rowspan="6">Pyromorphite cannot be formed</th>
+                    <td>unable to detect</td>
+                    <td>Noneffective experimental methods</td>
+                    <td>Apply more sensitive and advanced methods like XRD analysis</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="5">Poor enzyme activity</td>
+                    <td>Oxygen switch is non-functional</td>
+                    <td rowspan="5">
+                      <ul>
+                        <li style="font-size:inherit;">Search for enzymes that can work better. </li>
+                        <li style="font-size:inherit;">Change characteristics of phytase.</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+
+
+                    <td>Oxygen switch is non-functional </td>
+
+                  </tr>
+                  <tr>
+
+                    <td>Proteins don't fold properly</td>
+
+                  </tr>
+                  <tr>
+
+                    <td>Form inclusion-body protein</td>
+
+                  </tr>
+                  <tr>
+                    <td>Enzymatic reaction conditions are not suitable</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h6>Table.4. Analysis of phytase.</h6>
+
+              <h4>TOEHOLD-BASED KILL SWITCH</h4>
+              <p>
+                Kill switch problems can be divided into two situations: mis-killing and non-killing, possibly reasons are shown below.
+              </p>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th colspan="2">Unexpected results</th>
+
+                    <th colspan="2">Possible reasons</th>
+                    <th>Treatment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" rowspan="13">
+                      Suicide mistake
+                    </th>
+                    <td rowspan="7">
+                      Mis-killing: Toehold mistakenly opens, toxin protein expresses.<br>(phases I and II)
+                    </td>
+                    <td>In the laboratory</td>
+                    <td>Pgrac is not successfully induced or Pgrac is not strong enough</td>
+                    <td rowspan="13">
+                      <ul>
+                        <li style="font-size: inherit;">
+                          Search for more sensitive and effective parts, such as more stronger oxygen-free inducible promoters or other switches that can be used as "AND" gate.
+                        </li>
+                        <li style="font-size: inherit;">
+                          Use more precise experimental methods, such as flow cytometry.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>In the intestine of earthworms</td>
+                    <td>Pnar is not strong enough</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="5">Common reasons</td>
+                    <td>Toehold switch background expression</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      The activity of CI repressor is low
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Toehold switch cannot form stem-ring structure</td>
+                  </tr>
+                  <tr>
+                    <td>CI cannot be expressed</td>
+                  </tr>
+                  <tr>
+                    <td>Expression of CI repressor don’t reach functional threshold</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="6">Non-killing: toxin protein does not express.<br>(phase III)</td>
+                    <td rowspan="3">Toxin protein</td>
+                    <td>Fold incorrectly</td>
+                  </tr>
+                  <tr>
+                    <td>Inclusion Body formation</td>
+                  </tr>
+                  <tr>
+                    <td>Degradation</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">Toehold does not open</td>
+                    <td>The degradation rate of trigger RNA is too high</td>
+                  </tr>
+                  <tr>
+                    <td>Concentration of switch RNA or trigger RNA dose not reach threshold</td>
+                  </tr>
+                  <tr>
+                    <td>The degradation of CI is too slow</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h6>Table.6. Analysis of the kill switch.</h6>
+            </div>
+
+            <!--4. Future Steps-->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <p>
+                Due to the impact of the epidemic, we can’t conduct experiments practically. However, there are shortcomings of circuit and we can put forward ideas to further optimize the engineering design according to theoretical design and mathematical model.
+              </p>
+              <h4>Optimize the experimental plan: </h4>
+              <ul>
+                <li>when designing the experiment on the effect of kill switch, we can further detect the number of living bacteria by flow cytometry or dilution spread to avoid the small difference in total biomass caused by the incomplete cleavage of dead bacteria.</li>
+                <li>adopt more advanced detection methods such as XRD analysis to detect pyromorphite.</li>
+              </ul>
+              <h4>Add the colonization part:</h4>
+              <p>
+                For the purpose of engineering, we hope that the engineered bacteria can colonize in the intestine of earthworms for a long time, express phytase to hydrolyze phytate in soil and form pyromorphite with lead ions.
+              </p>
+
+              <h4>Further soil experiments are carried out:</h4>
+              <p>
+                On the basis of laboratory experiments, the effect of engineered bacteria under real soil conditions is further verified. At the same time, earthworm experiments can also be carried out under approval of the laboratory and safety policies.
+              </p>
+
+              <h4>Find and choose more effective parts:</h4>
+              <ul>
+                <li>change the enzymatic characteristics of phytase or find a more suitable enzyme.</li>
+                <li>use more sensitive oxygen-free inducible promoter.</li>
+                <li>use switches that have lower basic expression and broader adjusting range as an "AND" gate to replace toehold switch.</li>
+              </ul>
+
+              <h4>REFERENCE</h4>
+              <div class="col-md-12 col-sm-12 reference" style="margin-top: 40px">
+                 <ul>
+                   <li><span>[1]</span><a style="text-decoration: none;">
+                     Xi Wang, Wenliang Lu, Mingze Yao, et al. Heterologous expression and purification of Bacillus phytase phy (ycD) Gene in E.coli[J]. Chinese Journal of Applied and Environmental Biology, 2014, 20(02):295-299.
+                   </a></li>
+                   <li><span>[2]</span><a style="text-decoration: none;">
+                      Green Alexander A, Silver Pamela A, Collins James J, Yin Peng. Toehold switches: de-novo-designed regulators of gene expression[J]. Cell,2014,159(4):1-15.
+                   </a></li>
+                   <li><span>[3]</span><a style="text-decoration: none;">
+                     Kerovuo J, Rouvinen J, Hatzack F. Analysis of myo-inositol hexakisphosphate hydrolysis by Bacillus phytase: indication of a novel reaction mechanism[J]. Biochemical journal,2000,352Pt 3(Pt 3):623-628.
+                   </a></li>
+                   <li><span>[4]</span><a style="text-decoration: none;">
+                     Yamaguchi Y, Inouye M. Regulation of growth and death in Escherichia coli by toxin-antitoxin systems[J]. Nature Reviews Microbiology, 2011, 9 (11) :779-790.
+                   </a></li>
+                   <li>
+                     <span>[5]</span>
+                     <a style="text-decoration: none;">
+                       Tavares Batista M, Souza RD, Paccez JD, Luiz WB, Ferreira EL, Cavalcante RC, Ferreira RC, Ferreira LC. Gut adhesive Bacillus subtilis spores as a platform for mucosal delivery of antigens. Infect Immun. 2014;82(4):1414–1423.
+                     </a>
+                   </li>
+                 </ul>
+               </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>
