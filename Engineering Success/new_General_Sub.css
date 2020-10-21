@@ -366,6 +366,15 @@ body{
   padding-left: 2em;
   display: inline-block;
 }
+
+
+.collapse h6{
+  text-align: center;
+}
+
+.collapse img{
+  width: 100%;
+}
 /**************************************************/
 /*媒体查询*/
 @media screen and (max-width: 767px){

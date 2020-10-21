@@ -139,12 +139,11 @@
           <!--右边的信息-->
           <div class="col-md-8 col-sm-8 general_right_info">
             <!--1. PART-->
-            <!--peasant-->
             <div class="row general_info_element" id="general_info_ele_1">
               <h3>Part</h3>
               <h4>PHYTASE(ycD)：BBa_K3408001</h4>
               <p>
-                We selected the neutral phytase gene phy(ycD) from <i>Bacillus sp.</i> to obtain a large amount of phosphate as phytase could hydrolyze phytic acid or phytate to produce phosphate which could combine with lead ions and Cl-(or F-,OH-) to form insoluble compound pyromorphite (Pb5 (PO4) 3Cl (F, OH)). Pyromorphite is exceptionally stable, so we can achieve the purpose of precipitating lead and purifying soil.
+                We selected the neutral phytase gene phy(ycD) from <i>Bacillus sp.</i> to obtain a large amount of phosphate as phytase could hydrolyze phytic acid or phytate to produce phosphate which could combine with lead ions and Cl<sup>-</sup>(or F<sup>-</sup>,OH<sup>-</sup>) to form insoluble compound pyromorphite (Pb<sub>5</sub> (PO<sub>4</sub>) <sub>3</sub>Cl (F, OH)). Pyromorphite is exceptionally stable, so we can achieve the purpose of precipitating lead and purifying soil.
               </p>
               <h4>TOEHOLD-mazF：BBa_K3408010</h4>
               <p>
@@ -154,16 +153,640 @@
 
             <!--2.Device-->
             <div class="row general_info_element" id="general_info_ele_2">
-              <h3>SUB TITLE ONE</h3>
-              <div class="col-md-4 col-sm-12">
-                <img src="img/1-1.jpg">
+              <h3>Devices</h3>
+            </div>
+            <!--No.1 device-->
+            <div style="border-bottom:1px solid #999;padding-bottom:2em;" class="row general_info_element">
+              <div class="Engineer_device_ele">
+                <h4>P<sub>nar</sub>-GFP</h4>
+                <div class="col-md-12 col-sm-12">
+                  <img src="https://2020.igem.org/wiki/images/6/63/T--NAU-CHINA--Engineering-10-road.png">
+                  <h6>Fig.1. Device Pnar-GFP</h6>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <p>
+                    The intestine of earthworm is an anaerobic environment, so we choose and test the promoter P<sub>nar</sub> that can be activated under an oxygen-free condition. We add the gfp gene at the downstream of promoter P<sub>nar</sub> so that we can determine fluorescent intensity to characterize whether our promoter P<sub>nar</sub> works well.
+                  </p>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#device_1" aria-expanded="false" aria-controls="collapseExample">
+                    Detail Information
+                  </button>
+                </div>
               </div>
-              <div class="col-md-8 col-sm-12">
-                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
-                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
-                <h4>sub sub title</h4>
-                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
-                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+            </div>
+            <div class="collapse" style="margin-top: 2em; font-size: 1em;" id="device_1">
+              <div class="well">
+                <!--2.1.1-->
+                <img style="width:80%;margin-left: 10%;" src="https://2020.igem.org/wiki/images/6/63/T--NAU-CHINA--Engineering-10-road.png">
+                <h6 style="text-align: center;">Fig.1. Device Pnar-GFP</h6>
+                <h4>Strains and vectors</h4>
+                <p style="padding-left: 1em;">Strain: B. subtilis WB800N<br>Plasmid: pWB980-DB</p>
+                <!--2.1.2-->
+                <h4>Experimental methods</h4>
+                <ul>
+                  <!--2.1.2.1-->
+                  <li>
+                    <h5>Construction of the expression vector</h5>
+                    <p>
+                      The pWB980-DB is digested with enzyme EcoRI and PstI. The target fragment of the promoter, RBS, gene of green fluorescent protein (GFP) and terminator of this device are synthesized by the biotechnology company according to the known sequence. Add EcoRI and PstI restriction sites to both ends of the target fragment respectively. Connect the target fragment to the plasmid vector fragment to construct the recombinant expression vector pWB980-DB-P<sub>nar</sub>-GFP.
+                    </p>
+                  </li>
+                  <!--2.1.2.2-->
+                  <li>
+                    <h5>Construction and screening of recombinant engineered bacteria</h5>
+                    <img src="https://2020.igem.org/wiki/images/1/18/T--NAU-CHINA--composite-parts1.1.png">
+                    <h6>Fig.2. The expression vector of device P<sub>nar</sub>-GFP</h6>
+                    <p>
+                      Using B. subtilis WB800N as the expression host, the secretion expression vector pWB980-DB was transformed by electro-transformation. Inoculate them on LB solid medium coated with 10 μg/mL kanamycin, and incubate them overnight at 37°C. Send transformants to biotechnology company for sequencing.
+                    </p>
+                  </li>
+                  <!--2.1.2.3-->
+                  <li>
+                    <h5>Characterization experiment</h5>
+                    <p>
+                      Take 2 bottles of 50ml LB liquid medium with 10 μg/mL kanamycin, and inoculate the same amount of recombinant engineered bacteria.
+                    </p>
+                    <ul>
+                      <li>
+                        Culture engineered bacteria which have been transformed successfully for 6 hours.
+                      </li>
+                      <li>
+                        Culture the test group and negative control in anaerobic and aerobic environment for 6 hours respectively.
+                      </li>
+                      <li>
+                        Use the fluorescence microscope to observe the presence of fluorescence in the test group and the negative control group.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!--2.1.3-->
+                <h4>Expected results</h4>
+                <p>
+                  Fluorescence can be observed in the test group but not in the negative control group.
+                </p>
+                <div class="row">
+                  <img style="width:70%;margin-left:15%;" src="https://2020.igem.org/wiki/images/2/27/T--NAU-CHINA--composite-partsexperiment1.png">
+                  <div class="col-md-12 col-sm-12">
+                    <h6 style="text-align:center;">
+                      Fig.3. Expected results 1: different expressions of fluorescence between the negative control group and the test group.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--No.2 device-->
+            <div style="border-bottom:1px solid #999;padding-bottom:2em;" class="row general_info_element">
+              <div class="Engineer_device_ele">
+                <h4>P<sub>nar</sub>-phy(yCD)</h4>
+                <div class="col-md-12 col-sm-12">
+                  <p>
+                    Our project aims to secrete phytase to immobilize lead ions, so we need to ensure that our system can secrete phytase normally. Our first device has demonstrated the function of oxygen-free inducible promoter P<sub>nar</sub>. So next step, we need to verify whether P<sub>nar</sub> and phytase can achieve a successful assembly.
+                  </p>
+                </div>
+                <img src="https://2020.igem.org/wiki/images/8/81/T--NAU-CHINA--Engineering-06-road.png">
+                <h6 style="text-align:center;">Fig.4. Device 2.</h6>
+
+                <div class="col-md-12 col-sm-12">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#device_2" aria-expanded="false" aria-controls="collapseExample">
+                    Detail Information
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" style="margin-top: 2em; font-size: 1em;" id="device_2">
+              <div class="well">
+                <!--2.2.1-->
+                <img src="https://2020.igem.org/wiki/images/8/81/T--NAU-CHINA--Engineering-06-road.png">
+                <h6>Fig.4. Device 2.</h6>
+                <h4>Strains and vectors</h4>
+                <p style="padding-left: 1em;">Strain: B. subtilis WB800N<br>Plasmid: pWB980-DB</p>
+
+                <!--2.2.2-->
+                <h4>Experimental methods</h4>
+                <ul>
+                  <!--2.2.2.1-->
+                  <li>
+                    <h5>Construction of the expression vector</h5>
+                    <p>
+                      The pWB980-DB is digested with enzyme EcoRI and PstI. The target fragment of the promoter, RBS, gene of phytase and terminator of this device are synthesized by the biotechnology company with 6×His tags added. Add EcoRI and PstI restriction sites to both ends of the target fragment respectively. Connect the target fragment to the plasmid vector fragment to construct the recombinant expression vector pWB980-DB-P<sub>nar</sub>-phy(ycD).
+                    </p>
+                    <img style="width: 60%;margin-left: 20%;" src="https://2020.igem.org/wiki/images/3/37/T--NAU-CHINA--composite-parts2.1.png">
+                    <h5 style="text-align: center;">Fig.5. The expression vector of device 2.</h5>
+                  </li>
+                  <!--2.2.2.2-->
+                  <li>
+                    <h5>Construction and screening of recombinant engineered bacteria</h5>
+                    <p>
+                      Using B. subtilis WB800N as the expression host, the secretion expression vector pWB980-DB was transformed by electro-transformation. Inoculate them on LB solid medium coated with 10 μg/mL kanamycin, and incubate them overnight at 37°C. Send transformants to biotechnology company for sequencing.
+                    </p>
+                  </li>
+                  <!--2.2.2.3-->
+                  <li>
+                    <h5>Phytase expression and purification</h5>
+                    <p>
+                      Set up two groups of experiments:
+                    </p>
+                    <ul>
+                      <li>The control group: recombinant <i>Bacillus subtilis</i> are cultured in an aerobic condition</li>
+                      <li>The test group: recombinant <i>Bacillus subtilis</i> are cultured in an anaerobic condition</li>
+                    </ul>
+                    <ul>
+                      <li>Inoculate recombinant <i>Bacillus subtilis</i> in 20 mL of LB liquid medium containing 10 μg/mL kanamycin, and cultivate them overnight at 37°C with shaking at 180 rpm.</li>
+                      <li>Inoculate 2% of the overnight cultured bacteria in 100 mL of LB liquid medium containing 10μg/mL kanamycin, and culture them with shaking at 25°C for 24 hours. The supernatant was collected by centrifugation to obtain the crude enzyme solution, and the pure enzyme solution was obtained after Ni-NAT affinity chromatography and Superdex-75 gel chromatography. The purified protein is subjected to SDS-PAGE gel electrophoresis, western blot to determine phytase expression. And gel chromatography is used to obtain the elution profile of the enzyme after gel purification.</li>
+                      <li>Western Blot：After SDS-PAGE gel electrophoresis, transfer to membrane (wet transfer: 300 mA, 1 h), seal with 5% skimmed milk powder at 4°C overnight, and add TBST (Tris buffered salt-Tween solution, containing 10 mmol/L), pH 7. 6 Tris-HCl, 150 mmol /L NaCl, 0.05% Tween-20) 1:10 000 diluted His primary antibody, incubate at 37°C for 1 h, wash the membrane with TBST 3 times, 15 min each time; Add His secondary antibody diluted 1:20 000 with TBST, incubate at 37°C for 1 h, wash the membrane with TBST 3 times, 15 min each time; HRP-DAB substrate color kit for color development, use Bio-Rad gel imaging system to take pictures.</li>
+                    </ul>
+                  </li>
+                  <!--2.2.2.4-->
+                  <li>
+                    <h5>BCA protein concentration verification</h5>
+                    <h6>Experimental reagents</h6>
+                    <p>BCA reagent: Take 50 parts of BCA reagent A and 1 part of reagent B and mix well.</p>
+                    <p>Standard protein solution: Weigh 0.5g bovine serum albumin, dissolve it in distilled water and dilute to 100ml to make a 5mg/ml solution.  Dilute ten times when used.</p>
+                    <h6>Experimental operation</h6>
+                    <p>Draw a standard curve: Take a 96-well microtiter plate and add reagents in the following table.</p>
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th>Tube number</th>
+                          <th>1</th>
+                          <th>2</th>
+                          <th>3</th>
+                          <th>4</th>
+                          <th>5</th>
+                          <th>6</th>
+                          <th>7</th>
+                          <th>8</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Standard protein solution(μl)</th>
+                          <td style="vertical-align:middle;">0</td>
+                          <td style="vertical-align:middle;">1</td>
+                          <td style="vertical-align:middle;">2</td>
+                          <td style="vertical-align:middle;">4</td>
+                          <td style="vertical-align:middle;">8</td>
+                          <td style="vertical-align:middle;">12</td>
+                          <td style="vertical-align:middle;">16</td>
+                          <td style="vertical-align:middle;">20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Distilled water(μl)</th>
+                          <td style="vertical-align:middle;">20</td>
+                          <td style="vertical-align:middle;">19</td>
+                          <td style="vertical-align:middle;">18</td>
+                          <td style="vertical-align:middle;">16</td>
+                          <td style="vertical-align:middle;">12</td>
+                          <td style="vertical-align:middle;">8</td>
+                          <td style="vertical-align:middle;">4</td>
+                          <td style="vertical-align:middle;">0</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">BCA reagent(μl)</th>
+                          <td style="vertical-align:middle;">200</td>
+                          <td style="vertical-align:middle;">200</td>
+                          <td style="vertical-align:middle;">200</td>
+                          <td style="vertical-align:middle;">200</td>
+                          <td style="vertical-align:middle;">200</td>
+                          <td style="vertical-align:middle;">200</td>
+                          <td style="vertical-align:middle;">200</td>
+                          <td style="vertical-align:middle;">200</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Protein concentration(mg/μl)</th>
+                          <td style="vertical-align:middle;">0</td>
+                          <td style="vertical-align:middle;">0.025</td>
+                          <td style="vertical-align:middle;">0.05</td>
+                          <td style="vertical-align:middle;">0.1</td>
+                          <td style="vertical-align:middle;">0.2</td>
+                          <td style="vertical-align:middle;">0.3</td>
+                          <td style="vertical-align:middle;">0.4</td>
+                          <td style="vertical-align:middle;">0.5</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                    <h6 style="text-align:center;">Table.1. Draw a standard curve.</h6>
+                    <p>
+                      After the above reagents are added, accurately pipet 20μl of sample solution and add 200μl of BCA reagent to the sample, gently shake, then add the above system to the microplate well, keep it at 37°C for 30-60min, cool to room temperature, take the blank as a control, and place it on the microplate reader at 562nm.For colorimetry, draw a standard curve with the content of bovine serum albumin as the abscissa and absorbance as the ordinate. Take the blank of the standard curve as the control, find out the protein content of the sample from the standard curve according to the absorbance value of the sample, and do three sets of replicates for each sample.
+                    </p>
+                  </li>
+                  <!--2.2.2.5-->
+                  <li>
+                    <h5>Verification of the effect of phytase on phosphate hydrolysis</h5>
+                    <ul>
+                      <li>
+                        <h6>Preliminary identification of engineered bacteria expressing phytase</h6>
+                        <p>
+                          Pick a single colony of the transformant and inoculate it on a LB solid medium containing calcium phytate, and then observe the hydrolysis circle after culturing in a 37 ℃ incubator for 36 h.
+                        </p>
+                      </li>
+                      <li>
+                        <h6>Preparation of phosphorus standard curve</h6>
+                        <p>
+                          Configure 50 mmol standard KH<sub>2</sub>PO<sub>4</sub> solution (weigh 0.6804 g KH<sub>2</sub>PO<sub>4</sub> and dilute it to 100 mL with pH5.5 acetate buffer), and then dilute it to 0.025, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40 mmol/mL nine concentration gradients with deionized water. Take 1 mL of gradient solution and add 1 mL of 5.0mmol/L sodium phytate solution, then add 2 mL of stop solution, measure absorbance at 415 nm, do 3 sets of repeated experiments for each concentration gradient, and average within the standard deviation range. Draw a standard curve with the concentration of inorganic phosphorus as the abscissa and the absorbance value as the ordinate.
+                        </p>
+                      </li>
+                      <li>
+                        <h6>Determination of phytase activity</h6>
+                        <p>
+                          Add 0.8 mL of sodium phytate to 0.2 mL of diluted enzyme solution. After reacting for 15 min at pH 6.5 and temperature of 37 ℃, add 1 mL of 5% TCA (trichloroacetic acid) to stop enzyme activity reaction, and then add 1 mL of ferrous sulfate-ammonium molybdate coloring solution, determine the content of inorganic phosphorus in visible light at 415 nm, and calculate the specific activity. (Enzyme activity unit definition: Under the conditions of 37°C and pH 6.5, the amount of enzyme that releases 1 μmol of inorganic phosphorus from a 5.0 mmol/L sodium phytate solution per minute is defined as 1 enzyme activity unit (U).)
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--2.2.2.6-->
+                  <li>
+                    <h5>Verification of the effect of phytase to dissolve phosphorus and solid lead</h5>
+                    <ul>
+                      <li>
+                        Experimental reagents: sodium phytase solution 1.5mM, phytase solution, 230mg/L PbCl<sub>2</sub> solution
+                      </li>
+                      <li>
+                        <h6>Test group:</h6>
+                        <table class="table table-striped table-hover">
+                          <thead>
+                            <tr>
+                              <th>Group</th>
+                              <th>Sodium Phytate Solution(4ml)</th>
+                              <th>Phytase(1ml)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td style="vertical-align:middle;font-size: bold;">-</td>
+                              <td style="vertical-align:middle;font-size: bold;">-</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td style="vertical-align:middle;font-size: bold;">-</td>
+                              <td style="vertical-align:middle;font-size: bold;">+</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td style="vertical-align:middle;font-size: bold;">+</td>
+                              <td style="vertical-align:middle;font-size: bold;">-</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td style="vertical-align:middle;font-size: bold;">+</td>
+                              <td style="vertical-align:middle;font-size: bold;">+</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h6 style="text-align: center;">Table.2. Set test groups for determination of phytase activity</h6>
+                      </li>
+                      <li>
+                        Experimental steps: Set up four groups of experiments, with whether to add sodium phytase solution and whether to add phytase solution as variables. When phytase solution or sodium phytase solution is not added, the same amount of ddH<sub>2</sub>O is used instead. In each group of experiments, 15ml of 230mg/L PbCl<sub>2</sub> was added to react for 1h, and then the lead content in the reaction system was determined by dithizone colorimetry. The specific operation steps are as follows:
+                        <ul>
+                          <li>
+                            First, prepare a lead standard series with lead content of 0, 0.5, 1.0, 2.0, 4.0, 6.0, 8.0μg, and measure it in the range of 540nm and pH 8.5-11, and draw a standard curve based on the data.
+                          </li>
+                          <li>
+                            Secondly, take 10ml of the reaction solution in a 100ml separatory funnel, add 2ml 20% ammonium citrate, 1ml 20% hydroxylamine hydrochloride, 2d phenol red indicator, adjust the pH to 8.5-9.0 with concentrated ammonia and add 1ml 10% potassium hydride, shake well. Add 10ml of dithizone chloroform application solution, shake and layer, put the chloroform layer into a clean 10ml colorimetric tube, measure the spectrophotometry at 540nm, and find out the corresponding content from the standard curve.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <!--2.2.3-->
+                <h4>Expected experimental results</h4>
+                <ul>
+                  <!--2.2.3.1-->
+                  <li>
+                    <h5>PCR amplification phy (ycD) and construction of secretion vector</h5>
+                    <p>
+                      After identification, the recombinant expression plasmid pWB980-phy (ycD) and successfully transformed engineering bacteria were obtained.
+                    </p>
+                  </li>
+                  <!--2.2.3.2-->
+                  <li>
+                    <h5>Phytase expression and purification</h5>
+                    <p>
+                      The control group has no production of phytase, and the test group has production of phytase.
+                    </p>
+                    <p>
+                      The molecular weight that can be determined by SDS-PAGE analysis of the expressed enzyme is 45 KD, and the protein can be determined as phytase by Western blot.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/7/71/T--NAU-CHINA--composite-partsexperiment3.png">
+                    <h6 style="text-align:center;">Fig.6. Expected results 2: SDS-PAGE image of predicted expression product.</h6>
+                  </li>
+                  <!--2.2.3.3-->
+                  <li>
+                    <h5>Verification of BCA protein concentration</h5>
+                    <p>The secreted protein concentration is obtained through this experimental program.</p>
+                  </li>
+                  <!--2.2.3.4-->
+                  <li>
+                    <h5> Verification of the effect of phytase on phosphorus hydrolysis</h5>
+                    <ul>
+                      <li>
+                        <h6>Preliminary screening of strains</h6>
+                        <img src="https://2020.igem.org/wiki/images/1/14/T--NAU-CHINA--composite-partsexperiment4.png">
+                        <h6 style="text-align:center;">Fig.7. Expected results 3: the transparent hydrolysis circle produced by engineered bacteria.</h6>
+                      </li>
+                      <li>
+                        <h6>Phytase activity determination</h6>
+                        <p>
+                          According to the experiment, the relative activity of phytase can be obtained.<br>According to literature prediction, the relative activity of phytase is about 40%.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--2.2.3.5-->
+                  <li>
+                    <h5>Verification of the effect of phytase on phosphorus hydrolysis and lead fixation</h5>
+                    <p>
+                      Only in the group 4, whose reaction system has both phytase and sodium phytate, the lead content is reduced.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/2/20/T--NAU-CHINA--composite-partsexperiment5.png">
+                    <h6 style="text-align:center;">Fig.8. Expected results 4: changes of lead concentration over time.</h6>
+                  </li>
+              </div>
+            </div>
+
+            <!--NO.3 device-->
+            <div style="border-bottom:1px solid #999;padding-bottom:2em;" class="row general_info_element">
+              <div class="Engineer_device_ele">
+                <h4>P<sub>nar</sub>-CⅠ-PCⅠ-GFP</h4>
+                <div class="col-md-12 col-sm-12">
+                  <p>
+                    On the basis of successful verification of device 2.1, we can verify the CⅠ repressor and the promoter P<sub>CⅠ</sub>, which connects P<sub>nar</sub> and the following toehold switch（in Device 2.4）. Successful verification of this composite part can well consolidate our more complicated devices below.
+                  </p>
+                </div>
+                <img src="https://2020.igem.org/wiki/images/8/81/T--NAU-CHINA--Engineering-07-road.png">
+                <h6 style="text-align:center;">Fig.9. device 3  </h6>
+
+                <div class="col-md-12 col-sm-12">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#device_3" aria-expanded="false" aria-controls="collapseExample">
+                    Detail Information
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" style="margin-top: 2em; font-size: 1em;" id="device_3">
+              <div class="well">
+                <!--2.3.1-->
+                <img src="https://2020.igem.org/wiki/images/8/81/T--NAU-CHINA--Engineering-07-road.png">
+                <h6>Fig.9. device 3</h6>
+                <h4>Strains and vectors</h4>
+                <p style="padding-left: 1em;">Strain: <i>Bacillus subtilis</i> WB800N<br>Plasmid: pWB980-DB</p>
+
+                <!--2.3.2-->
+                <h4>Experimental methods</h4>
+                <ul>
+                  <!--2.3.2.1-->
+                  <li>
+                    <h5>Construction of the expression vector</h5>
+                    <p>
+                      Similar to procedure 2.1.2.1, construct the expression vector P<sub>nar</sub>-CⅠ-P<sub>CⅠ</sub>-GFP.
+                    </p>
+                    <img style="width: 60%;margin-left: 20%;" src="https://2020.igem.org/wiki/images/e/e9/T--NAU-CHINA--composite-parts3.1.png">
+                    <h5 style="text-align: center;">Fig.5. The expression vector of device 2.</h5>
+                  </li>
+                  <!--2.3.2.2-->
+                  <li>
+                    <h5>Construction and screening of recombinant engineered bacteria</h5>
+                    <p>
+                      Similar to 2.1.2.2 <b>sure??????</b>
+                    </p>
+                  </li>
+                  <!--2.3.2.3-->
+                  <li>
+                    <h5>Medium experiment</h5>
+                    <p>
+                      Take 2 bottles of 50ml LB liquid medium with 10μg/mL kanamycin, and inoculate the same amount of recombinant engineered bacteria.
+                    </p>
+                    <ul>
+                      <li>
+                        Culture engineered bacteria which have been transformed successfully for 6 hours, the test group is cultured in an anaerobic environment, and the negative control group is cultured in an aerobic environment.
+                      </li>
+                      <li>
+                        Use the microplate reader to observe the presence of fluorescence in the test group and the control group at 0 min, 10 min, 20 min, 30 min, 40 min, 60 min, 80 min, and 120 min.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <!--2.3.3-->
+                <h4>Expected experimental results</h4>
+                <p>
+                  The test group: the fluorescence intensity gradually decreases<br>The control group: the fluorescence intensity remains unchanged
+                </p>
+                <img src="https://2020.igem.org/wiki/images/1/13/T--NAU-CHINA--composite-partsexperiment6.png">
+                <h6 style="text-align:center;">Fig.11.Expected results 5: changes of fluorescence intensity under an anaerobic induced environment over time.</h6>
+              </div>
+            </div>
+
+            <!--NO.4 device-->
+            <div style="border-bottom:1px solid #999;padding-bottom:2em;" class="row general_info_element">
+              <div class="Engineer_device_ele">
+                <h4>P<sub>liaG</sub>- trigger RNA-P<sub>CⅠ</sub>-switch RNA-GFP</h4>
+                <div class="col-md-12 col-sm-12">
+                  <p>
+                    Toehold switch comprising of trigger RNA and switch RNA is significant to our overall design of genetic circuit. So, it’s essential to verify the feasibility of it. We add the gfp gene in the downstream of the switch sequence and use a constitutive promoter P<sub>liaG</sub> to control expression of trigger RNA.
+                  </p>
+                </div>
+                <img src="https://2020.igem.org/wiki/images/9/92/T--NAU-CHINA--composite-partsengineering3.png">
+                <h6 style="text-align:center;">Fig.9. device 3</h6>
+                <div class="col-md-12 col-sm-12">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#device_4" aria-expanded="false" aria-controls="collapseExample">
+                    Detail Information
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" style="margin-top: 2em; font-size: 1em;" id="device_4">
+              <div class="well">
+                <!--2.4.1-->
+                <img src="https://2020.igem.org/wiki/images/9/92/T--NAU-CHINA--composite-partsengineering3.png">
+                <h6>Fig.12. device 4</h6>
+                <h4>Strains and vectors</h4>
+                <p style="padding-left: 1em;">Strain: <i>B.subtilis</i> WB800N<br>Plasmid: pWB980-DB</p>
+
+                <!--2.4.2-->
+                <h4>Experimental methods</h4>
+                <ul>
+                  <!--2.4.2.1-->
+                    <h5>Construction of the expression vector</h5>
+                    <p>
+                      Similar to procedure 2.1.2.1, construct the expression vector P<sub>liaG</sub>- trigger RNA-P<sub>CⅠ</sub>-switch RNA-GFP.
+                    </p>
+                    <img style="width: 70%;margin-left:15%;" src="https://2020.igem.org/wiki/images/e/ea/T--NAU-CHINA--composite-parts4.1.png">
+                    <h5 style="text-align: center;">Fig.5. The expression vector of device 2.</h5>
+                  </li>
+                  <!--2.4.2.2-->
+                  <li>
+                    <h5>Construction and screening of recombinant engineered bacteria</h5>
+                    <p>
+                      Similar to procedure 2.1.2.1, construct the expression vector P<sub>liaG</sub>- trigger RNA-P<sub>CⅠ</sub>-switch RNA-GFP.
+                    </p>
+                  </li>
+                  <!--2.4.2.3-->
+                  <li>
+                    <h5>Characterization experiment</h5>
+                    <p>
+                      Take 2 bottles of 50ml LB liquid medium with 10μg/mL kanamycin, the one used for the test group is added 10μg/mL kanamycin and the other used for the control group is not. Test group which successfully transformed engineered bacteria, and control group which transformed pWB980-DB, are inoculated the same amount in medium.
+                    </p>
+                    <p>
+                      After culturing them for a period of time, use the fluorescence microscope to observe the presence of fluorescence in the test group and the control group.
+                    </p>
+                  </li>
+
+                  <!--2.4.3-->
+                  <li>
+                    <h4>Expected results</h4>
+                    <p>
+                      Fluorescence can be observed in the test group but not in the negative control group.
+                    </p>
+                    <img src="https://2020.igem.org/wiki/images/2/27/T--NAU-CHINA--composite-partsexperiment1.png">
+                    <h6 style="text-align:center;">Fig.14.Eexpected results 6: different expressions of fluorescence between the control group and the test group.</h6>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--No.5 device-->
+            <div style="border-bottom:1px solid #999;padding-bottom:2em;" class="row general_info_element">
+              <div class="Engineer_device_ele">
+                <h4>P<sub>nar</sub>-trigger RNA-P<sub>CⅠ</sub>-switch RNA-mazF</h4>
+                <div class="col-md-12 col-sm-12">
+                  <p>
+                    Now we have verified effectiveness of P<sub>nar</sub>, CⅠ repressor and toehold switch. So, further verification of more complicated assembly based on above parts can lay the foundation of our future demonstration of the whole system. Considering the bio-safety, we will let our engineered bacteria commit suicide by expressing toxin protein MazF. Based on this, we tried to achieve a good assembly of the parts P<sub>nar</sub>, P<sub>CⅠ</sub>, toehold switch and MazF.
+                  </p>
+                </div>
+                <img src="https://2020.igem.org/wiki/images/3/31/T--NAU-CHINA--composite-partsengineering5.png">
+                <h6 style="text-align:center;">Fig.15. Device 5.</h6>
+                <div class="col-md-12 col-sm-12">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#device_5" aria-expanded="false" aria-controls="collapseExample">
+                    Detail Information
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" style="margin-top: 2em; font-size: 1em;" id="device_5">
+              <div class="well">
+                <!--2.5.1-->
+                <img src="https://2020.igem.org/wiki/images/3/31/T--NAU-CHINA--composite-partsengineering5.png">
+                <h6>Fig.12. device 4</h6>
+                <h4>Strains and vectors</h4>
+                <p style="padding-left: 1em;">Strain: <i>B.subtilis</i> WB800N<br>Plasmid: pWB980-DB</p>
+
+                <!--2.5.2-->
+                <h4>Experimental methods</h4>
+                <ul>
+                  <!--2.5.2.1-->
+                  <li>
+                    <h5>Construction of the expression vector</h5>
+                    <p>
+                      Similar to procedure 2.1.2.1, construct the expression vector P<sub>nar</sub>-trigger RNA-P<sub>CⅠ</sub>-switch RNA-mazF.
+                    </p>
+                  </li>
+
+                  <!--2.5.2.2-->
+                  <li>
+                    <h5>Construction and screening of recombinant engineered bacteria</h5>
+                    <img src="https://2020.igem.org/wiki/images/d/d2/T--NAU-CHINA--composite-parts5.1.png">
+                    <h6 style="text-align:center;">Fig.16. The expression vector of device 5.</h6>
+                    <p>Similar to 2.1.2.2</p>
+                  </li>
+
+                  <!--2.5.2.3-->
+                  <li>
+                    <h5>Characterization experiment</h5>
+                    <ul>
+                      <li>Take 2 bottles of 50ml LB liquid medium with 10μg/mL kanamycin, and inoculate the same amount of recombinant engineered bacteria.</li>
+                      <li>After culturing engineered bacteria which have been transformed successfully for 6 hours, the test group is cultured in an anaerobic induced environment for 6 hours, and the negative control group is cultured in an aerobic environment for 6 hours.</li>
+                      <li>Measure OD<sub>600</sub> of bacteria liquid every 2 hours.</li>
+                    </ul>
+                    <img src="https://2020.igem.org/wiki/images/0/0f/T--NAU-CHINA--composite-partsexperiment7.png">
+                    <h6 style="text-align:center;">Fig.17. Expected results 7: changes of OD<sub>600</sub> over time.</h6>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <!--NO.6 device-->
+            <div style="border-bottom:1px solid #999;padding-bottom:2em;" class="row general_info_element">
+              <div class="Engineer_device_ele">
+                <h4>P<sub>liaG</sub>-lacⅠ-P<sub>grac</sub>-CⅠ-P<sub>CⅠ</sub>-GFP</h4>
+                <div class="col-md-12 col-sm-12">
+                  <p>
+                    In the laboratory, to guarantee successful culture of our engineered <i>Bacillus subtilis</i>, we need to introduce an IPTG induction system to our bacteria, so this composite part is to demonstrate the IPTG induction system which can actually work in engineered bacteria.
+                  </p>
+                </div>
+                <img src="https://2020.igem.org/wiki/images/0/01/T--NAU-CHINA--Engineering-09-road.png">
+                <h6 style="text-align:center;">Fig.18. Device 6.</h6>
+                <div class="col-md-12 col-sm-12">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#device_6" aria-expanded="false" aria-controls="collapseExample">
+                    Detail Information
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" style="margin-top: 2em; font-size: 1em;" id="device_6">
+              <div class="well">
+                <!--2.6.1-->
+                <img src="https://2020.igem.org/wiki/images/0/01/T--NAU-CHINA--Engineering-09-road.png">
+                <h6>Fig.12. device 4</h6>
+                <h4>Strains and vectors</h4>
+                <p style="padding-left: 1em;">Strain: <i>B.subtilis</i> WB800N<br>Plasmid: pWB980-DB</p>
+
+                <!--2.6.2-->
+                <h4>Experimental methods</h4>
+                <ul>
+                  <!--2.6.2.1-->
+                  <li>
+                    <h5>Construction of the expression vector</h5>
+                    <p>
+                      Similar to procedure 2.1.2.1, construct the expression vector P<sub>liaG</sub>-lacⅠ-P<sub>grac</sub>-CⅠ-P<sub>CⅠ</sub>-GFP.
+                    </p>
+                  </li>
+
+                  <!--2.6.2.2-->
+                  <li>
+                    <h5>Construction and screening of recombinant engineered bacteria</h5>
+                    <img src="https://2020.igem.org/wiki/images/5/58/T--NAU-CHINA--composite-parts6.1.png">
+                    <h6 style="text-align:center;">Fig.19. The expression vector of device 6.</h6>
+                    <p>Similar to 2.1.2.2</p>
+                  </li>
+
+                  <!--2.6.2.3-->
+                  <li>
+                    <h5>Characterization experiment</h5>
+                    <p>
+                      Take 2 bottles of 50mL LB liquid medium with 10μg/mL kanamycin, and inoculate the same amount of recombinant engineered bacteria.
+                    </p>
+                    <ul>
+                      <li>
+                        After culturing for 3 hours, the test group is cultured with 1 mM IPTG at 37°C and 200 rpm for 2 hours while the IPTG is not added to control group.
+                      </li>
+                      <li>
+                        Use the fluorescence microscope to observe the presence of fluorescence in the test group and the control group.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <!--2.6.3-->
+                <h4>Expected results</h4>
+                <p>
+                  Fluorescence can be observed in the negative control group but the test group cannot.
+                </p>
+                <img src="https://2020.igem.org/wiki/images/2/2e/T--NAU-CHINA--composite-partsexperiment8.png">
+                <h6 style="text-align:center;">Fig.20. Expected results 8: different expressions of fluorescence between the control group and the test group.</h6>
+                <p>
+                  The engineering of biology has been the core of our project, so we want to make sure that our devices are as successful as possible. We designed the above experiments to verify the engineering success of our devices, but these tests were based on literature  or mathematical model predictions. There will  be errors or failures in the actual experimental verification inevitably. For example, mis-operation during experiments and objective factors, such as kit problems, may cause unexpected results. Therefore, it is necessary to conduct fault detection for unexpected results. The inspection thinking pattern of each device is roughly the same, so in order to conduct fault troubleshooting quickly and systematically, we made an "experiment failure troubleshooting handbook", which summarized the possible causes of experiment failure and proposed corresponding solutions.
+                </p>
+                <p>
+                  We use the troubleshooting handbook to help us systematically identify the causes of failure and ensure the success of our devices to the greatest extent. At the same time, we hope that our handbook can help other devices to be troubleshooted.
+                </p>
               </div>
             </div>
 
@@ -185,18 +808,18 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>+</td>
-                    <td>+</td>
+                    <td style="vertical-align:middle;">+</td>
+                    <td style="vertical-align:middle;">+</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>-</td>
-                    <td>-</td>
+                    <td style="vertical-align:middle;">-</td>
+                    <td style="vertical-align:middle;">-</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td>+</td>
-                    <td>-</td>
+                    <td style="vertical-align:middle;">+</td>
+                    <td style="vertical-align:middle;">-</td>
                   </tr>
                 </tbody>
               </table>
@@ -215,12 +838,13 @@
                   In the excrement: no phytase expression, engineered bacteria commit suicide.
                 </li>
               </ul>
-              <img src="" alt="reuslt image">
+              <img src="https://2020.igem.org/wiki/images/2/2a/T--NAU-CHINA--composite-partssystem.png" alt="reuslt image">
+              <h6 style="text-align:center;">Fig.21. Simulated expressions of engineered bacteria in three different stages.</h6>
               <p>
                 In our project, phytase and kill switch, which are core parts, play important roles and may cause bad results if they are non-functional. We assumed unexpected results caused by them, speculated possible reasons and proposed treatments respectively.
               </p>
               <p>
-                So how can we find out possible reasons? Generally, we only can observe phenomena of experiments, such as fluorescence, hydrolysis circle. However, we know that every phenomenon is caused by corresponding proteins. For example, only if green fluorescence proteins are expressed, can we detect green fluorescence. In this perspective, we can speculate possible reasons according to the common process of producing protein: transcription of the relevant gene, translation of mRNA, proper protein folding and configuration, secretion from cells (if necessary) and enzyme activity.
+                So how can we find out possible reasons? Generally, we can only observe phenomena of experiments, such as fluorescence and hydrolysis circle. However, we know that every phenomenon is caused by corresponding proteins. For example, only if green fluorescence proteins are expressed, can we detect green fluorescence. In this perspective, we can speculate possible reasons according to the common process of producing protein: transcription of the relevant gene, translation of mRNA, proper protein folding and configuration, secretion from cells (if necessary) and enzyme activity.
               </p>
               <h4>PHYTASE(ycD)</h4>
               <style type="text/css">
@@ -234,20 +858,20 @@
                     <th colspan="2">Unexpected results</th>
 
                     <th>Possible reasons</th>
-                    <th>Treatment</th>
+                    <th>Treatments</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row" rowspan="6">Pyromorphite cannot be formed</th>
-                    <td>unable to detect</td>
-                    <td>Noneffective experimental methods</td>
-                    <td>Apply more sensitive and advanced methods like XRD analysis</td>
+                    <td style="vertical-align:middle;">unable to detect</td>
+                    <td style="vertical-align:middle;">Noneffective experimental methods</td>
+                    <td style="vertical-align:middle;">Apply more sensitive and advanced methods like XRD analysis</td>
                   </tr>
                   <tr>
-                    <td rowspan="5">Poor enzyme activity</td>
-                    <td>Oxygen switch is non-functional</td>
-                    <td rowspan="5">
+                    <td style="vertical-align:middle;" rowspan="5">Poor enzyme activity</td>
+                    <td style="vertical-align:middle;">Oxygen switch is non-functional</td>
+                    <td style="vertical-align:middle;" rowspan="5">
                       <ul>
                         <li style="font-size:inherit;">Search for enzymes that can work better. </li>
                         <li style="font-size:inherit;">Change characteristics of phytase.</li>
@@ -257,31 +881,31 @@
                   <tr>
 
 
-                    <td>Oxygen switch is non-functional </td>
+                    <td style="vertical-align:middle;">Oxygen switch is non-functional </td>
 
                   </tr>
                   <tr>
 
-                    <td>Proteins don't fold properly</td>
+                    <td style="vertical-align:middle;">Proteins don't fold properly</td>
 
                   </tr>
                   <tr>
 
-                    <td>Form inclusion-body protein</td>
+                    <td style="vertical-align:middle;">Form inclusion-body protein</td>
 
                   </tr>
                   <tr>
-                    <td>Enzymatic reaction conditions are not suitable</td>
+                    <td style="vertical-align:middle;">Enzymatic reaction conditions are not suitable</td>
                   </tr>
                 </tbody>
               </table>
-              <h6>Table.4. Analysis of phytase.</h6>
+              <h6 style="text-align:center;">Table.4. Analysis of phytase.</h6>
 
               <h4>TOEHOLD-BASED KILL SWITCH</h4>
               <p>
                 Kill switch problems can be divided into two situations: mis-killing and non-killing, possibly reasons are shown below.
               </p>
-              <table class="table table-striped">
+              <table class="table">
                 <thead>
                   <tr>
                     <th colspan="2">Unexpected results</th>
@@ -295,12 +919,12 @@
                     <th scope="row" rowspan="13">
                       Suicide mistake
                     </th>
-                    <td rowspan="7">
+                    <td style="vertical-align:middle;" rowspan="7">
                       Mis-killing: Toehold mistakenly opens, toxin protein expresses.<br>(phases I and II)
                     </td>
-                    <td>In the laboratory</td>
-                    <td>Pgrac is not successfully induced or Pgrac is not strong enough</td>
-                    <td rowspan="13">
+                    <td style="vertical-align:middle;">In the laboratory</td>
+                    <td style="vertical-align:middle;">Pgrac is not successfully induced or Pgrac is not strong enough</td>
+                    <td style="vertical-align:middle;" rowspan="13">
                       <ul>
                         <li style="font-size: inherit;">
                           Search for more sensitive and effective parts, such as more stronger oxygen-free inducible promoters or other switches that can be used as "AND" gate.
@@ -312,51 +936,51 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>In the intestine of earthworms</td>
-                    <td>Pnar is not strong enough</td>
+                    <td style="vertical-align:middle;">In the intestine of earthworms</td>
+                    <td style="vertical-align:middle;">Pnar is not strong enough</td>
                   </tr>
                   <tr>
-                    <td rowspan="5">Common reasons</td>
-                    <td>Toehold switch background expression</td>
+                    <td style="vertical-align:middle;" rowspan="5">Common reasons</td>
+                    <td style="vertical-align:middle;">Toehold switch background expression</td>
                   </tr>
                   <tr>
-                    <td>
+                    <td style="vertical-align:middle;">
                       The activity of CI repressor is low
                     </td>
                   </tr>
                   <tr>
-                    <td>Toehold switch cannot form stem-ring structure</td>
+                    <td style="vertical-align:middle;">Toehold switch cannot form stem-ring structure</td>
                   </tr>
                   <tr>
-                    <td>CI cannot be expressed</td>
+                    <td style="vertical-align:middle;">CI cannot be expressed</td>
                   </tr>
                   <tr>
-                    <td>Expression of CI repressor don’t reach functional threshold</td>
+                    <td style="vertical-align:middle;">Expression of CI repressor don’t reach functional threshold</td>
                   </tr>
                   <tr>
-                    <td rowspan="6">Non-killing: toxin protein does not express.<br>(phase III)</td>
-                    <td rowspan="3">Toxin protein</td>
-                    <td>Fold incorrectly</td>
+                    <td style="vertical-align:middle;" rowspan="6">Non-killing: toxin protein does not express.<br>(phase III)</td>
+                    <td style="vertical-align:middle;" rowspan="3">Toxin protein</td>
+                    <td style="vertical-align:middle;">Fold incorrectly</td>
                   </tr>
                   <tr>
-                    <td>Inclusion Body formation</td>
+                    <td style="vertical-align:middle;">Inclusion Body formation</td>
                   </tr>
                   <tr>
-                    <td>Degradation</td>
+                    <td style="vertical-align:middle;">Degradation</td>
                   </tr>
                   <tr>
-                    <td rowspan="3">Toehold does not open</td>
-                    <td>The degradation rate of trigger RNA is too high</td>
+                    <td style="vertical-align:middle;" rowspan="3">Toehold does not open</td>
+                    <td style="vertical-align:middle;">The degradation rate of trigger RNA is too high</td>
                   </tr>
                   <tr>
-                    <td>Concentration of switch RNA or trigger RNA dose not reach threshold</td>
+                    <td style="vertical-align:middle;">Concentration of switch RNA or trigger RNA dose not reach threshold</td>
                   </tr>
                   <tr>
-                    <td>The degradation of CI is too slow</td>
+                    <td style="vertical-align:middle;">The degradation of CI is too slow</td>
                   </tr>
                 </tbody>
               </table>
-              <h6>Table.6. Analysis of the kill switch.</h6>
+              <h6 style="text-align:center;">Table.6. Analysis of the kill switch.</h6>
             </div>
 
             <!--4. Future Steps-->
@@ -364,11 +988,12 @@
               <p>
                 Due to the impact of the epidemic, we can’t conduct experiments practically. However, there are shortcomings of circuit and we can put forward ideas to further optimize the engineering design according to theoretical design and mathematical model.
               </p>
-              <h4>Optimize the experimental plan: </h4>
+              <h4>Optimize the experimental plan:</h4>
               <ul>
                 <li>when designing the experiment on the effect of kill switch, we can further detect the number of living bacteria by flow cytometry or dilution spread to avoid the small difference in total biomass caused by the incomplete cleavage of dead bacteria.</li>
                 <li>adopt more advanced detection methods such as XRD analysis to detect pyromorphite.</li>
               </ul>
+
               <h4>Add the colonization part:</h4>
               <p>
                 For the purpose of engineering, we hope that the engineered bacteria can colonize in the intestine of earthworms for a long time, express phytase to hydrolyze phytate in soil and form pyromorphite with lead ions.
@@ -409,7 +1034,6 @@
                    </li>
                  </ul>
                </div>
-            </div>
             </div>
           </div>
         </div>

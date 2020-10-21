@@ -1,0 +1,35 @@
+{{IGEM_TopBar}}
+{{NAU-CHINA}}
+<html>
+
+
+<div class="column full_size judges-will-not-evaluate">
+<h3>★  ALERT! </h3>
+<p>This page is used by the judges to evaluate your team for the <a href="https://2020.igem.org/Judging/Medals">medal criterion</a> or <a href="https://2020.igem.org/Judging/Awards"> award listed below</a>. </p>
+<p> Delete this box in order to be evaluated for this medal criterion and/or award. See more information at <a href="https://2020.igem.org/Judging/Pages_for_Awards"> Instructions for Pages for awards</a>.</p>
+</div>
+
+
+<div class="clear"></div>
+
+
+<div class="column full_size">
+<h1>Education </h1>
+
+<h3>Gold Medal Criterion #6</h3>
+
+<p> Develop and implement science communication, education, and/or outreach materials related to synthetic biology.
+<br><br>
+All activities must follow Safety policies for <a href="https://2020.igem.org/Safety/Policies#subjects">Human Subjects Research</a>.
+<br><br>
+Please see the <a href="https://2020.igem.org/Judging/Medals">2020 Medals Page</a> for more information. 
+</p>
+
+<h3>Best Education Special Prize</h3>
+<p>To compete for the <a href="https://2020.igem.org/Judging/Awards">Best Education prize</a>, please describe your work on this page  and also fill out the description on the <a href="https://2020.igem.org/Judging/Judging_Form">judging form</a>. Please note you can compete for both the Gold Medal criterion #6 and the Best Education prize with this page. </p>
+
+
+</div>
+
+
+</html>

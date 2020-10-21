@@ -1,0 +1,10 @@
+function map_big = map_expand(map_initial)
+A = map_initial;
+[m,n] = size(A);
+add_c_left = [A(:,end)];
+add_c_right = [A(:,1)];
+add_l_up = [A(m,n),A(end,:),A(m,1)];
+add_l_dowm = [A(1,n),A(1,:),A(1,1)];
+A = [add_c_left,A,add_c_right];
+A = [add_l_up;A;add_l_dowm];
+map_big = A;

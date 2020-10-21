@@ -62,8 +62,31 @@ HOME(非官方要求链接)
 
 	https://2020.igem.org/Template:NAU-CHINA/test-Home/Home-snapsvg-js?action=raw&ctype=text/javascript
 	-- HOME snapsvg js
+
+Composite Parts(主题色没改)
+	https://2020.igem.org/Team:NAU-CHINA/Composite_Parts
+
+
+Science Communication
+	https://2020.igem.org/Team:NAU-CHINA/Education
+
+	{{NAU-CHINA/Science-Communication-css}}
+
+	https://2020.igem.org/Template:NAU-CHINA/HP/Science_Communication-js?action=raw&ctype=text/javascript
+	-- Science Communication unique js
 	
-	
+Partnership
+	https://2020.igem.org/Team:NAU-CHINA/Partnership
+
+	{{NAU-CHINA/Implementation-css}}
+
+	https://2020.igem.org/Template:NAU-CHINA/HP/Science_Communication-js?action=raw&ctype=text/javascript
+
+
+Model(OK)
+	https://2020.igem.org/Team:NAU-CHINA/Model
+	-- Model Overview
+
 
 通用：
 	{{NAU-CHINA/oranjia-test-home.csschushihua}}

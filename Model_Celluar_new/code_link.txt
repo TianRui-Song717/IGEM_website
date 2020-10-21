@@ -1,0 +1,11 @@
+delta_Pb.m
+https://2020.igem.org/wiki/images/a/a7/T--NAU-CHINA--delta_Pb.txt
+
+ew_spread.m
+https://2020.igem.org/wiki/images/3/32/T--NAU-CHINA--ew_spread.txt
+
+map_produce.m
+https://2020.igem.org/wiki/images/e/e2/T--NAU-CHINA--map_produce.txt
+
+download code.zip
+https://2020.igem.org/wiki/images/d/d5/T--NAU-CHINA--Model_CA_code.zip
