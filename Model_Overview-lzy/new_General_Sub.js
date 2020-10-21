@@ -19,41 +19,41 @@ $(function(){
     }else{
       $(".left_nav").removeClass("left_nav_after");
     }
-    //侧边导航颜色改变
-    var element_1 = $("#general_info_ele_1").offset().top;
-    var element_2 = $("#general_info_ele_2").offset().top;
-    var element_3 = $("#general_info_ele_3").offset().top;
-    if(curTop >= (element_1 - 10) && curTop < (element_2 - 10)){
-      $("#sidenav_1").addClass("general_side_nav_color");
-    }else{
-      $("#sidenav_1").removeClass("general_side_nav_color");
-    }
-    if(curTop >= (element_2 - 10) && curTop < (element_3 - 300)){
-      $("#sidenav_2").addClass("general_side_nav_color");
-    }else{
-      $("#sidenav_2").removeClass("general_side_nav_color");
-    }
-    if(curTop >= (element_3 - 300)){
-      $("#sidenav_3").addClass("general_side_nav_color");
-    }else{
-      $("#sidenav_3").removeClass("general_side_nav_color");
-    }
+    // //侧边导航颜色改变
+    // var element_1 = $("#general_info_ele_1").offset().top;
+    // var element_2 = $("#general_info_ele_2").offset().top;
+    // var element_3 = $("#general_info_ele_3").offset().top;
+    // if(curTop >= (element_1 - 10) && curTop < (element_2 - 10)){
+    //   $("#sidenav_1").addClass("general_side_nav_color");
+    // }else{
+    //   $("#sidenav_1").removeClass("general_side_nav_color");
+    // }
+    // if(curTop >= (element_2 - 10) && curTop < (element_3 - 300)){
+    //   $("#sidenav_2").addClass("general_side_nav_color");
+    // }else{
+    //   $("#sidenav_2").removeClass("general_side_nav_color");
+    // }
+    // if(curTop >= (element_3 - 300)){
+    //   $("#sidenav_3").addClass("general_side_nav_color");
+    // }else{
+    //   $("#sidenav_3").removeClass("general_side_nav_color");
+    // }
   })
 })
 
 
-//sidenav_锚点点击滚动跳转
-$(function(){
-  $(".general_sidenav_a").click(function(){
-    var element_1 = $("#general_info_ele_1").offset().top;
-    var element_2 = $("#general_info_ele_2").offset().top;
-    var element_3 = $("#general_info_ele_3").offset().top;
-    if($(this).attr("id") == "sidenav_1"){
-      $("html,body").animate({scrollTop:element_1},1000);
-    }else if($(this).attr("id") == "sidenav_2"){
-      $("html,body").animate({scrollTop:element_2},1000);
-    }else if($(this).attr("id") == "sidenav_3"){
-      $("html,body").animate({scrollTop:element_3},1000);
-    }
-  })
-})
+// //sidenav_锚点点击滚动跳转
+// $(function(){
+//   $(".general_sidenav_a").click(function(){
+//     var element_1 = $("#general_info_ele_1").offset().top;
+//     var element_2 = $("#general_info_ele_2").offset().top;
+//     var element_3 = $("#general_info_ele_3").offset().top;
+//     if($(this).attr("id") == "sidenav_1"){
+//       $("html,body").animate({scrollTop:element_1},1000);
+//     }else if($(this).attr("id") == "sidenav_2"){
+//       $("html,body").animate({scrollTop:element_2},1000);
+//     }else if($(this).attr("id") == "sidenav_3"){
+//       $("html,body").animate({scrollTop:element_3},1000);
+//     }
+//   })
+// })

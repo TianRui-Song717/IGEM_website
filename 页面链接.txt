@@ -49,7 +49,18 @@ Integrated Human Practices(差几个文件的说明）
 	
 	{{NAU-CHINA/Integrated-HP-css}}
 	-- Integrated Human Practices unqiue css
+	
+	
 
+Model-Overview
+	https://2020.igem.org/Team:NAU-CHINA/Model
+
+	https://2020.igem.org/Template:NAU-CHINA/Model/Overview-js?action=raw&ctype=text/javascript
+	-- model Overview js
+	
+	{{NAU-CHINA/Model_CA-css}}
+	
+	
 
 HOME(非官方要求链接)
 	{{NAU-CHINA/HOME-css}}	
