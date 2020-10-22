@@ -12,7 +12,7 @@ Description
 	-- {{NAU-CHINA/Description-css}}
 	--description unique css
 
-Model Celluar(非官方要求链接)
+Model Celluar Automation
 	https://2020.igem.org/Team:NAU-CHINA/test-Model_CA.html
 	-- test MODEL CA 
 	
@@ -20,10 +20,16 @@ Model Celluar(非官方要求链接)
 	{{NAU-CHINA/Model_CA-css}}
 	--model_CA unique css
 
-	https://2020.igem.org/Template:NAU-CHINA/Model/Model-CA-js?action=raw&ctype=text/javascript
+	https://2020.igem.org/Template:NAU-CHINA/Model/CA-js?action=raw&ctype=text/javascript
 	-- model_CA unique js
 
-Implementation
+	https://2020.igem.org/Template:NAU-CHINA/Model/Mathjax?action=raw&ctype=text/javascript
+	-- Mathjax
+
+	https://2020.igem.org/Template:NAU-CHINA/Model/Mathjax-link?action=raw&ctype=text/javascript
+	-- Mathjax 外引
+
+Implementation（大图）
 	https://2020.igem.org/Team:NAU-CHINA/Implementation
 	-- Implementation page
 
@@ -37,7 +43,7 @@ Implementation
 	https://2020.igem.org/Template:NAU-CHINA/Human_Practices/Implementation-js?action=raw&ctype=text/javascript
 	-- Implementation unqiue js
 
-Integrated Human Practices(差几个文件的说明）
+Integrated Human Practices(大图不好)
 	https://2020.igem.org/Team:NAU-CHINA/Human_Practices
 	-- Final Description	
 
@@ -67,7 +73,7 @@ Composite Parts(主题色没改)
 	https://2020.igem.org/Team:NAU-CHINA/Composite_Parts
 
 
-Science Communication
+Science Communication（大图，字，视频，图片）
 	https://2020.igem.org/Team:NAU-CHINA/Education
 
 	{{NAU-CHINA/Science-Communication-css}}
@@ -75,7 +81,7 @@ Science Communication
 	https://2020.igem.org/Template:NAU-CHINA/HP/Science_Communication-js?action=raw&ctype=text/javascript
 	-- Science Communication unique js
 	
-Partnership
+Partnership（大图，字）
 	https://2020.igem.org/Team:NAU-CHINA/Partnership
 
 	{{NAU-CHINA/Implementation-css}}
@@ -83,10 +89,10 @@ Partnership
 	https://2020.igem.org/Template:NAU-CHINA/HP/Science_Communication-js?action=raw&ctype=text/javascript
 
 
-Model(OK)
-	https://2020.igem.org/Team:NAU-CHINA/Model
-	-- Model Overview
+Engineering Success(排版修改)
+	https://2020.igem.org/Team:NAU-CHINA/Engineering
 
+	https://2020.igem.org/Template:NAU-CHINA/Project/Engineering-Success-js?action=raw&ctype=text/javascript
 
 通用：
 	{{NAU-CHINA/oranjia-test-home.csschushihua}}
