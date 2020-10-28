@@ -1,0 +1,980 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/Implementation-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>Implementation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+   
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image" style="background-image:url(https://2020.igem.org/wiki/images/f/ff/T--NAU-CHINA--Integrated-Implementation-back.jpg);"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image" style="background-image:url(https://2020.igem.org/wiki/images/1/15/T--NAU-CHINA--Implementation-logo.jpg); width:80%; margin-left:10%;background-size:contain;">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4 style="margin-bottom:1em;">Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">End Users</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">How to Use</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Real World Application</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Safety</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Challenge</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. Final Users-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3>End Users：Agricultural Producer</h3>
+              <p>
+                In the process of agricultural production, lead pollution in the soil enters the human body through the way of 
+ "soil → crop → human", posing a threat to human health. And lead pollution also causes damage to the agricultural economy. In this process, agricultural producers are closely related to the cultivation of soil and the production of crops. The main reasons we choose agricultural producers as end users are as follows.
+              </p>
+              <p>
+                Firstly, remediation of heavy metal contaminated soil may provide direct benefits to agricultural producers. Agricultural producers are users of soil and producers of crops. Lead pollution in cultivated soil enters the human body through the enrichment of crops and poses a serious threat to health. It is known that lead pollution is one of the important causes of disease. According to a large domestic epidemiological survey in 2015, the average blood lead level(BLL) of urban children under the age of 6 in China was 35.35μg/L, higher than that of 20μg/L～25μg/L in the US in 2000 and less than that of 30μg/L in Europe. If we can repair the lead pollution, this will directly benefit farmers.
+              </p>
+              <!--svg-->
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1451 1000.4" style="enable-background:new 0 0 1451 1000.4;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#7485CE;}
+                  .st1{fill:#FECB7F;}
+                  .st2{clip-path:url(#SVGID_2_);fill:#7DBC7D;}
+                  .st3{fill:#59993C;}
+                  .st4{fill:#FCDE95;}
+                  .st5{clip-path:url(#SVGID_4_);}
+                  .st6{fill:#F3CD8E;}
+                  .st7{fill:#E6C382;}
+                  .st8{fill:#FECF91;}
+                  .st9{fill:url(#SVGID_5_);}
+                  .st10{fill:#8C8984;}
+                  .st11{fill:none;stroke:#808080;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st12{fill:none;stroke:#666666;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st13{fill:none;stroke:#666666;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;}
+                  .st14{fill:#666666;}
+                  .st15{fill:none;stroke:#ED5858;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st16{fill:#ED5858;stroke:#ED5858;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st17{fill:none;stroke:#FFDC73;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st18{fill:#FBB03B;stroke:#FBB03B;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st19{fill:#FFDC73;stroke:#FFDC73;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st20{fill:none;stroke:#F7931E;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st21{fill:none;stroke:#FFDC73;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st22{fill:none;stroke:#F7931E;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st23{fill:none;stroke:#ED5858;stroke-width:30;stroke-miterlimit:10;}
+                  .st24{fill:#ED5858;}
+                  .st25{fill:#808080;}
+                  .st26{fill:none;stroke:#4D4D4D;stroke-width:70;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st27{fill:#FFFFFF;}
+                  .st28{fill:#4D4D4D;}
+                  .st29{fill:none;stroke:#F2F2F2;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st30{fill:#F2F2F2;}
+                  .st31{font-family:'Rubrik-SemiBold';}
+                  .st32{font-size:99.6713px;}
+                </style>
+                <g id="_x35_">
+                  <g id="图层_4">
+                    <path class="st0" d="M542.1,939.2c0.9-23.7,6.4-63.4,34.3-96.7c67.8-81,231.7-79.8,301.5,1.7c29,33.9,35.3,74,36.8,95.8"/>
+                    <path class="st1" d="M672.3,737.9v52.2c19.1,24.6,38.3,49.1,57.4,73.7c18.6-24.3,37.1-48.5,55.7-72.8v-60L672.3,737.9z"/>
+                  </g>
+                  <g id="图层_5">
+                    <g>
+                      <defs>
+                        <polygon id="SVGID_1_" points="609.8,804.7 609.8,940 843.6,940 843.6,797.8 798.2,785.8 798.2,892 656.1,892 656.1,773.8        
+                          "/>
+                      </defs>
+                      <clipPath id="SVGID_2_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <path class="st2" d="M543,939.2c0.9-23.7,6.4-63.4,34.3-96.7c67.8-81,231.7-79.8,301.5,1.7c29,33.9,35.3,74,36.8,95.8"/>
+                    </g>
+                  </g>
+                  <g id="图层_6">
+                    <circle class="st3" cx="635.9" cy="917.3" r="14.1"/>
+                    <circle class="st3" cx="819.2" cy="917.3" r="14.1"/>
+                  </g>
+                  <g>
+                    <g>
+                      <path class="st4" d="M612.8,659.5c0-28.3,32.5-126.8,67.7-126.8c20.6,0,29.1,26.6,47.1,26.6c18,0,25.7-26.6,40.3-26.6
+                        c21.4,0,73.7,56.5,73.7,131.9L612.8,659.5z"/>
+                    </g>
+                    <g>
+                      <defs>
+                        <path id="SVGID_3_" d="M612.8,656.9c0-28.3,32.5-126.8,67.7-126.8c20.6,0,29.1,26.6,47.1,26.6c18,0,25.7-26.6,40.3-26.6
+                          c21.4,0,73.7,56.5,73.7,131.9L612.8,656.9z"/>
+                      </defs>
+                      <clipPath id="SVGID_4_">
+                        <use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g class="st5">
+                        <path class="st6" d="M871.9,661.6H592.7v-41.1c74.4-9,147.3-18.7,279.2,0V661.6z"/>
+                      </g>
+                    </g>
+                    <g>
+                      <ellipse class="st7" cx="728" cy="700.6" rx="197" ry="55.2"/>
+                    </g>
+                  </g>
+                  <g>
+                    <circle class="st8" cx="619.7" cy="719.4" r="18.4"/>
+                  </g>
+                  <g>
+                    <circle class="st8" cx="835.5" cy="719.4" r="18.4"/>
+                  </g>
+                  <g>
+                    <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="726.7152" y1="824.3696" x2="726.7152" y2="669.3391">
+                      <stop  offset="0" style="stop-color:#FFFFFF"/>
+                      <stop  offset="0" style="stop-color:#FFEDCF"/>
+                      <stop  offset="0.3547" style="stop-color:#FDECCD"/>
+                      <stop  offset="0.5502" style="stop-color:#F6E9C5"/>
+                      <stop  offset="0.7071" style="stop-color:#EAE4B7"/>
+                      <stop  offset="0.8433" style="stop-color:#D9DDA3"/>
+                      <stop  offset="0.965" style="stop-color:#C3D48A"/>
+                      <stop  offset="1" style="stop-color:#BCD182"/>
+                    </linearGradient>
+                    <path class="st9" d="M842.8,706.6c0-20.6-52-37.3-116.1-37.3S610.7,686,610.7,706.6c0,7,6,13.5,16.4,19.1
+                      c2.9,55,47,98.7,100.9,98.7c54.4,0,98.7-44.4,101-100.1C837.8,719,842.8,713,842.8,706.6z"/>
+                  </g>
+                  <g id="图层_3">
+                    <path class="st10" d="M634.6,683v46.3l-24.8-19.7v-16.3C619.2,683,634.6,683,634.6,683z"/>
+                    <path class="st10" d="M817.9,683v46.3l24.8-19.7v-16.3C833.4,683,817.9,683,817.9,683z"/>
+                    <circle cx="682.2" cy="726.3" r="12.4"/>
+                    <circle cx="773.8" cy="726.3" r="12.4"/>
+                    <g>
+                      <path class="st10" d="M737.4,760.1c6.9-5.6,15.5-3.8,17.1-3.5c6.5,1.4,10.8,5.3,14.8,9.9c5.3,6.1,6,16.3,14.3,18.5
+                        c10,2.7,18.9-1.3,21.3-2.6c0.1-0.1,0.2-0.1,0.2,0c0.2,0.3-15.9,16.3-36.8,18.8c-5.5,0.7-16.9,2.1-26.6-5.1
+                        c-1.6-1.2-11-8.2-11.1-19.7C730.5,774.7,730.4,765.8,737.4,760.1z"/>
+                      <path class="st10" d="M719.4,775.5"/>
+                      <path class="st10" d="M729.7,760.1c-6.9-5.6-15.5-3.8-17.1-3.5c-6.5,1.4-10.8,5.3-14.8,9.9c-5.3,6.1-6,16.3-14.3,18.5
+                        c-10,2.7-18.9-1.3-21.3-2.6c-0.1-0.1-0.2-0.1-0.2,0c-0.2,0.3,15.9,16.3,36.8,18.8c5.5,0.7,16.9,2.1,26.6-5.1
+                        c1.6-1.2,11-8.2,11.1-19.7C736.6,774.7,736.7,765.8,729.7,760.1z"/>
+                    </g>
+                    <path class="st11" d="M694.6,705.3c-2.1,2.8-7.6,9.3-17.7,13.3c-8.1,3.1-15.3,3.2-19.1,3"/>
+                    <path class="st11" d="M761,705.7c2.1,2.8,7.6,9.3,17.7,13.3c8.1,3.1,15.3,3.2,19.1,3"/>
+                  </g>
+                </g>
+                <g id="_x34_">
+                  <path class="st12" d="M81,606"/>
+                  <path class="st12" d="M81,343"/>
+                  <g>
+                    <g>
+                      <g>
+                        <path class="st13" d="M966.2,794h122.9c76.1,0,138.4-62.3,138.4-138.4v-28.1"/>
+                        <g>
+                          <path class="st14" d="M1007.2,822.8c0.9-1.4,0.5-3.3-0.9-4.1L967.6,794l38.7-24.7c1.4-0.9,1.8-2.7,0.9-4.1s-2.8-1.8-4.1-0.9
+                            l-42.7,27.2c-0.9,0.6-1.4,1.5-1.4,2.5s0.5,2,1.4,2.5l42.7,27.2c0.5,0.3,1.1,0.5,1.6,0.5
+                            C1005.7,824.2,1006.6,823.7,1007.2,822.8z"/>
+                        </g>
+                        <g>
+                          <path class="st14" d="M1250.1,628.6c0-12.5-10.1-22.6-22.6-22.6s-22.6,10.1-22.6,22.6c0,12.5,10.1,22.6,22.6,22.6
+                            S1250.1,641,1250.1,628.6z"/>
+                        </g>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path class="st13" d="M224.5,627.4v28.1c0,76.1,62.3,138.4,138.4,138.4h134.9"/>
+                        <g>
+                          <path class="st14" d="M201.9,628.6c0-12.5,10.1-22.6,22.6-22.6s22.6,10.1,22.6,22.6c0,12.5-10.1,22.6-22.6,22.6
+                            S201.9,641,201.9,628.6z"/>
+                        </g>
+                        <g>
+                          <path class="st14" d="M456.8,822.8c-0.9-1.4-0.5-3.3,0.9-4.1l38.7-24.7l-38.7-24.7c-1.4-0.9-1.8-2.7-0.9-4.1s2.8-1.8,4.1-0.9
+                            l42.7,27.2c0.9,0.6,1.4,1.5,1.4,2.5s-0.5,2-1.4,2.5l-42.7,27.2c-0.5,0.3-1.1,0.5-1.6,0.5C458.3,824.2,457.4,823.7,456.8,822.8z
+                            "/>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g id="_x33_">
+                  <g>
+                    <path class="st15" d="M123,365.7c-3-8.5-1.7-12,0.1-13.5c4.8-3.9,15.3,4,24.2,0.1c7.5-3.3,3.7-13.8,10.3-16.8
+                      c6.7-3,13.5,5.2,21.5,2.7c5.9-1.9,4.9-7.8,6.6-14"/>
+                    <path class="st15" d="M135,502.3c6.3-6.5,9.9-7,12.1-6c5.7,2.5,3.4,15.4,10.8,21.6c6.3,5.2,14-3,19.7,1.6
+                      c5.7,4.6,1.4,14.4,7.3,20.4c4.4,4.4,9.2,0.8,15.5-0.5"/>
+                    <path class="st15" d="M349.7,508c-7.1-5.6-7.9-9.1-7.2-11.4c2-5.9,15-4.9,20.4-12.9c4.6-6.8-4.4-13.6-0.4-19.8
+                      c4-6.2,14.2-2.9,19.5-9.3c4-4.8-0.1-9.2-2-15.4"/>
+                    <g>
+                      <path class="st16" d="M340.8,451.8c0.3-0.5,0.6-1.1,0.9-1.6c26.6-50-39.2-97.9-79.4-58.1l-16.9,16.7c-0.5,0.5-1.4,0.5-2,0
+                        l-19.1-18.5c-37.7-36.5-99.6,2.9-81.6,52.2c1.1,3.1,2.6,6.2,4.3,9.2c0.1,0.1,0.2,0.3,0.3,0.4l95.7,83.4c0.5,0.5,1.3,0.5,1.9,0
+                        l95.7-83.4C340.7,452,340.8,451.9,340.8,451.8z"/>
+                      <polyline class="st17" points="67.5,437.8 78.1,437.8 90.5,427.1 102.2,437.8 112.5,437.8 120.7,451.8 127.6,437.8 146.1,437.8 
+                        155.2,428.3 163.1,455.1 170.2,437.8 195.4,437.8 203.9,391.3 220.4,478.7 230.4,437.8 244.6,437.8 270.2,314 289.1,575 
+                        305.2,438 331.7,438 345.3,424.9 356.2,437.9 361.3,437.9 367.1,449.5 372.7,437.9 389.5,437.8       "/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1193.5,542.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V542.5z"/>
+                          <ellipse class="st19" cx="1146.3" cy="541.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1103.5" y1="550.5" x2="1103.5" y2="560.5"/>
+                        <line class="st20" x1="1111.5" y1="553.5" x2="1111.5" y2="563.5"/>
+                        <line class="st20" x1="1115.5" y1="554.5" x2="1115.5" y2="564.5"/>
+                        <line class="st20" x1="1123.5" y1="556.5" x2="1123.5" y2="560.5"/>
+                        <line class="st20" x1="1123.5" y1="565.5" x2="1123.5" y2="566.5"/>
+                        <line class="st21" x1="1190.5" y1="549.5" x2="1190.5" y2="560.5"/>
+                        <line class="st21" x1="1183.5" y1="551.5" x2="1183.5" y2="554.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1192.5,523.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V523.5z"/>
+                          <ellipse class="st19" cx="1145.3" cy="522.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1102.5" y1="531.5" x2="1102.5" y2="541.5"/>
+                        <line class="st20" x1="1110.5" y1="534.5" x2="1110.5" y2="544.5"/>
+                        <line class="st20" x1="1114.5" y1="535.5" x2="1114.5" y2="545.5"/>
+                        <line class="st20" x1="1122.5" y1="537.5" x2="1122.5" y2="541.5"/>
+                        <line class="st20" x1="1122.5" y1="546.5" x2="1122.5" y2="547.5"/>
+                        <line class="st21" x1="1189.5" y1="530.5" x2="1189.5" y2="541.5"/>
+                        <line class="st21" x1="1182.5" y1="532.5" x2="1182.5" y2="535.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1191.5,504.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V504.5z"/>
+                          <ellipse class="st19" cx="1144.3" cy="503.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1101.5" y1="512.5" x2="1101.5" y2="522.5"/>
+                        <line class="st20" x1="1109.5" y1="515.5" x2="1109.5" y2="525.5"/>
+                        <line class="st20" x1="1113.5" y1="516.5" x2="1113.5" y2="526.5"/>
+                        <line class="st20" x1="1121.5" y1="518.5" x2="1121.5" y2="522.5"/>
+                        <line class="st20" x1="1121.5" y1="527.5" x2="1121.5" y2="528.5"/>
+                        <line class="st21" x1="1188.5" y1="511.5" x2="1188.5" y2="522.5"/>
+                        <line class="st21" x1="1181.5" y1="513.5" x2="1181.5" y2="516.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1189.5,485.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V485.5z"/>
+                          <ellipse class="st19" cx="1142.3" cy="484.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1099.5" y1="493.5" x2="1099.5" y2="503.5"/>
+                        <line class="st20" x1="1107.5" y1="496.5" x2="1107.5" y2="506.5"/>
+                        <line class="st20" x1="1111.5" y1="497.5" x2="1111.5" y2="507.5"/>
+                        <line class="st20" x1="1119.5" y1="499.5" x2="1119.5" y2="503.5"/>
+                        <line class="st20" x1="1119.5" y1="508.5" x2="1119.5" y2="509.5"/>
+                        <line class="st21" x1="1186.5" y1="492.5" x2="1186.5" y2="503.5"/>
+                        <line class="st21" x1="1179.5" y1="494.5" x2="1179.5" y2="497.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1187.5,465.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V465.5z"/>
+                          <ellipse class="st19" cx="1140.3" cy="464.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1097.5" y1="473.5" x2="1097.5" y2="483.5"/>
+                        <line class="st20" x1="1105.5" y1="476.5" x2="1105.5" y2="486.5"/>
+                        <line class="st20" x1="1109.5" y1="477.5" x2="1109.5" y2="487.5"/>
+                        <line class="st20" x1="1117.5" y1="479.5" x2="1117.5" y2="483.5"/>
+                        <line class="st20" x1="1117.5" y1="488.5" x2="1117.5" y2="489.5"/>
+                        <line class="st21" x1="1184.5" y1="472.5" x2="1184.5" y2="483.5"/>
+                        <line class="st21" x1="1177.5" y1="474.5" x2="1177.5" y2="477.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1187.5,447.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V447.5z"/>
+                          <ellipse class="st19" cx="1140.3" cy="446.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1097.5" y1="455.5" x2="1097.5" y2="465.5"/>
+                        <line class="st20" x1="1105.5" y1="458.5" x2="1105.5" y2="468.5"/>
+                        <line class="st20" x1="1109.5" y1="459.5" x2="1109.5" y2="469.5"/>
+                        <line class="st20" x1="1117.5" y1="461.5" x2="1117.5" y2="465.5"/>
+                        <line class="st20" x1="1117.5" y1="470.5" x2="1117.5" y2="471.5"/>
+                        <line class="st21" x1="1184.5" y1="454.5" x2="1184.5" y2="465.5"/>
+                        <line class="st21" x1="1177.5" y1="456.5" x2="1177.5" y2="459.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1193.5,428.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V428.5z"/>
+                          <ellipse class="st19" cx="1146.3" cy="427.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1103.5" y1="436.5" x2="1103.5" y2="446.5"/>
+                        <line class="st20" x1="1111.5" y1="439.5" x2="1111.5" y2="449.5"/>
+                        <line class="st20" x1="1115.5" y1="440.5" x2="1115.5" y2="450.5"/>
+                        <line class="st20" x1="1123.5" y1="442.5" x2="1123.5" y2="446.5"/>
+                        <line class="st20" x1="1123.5" y1="451.5" x2="1123.5" y2="452.5"/>
+                        <line class="st21" x1="1190.5" y1="435.5" x2="1190.5" y2="446.5"/>
+                        <line class="st21" x1="1183.5" y1="437.5" x2="1183.5" y2="440.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1203.5,409.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V409.5z"/>
+                          <ellipse class="st19" cx="1156.3" cy="408.3" rx="46.3" ry="9.8"/>
+                          <g>
+                            <line class="st20" x1="1137" y1="400.8" x2="1154" y2="405"/>
+                            <line class="st20" x1="1156.7" y1="399.8" x2="1155.2" y2="405.3"/>
+                            <line class="st20" x1="1142.6" y1="405.9" x2="1168" y2="403.9"/>
+                            <line class="st20" x1="1151.1" y1="410.1" x2="1175" y2="408"/>
+                            <line class="st20" x1="1155.2" y1="405.3" x2="1171.2" y2="413.4"/>
+                          </g>
+                          <ellipse class="st22" cx="1156.3" cy="407.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1113.5" y1="417.5" x2="1113.5" y2="427.5"/>
+                        <line class="st20" x1="1121.5" y1="420.5" x2="1121.5" y2="430.5"/>
+                        <line class="st20" x1="1125.5" y1="421.5" x2="1125.5" y2="431.5"/>
+                        <line class="st20" x1="1133.5" y1="423.5" x2="1133.5" y2="427.5"/>
+                        <line class="st20" x1="1133.5" y1="432.5" x2="1133.5" y2="433.5"/>
+                        <line class="st21" x1="1200.5" y1="416.5" x2="1200.5" y2="427.5"/>
+                        <line class="st21" x1="1193.5" y1="418.5" x2="1193.5" y2="421.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1292.5,543.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V543.5z"/>
+                          <ellipse class="st19" cx="1245.3" cy="542.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1202.5" y1="551.5" x2="1202.5" y2="561.5"/>
+                        <line class="st20" x1="1210.5" y1="554.5" x2="1210.5" y2="564.5"/>
+                        <line class="st20" x1="1214.5" y1="555.5" x2="1214.5" y2="565.5"/>
+                        <line class="st20" x1="1222.5" y1="557.5" x2="1222.5" y2="561.5"/>
+                        <line class="st20" x1="1222.5" y1="566.5" x2="1222.5" y2="567.5"/>
+                        <line class="st21" x1="1289.5" y1="550.5" x2="1289.5" y2="561.5"/>
+                        <line class="st21" x1="1282.5" y1="552.5" x2="1282.5" y2="555.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1288.5,524.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V524.5z"/>
+                          <ellipse class="st19" cx="1241.3" cy="523.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1198.5" y1="532.5" x2="1198.5" y2="542.5"/>
+                        <line class="st20" x1="1206.5" y1="535.5" x2="1206.5" y2="545.5"/>
+                        <line class="st20" x1="1210.5" y1="536.5" x2="1210.5" y2="546.5"/>
+                        <line class="st20" x1="1218.5" y1="538.5" x2="1218.5" y2="542.5"/>
+                        <line class="st20" x1="1218.5" y1="547.5" x2="1218.5" y2="548.5"/>
+                        <line class="st21" x1="1285.5" y1="531.5" x2="1285.5" y2="542.5"/>
+                        <line class="st21" x1="1278.5" y1="533.5" x2="1278.5" y2="536.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1288.5,505.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V505.5z"/>
+                          <ellipse class="st19" cx="1241.3" cy="504.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1198.5" y1="513.5" x2="1198.5" y2="523.5"/>
+                        <line class="st20" x1="1206.5" y1="516.5" x2="1206.5" y2="526.5"/>
+                        <line class="st20" x1="1210.5" y1="517.5" x2="1210.5" y2="527.5"/>
+                        <line class="st20" x1="1218.5" y1="519.5" x2="1218.5" y2="523.5"/>
+                        <line class="st20" x1="1218.5" y1="528.5" x2="1218.5" y2="529.5"/>
+                        <line class="st21" x1="1285.5" y1="512.5" x2="1285.5" y2="523.5"/>
+                        <line class="st21" x1="1278.5" y1="514.5" x2="1278.5" y2="517.5"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1290.5,486.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V486.5z"/>
+                          <ellipse class="st19" cx="1243.3" cy="485.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1200.5" y1="494.5" x2="1200.5" y2="504.5"/>
+                        <line class="st20" x1="1208.5" y1="497.5" x2="1208.5" y2="507.5"/>
+                        <line class="st20" x1="1212.5" y1="498.5" x2="1212.5" y2="508.5"/>
+                        <line class="st20" x1="1220.5" y1="500.5" x2="1220.5" y2="504.5"/>
+                        <line class="st20" x1="1220.5" y1="509.5" x2="1220.5" y2="510.5"/>
+                        <line class="st21" x1="1287.5" y1="493.5" x2="1287.5" y2="504.5"/>
+                        <line class="st21" x1="1280.5" y1="495.5" x2="1280.5" y2="498.5"/>
+                        <g>
+                          <line class="st20" x1="1224" y1="477.8" x2="1241" y2="482"/>
+                          <line class="st20" x1="1243.7" y1="476.8" x2="1242.2" y2="482.3"/>
+                          <line class="st20" x1="1229.6" y1="482.9" x2="1255" y2="480.9"/>
+                          <line class="st20" x1="1238.1" y1="487.1" x2="1262" y2="485"/>
+                          <line class="st20" x1="1242.2" y1="482.3" x2="1258.2" y2="490.4"/>
+                        </g>
+                        <ellipse class="st22" cx="1243.3" cy="484.3" rx="46.3" ry="9.8"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1392.5,546.5h-94v16h0.5c0.6,5.3,21.1,9.5,46.2,9.5s45.6-4.2,46.2-9.5h1V546.5z"/>
+                          <ellipse class="st19" cx="1345.3" cy="545.3" rx="46.3" ry="9.8"/>
+                        </g>
+                        <line class="st20" x1="1302.5" y1="554.5" x2="1302.5" y2="564.5"/>
+                        <line class="st20" x1="1310.5" y1="557.5" x2="1310.5" y2="567.5"/>
+                        <line class="st20" x1="1314.5" y1="558.5" x2="1314.5" y2="568.5"/>
+                        <line class="st20" x1="1322.5" y1="560.5" x2="1322.5" y2="564.5"/>
+                        <line class="st20" x1="1322.5" y1="569.5" x2="1322.5" y2="570.5"/>
+                        <line class="st21" x1="1389.5" y1="553.5" x2="1389.5" y2="564.5"/>
+                        <line class="st21" x1="1382.5" y1="555.5" x2="1382.5" y2="558.5"/>
+                        <g>
+                          <line class="st20" x1="1326" y1="537.8" x2="1343" y2="542"/>
+                          <line class="st20" x1="1345.7" y1="536.8" x2="1344.2" y2="542.3"/>
+                          <line class="st20" x1="1331.6" y1="542.9" x2="1357" y2="540.9"/>
+                          <line class="st20" x1="1340.1" y1="547.1" x2="1364" y2="545"/>
+                          <line class="st20" x1="1344.2" y1="542.3" x2="1360.2" y2="550.4"/>
+                        </g>
+                        <ellipse class="st22" cx="1345.3" cy="544.3" rx="46.3" ry="9.8"/>
+                      </g>
+                      <g>
+                        <g>
+                          <path class="st18" d="M1362.8,534.7l-65-67.9l-11.6,11.1l0.4,0.4c-3.4,4.1,7.7,21.8,25.1,39.9c17.4,18.2,34.6,30,38.8,26.8
+                            l0.7,0.7L1362.8,534.7z"/>
+                          
+                            <ellipse transform="matrix(0.7221 -0.6917 0.6917 0.7221 24.1767 1059.5724)" class="st19" cx="1331" cy="499.7" rx="9.8" ry="46.3"/>
+                        </g>
+                        <line class="st20" x1="1294.8" y1="475.2" x2="1287.6" y2="482.1"/>
+                        <line class="st20" x1="1298.1" y1="483.1" x2="1290.9" y2="490"/>
+                        <line class="st20" x1="1300.2" y1="486.7" x2="1293" y2="493.6"/>
+                        <line class="st20" x1="1304.3" y1="493.8" x2="1301.4" y2="496.6"/>
+                        <line class="st20" x1="1297.8" y1="500" x2="1297.1" y2="500.7"/>
+                        <line class="st21" x1="1355.7" y1="537.4" x2="1347.7" y2="545"/>
+                        <line class="st21" x1="1349.4" y1="533.7" x2="1347.2" y2="535.8"/>
+                        <g>
+                          <line class="st20" x1="1323.1" y1="480.6" x2="1331.8" y2="495.8"/>
+                          <line class="st20" x1="1337.5" y1="494.1" x2="1332.5" y2="496.9"/>
+                          <line class="st20" x1="1323.3" y1="488.3" x2="1342.3" y2="505.1"/>
+                          <line class="st20" x1="1326.1" y1="497.2" x2="1344.2" y2="513.1"/>
+                          <line class="st20" x1="1332.5" y1="496.9" x2="1337.6" y2="514"/>
+                        </g>
+                        
+                          <ellipse transform="matrix(0.7221 -0.6917 0.6917 0.7221 24.8559 1059.8798)" class="st22" cx="1331.8" cy="499" rx="9.8" ry="46.3"/>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <polyline class="st23" points="1105,290 1241,398 1297,367 1362,449.3        "/>
+                        <g>
+                          <polygon class="st24" points="1318.6,466.8 1402,500 1389.1,411.2          "/>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g id="_x32_">
+                  <g>
+                    <g>
+                      <path class="st13" d="M1227.5,261.6v-38.3c0-55.4-62.3-100.8-138.4-100.8H362.9c-76.1,0-138.4,45.3-138.4,100.8v38.3"/>
+                      <g>
+                        <path class="st14" d="M1250.1,260.4c0,12.5-10.1,22.6-22.6,22.6s-22.6-10.1-22.6-22.6c0-12.5,10.1-22.6,22.6-22.6
+                          S1250.1,248,1250.1,260.4z"/>
+                      </g>
+                      <g>
+                        <path class="st14" d="M201.9,260.4c0,12.5,10.1,22.6,22.6,22.6s22.6-10.1,22.6-22.6c0-12.5-10.1-22.6-22.6-22.6
+                          S201.9,248,201.9,260.4z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <g id="_x31_">
+                  <g>
+                    <circle class="st14" cx="725.8" cy="45.4" r="341.6"/>
+                    <circle class="st25" cx="661.1" cy="-68.9" r="198.4"/>
+                    <g>
+                      <path class="st26" d="M978.8,45.4c0,139.7-113.3,253-253,253c-59.3,0-104.1-21.5-119.1-29.7"/>
+                      <circle class="st27" cx="598.1" cy="-133.9" r="47.8"/>
+                      <circle class="st28" cx="524.8" cy="206.4" r="34.5"/>
+                      <line class="st29" x1="624.6" y1="113.6" x2="624.6" y2="-46.4"/>
+                      <line class="st29" x1="675.1" y1="-46.4" x2="624.6" y2="-46.4"/>
+                      <line class="st29" x1="678" y1="53.7" x2="628.6" y2="53.7"/>
+                      <path class="st29" d="M678,53.7c27.6,0,50-22.4,50-50s-22.4-50-50-50"/>
+                      <line class="st29" x1="773.7" y1="-46.4" x2="773.7" y2="113.6"/>
+                      <line class="st29" x1="824.2" y1="113.6" x2="773.7" y2="113.6"/>
+                      <line class="st29" x1="818.1" y1="31.7" x2="777.6" y2="31.7"/>
+                      <path class="st29" d="M818.1,31.7c17.5,0,31.6,18.4,31.6,41s-14.2,41-31.6,41"/>
+                      <text transform="matrix(0.8848 0 0 1 686.158 238.0786)" class="st30 st31 st32">82</text>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <p>
+                Secondly, remediation of heavy metal contaminated soil may help farmers in China recover their economic loss caused by heavy metal pollution. It is reported that in China, 12 million tons of vegetables and crops are polluted by heavy metals annually, causing an economical loss of 3 billion dollars. The solution of soil problems would save the vegetables and crops, and in turn bring income to farmers.
+              </p>
+              <p>
+                Therefore, for the sake of the general public and agricultural economy, we choose agricultural producers as our end users.
+              </p>
+            </div>
+
+            <!--2 How to use -->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>How to use</h3>
+              <p>
+                We envision that others can form a closed loop between laboratories, biotechnology companies, and farms when using our approach devised in this project.
+              </p>
+              <p>
+                After obtaining the engineered bacteria in the laboratory, we will register them for patents and sell them to biotechnology companies and provide certain technical support.
+              </p>
+              <p>
+                The biotechnology companies will carry out further screening, expansion and freeze-drying preservation. They will wash the artificially cultivated earthworms and put them in a turnover box with moist absorbent paper, followed by adding the freeze-dried powder of engineered bacteria. After one day, they will wash and sell the earthworms to the farmers, while providing a certain assessment of heavy metal pollution in farmland.
+              </p>
+              <p>
+                Before planting each season, farmers inoculate earthworms in the cultivated land and supplement the inoculation according to the changes in the number of earthworms. At the same time, farmers will provide some real application feedback for the laboratory to make technical improvements.
+              </p>
+              <p>
+                As for the number of inoculated earthworms, we simulated the relationship between different inoculation amounts and effects through <a style="padding:0px;" href="https://2020.igem.org/Team:NAU-CHINA/CA_Model">cellular automata model</a>. So far, 7500 earthworms were put into each pile at an interval of 10 meters.
+              </p>
+              <style>
+              .Implementation_btn{display: inline-block;
+                padding: 15px;
+                background-color: #68b0ab;
+                color: white;
+                border-radius: 5px;
+                text-decoration: none;
+              }
+              a.Implementation_btn:hover{color:white;position:relative;top:-2px;}
+              </style>
+              
+
+              <!--svg-->
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1697.9 813.5" style="margin-top:4em;enable-background:new 0 0 1697.9 813.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st0_1{fill:#85AA41;}
+                  .st1_1{fill:none;}
+                  .st2_1{fill:#4D4D4D;}
+                  .st3_1{font-family:'Rubrik-SemiBold';}
+                  .st4_1{font-size:40px;}
+                  .st5_1{fill:#FFFFFF;}
+                  .st6_1{font-size:27.3011px;}
+                  .st7_1{font-family:'AdobeSongStd-Light-GBpc-EUC-H';}
+                  .st8_1{font-size:25px;}
+                  .st9_1{font-size:30px;}
+                  .st10_1{fill:none;stroke:#4D4D4D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st11_1{fill:#4D4D4D;stroke:#4D4D4D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  .st12_1{display:none;}
+                  .st13_1{display:inline;fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                </style>
+                <g id="图层_4">
+                  <g>
+                    <path class="st0_1" d="M913.4,170.9h34.5c2,0,3.8-1.2,5.2-3.4l24.5-38.7c2.9-4.5,2.9-11.9,0-16.4l-24.5-38.7
+                      c-1.4-2.2-3.3-3.4-5.2-3.4h-34.5l19.2,30.2l7.3,11.5c3,4.7,3,12.4,0,17.2l-7.3,11.5L913.4,170.9z"/>
+                    <path class="st0_1" d="M915.4,113.7l-26.5-41.8c-0.6-1-1.5-1.5-2.3-1.5H622.9c-3.9,0-7.1,5-7.1,11.3v78.1c0,6.2,3.2,11.3,7.1,11.3
+                      h263.6c0.9,0,1.7-0.5,2.3-1.5l26.5-41.8C917.8,123.7,917.8,117.5,915.4,113.7z"/>
+                  </g>
+                  <rect x="353.1" y="191.1" class="st1_1" width="281.9" height="90.5"/>
+                  <text transform="matrix(1 0 0 0.98 389.3351 225.3219)" class="st2_1 st3_1 st4_1">Laboratory</text>
+                  <rect x="971" y="176.4" class="st1_1" width="327.2" height="98"/>
+                  <text transform="matrix(1 0 0 0.98 996.5415 210.5888)"><tspan x="0" y="0" class="st2_1 st3_1 st4_1">Biotechnology</tspan><tspan x="33.5" y="45.9" class="st2_1 st3_1 st4_1">Companies</tspan></text>
+                  <rect x="693.4" y="744.8" class="st1_1" width="278" height="95.5"/>
+                  <text transform="matrix(1 0 0 0.98 764.4944 778.9966)" class="st2_1 st3_1 st4_1">Farmer</text>
+                  <rect x="602.5" y="87.8" class="st1_1" width="328.1" height="99.4"/>
+                  <text transform="matrix(1 0 0 0.98 724.968 111.8174)"><tspan x="0" y="0" class="st5_1 st3_1 st6_1">Sale</tspan><tspan x="55.8" y="0" class="st5_1 st7_1 st6_1">，</tspan><tspan x="-78.1" y="33.4" class="st5_1 st3_1 st6_1">Technical Support</tspan></text>
+                  <g>
+                    <path class="st0_1" d="M634.6,313.4L618.8,286c-0.9-1.6-2.7-2.5-5.1-2.6l-41.9-1.8c-4.9-0.2-10.8,3.2-13,7.5l-19.4,37.2
+                      c-1.1,2.1-1.2,4.1-0.3,5.7l15.8,27.4l15.2-29l5.8-11c2.4-4.6,8.5-8.1,13.6-7.9l12.4,0.5L634.6,313.4z"/>
+                    <path class="st0_1" d="M588.3,338l-21,40.2c-0.5,0.9-0.5,1.9-0.1,2.6l120.7,209c1.8,3.1,7.3,3.4,12.2,0.5l61.9-35.7
+                      c4.9-2.8,7.5-7.7,5.7-10.8l-120.7-209c-0.4-0.7-1.2-1.1-2.3-1.2l-45.3-1.9C595.1,331.4,590.2,334.3,588.3,338z"/>
+                  </g>
+                  <rect x="604.4" y="311.9" transform="matrix(0.866 -0.5 0.5 0.866 -143.9742 386.8943)" class="st1_1" width="91.1" height="300.4"/>
+                  <text transform="matrix(0.5 0.866 -0.8487 0.49 636.6404 390.8094)"><tspan x="0" y="0" class="st5_1 st3_1 st_18">Application</tspan><tspan x="10.6" y="30.6" class="st5_1 st3_1 st8_1">Feedback</tspan></text>
+                  <g>
+                    <path class="st0_1" d="M912.1,512.7l-15.8,27.4c-0.9,1.6-0.8,3.6,0.3,5.7l19.4,37.2c2.3,4.4,8.1,7.7,13,7.5l41.9-1.8
+                      c2.4-0.1,4.2-1,5.1-2.6l15.8-27.4l-32.8,1.4l-12.4,0.5c-5.1,0.2-11.3-3.3-13.6-7.9l-5.8-11L912.1,512.7z"/>
+                    <path class="st0_1" d="M956.6,540.6l45.3-1.9c1.1,0,1.9-0.5,2.3-1.2l120.7-209c1.8-3.1-0.7-8-5.7-10.8l-61.9-35.7
+                      c-4.9-2.8-10.4-2.6-12.2,0.5l-120.7,209c-0.4,0.7-0.4,1.6,0.1,2.6l21,40.2C947.5,537.9,952.4,540.7,956.6,540.6z"/>
+                  </g>
+                  <rect x="886.6" y="368.1" transform="matrix(0.5 -0.866 0.866 0.5 160.2201 1104.7021)" class="st1_1" width="300.4" height="91.1"/>
+                  <text transform="matrix(0.5 -0.866 0.8487 0.49 997.4468 434.732)"><tspan x="0" y="0" class="st5_1 st3_1 st8_1">Sale</tspan><tspan x="51.1" y="0" class="st5_1 st7_1 st8_1">，</tspan><tspan x="-51.3" y="30.6" class="st5_1 st3_1 st8_1">Soil Evaluation</tspan></text>
+                  <rect x="1301.1" y="79.5" class="st1_1" width="358.5" height="190.5"/>
+                  <text transform="matrix(1 0 0 0.98 1301.0839 105.1854)"><tspan x="0" y="0" class="st0_1 st3_1 st9_1">Cultivation and Expasion</tspan><tspan x="0" y="45.9" class="st0_1 st3_1 st9_1">Earthworm breeding</tspan></text>
+                  <circle class="st0_1" cx="1277.9" cy="95.8" r="6.5"/>
+                  <circle class="st0_1" cx="1277.9" cy="139.4" r="6.5"/>
+                  <rect x="17" y="79.5" class="st1_1" width="343.9" height="179.3"/>
+                  <text transform="matrix(1 0 0 0.98 85.9228 105.1854)"><tspan x="0" y="0" class="st0_1 st3_1 st9_1">Patent registration</tspan><tspan x="-61.4" y="45.9" class="st0_1 st3_1 st9_1">Technical improvement</tspan></text>
+                  <circle class="st0_1" cx="381.6" cy="95.8" r="6.5"/>
+                  <circle class="st0_1" cx="381.6" cy="139.8" r="6.5"/>
+                  <rect x="955.3" y="646.3" class="st1_1" width="358.5" height="190.5"/>
+                  <text transform="matrix(1 0 0 0.98 955.2587 671.9049)"><tspan x="0" y="0" class="st0_1 st3_1 st9_1">Inoculation</tspan><tspan x="0" y="45.9" class="st0_1 st3_1 st9_1">Regular replenishment</tspan></text>
+                  <circle class="st0_1" cx="932.1" cy="662.6" r="6.5"/>
+                  <circle class="st0_1" cx="932.1" cy="706.5" r="6.5"/>
+                </g>
+                <g id="图层_1">
+                  <g>
+                    <path class="st10_1" d="M527.6,53.2h-67.1c-4.3,0-7.8-3.5-7.8-7.8v-3.4c0-4.3,3.5-7.8,7.8-7.8h67.1c4.3,0,7.8,3.5,7.8,7.8v3.4
+                      C535.4,49.6,531.9,53.2,527.6,53.2z"/>
+                    <path class="st10_1" d="M553.4,140l-32-45.6c-2.4-3.4-3.7-7.5-3.7-11.8V53.2h-47.1v29.4c0,4.2-1.3,8.3-3.7,11.8l-32,45.6
+                      c-7.5,10.7,0.2,25.5,13.3,25.5h92C553.2,165.5,560.9,150.7,553.4,140z"/>
+                  </g>
+                </g>
+                <g id="图层_2">
+                  <g>
+                    <path class="st10_1" d="M1073.2,163.7c0-36.3,29.4-65.7,65.7-65.7s65.7,29.4,65.7,65.7"/>
+                    <line class="st10_1" x1="1062.6" y1="163.7" x2="1216.6" y2="163.7"/>
+                    <line class="st10_1" x1="1119.6" y1="122.4" x2="1119.6" y2="135.1"/>
+                    <line class="st10_1" x1="1155.5" y1="122" x2="1155.5" y2="134.7"/>
+                    <circle class="st10_1" cx="1083.9" cy="91.6" r="0.4"/>
+                    <circle class="st10_1" cx="1130" cy="42" r="4.6"/>
+                    <circle class="st10_1" cx="1190" cy="71.1" r="11.1"/>
+                  </g>
+                  <g>
+                    <path class="st10_1" d="M876.6,690.8c-4.4-2.9-10.5-7.6-16.3-14.6c-7.2-8.6-11-17.1-13-22.6"/>
+                    <line class="st10_1" x1="802.5" y1="688.9" x2="847.3" y2="653.6"/>
+                    <path class="st10_1" d="M831.8,726.1c-4.3-2.5-10.7-6.8-16.7-14c-7.7-9-11-18.1-12.5-23.2"/>
+                    <path class="st10_1" d="M861.7,702.5c-3.9-1.8-11.5-5.9-18.3-14.1c-7.7-9.3-10.2-18.8-11-23.1"/>
+                    <path class="st10_1" d="M846.7,714.3c-4.2-2.4-11.4-7-17.9-15.2c-7-8.7-10-17.2-11.4-22"/>
+
+                      <rect x="809.5" y="655" transform="matrix(-0.7857 0.6187 -0.6187 -0.7857 1874.8673 677.9055)" class="st11_1" width="21.1" height="17.5"/>
+
+                      <rect x="785.7" y="598.3" transform="matrix(-0.7857 0.6187 -0.6187 -0.7857 1808.1841 636.5302)" class="st10_1" width="16.2" height="66.5"/>
+                  </g>
+                </g>
+                <g id="图层_3" class="st12_1">
+                  <polygon class="st13_1" points="879.3,748.7 1241.9,120.6 516.7,120.6  "/>
+                </g>
+                </svg>
+
+              <h4 style="margin-bottom:1em;">
+                Further Development
+              </h4>
+              <p>
+                In addition to traditional applications, we also envision the further development of the project. We expect that our project can be combined with vermicomposting and develop a multi-functional and sustainable application to better solve certain environmental problems.
+              </p>
+              <ul>
+                <li>Used in vermicomposting</li>
+                <p>Vermicompost is the product of the decomposition process using various species of worms to create a mixture of decomposing vegetable or food waste, bedding materials, and vermicast.</p>
+                <p>
+                  Earthworms eat a lot of manure and take advantage of the synergy of intestinal microbes. They can efficiently transform organic matter and accelerate fertilizer maturity. However, the lead in “farm manure” is also an important source of lead pollution on farmland. If earthworms inoculated with engineered bacteria are applied to vermicomposting, they will greatly reduce the lead pollution in fertilizers entering the soil and avoid the use of chemical fertilizers, which will promote the development of vermicomposting and contribute to the sustainable agriculture.
+                </p>
+                <li>
+                  Multi-functional application
+                </li>
+                <p>
+                  After the engineered bacteria have made progress in the treatment of lead pollution, we will design other recombinase to obtain free dissociative sulfur and phosphate groups to deal with other heavy metal pollution.
+                </p>
+                <li>Sustainable application</li>
+                <p>
+                  After fully verifying the safety and security of the project, we plan to release the engineered bacteria directly into the soil environment to ensure their roles in every generation, which will greatly reduce the cost of project implementation.
+                </p>
+              </ul>
+            </div>
+
+            <!--3. Application in real world-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>Applications in the Real World</h3>
+              <p>
+                When it comes to the applications in the real world, we believe that the cultivated land in southern China is the most suitable agricultural land that meets our expectations.
+              </p>
+              <p>
+                The lead concentration in polluted southern cultivated land is mostly in the range between the screened value and the controlled value, according to the soil risk control standards for agricultural land issued by the Chinese government in 2018. In the national soil risk control standards, the quality and safety of edible agricultural products were taken to set the screening value and control value of soil pollution risk in agricultural land. When the lead content of cultivated land exceeds the screening value, the quality and safety of agricultural products may be at risk, while the risk is higher when the lead content exceeds the control value.
+              </p>
+              <div class="col-md-8 col-ms-12">
+                <a href="#" onclick="return false;"><img style="margin-top:4em;" data-toggle="modal" data-target="#Larger_img_modal" src="https://2020.igem.org/wiki/images/9/93/T--NAU-CHINA--Risk_screening_value.jpeg" alt="the picture of table"></a>
+                <a href="#" onclick="return false;"><img style="margin-top:4em;" data-toggle="modal" data-target="#Larger_img_modal" src="https://2020.igem.org/wiki/images/4/4b/T--NAU-CHINA--Risk_control_value.jpeg" alt="the picture of table"></a>
+              </div>
+              <div class="col-md-4 col-ms-12">
+                <a href="#" onclick="return false;"><img src="https://2020.igem.org/wiki/images/e/e6/T--NAU-CHINA--Implementation-map.jpg" data-toggle="modal" data-target="#Larger_img_modal" alt="map_picture"></a>
+                <h6>Pb Concentration</h6>
+              </div>
+              <div class="clearfix"></div>
+              <p>
+                The lead content of the cultivated land we selected is between the risk screening value and the risk control value, which determines that the target land still has production efficiency and will not harm the engineered bacteria carrier <i>Eisenia fetida</i>.
+              </p>
+              <p>
+                The traditional method of physical and chemical lead fixation combined with phytoremediation will adversely affect the production efficiency. In contrast, our project hopes to treat the lead pollution while maintaining the production efficiency of cultivated land.
+              </p>
+              <p>
+                In southern China the engineered bacteria carrier—<i>Eisenia fetida</i> is commonly used as one of vermicomposting species in agricultural production. It shows good heavy metal tolerance in heavy metal contaminated sites. With carefully selected lead content, our earthworms will be able to ensure their normal growth while tackling with lead contamination at the same time.
+              </p>
+            </div>
+
+            <!--4. Safety-->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <h3>Safety</h3>
+              <p>
+                Due to the isolation during the epidemic, we cannot enter the laboratory for experiments this year, but safety work is always of first priority. We studied lectures and regulations related to safety and ethics to improve the safety awareness of our team members.
+              </p>
+              <h4 style="margin-bottom:1em;">Security of project design</h4>
+              <ul>
+                <li style="font-size:1.3em;">
+                  <h5 style="text-align: left;">Overall biosafety</h5>
+                </li>
+                <p>
+                  Our project envisages using <i>Bacillus subtilis</i> WB800N as the chassis organism, <i>Bacillus subtilis</i> YCD as the source of phytase, and <i>Eisenia fetida</i> as the engineering bacteria carrier. <i>Bacillus subtilis</i> is a safe and commonly used strain in laboratory, and usually does not cause obvious risks to human health, the community or the environment. <i>Eisenia fetida</i> is a widespread species in China and is widely used as a compost species in southern China. The common strain and widespread species can guarantee the safety of our project.
+                </p>
+                <li style="font-size:1.3em;">
+                  <h5 style="text-align: left;">Gene safety</h5>
+                </li>
+                <p>
+                  We designed a kill switch in the gene pathway to trigger suicide when the engineered bacteria enter the natural environment, avoiding the risk of gene drift to the greatest extent.
+                </p>
+              </ul>
+
+              <h4 style="margin-bottom:1em;">Implement security</h4>
+              <p>
+                When we envision the project to function in the real soil environment, we will follow the principle of gradual evaluation, and gradually increase the release scale.
+              </p>
+              <p>
+                After obtaining the earthworms containing engineered bacteria, we envisage building an ecological box similar to the soil environment of the target cultivated land. We will apply earthworms in the ecological box, and conduct ecological evaluation after a period of time, mainly considering the quantity of soil organisms and whether there are living engineered bacteria in the soil, etc.
+              </p>
+              <p>
+                After ensuring the safety of the application in the ecological box, we will conduct a release evaluation in the test field of Nanjing Agricultural University located in the Baima Experimental Base of Nanjing. We will design three different release scales, namely, 100 bars/m<sup>2</sup>, 130 bars/m<sup>2</sup>, and 160 bars/m<sup>2</sup> to gradually expand the release scale. If other soil biomass is found being abnormally reduced or the number of engineered bacteria detected in the soil environment exceeds the error range, we will immediately stop the release and improve the pathway.
+              </p>
+              <p>
+                In short, we will evaluate each step of the implementation and rationally optimize the implementation plan.
+              </p>
+
+              <h4 style="margin-bottom:1em;">Laboratory safety</h4>
+              <p>
+                The isolation during the epidemic prevent us from entering the laboratory for experiments this year, but we still have received laboratory safety training and passed the laboratory safety exam. We are familiar with laboratory safety operations and emergency measures.
+              </p>
+              <div class="col-md-4 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/f/f5/T--NAU-CHINA--safe_laboratorynew.png" alt="picture 1 of lab safety">
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/9/98/T--NAU-CHINA--safe_laboratory.jpeg" alt="picture 2 of lab safety">
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/1/1a/T--NAU-CHINA--safe_laboratory2.png" alt="picture 3 of lab safety">
+              </div>
+              <div class="clearfix"></div>
+              <p>The followings are our supplementary materials to ensure laboratory safety：</p>
+              <a href="https://2020.igem.org/wiki/images/0/0d/T--NAU-CHINA--Implementation.pdf" class="Implementation_btn" style="color:white;background-color:#68b0ab;">Supplementary Materials</a>
+            </div>
+
+            <!--5. Challenge-->
+            <div class="row general_info_element" id="general_info_ele_5">
+              <h3>Challenge</h3>
+              <h4 style="margin-bottom:1em;">How to ensure the activity of earthworms and engineered bacteria?</h4>
+              <div class="col-md-4 col-sm-12">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 374.2 554.8" style="enable-background:new 0 0 374.2 554.8;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0_3{display:none;}
+                    .st1_3{display:inline;}
+                    .st2_3{fill:none;stroke:#85AA41;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st3_3{fill:none;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st4_3{fill:#FFFFFF;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st5_3{display:inline;fill:none;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+                    .st6_3{display:inline;fill:#85AA41;stroke:#85AA41;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st7_3{display:inline;fill:none;stroke:#1D663D;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st8_3{fill:#1D663D;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st9_3{fill:none;stroke:#1D663D;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st10_3{fill:#FFFFFF;stroke:#85AA41;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st11_3{fill:none;stroke:#85AA41;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st12_3{fill:none;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+                  </style>
+                  <g id="升天" class="st0_3">
+                    <g class="st1_3">
+                      <path class="st2_3" d="M333.2,349.5c13.2-6,19.4-20.6,16.6-31.4c-1.4-5.2-5.5-13.3-11-13.5c-6.9-0.3-8.7,11-20.3,23.7
+                        c-11.6,12.7-22.4,11.1-33,20.3c-10.2,8.9-19.8,24.5-11.5,38.4c8.7,14.6,23.3,12.4,28.7,9.2c8.6-5.1,7.4-21.7-1-21.9"/>
+                      <path class="st2_3" d="M350.2,333.7c0.6,0.9,8.3,5.5,4.8,17c-3,9.8-11.8,16.9-20.6,19.2"/>
+                      <path class="st2_3" d="M353.1,359c4.2,10.7-2.9,17.4-10,23.5c-8.4,7.2-22.7,11-35.7,8.3"/>
+                    </g>
+                    <g class="st1_3">
+                      <path class="st3_3" d="M104,407.5c-4.7,16.4-19.4,17.9-25.5,16.2C69,421,66,404.6,74,402.3"/>
+                      <path class="st3_3" d="M37.3,386.2c-14.3-2.5-24-15-24-26.2c0-5.3,1.9-14.2,7.2-15.9c6.6-2,11.2,8.5,25.6,17.8
+                        c14.5,9.4,24.5,5.1,37.1,11.3c12.1,6,25.3,18.7,20.8,34.2"/>
+                      <path class="st3_3" d="M16.9,375.2c-0.3,1-6.6,7.5-0.4,17.7c5.3,8.7,15.6,13.4,24.8,13.3"/>
+                      <path class="st3_3" d="M20.5,400.4c-1.3,11.4,7.2,16.1,15.6,20.2c10,4.9,24.7,4.9,36.6-1"/>
+                    </g>
+                    <g class="st1_3">
+                      <path class="st4_3" d="M185.2,482.2c-5.6-1.2-11.1-2.9-16.2-5.2"/>
+                      <path class="st4_3" d="M237.7,476.9c-5.8,2.5-12,4.5-18.3,5.7"/>
+                      <path class="st4_3" d="M276.7,442.8c-2.2,3.6-4.7,7-7.3,10.3"/>
+                      <path class="st4_3" d="M139.4,456c-14-15.3-22.5-35.7-22.5-58.1c0-47.6,38.6-86.2,86.2-86.2s86.2,38.6,86.2,86.2
+                        c0,12.1-2.5,23.7-7,34.2"/>
+                      <path class="st4_3" d="M152.9,468c-1.9-1.3-3.7-2.7-5.4-4.2"/>
+                      <line class="st3_3" x1="161.9" y1="379.3" x2="196.1" y2="372.3"/>
+                      <line class="st3_3" x1="239.1" y1="367.1" x2="262.5" y2="371.8"/>
+                    </g>
+
+                      <ellipse transform="matrix(0.9932 -0.1164 0.1164 0.9932 -31.0379 24.157)" class="st5_3" cx="191.2" cy="277.7" rx="49.4" ry="9.3"/>
+                    <polygon class="st6_3" points="92.3,249.2 93.5,261 103.9,266.6 93.1,271.4 91,283.1 83,274.3 71.3,275.8 77.2,265.6 72.1,254.9
+                      83.7,257.3  "/>
+                    <polygon class="st6_3" points="263.4,178.8 269.2,172.8 267.6,164.6 275.1,168.3 282.4,164.2 281.2,172.5 287.4,178.2 279.1,179.6
+                      275.6,187.2 271.7,179.8   "/>
+                    <polygon class="st6_3" points="192.4,63.8 192.8,67.7 196.2,69.5 192.7,71.1 192,74.9 189.4,72 185.5,72.5 187.5,69.2 185.8,65.7
+                      189.6,66.5  "/>
+                    <path class="st7_3" d="M175.4,378.8v8.2c0,3.7-3,6.7-6.7,6.7h0c-3.7,0-6.7-3-6.7-6.7v-5.5"/>
+                  </g>
+                  <g id="图层_2">
+                    <g>
+                      <path class="st8_3" d="M278.9,478.6V494c0,6.2,5.1,11.3,11.3,11.3h21.3c6.2,0,11.3-5.1,11.3-11.3v-15.3c0-6.2-5.1-11.3-11.3-11.3
+                        h-21.3C284,467.3,278.9,472.4,278.9,478.6z"/>
+                      <path class="st4_3" d="M316.2,410.2c-1,0-2,0.1-3,0.2c-9.3-32.1-38.9-55.6-74-55.6c-42.5,0-77,34.5-77,77s34.5,77,77,77
+                        c30,0,55.9-17.1,68.6-42.1c2.7,0.8,5.5,1.2,8.4,1.2c15.9,0,28.8-12.9,28.8-28.8S332.1,410.2,316.2,410.2z"/>
+                      <path class="st3_3" d="M187.1,433.2l9.7-2.1c14.3-3.1,28.5,6,31.6,20.3s-6,28.5-20.3,31.6l-8.2,1.8"/>
+                      <path class="st9_3" d="M222.2,392.4c9.3-0.3,21.1,0.4,34.3,3.5c9.4,2.2,17.6,5.2,24.4,8.3"/>
+                      <path class="st9_3" d="M274.4,383.3c-6.3,3.4-12.8,7.1-19.5,11.3c-9.4,5.8-18,11.7-25.8,17.5"/>
+                      <path class="st9_3" d="M253,439c1.2-3.6,3-7.3,5.2-7.3c2.9-0.1,5.9,6.1,8.6,5.9c2.9-0.2,1.3-7.7,5.1-9c2-0.7,4.6,1,8.7,6.9"/>
+                      <path class="st8_3" d="M221.8,490.8c-2.4,4-3.6,7.6-3.6,7.6c-0.2,6.2,4.8,7.8,11,8l21.3,0.7c6.2,0.2,11.5-4.7,11.7-11l0.5-15.3
+                        c0.2-6.2-4.7-11.5-11-11.7l-6.1-0.2C237.1,469.3,224.5,486.3,221.8,490.8z"/>
+                      <path class="st10_3" d="M286.8,346.9c-0.2,3,0.1,7.2,2.7,9c4.2,2.9,11.5-2.4,14,0.3c2.1,2.2-2,6.6,0.3,10.3c2,3.2,8.3,0.3,10.5,3.7
+                        c1.5,2.3,0.5,7.2-1.5,9"/>
+                      <path class="st10_3" d="M165.1,371.2c2.9,0.7,7.1,1.2,9.3-1.1c3.6-3.6-0.4-11.7,2.7-13.7c2.6-1.7,6.2,3.1,10.2,1.4
+                        c3.5-1.5,1.7-8.2,5.4-9.7c2.5-1.1,7.1,0.7,8.6,3"/>
+                      <path class="st11_3" d="M198.4,405.8v8.2c0,3.7-3,6.7-6.7,6.7h0c-3.7,0-6.7-3-6.7-6.7v-5.5"/>
+                    </g>
+                    <g>
+                      <path class="st9_3" d="M187.7,125.6c10.1,0.8,17.5,3.2,17.5,6c0,2.9-7.7,6.6-18.4,8.9"/>
+                      <path class="st9_3" d="M240.4,128.7c-7.5-0.2-13.6,1.5-14.1,4.1c-0.6,2.8,5.1,7.4,14.4,10.3"/>
+                      <path class="st9_3" d="M201.8,158.4c1.4-3.1,2.6-3.7,4.6-3.7c1.8,0,2,3.3,3.5,3.3c3.1,0.1,5.3-3.4,7.9-3.1c2.3,0.3,3.8,3,4.5,5.6
+                        c1.2,4.4,1.8,10.1-1.3,9.9c-2.8-0.2-7.5-4.5-9.7-4.7c-2.3-0.2-8.9,2.6-10.1,2.2C200.4,167.7,199.6,163.4,201.8,158.4z"/>
+                      <path class="st11_3" d="M161.2,205.3c8,6,27,18.5,54.5,21.5c29.2,3.2,51.5-6.1,60.5-10.5"/>
+                      <path class="st11_3" d="M115.1,277.4c5.4,8.5,18.7,26.9,43.3,39.5c26.2,13.3,50.3,12.6,60.3,11.7"/>
+                      <path class="st11_3" d="M48.1,367.1c6,8.1,20.6,25.5,46.1,36.2c27.1,11.4,51.1,8.9,61,7.3"/>
+                      <path class="st11_3" d="M39.7,478.8c8.4,5.5,28,16.9,55.7,18.3c29.3,1.5,51.1-9.1,59.8-14"/>
+                      <path class="st3_3" d="M156.5,470.6c2.8,20.1,7.2,34.2,9.3,38.9 M164.6,507.6"/>
+                      <path class="st11_3" d="M137.4,128.7c3.2-0.6,7.5-1.9,8.7-5c2-5-5.4-11-3.2-14.3c1.8-2.7,7.5,0.3,10.7-3c2.8-2.9-1.8-8.5,1.2-11.6
+                        c2-2.1,7.4-2.4,9.8-0.8"/>
+                      <path class="st11_3" d="M300.6,195.3c-2.8,1.6-6.4,4.3-6.5,7.7c-0.2,5.4,8.8,8.5,7.8,12.4c-0.8,3.2-7.1,2.2-9.1,6.5
+                        c-1.7,3.7,4.6,7.4,2.8,11.3c-1.2,2.7-6.1,4.7-8.9,4.1"/>
+                      <path class="st11_3" d="M46,322.4c3.2-0.1,7.7-0.8,9.4-3.7c2.7-4.7-3.7-11.7-1-14.6c2.2-2.4,7.3,1.4,11-1.4
+                        c3.2-2.5-0.5-8.7,2.9-11.3c2.3-1.8,7.6-1.2,9.8,0.6"/>
+                      <path class="st11_3" d="M254,150.8v8.2c0,3.7,3.4,6.7,7.5,6.7l0,0c4.1,0,7.5-3,7.5-6.7v-5.5"/>
+                    </g>
+                    <path class="st12_3" d="M342.7,513.3H67c-14.6,0-27.1-10.7-29.1-25.2c-0.4-3-0.8-5.8-1.1-8.1c-3.9-32.6-6.7-73.3,9.2-112.9
+                      c11.6-28.9,33.9-60.8,54.6-81.4c18.1-18.1,35.2-35.1,49.4-62.2c12.5-23.9,14.5-38.7,9.5-69c-5.4-32.7,16.7-63.6,49.4-69
+                      c32.7-5.4,63.6,16.7,69,49.4c4.5,27.3,5.3,49,2.6,70.5c-3.1,24.4-11,48.6-24.2,73.8c-13.1,25-27.9,44.8-42,61"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  Soil animals are sensitive to the toxicity of pesticides. Long-term use of pesticides has a great impact on the types, quantity, flora and respiratory intensity of soil animals. Relevant studies have shown that pesticide pollution will lead to the decline of soil microbial functional diversity, and also reduce the use of carbon substrates by microorganisms. Therefore, the use of pesticides and chemical fertilizers on farmland may cause problems, for example, low activity of earthworms or engineered bacteria.
+                </p>
+                <p>
+                  However, the development of vermicomposting technology can improve the utilization efficiency of nutrients in organic fertilizer by plants. Therefore, if follow-up research can give full play to the synergistic effects of vermicomposting and beneficial microorganisms, the use of pesticides and chemical fertilizers can be greatly reduced.
+                </p>
+              </div>
+              <h4 style="margin-bottom:1em;">Wrong suicide</h4>
+              <div class="col-md-8 col-sm-12">
+                <p>
+                  When freeze-dried powder of our engineered bacteria are fed to earthworms in incubator, they may recover without entering the intestine of earthworm, which will lead to unexpected suicide of the engineered bacteria. This kind of death of bacteria will cause some economical loss. 
+                </p>
+                <p>
+                  There are two aspects we can explore. One is improving earthworms’ feeding strategy, which is suitable for growth of earthworms as well as not suitable for freeze-dried powder of bacteria to recover. Another is looking for one kind of anaerobionts as our engineered bacteria which cannot survive outside the intestine of earthworm.
+                </p>
+                <p>
+                  With more and more efforts, we can solve this problem and realize our ideal function in the future.
+                </p>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 374.2 554.8" style="enable-background:new 0 0 374.2 554.8;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0_4{fill:none;stroke:#85AA41;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st1_4{fill:none;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st2_4{fill:#FFFFFF;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st3_4{fill:#85AA41;stroke:#85AA41;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st4_4{fill:none;stroke:#1D663D;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st5_4{display:none;}
+                    .st6_4{display:inline;}
+                    .st7_4{fill:#1D663D;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st8_4{fill:#FFFFFF;stroke:#85AA41;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st9_4{fill:none;stroke:#85AA41;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st10_4{display:inline;fill:none;stroke:#1D663D;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+                  </style>
+                  <g id="升天">
+                    <g>
+                      <path class="st0_4" d="M333.2,349.5c13.2-6,19.4-20.6,16.6-31.4c-1.4-5.2-5.5-13.3-11-13.5c-6.9-0.3-8.7,11-20.3,23.7
+                        c-11.6,12.7-22.4,11.1-33,20.3c-10.2,8.9-19.8,24.5-11.5,38.4c8.7,14.6,23.3,12.4,28.7,9.2c8.6-5.1,7.4-21.7-1-21.9"/>
+                      <path class="st0_4" d="M350.2,333.7c0.6,0.9,8.3,5.5,4.8,17c-3,9.8-11.8,16.9-20.6,19.2"/>
+                      <path class="st0_4" d="M353.1,359c4.2,10.7-2.9,17.4-10,23.5c-8.4,7.2-22.7,11-35.7,8.3"/>
+                    </g>
+                    <g>
+                      <path class="st1_4" d="M104,407.5c-4.7,16.4-19.4,17.9-25.5,16.2C69,421,66,404.6,74,402.3"/>
+                      <path class="st1_4" d="M37.3,386.2c-14.3-2.5-24-15-24-26.2c0-5.3,1.9-14.2,7.2-15.9c6.6-2,11.2,8.5,25.6,17.8
+                        c14.5,9.4,24.5,5.1,37.1,11.3c12.1,6,25.3,18.7,20.8,34.2"/>
+                      <path class="st1_4" d="M16.9,375.2c-0.3,1-6.6,7.5-0.4,17.7c5.3,8.7,15.6,13.4,24.8,13.3"/>
+                      <path class="st1_4" d="M20.5,400.4c-1.3,11.4,7.2,16.1,15.6,20.2c10,4.9,24.7,4.9,36.6-1"/>
+                    </g>
+                    <g>
+                      <path class="st2_4" d="M185.2,482.2c-5.6-1.2-11.1-2.9-16.2-5.2"/>
+                      <path class="st2_4" d="M237.7,476.9c-5.8,2.5-12,4.5-18.3,5.7"/>
+                      <path class="st2_4" d="M276.7,442.8c-2.2,3.6-4.7,7-7.3,10.3"/>
+                      <path class="st2_4" d="M139.4,456c-14-15.3-22.5-35.7-22.5-58.1c0-47.6,38.6-86.2,86.2-86.2s86.2,38.6,86.2,86.2
+                        c0,12.1-2.5,23.7-7,34.2"/>
+                      <path class="st2_4" d="M152.9,468c-1.9-1.3-3.7-2.7-5.4-4.2"/>
+                      <line class="st1_4" x1="161.9" y1="379.3" x2="196.1" y2="372.3"/>
+                      <line class="st1_4" x1="239.1" y1="367.1" x2="262.5" y2="371.8"/>
+                    </g>
+
+                      <ellipse transform="matrix(0.9932 -0.1164 0.1164 0.9932 -31.0379 24.157)" class="st1" cx="191.2" cy="277.7" rx="49.4" ry="9.3"/>
+                    <polygon class="st3_4" points="92.3,249.2 93.5,261 103.9,266.6 93.1,271.4 91,283.1 83,274.3 71.3,275.8 77.2,265.6 72.1,254.9
+                      83.7,257.3  "/>
+                    <polygon class="st3_4" points="263.4,178.8 269.2,172.8 267.6,164.6 275.1,168.3 282.4,164.2 281.2,172.5 287.4,178.2 279.1,179.6
+                      275.6,187.2 271.7,179.8   "/>
+                    <polygon class="st3_4" points="192.4,63.8 192.8,67.7 196.2,69.5 192.7,71.1 192,74.9 189.4,72 185.5,72.5 187.5,69.2 185.8,65.7
+                      189.6,66.5  "/>
+                    <path class="st4_4" d="M175.4,378.8v8.2c0,3.7-3,6.7-6.7,6.7h0c-3.7,0-6.7-3-6.7-6.7v-5.5"/>
+                  </g>
+                  <g id="图层_2" class="st5_4">
+                    <g class="st6">
+                      <path class="st7_4" d="M278.9,478.6V494c0,6.2,5.1,11.3,11.3,11.3h21.3c6.2,0,11.3-5.1,11.3-11.3v-15.3c0-6.2-5.1-11.3-11.3-11.3
+                        h-21.3C284,467.3,278.9,472.4,278.9,478.6z"/>
+                      <path class="st2_4" d="M316.2,410.2c-1,0-2,0.1-3,0.2c-9.3-32.1-38.9-55.6-74-55.6c-42.5,0-77,34.5-77,77s34.5,77,77,77
+                        c30,0,55.9-17.1,68.6-42.1c2.7,0.8,5.5,1.2,8.4,1.2c15.9,0,28.8-12.9,28.8-28.8S332.1,410.2,316.2,410.2z"/>
+                      <path class="st1_4" d="M187.1,433.2l9.7-2.1c14.3-3.1,28.5,6,31.6,20.3s-6,28.5-20.3,31.6l-8.2,1.8"/>
+                      <path class="st4_4" d="M222.2,392.4c9.3-0.3,21.1,0.4,34.3,3.5c9.4,2.2,17.6,5.2,24.4,8.3"/>
+                      <path class="st4_4" d="M274.4,383.3c-6.3,3.4-12.8,7.1-19.5,11.3c-9.4,5.8-18,11.7-25.8,17.5"/>
+                      <path class="st4_4" d="M253,439c1.2-3.6,3-7.3,5.2-7.3c2.9-0.1,5.9,6.1,8.6,5.9c2.9-0.2,1.3-7.7,5.1-9c2-0.7,4.6,1,8.7,6.9"/>
+                      <path class="st7_4" d="M221.8,490.8c-2.4,4-3.6,7.6-3.6,7.6c-0.2,6.2,4.8,7.8,11,8l21.3,0.7c6.2,0.2,11.5-4.7,11.7-11l0.5-15.3
+                        c0.2-6.2-4.7-11.5-11-11.7l-6.1-0.2C237.1,469.3,224.5,486.3,221.8,490.8z"/>
+                      <path class="st8_4" d="M286.8,346.9c-0.2,3,0.1,7.2,2.7,9c4.2,2.9,11.5-2.4,14,0.3c2.1,2.2-2,6.6,0.3,10.3c2,3.2,8.3,0.3,10.5,3.7
+                        c1.5,2.3,0.5,7.2-1.5,9"/>
+                      <path class="st8_4" d="M165.1,371.2c2.9,0.7,7.1,1.2,9.3-1.1c3.6-3.6-0.4-11.7,2.7-13.7c2.6-1.7,6.2,3.1,10.2,1.4
+                        c3.5-1.5,1.7-8.2,5.4-9.7c2.5-1.1,7.1,0.7,8.6,3"/>
+                      <path class="st9_4" d="M198.4,405.8v8.2c0,3.7-3,6.7-6.7,6.7h0c-3.7,0-6.7-3-6.7-6.7v-5.5"/>
+                    </g>
+                    <g class="st6">
+                      <path class="st4_4" d="M187.7,125.6c10.1,0.8,17.5,3.2,17.5,6c0,2.9-7.7,6.6-18.4,8.9"/>
+                      <path class="st4_4" d="M240.4,128.7c-7.5-0.2-13.6,1.5-14.1,4.1c-0.6,2.8,5.1,7.4,14.4,10.3"/>
+                      <path class="st4_4" d="M201.8,158.4c1.4-3.1,2.6-3.7,4.6-3.7c1.8,0,2,3.3,3.5,3.3c3.1,0.1,5.3-3.4,7.9-3.1c2.3,0.3,3.8,3,4.5,5.6
+                        c1.2,4.4,1.8,10.1-1.3,9.9c-2.8-0.2-7.5-4.5-9.7-4.7c-2.3-0.2-8.9,2.6-10.1,2.2C200.4,167.7,199.6,163.4,201.8,158.4z"/>
+                      <path class="st9_4" d="M161.2,205.3c8,6,27,18.5,54.5,21.5c29.2,3.2,51.5-6.1,60.5-10.5"/>
+                      <path class="st9_4" d="M115.1,277.4c5.4,8.5,18.7,26.9,43.3,39.5c26.2,13.3,50.3,12.6,60.3,11.7"/>
+                      <path class="st9_4" d="M48.1,367.1c6,8.1,20.6,25.5,46.1,36.2c27.1,11.4,51.1,8.9,61,7.3"/>
+                      <path class="st9_4" d="M39.7,478.8c8.4,5.5,28,16.9,55.7,18.3c29.3,1.5,51.1-9.1,59.8-14"/>
+                      <path class="st1_4" d="M156.5,470.6c2.8,20.1,7.2,34.2,9.3,38.9 M164.6,507.6"/>
+                      <path class="st9_4" d="M137.4,128.7c3.2-0.6,7.5-1.9,8.7-5c2-5-5.4-11-3.2-14.3c1.8-2.7,7.5,0.3,10.7-3c2.8-2.9-1.8-8.5,1.2-11.6
+                        c2-2.1,7.4-2.4,9.8-0.8"/>
+                      <path class="st9_4" d="M300.6,195.3c-2.8,1.6-6.4,4.3-6.5,7.7c-0.2,5.4,8.8,8.5,7.8,12.4c-0.8,3.2-7.1,2.2-9.1,6.5
+                        c-1.7,3.7,4.6,7.4,2.8,11.3c-1.2,2.7-6.1,4.7-8.9,4.1"/>
+                      <path class="st9_4" d="M46,322.4c3.2-0.1,7.7-0.8,9.4-3.7c2.7-4.7-3.7-11.7-1-14.6c2.2-2.4,7.3,1.4,11-1.4c3.2-2.5-0.5-8.7,2.9-11.3
+                        c2.3-1.8,7.6-1.2,9.8,0.6"/>
+                      <path class="st9_4" d="M254,150.8v8.2c0,3.7,3.4,6.7,7.5,6.7l0,0c4.1,0,7.5-3,7.5-6.7v-5.5"/>
+                    </g>
+                    <path class="st10_4" d="M342.7,513.3H67c-14.6,0-27.1-10.7-29.1-25.2c-0.4-3-0.8-5.8-1.1-8.1c-3.9-32.6-6.7-73.3,9.2-112.9
+                      c11.6-28.9,33.9-60.8,54.6-81.4c18.1-18.1,35.2-35.1,49.4-62.2c12.5-23.9,14.5-38.7,9.5-69c-5.4-32.7,16.7-63.6,49.4-69
+                      c32.7-5.4,63.6,16.7,69,49.4c4.5,27.3,5.3,49,2.6,70.5c-3.1,24.4-11,48.6-24.2,73.8c-13.1,25-27.9,44.8-42,61"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <!--6. REFERENCE -->
+            <div class="row general_info_element">
+              <h4 style="margin-bottom:1em;">References</h4>
+                <div class="col-md-12 col-sm-12 reference">
+                  <ul>
+                    <li style="font-size: 1.3em;">
+                      <span>[1]</span>
+                      <a>
+                        Zhang Weixin, Shen Zhifeng, Shao Yuanhu, et al. Research progress in soil biology and sustainable agriculture[J]. Acta Ecologica Sinica, 2020, v.40(10):33-56.
+                      </a>
+                    </li>
+                    <li style="font-size: 1.3em;">
+                      <span>[2]</span>
+                      <a>
+                        Xu Qin. Overview of the geographical distribution of terrestrial earthworms in China[J]. Journal of Beijing Institute of Education, 1996(03):54-61.
+                      </a>
+                    </li>
+                    <li style="font-size: 1.3em;">
+                      <span>[3]</span>
+                      <a>
+                        Zhang X, Chen D, Zhong T, et al. Evaluation of Lead in Arable Soils, China[J]. CLEAN - Soil, Air, Water, 2015, 43(8):1232-1240.
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/Human_Practices/Implementation-js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>
+{{NAU-CHINA/img-larger}}

@@ -1,0 +1,82 @@
+function y=model_calculate_1(x)
+% CI2=2*CI;
+% OCI1=2.54e-9;
+% OCI2=2.54e-9;
+% D=0.0118;
+% k1=1e11;
+% k2=1e9;
+% k3=100;
+% k4=8.3e6;
+% CI2=CI/2;
+% CI2=CI2f+CI2_OCI1+CI2_OCI2+OCI1_CI2_OCI2+CI2_D;
+% OCI1=OCI1f+CI2_OCI1+OCI1_CI2_OCI2;
+% OCI2=OCI2f+CI2_OCI2+OCI1_CI2_OCI2;
+% CI2_OCI1=k1*CI2f*OCI1f;
+% CI2_OCI2=k2*CI2f*OCI2f;
+% OCI1_CI2_OCI2=k2*k3*CI2_OCI1*OCI2f
+% OCI1_CI2_OCI2=k1*CI2_OCI2*OCI1f;
+% CI2_D=k4*CI2f*Df;
+% D=CI2_D+Df;
+
+% 求解方程组: 
+% 2.54e-9=OCI1f+CI2_OCI1+OCI1_CI2_OCI2;
+% 2.54e-9=OCI2f+CI2_OCI2+OCI1_CI2_OCI2;
+% CI2_OCI1=1e11*CI2f*OCI1f;
+% CI2_OCI2=1e9*CI2f*OCI2f;
+% OCI1_CI2_OCI2=1e9*100*CI2_OCI1*OCI2f
+% OCI1_CI2_OCI2=1e11*CI2_OCI2*OCI1f;
+% CI2_D=8.3e6*CI2f*0.0118;
+% OCI1f=x1;
+% CI2_OCI1=x2;
+% OCI1_CI2_OCI2=x3;
+% OCI2f=x4;
+% CI2_OCI2=x5;
+% CI2f=x6;
+% CI2_D=x7;
+% Df=x8;
+
+    % 声明符号变量
+    syms x1 x2 x3 x4 x5 x6 x7 x8;
+    % 定义方程
+    eq1 = x1+x2+x3-2.54e-9;
+    eq2 = x4+x5+x3-2.54e-9;
+    eq3 = x2-1e11*x6*x1;
+    eq4 = x5-1e9*x6*x4;
+    eq5 = x3-1e9*100*x2*x4;
+    eq6 = x7-8.3e6*x8*x6;
+    eq7 = x/2-x2-x3-x5-x6-x7;
+    eq8 = 0.0118-x7-x8;
+    % 调用solve求解方程组
+    sol = solve(eq1, eq2, eq3, eq4, eq5, eq6, eq7, eq8, x1, x2, x3, x4, x5, x6, x7, x8);
+    x1 = sol.x1;
+    x2 = sol.x2;
+    x3 = sol.x3;
+    x4 = sol.x4;
+    x5 = sol.x5;
+    x6 = sol.x6;
+    x7 = sol.x7;
+    x8 = sol.x8;
+
+    % 使用double将符号解转换为数值解   
+     R1 = double(x1); 
+     R2 = double(x2); 
+     R3 = double(x3); 
+     R4 = double(x4); 
+     R5 = double(x5); 
+     R6 = double(x6);
+     R7 = double(x7); 
+     R8 = double(x8); 
+     
+     ind = find(R1>0&R2>0&R3>0&R4>0&R5>0&R6>0&R7>0&R8>0);
+     R1_end = R1(ind); 
+     R2_end = R2(ind);
+     R3_end = R3(ind); 
+     R4_end = R4(ind); 
+     R5_end = R5(ind);
+     R6_end = R6(ind);
+     R7_end = R7(ind); 
+     R8_end = R8(ind);
+     
+     y=(R1_end/2.54e-9)*(R4_end/2.54e-9);
+
+     return

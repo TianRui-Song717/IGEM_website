@@ -1,0 +1,30 @@
+function dndt = model_CI_inner_function(t,n,param1)
+%Abbreviations:
+    % Cr1:copy number (second path)
+    % p1:translation rate of CI mRNA (second path)      
+    % Vm1:production rate of CI mRNA (second path) 
+    % dm1:degradation rate of CI mRNA (second path)
+    % dp1_1:degradation rate of CI protein (second path)
+    % dp1_2:degradation rate of CI protein (first path)
+    % G1:transcription rate of CI mRNA (second path)
+        
+dm1   = param1(1);
+Cr1   = param1(2);
+G1    = param1(3);
+p1    = param1(4);
+dp1_1 = param1(5); 
+dp1_2 = param1(6);
+
+Vm1=Cr1*G1;
+% Differential equations:
+    %n(1): CI mRNA (second path)  
+    %n(2): CI protein (second path)   
+    %n(3): CI protein (first path) 
+    
+dn1  = Vm1 - dm1*n(1);
+dn2  = p1*n(1)-dp1_1*n(2);
+dn3  = -dp1_2*n(3);
+
+dndt = [dn1; dn2; dn3];
+
+return

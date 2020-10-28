@@ -1,0 +1,23 @@
+function dmdt = model_Toehold_function(t,m,param2)
+%Abbreviations:
+    % Cr2:copy number 
+    % Vm2:production rate of Toehold mRNA 
+    % dm2:degradation rate of Toehold mRNA
+    % G2:transcription rate of Toehold mRNA
+    % w1:fraction of both free CI operator regions
+    
+dm2 = param2(1);
+Cr2 = param2(2);
+G2  = param2(3);
+w1  = param2(4);
+
+Vm2=Cr2*w1*G2;
+
+% Differential equations:
+    %m(1): Toehold mRNA 
+
+dm1  = Vm2 - dm2*m(1);
+
+dmdt = dm1;
+
+return

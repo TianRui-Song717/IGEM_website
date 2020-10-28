@@ -1,4 +1,5 @@
 https://2020.igem.org/wiki/images/1/15/T--NAU-CHINA--Implementation-logo.jpg
+-- logo
 
 https://2020.igem.org/wiki/images/9/93/T--NAU-CHINA--Risk_screening_value.jpeg
 -- risk screen value
@@ -7,3 +8,9 @@ https://2020.igem.org/wiki/images/4/4b/T--NAU-CHINA--Risk_control_value.jpeg
 -- risk control value
 
 https://2020.igem.org/wiki/images/e/e6/T--NAU-CHINA--Implementation-map.jpg
+
+https://2020.igem.org/wiki/images/f/ff/T--NAU-CHINA--Integrated-Implementation-back.jpg
+--background
+
+https://2020.igem.org/wiki/images/0/0d/T--NAU-CHINA--Implementation.pdf
+-- PDF

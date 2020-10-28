@@ -1,0 +1,388 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/Implementation-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>Description</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    b{color:#1d663d;}
+
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/1/14/T--NAU-CHINA--partnershipdt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url('https://2020.igem.org/wiki/images/3/39/T--NAU-CHINA--partnershipdtwz.jpg');
+  background-size: 70%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+
+    .general_info_element ul li{font-size:1.3em;}
+
+    .row div p{margin-top:1em!important;}
+    .row h4{margin-top:1em;padding-top:0px;}
+  </style>
+</head>
+<body>
+   <!--nav-->
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4 style="margin-bottom:1em;">Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">March</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">April</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">May</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">June</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">July</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">August</a></li>           
+                <li class="general_sidenav_li"><a href="#general_info_ele_7" class="general_sidenav_a" id="sidenav_7">September</a></li>            
+                <li class="general_sidenav_li"><a href="#general_info_ele_8" class="general_sidenav_a" id="sidenav_8">October</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+              <!--1. BACKGROUND-->
+              <div class="row general_info_element">
+                <h3><span>Partnership with Nanjing-China</span></h3>
+                <p>
+                  <i>
+                    We formed and maintained a meaningful relationship with Nanjing-China iGEMers, exchanging ideas and shaping our projects in experimental design, modeling, human practices, wiki, art design throughout the season.
+                  </i>
+                </p>
+                <p>
+                  <i>
+                    At the beginning of the project, we preliminarily determined the direction of our subject and chatted with wet lab members of Nanjing-China. We discussed with each other at an online meeting, actively expounded own inspirations and plans, and exchanged opinions.
+                  </i>
+                </p>
+                <img src="https://2020.igem.org/wiki/images/4/4e/T--NAU-CHINA--straizyy1314.jpg" alt="online_conference">
+              </div>
+
+              <!--2. March-->
+              <div class="row general_info_element" id="general_info_ele_1">
+                <h3><span>March</span></h3>
+                <h4>Experimental design</h4>
+
+                <p>
+                  Our project aimed to<b> handle soil heavy metal pollution</b> under the circumstances that current methods, like plant treatment and physicochemical treatment,<b> couldn’t solve the problem completely</b>. To make up for the possible <b>damage to soil </b>caused by current methods, we came up with a new method using<b> synthetic biology</b>for restoring soil. We combined earthworms with engineered bacteria to<b> secrete phosphate-solubilizing enzyme (PSE)</b> to combine lead into<b> precipitation complex</b>. In this way, the soil could plant while treating heavy metal.
+                </p>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p style="margin-top:0px;">
+                     Nanjing-China members asked us if we had any ideas about the engineered bacteria. We discussed for a while and agreed that our engineered bacteria should <b>be dominant in the environment and have strong secretory ability</b>. The next few weeks, we searched for information in this direction and decided to use <i>Bacillus subtilis</i> because it was gram-positive bacterium as well as the dominant bacteria both in the environment and earthworm intestine. It also had powerful secretory ability that we needed.
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+                <h4>Human Practices</h4>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p style="margin-top:0px;">
+                     After listening to Nanjing-China’s project introduction, we suggested that they can <b>extend the application scope</b> to building materials and other aspects, which inspired Nanjing-China to contact a fireproof coating production company for research.
+                  </p>
+                </div>
+              </div>
+
+              <!--3. April-->
+              <div class="row general_info_element" id="general_info_ele_2">
+                <h3><span>April</span></h3>
+                <h4 style="margin-bottom:1em;">Experimental design</h4>
+                <p>
+                  We exchanged ideas with Nanjing-China members about our <i>Bacillus subtilis</i> playing its role of dissolving phosphorus in earthworm intestine.
+                </p>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We hoped our engineered bacteria secrete phosphate-solubilizing enzyme (PSE) and <b>kill itself outside the intestine</b>. NAU-CHINA members asked some questions about <b>intestinal environment of earthworm</b>. Then they considered that our PSE couldn’t work well because nowadays the <b>PSE are mostly acid phosphatase (ACP) and alkaline phosphatase </b>nevertheless the pH of earthworm<b> intestine is from pH6 to pH7</b>. So, they thought the phosphate-solubilizing efficiency would be very low and recommended us to change enzyme. We took their advice and <b>searched for neutral enzyme</b>. Finally, we found the phytase, <b>phy(ycD).</b>
+                  </p>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We hoped our engineered bacteria secrete phosphate-solubilizing enzyme (PSE) and <b>kill itself outside the intestine</b>. NAU-CHINA members asked some questions about <b>intestinal environment of earthworm</b>. Then they considered that our PSE couldn’t work well because nowadays the <b>PSE are mostly acid phosphatase (ACP) and alkaline phosphatase </b>nevertheless the pH of earthworm<b> intestine is from pH6 to pH7</b>. So, they thought the phosphate-solubilizing efficiency would be very low and recommended us to change enzyme. We took their advice and <b>searched for neutral enzyme</b>. Finally, we found the phytase, <b>phy(ycD).</b>
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <h4 style="margin-bottom:1em;">Human Practices</h4>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    Nanjing-China iGEMers advised us to focus on the development of agricultural economy, so we took part in a lecture about agricultural economy and had <b>a conversation with one of the agricultural economists</b>.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <h4 style="margin-bottom:1em;">Model</h4>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>             
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We had an online communication with the model group of Nanjing-China. During the communication, we learned that Nanjing-China wanted to <b>simulate the docking of polyP and GFP</b> through model, but the simulation rate was slow with autodock software. Therefore, we recommended <b>autodock</b> vina to them. Compared with autodock, it is faster in docking speed and could effectively solve their problems.
+                  </p>
+                </div>
+              </div>
+
+              <!--4. May-->
+              <div class="row general_info_element" id="general_info_ele_3">
+                <h3>May</h3>
+                <h4 style="margin-bottom:1em;">Experimental design</h4>
+                <p>
+                  We had designed our circuit and <b>explained the mechanism of treating lead pollution to Nanjing-China team</b>: when earthworm ate the soil, the engineered bacteria secreted enzyme in the intestine and turned phosphorus into phosphate radical to form stable pyromorphite with lead. Then our engineered bacteria triggered kill switch when they were excreted outside so that no bio-pollution could be caused.
+                </p>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    Nanjing-China tried to combine polyphosphates with recombinant spider silk protein, but they could not <b>occur electrostatic interaction</b>. Then, we advised them to change some of the amino acids in the N’ terminal and C’ terminal into positively charged amino acids.
+                  </p>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    Nanjing-China members asked us <b>how to ensure adequate contact</b> of the converted phosphate with lead and how to<b> control the combination ratio</b>.
+                  </p>
+                  <p>
+                    These problems were very important to us. We also thought we needed to take <b>ion product </b>and <b>Ksp</b> of the reaction into account. In the meanwhile, we needed to check the <b>concentration of phosphate, lead ion and chloride ion</b>, which required the relevant information provided by the mathematic model members. With the advice of some professors and our own calculations, we <b>solved the problem</b> by July: we calculated that the ion product of pyromorphite was between 10<sup>-20</sup>~10<sup>-30</sup> and its Ksp is about 10<sup>-60</sup>~10<sup>-80</sup>, which was far enough to meet the conditions for precipitation. Therefore, even if other ions existed, pyromorphite would still be generated in priority for its smaller Ksp.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <h4 style="margin-bottom:1em;">Human Practices</h4>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We suggested that Nanjing-China should carefully consider <b>the requirements and expectations of related enterprises</b> for products, and guided them in the next step of research. Based on this, Nanjing-China finally determined interviews’ forms to enterprises, which focused on the feasibility, practicability and advantages of their project.
+                  </p>
+                  <p>
+                     Our team deeply thought about <b>stakeholders</b> and divided them into four categories:
+                  </p>
+                  <ul>
+                    <li>Who will benefit from our program？</li>
+                    <li>Who will use our program?</li>
+                    <li>Who cares about it most?</li>
+                    <li>Who are the policy-makers?</li>
+                  </ul>
+                  <p>
+                    Nanjing-China confirmed our thoughts.
+                  </p>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We shared our thoughts with Nanjing-China iGEMers and had a brainstorm of stakeholders. Nanjing-China iGEMers got new insight into stakeholders ---- “<b>Make a stakeholders’ circle to tie stakeholders closely </b>”.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+
+
+              <!--5.June-->
+              <div class="row general_info_element" id="general_info_ele_4">
+                <h3>June</h3>
+                <h4 style="margin-bottom:1em;">Experimental design</h4>
+                <p>
+                  We started to <b>optimize our circuit</b>, including the optimization of kill switch. We explained to Nanjing-China how the engineered bacteria secreted phytase in earthworm intestine and committed suicide after excretion of earthworm to prevent bio-pollution.
+                </p>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                     Nanjing-China asked us: “Did <i>Bacillus subtilis</i> metabolites have an impact on soil quality or crop production after suicide?”
+                  </p>
+                  <p>
+                    Because the <i>Bacillus subtilis</i> we selected was the <b>dominant bacteria</b> in the soil, earthworm intestine and wormcast, we didn't think that it would affect the soil crops after the engineered bacteria commit suicide. Both of us reached an agreement on the safety of the project.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <h4 style="margin-bottom:1em;">Human Practices</h4>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    Regarding the promotion, we participated in the monthly magazine activity of Jiangnan_China, and distributed the monthly magazines to four different middle schools. Besides, we promoted our project on our official account. We suggested Nanjing-China that they could use the online platform for promotion. Nanjing-China adopted our suggestions and operated their official account to promote their project.
+                  </p>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                     Nanjing-China publicized the knowledge of synthetic biology to students with the school organization, which had an unexceptionable impact. We took their advice <b>to collaborate with school associations</b>, like NJAU Youth Association. Through online counselings and lectures, we opened the door of synthetic biology to children who might not have learnt that before.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <p>
+                  They also helped us figure out that target audience of our children comic was not only <b>kids</b>, but also <b>young parents, educators, and children literature writers</b>. We can also get feedback by distributing comic to these groups of target audience.
+                </p>
+              </div>
+
+
+              <!--6.July-->
+              <div class="row general_info_element" id="general_info_ele_5">
+                <h3>July</h3>
+                 <h4 style="margin-bottom:1em;">Experimental design</h4>
+                <p>
+                  We discussed with Nanjing-China members to improve the circuit, and Nanjing-China members asked <b>how to control the process of engineered bacteria in laboratory culture without committing suicide</b>.
+                </p>
+                <p>
+                  We had considered this problem before and designed the preliminary circuit. We designed the <b>Toehold Switch</b>. Only when the transcribed Trigger RNA was accumulated in earthworm intestine, the transcribed Switch RNA could be turned on in the aerobic environment and released the suicide gene.
+                </p>
+              </div>
+              <div class="row general_info_element">
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    Nanjing-China members said that although the engineered bacteria couldn’t commit suicide in the lab, continuous transcription of switch RNA was a pressure on them. We took their advice and made adjustments.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <p>
+                  We added IPTG induction system to express CⅠ protein and inhibit the transcription of switch RNA in the lab so that there was no extra pressure on engineered bacteria.
+                </p>
+              </div>
+
+              <!--7.August-->
+              <div class="row general_info_element" id="general_info_ele_6">
+                <h3>August</h3>
+                <h4 style="margin-bottom:1em;">Model</h4>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    Due to the lack of experiments, data acquisition has always been a problem for us, especially data such as DNA transcription rate and mRNA translation rate. Under the recommendation of Nanjing-China, <b>we applied De Novo DNA ( <a href="https://www.denovodna.com">https://www.denovodna.com</a>) to calculate relevant data</b>, which improved the accuracy of model data acquisition and laid a foundation for the later model establishment.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <h4 style="margin-bottom:1em;">Wiki</h4>
+                <div class="col-md-4 col-sm-12">
+                  <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We had a communication with Nanjing-China, and discussed the issue of uploading the code to the official website. The main reason is that Nanjing-China wants to make vertical layout, and finally add "Vertical- Align: Middle". The problem has been solved and the friendship between the two teams has been promoted on the basis of previous communication.
+                  </p>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <h4 style="margin-bottom:1em;">Art Designing</h4>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We exchanged some idea with Nanjing-China about <b>the design of our logo</b>, and received some helpful suggestions. In the beginning, we designed two logos respectively with the theme of earthworm and engineered bacteria. When we were hesitating to choose one, Nanjing-China advised that we can choose the logo with soil element, giving that soil element can express the theme of our project——environment protection better.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <h5>Nanjing-China<br><br>⬇<br><br>NAU-CHINA</h5>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p>
+                    We designed the earthworm as a ring with a gap, and fill in a little bit black to represents the clitellum of earthworm. Nanjing-China suggested that we can enhance the balance of design by adjusting the position of the gap and clitellum and the size of bud, and use more arcs to make the image of the earthworm three-dimensional. <b>With the help of Nanjing-China, we perfected our design of logo</b>, planning to make an animation of logo to emphasize the existence of earthworm.
+                  </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <img src="https://2020.igem.org/wiki/images/c/ce/T--NAU-CHINA--Partnership-Logo.jpg">
+                </div>
+                <div class="clearfix"></div>
+                 <img src="https://2020.igem.org/wiki/images/e/eb/T--NAU-CHINA--Partnership-Logochange.jpg" alt="logo change image">
+              </div>
+
+
+              <!--8.September-->
+              <div class="row general_info_element" id="general_info_ele_7">
+                <h3>September</h3>
+                  <div class="col-md-4 col-sm-12">
+                    <h5>NAU-CHINA<br><br>⬇<br><br>Nanjing-China</h5>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <p>
+                      Nanjing-China asked us about the recent experiments. After learning that Nanjing-China have carried out in vivo experiments on binding polyP and GFP, we asked them <b>whether they have also done in vivo binding experiments</b>, and reminded them that they should <b>pay attention to their in vivo binding conditions</b>. Nanjing-China did carry out these experiments later and showed that +36GFP and polyP could be synthesized simultaneously in vivo and directly combined in bacteria.
+                    </p>
+                  </div>
+              </div>
+
+
+              <!--9.October-->
+              <div class="row general_info_element" id="general_info_ele_8">
+              <h3>October</h3>
+                <p>
+                  In October, we had <b>a concluding online meeting </b>with Nanjing-China. During the meeting, we summarized our projects respectively and shared our thoughts and reflections on partnership throughout the season, as well as our vision for the future. In the end, we took a photo together, which kept precious memories and contributed to our deep friendship.
+                </p> 
+<img src="https://2020.igem.org/wiki/images/e/e6/T--NAU-CHINA--partnership1027.jpg" alt="online_conference">
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+   <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/notebook1js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

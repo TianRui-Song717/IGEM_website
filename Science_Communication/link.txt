@@ -2,3 +2,9 @@ https://2020.igem.org/wiki/images/5/56/T--NAU-CHINA--Education-back.jpg
 -- Logo
 https://2020.igem.org/wiki/images/3/3e/T--NAU-CHINA--Education-backimg.jpg
 -- background
+
+https://2020.igem.org/wiki/images/1/14/T--NAU-CHINA--Education-Magazine1.jpg
+--magazine 1
+
+https://2020.igem.org/wiki/images/f/f2/T--NAU-CHINA--Education-Magazine2.jpg
+-- magazine 2

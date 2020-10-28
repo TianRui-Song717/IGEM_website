@@ -1,0 +1,694 @@
+
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/attribution.css}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style type="text/css">
+  	.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  		border:none!important;
+  	}
+
+
+  </style>
+<style>
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/e/e9/T--NAU-CHINA--comtributiondt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url('https://2020.igem.org/wiki/images/b/b3/T--NAU-CHINA--comtributionwz.png');
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+.general_info_element h3{
+  text-align:left;
+  margin: 50px 0px 0px 0px;
+  font-size: 3.5em;
+  font-weight:bold;
+  letter-spacing:0.05em;
+
+/*  border-top:dashed 2px rgba(180,180,180,0.5);*/
+  color:#af2434;/*#4f8a8b;*/
+}
+
+.general_info_element h4{
+  text-align:left;
+  margin: 1.5em 0px 1em 0px;
+  font-size: 1.8em;
+  letter-spacing:0.1em;
+  color:#ee7a65;
+  float: left;
+  width: 100%;
+}
+
+.general_info_element h5{
+  margin: 1.2em 0px;
+  font-size: 1.5em;
+  letter-spacing:0.1em;
+  color:#ffb25f;
+  font-weight: bolder;
+}
+/*滚动到相应部分侧边栏颜色不同*/
+.general_side_nav_color{
+  background-color:#ee7a65;
+  color: white;
+  border-radius:5px;
+  transition:0.2s;
+
+  font-weight:bold;
+}
+a.general_side_nav_color{/*add because of official website*/
+  background-color:#ee7a65;
+  color: white;
+  border-radius:5px;
+  transition:0.2s;
+
+  font-weight:bold;
+}
+
+#bodyContent h4{margin:10px !important;}
+#bodyContent a[href ^="https://"], .link-https{padding-right:0px!important;}
+</style>
+</head>
+<body>
+ 
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">Contributions to an Existing Part</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">3D Model</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Codon Optimization</a></li>
+<!--                 <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Switch RNA</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Optimized CI</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_6">Optimized DpnI</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+           <div class="row general_info_element" id="general_info_ele_1">
+              <h3 style="border: none; border: none;position: relative;">Contributions to an Existing Part</h3>
+              <h4><a herf="http://parts.igem.org/Part:BBa_K525515#Contribution">BBa_K525515</a></h4>
+<div class="clearfix"></div>
+              <p>We find that there’s no information about “LC-ESI-qTOF-MS(-MS)”, which is a method to detect the pollutant of BPA<sup>[1]</sup>.</p>
+
+              <p>But we have found the <b>similar method “LC-MS/MS”</b>. This method uses <b>"methyl alcohol - water"</b> as the fluid phase, separated by the <b>Waters ACQUITY UPLC HSS T<sub>3</sub></b> chromatographic column separation and determined by the <b>UPLC/MS/MS</b> quantitative assay. The method could meet the requirement for the determination of BPA reference value limit specified in the <b>Sanitary Standard for Drinking Water (GB 5749-2006)</b>, with high reproducibility and precision.</p>
+
+              <P>Here're the results of the research：</P>
+              
+              <p style="font-size: 12px !important;margin: 0px 55px;">Table1.Linear equation, correlation coefficient, LOD and LOQ of BPS, BPF and BPA in pure water(Zhou Xiaoxin, et al., <i>Journal of Environmental Hygiene</i>. 2020)</p>
+              <!-- <img src="https://2020.igem.org/wiki/images/a/ad/T--NAU-CHINA--cyccontribution2.png" style="width: 100%;margin-top:0px"> -->
+    <table class="table" style="border:none;">
+	  <thead style="border-bottom: 2px solid black;">
+	    <tr style="border-top: 2px solid black; border-bottom: 2px solid black;">
+	      <th scope="col" style="text-align: center;">Compound</th>
+	      <th scope="col" style="text-align: center;">Linear equation</th>
+	      <th scope="col" style="text-align: center;">Correlation coefficient</th>
+	      <th scope="col" style="text-align: center;">LOD（μg/L）</th>
+	      <th scope="col" style="text-align: center;">LOQ（μg/L）</th>
+	    </tr>
+	  </thead>
+	  <tbody style="border-top: 2px solid black">
+	    <tr style="border-top: 2px solid black;">
+	      <td>BPS</td>
+	      <td>y=3.11×10<sup>6</sup>x-4.4×10<sup>5</sup></td>
+	      <td>0.9999</td>
+	      <td>0.002</td>
+	      <td>0.007</td>
+	    </tr>
+	    <tr>
+	      <td>BPF</td>
+	      <td>y=5.22×10<sup>4</sup>x-5.2×10<sup>4</sup></td>
+	      <td>0.9974</td>
+	      <td>0.05</td>
+	      <td>0.17</td>
+	    </tr>
+	    <tr style="border-bottom: 2px solid black">
+	      <td>BPA</td>
+	      <td>y=1.87×10<sup>4</sup>x+1.64×10<sup>4</sup></td>
+	      <td>0.9996</td>
+	      <td>0.15</td>
+	      <td>0.50</td>
+	    </tr>
+	  </tbody>
+	</table>
+              <p>According to Table1, the standard curve is plotted with the concentration of the standard series as the x-coordinate and the peak area of the corresponding compound as the vertical coordinate. BPS, BPF and BPA show good linearity in the range of (0.5 ~ 50.0) g/L and their correlation coefficients are bigger than 0.997.</p>
+              <!-- <img src="img/1.jpg" style="width: 80%"> -->
+               <!-- <p style="font-size: 12px !important;margin: 0px 55px;">Fig.1. Peak area of 3 substances (100 g /L) at different mobile phase ratios(Zhou Xiaoxin, et al., <i>Journal of Environmental Hygiene</i>. 2020)</p> -->
+
+                <p style="font-size: 12px !important;margin: 0px 55px;">Table2. Precision and recovery of BPS, BPF and BPA in different water samples (N = 6)(Zhou Xiaoxin, et al., <i>Journal of Environmental Hygiene</i>. 2020)</p>
+          		
+		
+
+				<table class="table" style="border:none;">
+				  <thead style="border-bottom: 2px solid black;">
+				    <tr style="border-top: 2px solid black; border-bottom: 2px solid black;">
+				      <th scope="col" style="text-align: center;">Sample name</th>
+				      <th scope="col" style="text-align: center;">Compound</th>
+				      <th scope="col" style="text-align: center;">Background/(μg/L)</th>
+				      <th scope="col" style="text-align: center;">Added Scalar/(μg/L)</th>
+				      <th scope="col" style="text-align: center;">Amount recycled/(μg/L)</th>
+				      <th scope="col" style="text-align: center;">Average recovery rate/%</th>
+				      <th scope="col" style="text-align: center;"><i>RSD</i>/%</th>
+				    </tr>
+				  </thead>
+				  <tbody style="border-top: 2px solid black">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>1.91~2.05</td>
+				      <td>100</td>
+			                     <td>3.19</td>
+
+				    </tr>
+
+				    <tr>
+				      <td>Pure water</td>
+				      <td>BPS</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.26~7.77</td>
+				      <td>101</td>
+			                     <td>2.95</td>
+
+				    </tr>
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>22.9~26.8</td>
+				      <td>103</td>
+			                     <td>5.90</td>
+
+				    </tr>
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>1.91~2.06</td>
+				      <td>98.4</td>
+			                     <td>2.85</td>
+
+				    </tr>
+
+				    <tr>
+				      <td></td>
+				      <td>BPF</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.67~7.79</td>
+				      <td>103</td>
+			                     <td>0.65</td>
+
+				    </tr>
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>24.1~25.5</td>
+				      <td>98.7</td>
+			                     <td>2.44</td>
+
+				    </tr>
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>1.93~2.09</td>
+				      <td>101</td>
+			                     <td>3.09</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td>BPA</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.33~7.51</td>
+				      <td>99.1</td>
+			                     <td>0.85</td>
+
+				    </tr>
+
+
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>23.7~25.1</td>
+				      <td>98.1</td>
+			                     <td>2.06</td>
+
+				    </tr>
+
+
+
+
+
+				    <tr>
+				      <td> </td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>2.07~2.20</td>
+				      <td>108</td>
+			                     <td>2.31</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td>Spring water</td>
+				      <td>BPS</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.13~7.30</td>
+				      <td>96.4</td>
+			                     <td>1.03</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>21.6~22.5</td>
+				      <td>88.3</td>
+			                     <td>1.71</td>
+
+				    </tr>
+
+
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>1.93~2.00</td>
+				      <td>98.3</td>
+			                     <td>1.47</td>
+
+				    </tr>
+
+
+
+				    <tr>
+				      <td></td>
+				      <td>BPF</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.23~7.50</td>
+				      <td>98.7</td>
+			                     <td>1.37</td>
+
+				    </tr>
+
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>21.8~24.1</td>
+				      <td>92.4</td>
+			                     <td>3.57</td>
+
+				    </tr>
+
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>2.03~2.06</td>
+				      <td>102</td>
+			                     <td>0.57</td>
+
+				    </tr>
+
+
+
+
+				    <tr>
+				      <td></td>
+				      <td>BPA</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.33~7.51</td>
+				      <td>99.2</td>
+			                     <td>0.85</td>
+
+				    </tr>
+
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>24.1~26.9</td>
+				      <td>102</td>
+			                     <td>4.03</td>
+
+				    </tr>
+
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>1.96~2.08</td>
+				      <td>102</td>
+			                     <td>2.46</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td>Tap water</td>
+				      <td>BPS</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>6.57~6.95</td>
+				      <td>90.1</td>
+			                     <td>2.35</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>23.3~24.4</td>
+				      <td>95.8</td>
+			                     <td>1.92</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>1.90~1.99</td>
+				      <td>97.3</td>
+			                     <td>1.65</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td>BPF</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.36~7.53</td>
+				      <td>99.2</td>
+			                     <td>0.98</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>22.9~25.5</td>
+				      <td>99.1</td>
+			                     <td>4.11</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>2.00</td>
+				      <td>1.96~2.05</td>
+				      <td>99.3</td>
+			                     <td>1.71</td>
+
+				    </tr>
+
+
+				    <tr>
+				      <td></td>
+				      <td>BPA</td>
+				      <td>Not detected</td>
+				     <td>7.50</td>
+				      <td>7.34~7.56</td>
+				      <td>98.8</td>
+			                     <td>1.05</td>
+
+				    </tr>
+
+
+				    <tr style="border-bottom: 2px solid black">
+				      <td></td>
+				      <td></td>
+				      <td></td>
+				     <td>25.0</td>
+				      <td>22.7~25.2</td>
+				      <td>96.0</td>
+			                     <td>3.92</td>
+
+				    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				  </tbody>
+				</table>
+
+
+          		<P>This study analyzed 5 parts of pure water, 5 parts of mineral water, 1 part of distilled water and 10 parts of terminal water respectively. The results showed that BPS, BPF and BPA were not detected in 11 commercially available samples and 6 terminal water samples but BPA was detected in 4 parts of terminal water with concentrations of (0.59 ~ 5.23) g/L.</P>
+          		<P>Thus, “LC-MS/MS” has the advantages of strong qualitative ability, strong stability and high sensitivity, and is often used in the determination of bisphenol compounds.</P>
+          		
+          		<h4><a herf="http://parts.igem.org/Part:BBa_K1067006">BBa_K1067006</a></h4>
+<div class="clearfix"></div>
+          		<p>A problem is that <b>N<sub>2</sub>O</b> couldn’t be detected precisely during the denitrification reaction, but we have discovered a new method.</p>
+          		<img src="https://2020.igem.org/wiki/images/7/72/T--NAU-CHINA--cyccontribution3.png">
+          		<p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.1. Schematic diagram of SBR device(Liu Guohua, et al.,<i>Environmental Engineering</i>. 2020)</p>
+          		<p>The gas samples are collected by the portable gas sampling pump every 30 min within one operating cycle and collected in a 1L gas sampling bag. The concentration of N<sub>2</sub>O was determined by <b>Agilent 6890N gas chromatography (GC) equipped with ECD detector</b>.</p>
+          		<p>The N<sub>2</sub>O accumulation released in aerobic stage was 8.2 mg, about 6 times of that released in anoxic stage. According to the calculation, the conversion of N<sub>2</sub>O occurs mainly in the aerobic stage, and its conversion rate is 2.84%.</p>
+          		<img src="https://2020.igem.org/wiki/images/2/2a/T--NAU-CHINA--cyccontribution4.png">
+          		<p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.2. N<sub>2</sub>O emission rates and N<sub>2</sub>O cumulative emission in A/O- SBR system(Liu Guohua, et al., <i>Environmental Engineering</i>. 2020)</p>
+          		<p style="margin-bottom: 0">This study got some conclusions:</p>
+          		<p style="margin: 0">①The release of N<sub>2</sub>O occured mainly in the aerobic stage of A/O-SBR sewage treatment pilot system.</p>
+          		<p style="margin: 0">②The maximum release rate of N<sub>2</sub>O was 2.02 μgmin<sup>-1</sup> gmLSS<sup>-1</sup> during one operating cycle of the A/O-SBR small scale test system. The cumulative release rate reached 8.2 mg after 300 min of operation, and the accumulation of nitrite also reached the maximum value of 7.5 mg/L.</p>
+          		<p style="margin-top: 10px">Although the equipment is a little big to use in the laboratory, we can improve it in the future.</p>
+
+          		<h4><a herf="http://parts.igem.org/Part:BBa_K1096001">BBa_K1096001</a></h4>
+<div class="clearfix"></div>
+          		<p>We checked the data of gene mazE, Part:BBa_K1096001, finding that there was no data about using CRISPRi technology to knock down the gene mazEF of <i>E. coli</i> Nissle1917 in situ and exploring the relevant data about its impact on biofilm and persistence. Thus, we checked the literature to supplement it.</p>
+          		<h5>Knock down the mazEF gene and hipA gene of <i>E. coli</i> Nissle1917 in situ</h5>
+          		<p><b>The system of mazE and hipA was successfully knocked down through RT-PCR verification</b>, and the expression of other gene clusters was not affected.</p>
+          		<h5>Knock down mazEF gene and hipA gene in situ to explore its impact on persister bacteria and biofilm</h5>
+          		<p>This experiment used CRISPRi to knock down the mazEF gene and hipA gene in situ in EcN1917 to study the influence of mazEF gene and hipA gene on the formation of biofilm and persister bacteria.</p>
+          		<p>①Determination about the effect of mazE on <b>biofilm</b></p>
+          		<p>Experimental method: crystal violet staining method (quantitative)</p>
+          		<div class="col-md-6 col-sm-12">
+          		<img src="https://2020.igem.org/wiki/images/0/02/T--NAU-CHINA--cyccontribution5.png">
+          		</div>
+          		<div class="col-md-6 col-sm-12">
+          		<img src="https://2020.igem.org/wiki/images/1/10/T--NAU-CHINA--cyccontribution6.png">
+          		</div>
+<div class="clearfix"></div>
+          		<p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.3. Comparison chart of relative biofilm of each strain(Li Pinyi. <i>Zhejiang Gongshang University</i>. 2014)</p>
+          		<p>Original plasmid had no significant effect on growth. But after <b>CRISPRi knockdown expression</b>, the biofilm formation of EcN-ΔmazE and EcN-ΔhipA was <b>significantly inhibited</b>.</p>
+          		<p>②Determination about the effect of mazE on <b>persister bacteria</b></p>
+          		<p>They used a new method to test persistence — <b>enzyme lysis method</b> to avoid resistance cross-interference. They also adopted the classic method of persistence formation determination, the antibiotic method, to repeat the sterilization curve determination for verifying TA expression’s influence on strain’s persistence.</p>
+          		<img src="https://2020.igem.org/wiki/images/e/e9/T--NAU-CHINA--cyccontribution7.png">
+          		<p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.4. The killing curve on effect of mazEF and hipA on the formation of persiser cell(Li Pinyi. <i>Zhejiang Gongshang University</i>. 2014)</p>
+          		<p>This figure shows that the knockdown of mazE and hipA genes <b>inhibits the formation of persister bacteria</b>.</p>
+
+      <div class="row general_info_element" id="general_info_ele_2">
+        <h3>3D Model</h3>
+        <h4>Summary</h4>
+<div class="clearfix"></div>
+        <p>In order to better and more comprehensive understand our favorite reporter whose name is <a herf="http://parts.igem.org/Part:BBa_E1010">BBa_E1010</a>, this year NAU-CHINA uses SWISS MODEL<a href="https://swissmodel.expasy.org/"> (https://swissmodel.expasy.org/)</a>to model and simulates the tertiary structure of protein. We hope that the prediction of the structure will help other teams to better understand the nature and characteristics of this part and be able to use the reporter gene more skillfully.</p>
+        <p>The following model was built (see Materials and Methods "Model Building"):</p>
+    <div class="col-md-6 col-sm-12">
+        <img src="https://2020.igem.org/wiki/images/a/ab/T--NAU-CHINA--cyc3d1.png" style="width: 75%">
+        <p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.5. Model #01 </p>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <img src="https://2020.igem.org/wiki/images/1/18/T--NAU-CHINA--cyc3d2.png">
+        <p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.6. the Active center </p>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <img src="https://2020.igem.org/wiki/images/e/e4/T--NAU-CHINA--cyc3d3.png">
+        <p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.7. Local Quality Estimate</p>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <img src="https://2020.igem.org/wiki/images/f/fa/T--NAU-CHINA--cyc3d4.png">
+        <p style="font-size: 12px !important;margin-top: 0px;text-align: center;">Fig.8. Comparison with Non-redundant Set of PBD Structures</p>
+    </div>
+      </div>
+
+      <div class="row general_info_element" id="general_info_ele_3">
+        <h3 style="border: none; border: none;position: relative;">Codon Optimization</h3>
+        <h4>Optimized CⅠ(<a herf="http://parts.igem.org/Part:BBa_K3408004">BBa_K3408004</a>)</h4>
+<div class="clearfix"></div>
+        <p>We optimized the CⅠ protein (BBa_K3408004) based on <a href="https://www.thermofisher.com/cn/zh/home/life-science/cloning/gene-synthesis/geneart-gene-synthesis/geneoptimizer.html"> ThermoFisher SCIENTIFIC </a>to make it more suitable for our engineered bacteria.</p>
+<div class="col-md-6 col-sm-12">
+          <!-- <div class="col-md-4 col-sm-9 general_right_info"> -->
+            <img src="https://2020.igem.org/wiki/images/4/43/T--NAU-CHINA--basic-parts3.png " >
+<p style="font-size: 12px !important;text-align:center;">Fig.9. Codon quality distribution</p>
+</div>
+<div class="col-md-6 col-sm-12 ">
+            <img src="https://2020.igem.org/wiki/images/5/5e/T--NAU-CHINA--basic-parts4.png"  >
+
+
+<p style="font-size: 12px !important;text-align:center;">Fig.10.  Optimized codon quality distribution</p>
+</div>
+<div class="clearfix"></div>
+        <p>The histograms show the percentage of sequence codons which fall into a certain quality class. The quality value of the most frequently used codon for a given amino acid in the desired expression system is set to 100, the remaining codons are scaled accordingly (Sharp, P.M., Li, W.H., <i>Nucleic Acids Res</i>. 15 (3),1987).</p>
+
+        <h4>Optimized DpnI(<a herf="http://parts.igem.org/Part:BBa_K3408005">BBa_K3408005</a>)</h4>
+<div class="clearfix"></div>
+        <p><i>Bacillus subtilis</i> has been increasingly applied in genetic engineering due to its powerful secretion capacity. As a restriction enzyme which is capable of cutting all methylated DNA, optimized DpnI (BBa_K3408005) via codon optimization can be applied in <i>Bacillus subtilis</i> more efficiently.</p>
+<div class="col-md-6 col-sm-12">
+          <!-- <div class="col-md-4 col-sm-9 general_right_info"> -->
+            <img src="https://2020.igem.org/wiki/images/8/86/T--NAU-CHINA--basic-part7cp.png" >
+<p style="font-size: 12px !important;text-align:center;">Fig.11. Codon quality distribution</p>
+</div>
+<div class="col-md-6 col-sm-12 ">
+            <img src="https://2020.igem.org/wiki/images/f/f7/T--NAU-CHINA--basic-parts8.png"  >
+
+
+<p style="font-size: 12px !important;text-align:center;">Fig.12.  Optimized codon quality distribution</p>
+</div>
+<div class="clearfix"></div>
+        <p>The histograms show the percentage of sequence codons which fall into a certain quality class. The quality value of the most frequently used codon for a given amino acid in the desired expression system is set to 100, the remaining codons are scaled accordingly (Sharp, P.M., Li, W.H., <i>Nucleic Acids Res</i>. 15 (3),1987).</p>
+
+
+      </div>
+
+        
+       <div class="row general_info_element">
+<h4>References</h4>
+      <div class="col-md-12 col-sm-12 reference" style="margin-top: 40px">
+      	
+         <ul>
+          <li><span>[1]</span> <a > Zhou Xiaoxin, Hu Xiaojian. Determination of BPS, BPF and BPA in drinking water by SUPER high performance liquid chromatography tandem mass spectrometry[J]. Journal of Environmental Hygiene, 2020,10(02):196-200.</a></li>
+          <li><span>[2]</span> <a >  Liu Guohua, Pang Yumin, Qi Lu, Wang Hongchen. N<sub>2</sub>O Emission during Biological Nitrogen Removal from Wastewater in a SBR System[J]. Environmental Engineering,2020,38(07):51-57.</a></li>
+          <li><span>[3]</span> <a>  Li Pinyi. Crispri in situ investigates functions of toxin-antitoxin system in <i>Escherichia Coli Nissle</i> 1917[D].  Zhejiang Gongshang University,2019.</a></li>
+          <li><span>[4]</span> <a >Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R., Heer, F.T., de Beer, T.A.P., Rempfer, C., Bordoli, L., Lepore, R., Schwede, T. SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic Acids Res. 46(W1), W296-W303 (2018).</a></li>
+          <li><span>[5]</span> <a >  Guex, N., Peitsch, M.C., Schwede, T. Automated comparative protein structure modeling with SWISS-MODEL and Swiss-PdbViewer: A historical perspective. Electrophoresis 30, S162-S173 (2009).</a></li>
+          <li><span>[6]</span> <a>  Bienert, S., Waterhouse, A., de Beer, T.A.P., Tauriello, G., Studer, G., Bordoli, L., Schwede, T. The SWISS-MODEL Repository - new features and functionality. Nucleic Acids Res. 45, D313-D319 (2017).</a></li>
+          <li><span>[7]</span> <a >Studer, G., Rempfer, C., Waterhouse, A.M., Gumienny, G., Haas, J., Schwede, T. QMEANDisCo - distance constraints applied on model quality estimation. Bioinformatics 36, 1765-1771 (2020).</a></li>
+          <li><span>[8]</span> <a >  Bertoni, M., Kiefer, F., Biasini, M., Bordoli, L., Schwede, T. Modeling protein quaternary structure of homo- and hetero-oligomers beyond binary interactions by homology. Scientific Reports 7 (2017).</a></li>
+          
+         </ul>         
+      </div>          
+        </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+	    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+ <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/contributionjjs?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

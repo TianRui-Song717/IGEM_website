@@ -1,0 +1,185 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/d/d5/T--NAU-CHINA--compositedt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url("https://2020.igem.org/wiki/images/c/ce/T--NAU-CHINA--compositepartwzwz.png");
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+.general_info_element h3{
+  text-align:left;
+  margin: 50px 0px 0px 0px;
+  font-size: 3.5em;
+  font-weight:bold;
+  letter-spacing:0.05em;
+
+/*  border-top:dashed 2px rgba(180,180,180,0.5);*/
+  color:#af2434;/*#4f8a8b;*/
+}
+
+.general_info_element h4{
+  text-align:left;
+  margin: 1.5em 0px 1em 0px;
+  font-size: 1.8em;
+  letter-spacing:0.1em;
+  color:#ee7a65;
+  float: left;
+  width: 100%;
+}
+
+.general_info_element h5{
+  margin: 1.2em 0px;
+  font-size: 1.5em;
+  letter-spacing:0.1em;
+  color:#ffb25f;
+  font-weight: bolder;
+}
+/*滚动到相应部分侧边栏颜色不同*/
+.general_side_nav_color{
+  background-color:#ee7a65;
+  color: white;
+  border-radius:5px;
+  transition:0.2s;
+
+  font-weight:bold;
+}
+a.general_side_nav_color{/*add because of official website*/
+  background-color:#ee7a65;
+  color: white;
+  border-radius:5px;
+  transition:0.2s;
+
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+    <!--nav 见上-->
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">BBa_K3408006</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">BBa_K3408007</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">BBa_K3408008</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">BBa_K3408009</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">BBa_K34080010</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">BBa_K34080011</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--Overview-->
+            <div class="row general_info_element">
+              <h4>Overview</h4>
+<div class="clearfix"></div>
+              <p>
+                To initially verify that our system can finally serve its function, we need verification of different composite parts. Afterwards we can assemble them to build our engineering system. So, in this year, we designed six progressive composite parts to verify some critical functions of our system. Due to the influence of COVID-19 this year, all our verifications are based on the literature and mathematical theory.
+              </p>
+            </div>
+
+            <!--1 part-->
+            <div class="row general_info_element" id="general_info_ele_1">
+            	<h4>P<sub>nar</sub>-RBS-GFP- terminator</h4>
+            	<img src="https://2020.igem.org/wiki/images/2/2a/T--NAU-CHINA--composited010.png">
+<div class="clearfix"></div>
+            	<p>Part P<sub>nar</sub> is triggered by global regulator FNR, which is induced by ResDE bicomponent protein. The intestine is an <b>anaerobic environment</b>. ResE functions as the oxygen sensor which would be active in the absence of oxygen. Then ResD would be phosphorylated by ResE to activate promoter P<sub>fnr</sub> and express FNR. Therefore, the promoter <b>P<sub>nar</sub> can be activated by FNR to express phy(ycD)</b>. We employed this part to regulate different behaviors of our engineered <i>Bacillus subtilis</i>. Thus, we designed this composite part <a href="http://parts.igem.org/Part:BBa_K3408006"> (BBa_K3408006) </a>to verify function of the part P<sub>nar</sub>. We added a gfp gene following the promoter P<sub>nar</sub>. If our part P<sub>nar</sub> can function normally, we could see GFP successfully expressed in our <i>Bacillus subtilis</i>. </p>
+            </div>
+            <div class="row general_info_element" id="general_info_ele_2">
+            	<h4>P<sub>nar</sub>-RBS-phy(ycD)-terminator</h4>
+<div class="clearfix"></div>
+            	<img src="https://2020.igem.org/wiki/images/7/7a/T--NAU-CHINA--composited006.jpg">
+<div class="clearfix"></div>
+            	<p>Our project aims to secrete phytase to immobilize lead ions. Thus, we need to ensure that our system can secrete phytase normally. Our first composite part has demonstrated the function of part P<sub>nar</sub>. So next step, we need to verify whether part P<sub>nar</sub> and phytase phy(ycD) can achieve a successful assembly in this composite part <a href="http://parts.igem.org/Part:BBa_K3408007">(BBa_K3408007)</a>.</p>
+            	<p>When our engineered bacteria are fed to earthworms into the intestine, under the regulation of ResDE bicomponent protein, it can express phy(ycD) to tackle with lead. In our experiment, we would create an anaerobic environment to let our engineered bacteria function normally and detect production phy(ycD) to verify our circuit.</p>
+            </div>
+            <div class="row general_info_element" id="general_info_ele_3">
+            	<h4>P<sub>nar</sub>-RBS-CⅠ-terminator-P<sub>CⅠ</sub>-RBS-GFP-terminator</h4>
+<div class="clearfix"></div>
+            	<img src="https://2020.igem.org/wiki/images/9/91/T--NAU-CHINA--composited007.png">
+<div class="clearfix"></div>
+            	<p>On the basis of successful verification of part P<sub>nar</sub>, we can verify our optimized CⅠ, which serves the function of connecting P<sub>nar</sub> and the following Toehold switch. Successful verification of this composite part<a href="http://parts.igem.org/Part:BBa_K3408008"> (BBa_K3408008) </a>can well consolidate our more complicated part below.</p>
+            	<p>In earthworm’s intestine, <b>CⅠ protein would suppress P<sub>CⅠ</sub> to avoid expressing gene downstream</b>. We wanted to check if the CⅠ/P<sub>CI</sub> could work successfully. So, we used GFP as the coding sequence in the lab to verify our circuit.</p>
+            </div>
+            <div class="row general_info_element" id="general_info_ele_4">
+            	<h4>P<sub>liaG</sub>-trigger RNA-terminator-P<sub>CⅠ</sub>-switch RNA-GFP-terminator</h4>
+<div class="clearfix"></div>
+            	<img src="https://2020.igem.org/wiki/images/b/b7/T--NAU-CHINA--composited011.png">
+<div class="clearfix"></div>
+            	<p>Our Toehold switch comprising of trigger RNA and switch RNA are significant to our overall design of genetic circuit. So, it’s essential to verify the feasibility of this part. Thus, we designed an addition of a gfp gene following the Toehold switch.</p>
+            	<p>Trigger RNA could be transcribed in the intestine of earthworm under an anaerobic environment. With the intestine moving, switch RNA could be transcribed in the wormcast when oxygen exists. We used constitutive promoter P<sub>liaG</sub> and P<sub>CⅠ</sub> to transcribe trigger RNA and switch RNA all the time. In this composite part <a href="http://parts.igem.org/Part:BBa_K3408009">(BBa_K3408009)</a>, we could verify if our Toehold switch works normally by checking GFP.</p>
+            </div>
+            <div class="row general_info_element" id="general_info_ele_5">
+            	<h4>P<sub>nar</sub>-trigger RNA-terminator-P<sub>CⅠ</sub>-switch RNA-mazF-terminator</h4>
+<div class="clearfix"></div>
+<img src="https://2020.igem.org/wiki/images/2/2c/T--NAU-CHINA--composited008.png">
+<div class="clearfix"></div>
+            	
+            	<p>Now we have verified our P<sub>nar</sub>, optimized CⅠ and Toehold switch. So, further verification of more complicated assembly of our parts can lay the foundation of our future demonstration of the whole system. Considering the bio-safety, we will let our engineered bacteria commit suicide by expressing mazF. Based on this purpose, we tried to achieve a good assembly of P<sub>nar</sub>, Toehold switch and suicide module mazF.</p>
+            	<p>When in the intestine, <i>Bacillus subtilis</i> would accumulate trigger RNA. With time going by, engineered bacteria would be excreted outside and transcribe switch RNA with the existence of oxygen, so mazF could be translated and end engineered bacteria' life. In our lab, we would respectively create an anaerobic and an aerobic environment to check if our parts could assemble excellently. Follow-up experiments will verify the effect of mazF.</p>
+            	<p>Successful verification of this composite part<a href="http://parts.igem.org/Part:BBa_K3408010"> (BBa_K3408010) </a>can be very helpful to the overall building of our whole engineering system.</p>
+            </div>
+            <div class="row general_info_element" id="general_info_ele_6">
+            	<h4>P<sub>liaG</sub>-RBS-lacI-P<sub>grac</sub>-RBS-CⅠ-P<sub>CⅠ</sub>-RBS -GFP-terminator</h4>
+<div class="clearfix"></div>
+            	<img src="https://2020.igem.org/wiki/images/d/d6/T--NAU-CHINA--composited009.png">
+            	<p>In our lab, to guarantee successful culture of our engineered <i>Bacillus subtilis</i>, we introduced an IPTG induction system in our bacteria. Thus, this composite part<a href="http://parts.igem.org/Part:BBa_K3408011"> (BBa_K3408011) </a>is aimed to demonstrate that the IPTG induction system can actually work in our <i>Bacillus subtilis</i>.</p>
+            	<p>LacI is the transcriptional repressor protein, which could combine with <b>IPTG</b> and then detach from the locus of control to <b>activate the downstream P<sub>grac</sub></b>. In our culture medium with IPTG, <b>CⅠ protein could be expressed to suppress P<sub>CⅠ</sub></b>. So, there’s no GFP expressed in <i>Bacillus subtilis</i>.</p>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/Parts/Composite_Parts-js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

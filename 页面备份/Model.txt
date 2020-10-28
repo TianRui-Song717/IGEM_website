@@ -1,0 +1,113 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/Model_CA-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>Model Overview</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image" style="background-image: url(https://2020.igem.org/wiki/images/a/a8/T--NAU-CHINA--model-overview_back.jpg);background-size: contain;width: 50%;margin-left: 25%;">
+           <h2 style="width:100%;text-align:center;margin-top:70vh;color:white;"><i>All models are wrong, but some are useful.</i></h2>
+           <h2 style="width:100%;text-align:right;color:white;padding-right:10px;"><i>—— George Box</i></h2>
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <!-- <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">INTRODUCTION</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">CELLUAR AUTOMATION</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">KILL SWITCH</a></li>
+              </ul>
+            </div>
+          </div>
+ -->
+          <div class="col-md-1 col-sm-0"></div>
+
+          <!--右边的信息-->
+          <div class="col-md-10 col-sm-12 general_right_info">
+
+            <!--1.INTRODUCTION-->
+            <div class="row general_info_element">
+              <h3 style="text-align: center;">INTRODUCTION</h3>
+              <p style="padding:0px 3em;">
+                As synthetic biology continues to inject momentum into biomedical, biotechnology, and basic molecular research, mathematical model plays an increasingly important role as a tool. It makes significant sense in quantitative prediction and interpretation of data, as well as guiding the design of artificial systems.
+              </p>
+            </div>
+            <div class="row general_info_element">
+              <style>
+                  .my_btn{
+                    text-decoration: none;
+                    text-align: center;
+                    background-color:#bf7fc9;
+                    padding:15px 2%;
+                    border-radius: 10px;
+                    color: white;
+                  }
+
+
+                  .model_overview{
+                    padding: 2em;
+                  }
+
+
+                  @media screen and (max-width: 767px){
+                    #middle_line{display:none;}
+                  }
+              </style>
+
+
+              <div class="col-md-6 col-ms-6">
+                <div class="model_overview">
+                  <img src="https://2020.igem.org/wiki/images/5/5a/T--NAU-CHINA--Model-Overview1.png" style="display:inline-block;width:30%;">
+                  <h3 style="font-size:2.5em;min-height:15vh;text-align: center;">Kill Switch Model</h3>
+                  <p style="margin-top:5px;">
+                    To guide kill switch module design, ensuring the feasibility of kill switch, we established Kill Switch Model according to inhibition principle of CI protein and binding principle of Trigger and Toehold Switch. Through using differential equations, adjusting the RBS and degradation rates of CI protein, we obtained rational combinations enabling kill switch to work. Our model can be extended to analyze other kinds of kill switches by revising our model based on their own conditions.
+                  </p>
+                  <a style="background-color:#bf7fc9; color:white;padding:15px 2%;" href="https://2020.igem.org/Team:NAU-CHINA/KS_Model" class="my_btn">MORE INFO</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-ms-6">
+                <div class="model_overview">
+                  <img src="https://2020.igem.org/wiki/images/6/63/T--NAU-CHINA--Model-Overview2.png" style="display:inline-block;width:30%;">
+                  <h3 style="font-size:2.5em;min-height:15vh;text-align: center;">Cellular Automaton Model</h3>
+                  <p style="margin-top:5px;">
+                    To provide guidance for earthworm release strategy of our project, we constructed Cellular Automaton Model according to evolution rule. Through the simulation of cellular automaton, we got some results of different release strategies, and then gave feedback on earthworm releasing. Our model, focusing on migration of small soil animals, is an extension of our <a href="https://2019.igem.org/Team:NAU-CHINA/CA_Model" style="padding-right:0px;color:#bf7fc9;">team's model in last year</a> which was about flying insects in the air. 
+                  </p>
+                  <a  style="background-color:#bf7fc9; color:white;padding:15px 2%;" href="https://2020.igem.org/Team:NAU-CHINA/CA_Model" class="my_btn">MORE INFO</a>
+                </div>
+              </div>
+
+              <div id="middle_line" class="row" style="float: none;display: block;height: 60vh;width: 100%;margin: 10% 0px 5% 0px;">
+                <div class="col-md-6 col-sm-12"style="display:block;height: 100%;float: none;border-right: 2px solid #bf7fc9;"></div>
+                <div class="col-md-6 col-sm-12" style"display:block;height: 100%;float: none;"></div>
+              </div>
+            </div>
+
+          <div class="col-md-1 col-sm-0"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/Model/Overview-js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

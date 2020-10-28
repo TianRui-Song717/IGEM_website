@@ -1,0 +1,287 @@
+
+	{{NAU-CHINA/oranjia-test-home.csschushihua}}
+	{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/attribution.css}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>General Page</title>
+  <meta charset="utf-8">
+<style>
+.reference{
+  text-align:justify; 
+  text-justify:inter-ideograph;
+}
+.reference ul{
+  list-style: none;
+}
+
+.reference ul li{
+  position: relative;
+
+}
+.reference ul li span{
+  position: absolute; 
+  height: 100%;
+  width: 20px;
+  display: inline-block;
+}
+.reference ul li a{
+  padding-left: 2em;
+  display: inline-block;
+  text-decoration: none;
+}
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/2/27/T--NAU-CHINA--basicdt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url('https://2020.igem.org/wiki/images/9/9f/T--NAU-CHINA--hifliwaifldigfiladgblvbdwf.png');
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+.general_info_element h3{
+  text-align:left;
+  margin: 50px 0px 0px 0px;
+  font-size: 3.5em;
+  font-weight:bold;
+  letter-spacing:0.05em;
+
+/*  border-top:dashed 2px rgba(180,180,180,0.5);*/
+  color:#af2434;/*#4f8a8b;*/
+}
+
+.general_info_element h4{
+  text-align:left;
+  margin: 1.5em 0px 1em 0px;
+  font-size: 1.8em;
+  letter-spacing:0.1em;
+  color:#ee7a65;
+  float: left;
+  width: 100%;
+}
+
+.general_info_element h5{
+  margin: 1.2em 0px;
+  font-size: 1.5em;
+  letter-spacing:0.1em;
+  color:#ffb25f;
+  font-weight: bolder;
+}
+
+.general_info_element h6{color:#353535;}
+/*滚动到相应部分侧边栏颜色不同*/
+.general_side_nav_color{
+  background-color:#ee7a65;
+  color: white;
+  border-radius:5px;
+  transition:0.2s;
+
+  font-weight:bold;
+}
+a.general_side_nav_color{/*add because of official website*/
+  background-color:#ee7a65;
+  color: white;
+  border-radius:5px;
+  transition:0.2s;
+
+  font-weight:bold;
+}
+
+.general_right_info{
+    padding: 10vh 5vh;}
+
+#bodyContent a[href ^="https://"], .link-https{padding-right:0px!important;}
+</style>
+
+</head>
+<body>
+ 
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">P<sub>nar</sub></a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">phy(ycD)</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Toehold switch</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Optimized CⅠ</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Optimized DpnI</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1 Pnar-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3 style="border: none;">P<sub>nar</sub></h3>
+              <p>
+                P<sub>nar</sub> (<a href="http://parts.igem.org/Part:BBa_K3408000">BBa_K3408000</a>) is an oxygen-free inducible promoter which can response to the ResD/E two-component regulatory system and the global regulator Nitrate Reductase Regulator (FNR) of <i>Bacillus subtilis</i>.
+              </p>
+              <p>
+                In our gene circuit, we use P<sub>nar</sub> to control expression of phytase in the intestine of earthworm, which is an anaerobic condition. According to the paper (Jin, et al., 2018), P<sub>nar</sub> with three levels of strength were designed and applied in <i>E.coli</i> successfully(Fig.1.). The expression level of GFP in the control of high-strength promoter was 19.7 folds as the wild-type promoter. Since we wanted phytase to express as much as possible, we chose the high-strength P<sub>nar</sub>.
+              </p>
+              <img src="https://2020.igem.org/wiki/images/9/92/T--NAU-CHINA--basic-parts1.png" alt="sequence_of_promoter">
+              <h6>Fig.1. Sequence of promoter P<sub>nar</sub> with three levels of strength.</h6>
+              <h6>
+                The spacer sequence of 15 bp between the -35 and -10 elements of the upstream region of the wild-type nar promoter was randomized. (Hwang Hee Jin, et al., <i>BIOTECHNOL BIOFUELS</i>. 2018)
+              </h6>
+            </div>
+
+            <!--phy(ycD)-->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>phy(ycD)</h3>
+              <p>
+                Phytase is a kind of phosphate-solubilizing enzyme, which can hydrolyze phytate to produce phosphate.
+              </p>
+              <p>
+                Considering the limitation of pH, we chose the phytase which could work efficiently under pH 6.0 to pH 7.0. We have found the phy(ycD) (<a href="http://parts.igem.org/Part:BBa_K3408001">BBa_K3408001</a>) from <i>Bacillus subtilis</i> YCD whose optimum reaction pH is 6.5(Fig.2.). Thus, we constructed phy(ycD) gene into our engineered bacteria.
+              </p>
+              <img src="https://2020.igem.org/wiki/images/a/a0/T--NAU-CHINA--Basic-part-2.png" alt="Fig.2.">
+              <h6>Fig.2. Effects of pH on the phytase activity (Wang Xi, et al., <i>Applied and Environmental Biology</i>. 2014)</h6>
+            </div>
+
+            <!--toehold switch-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>Toehold switch</h3>
+              <p>
+                The toehold switch consists of a cis-repressing switch RNA hairpin and a trans-acting trigger RNA.
+              </p>
+              <h4>Switch RNA</h4>
+<div class="clearfix"></div>
+              <p>
+                The switch RNA contains the coding sequence of the regulated gene. The upstream of the coding sequence is a hairpin structure which contains RBS, the start codon and a common 21nt-linker sequence. The 5'end of the hairpin provides a binding site for the trigger RNA. The binding of the trigger RNA to an unpaired toehold sequence of the switch hairpin allows for a branch migration process, exposing the start codon and ribosome binding site for translation initiation.
+              </p>
+              <p>
+                We used the toxin protein gene mazF as the regulated gene, so when trigger RNA binds to the switch RNA (<a href="http://parts.igem.org/Part:BBa_K3408003">BBa_K3408003</a>) , MazF protein will be expressed to kill bacteria.
+              </p>
+              <h4>Trigger RNA</h4>
+<div class="clearfix"></div>
+              <p>
+                Trigger RNA is a short RNA sequence that can bind to the switch RNA to initiate translation of downstream gene.
+              </p>
+              <p>
+                In our gene circuit, we need high stability and long half-life of trigger RNA. Based on literature, we found that 5' hairpin can improve stability of mRNA (Fig.3.). By imitating this design, we added 5’ hairpin to trigger RNA to meet our need.
+              </p>
+              <img src="https://2020.igem.org/wiki/images/4/48/T--NAU-CHINA--basic-parts2.png" alt="Fig.3.">
+              <h6>Fig.3. Effect of different Synthetic 5' Secondary Structures to half-life of mRNA (Carrier T A, et al., <i>Biotechnology Progress</i>. 2010)</h6>
+            </div>
+
+            <!--Optimized CI-->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <h3>Optimized CⅠ</h3>
+              <p>
+                CⅠ repressor protein can specifically bind to promoter P <sub>CⅠ</sub> and inhibit activity of P<sub> CⅠ</sub>. It has been widely used to regulate expression of gene. We optimized the CⅠ protein (<a href="http://parts.igem.org/Part:BBa_K3408004">BBa_K3408004</a>) based on <a href="https://www.thermofisher.com/cn/zh/home/life-science/cloning/gene-synthesis/geneart-gene-synthesis/geneoptimizer.html">ThermoFisher SCIENTIFIC</a> to make it more suitable for our engineered bacteria.
+              </p>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/4/43/T--NAU-CHINA--basic-parts3.png" alt="Fig.4. quality class">
+                <h6>Fig.4. Codon quality distribution</h6>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/5/5e/T--NAU-CHINA--basic-parts4.png" alt="Fig.4. quality class">
+                <h6>Fig.5. Optimized codon quality distribution</h6>
+              </div>
+              <div class="clearfix"></div><!--两个col高度一致-->
+              <p>
+                The histograms show the percentage of sequence codons which fall into a certain quality class. The quality value of the most frequently used codon for a given amino acid in the desired expression system is set to 100, the remaining codons are scaled accordingly (see also Sharp, P.M., Li, W.H., Nucleic Acids Res. 15 (3),1987).
+              </p>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/b/bf/T--NAU-CHINA--basic-parts5.png" alt="Fig.4. quality class">
+                <h6>Fig.6. Codon quality plot</h6>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img src="http://parts.igem.org/wiki/images/0/0a/T--NAU-CHINA--basic-part6cp.png" alt="Fig.4. quality class">
+                <h6>Fig.7. Optimized codon quality plot</h6>
+              </div>
+              <div class="clearfix"></div><!--两个col高度一致-->
+              <p>
+                The plots show the quality of the used codon at the indicated codon position.
+              </p>
+            </div>
+
+
+            <!--Optimizded Dpnl-->
+            <div class="row general_info_element" id="general_info_ele_5">
+              <h3>Optimizded Dpnl</h3>
+              <p>
+                <i>Bacillus subtilis</i> has been increasingly applied in genetic engineering due to its powerful secretion capacity. As a restriction enzyme which is capable of cutting all methylated DNA, optimized DpnI (<a href="http://parts.igem.org/Part:BBa_K3408005">BBa_K3408005</a>) via codon optimization can be applied in <i>Bacillus subtilis</i> more efficiently.
+              </p>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/8/86/T--NAU-CHINA--basic-part7cp.png" alt="Fig.8. Condon quality distribution">
+                <h6>Fig.8. Codon quality distribution</h6>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/f/f7/T--NAU-CHINA--basic-parts8.png" alt="Fig.9. Optimized condon quality distribution">
+                <h6>Fig.9. Optimized codon quality distribution</h6>
+              </div>
+              <div class="clearfix"></div><!--两个col高度一致-->
+              <p>
+                The histograms show the percentage of sequence codons which fall into a certain quality class. The quality value of the most frequently used codon for a given amino acid in the desired expression system is set to 100, the remaining codons are scaled accordingly (see also Sharp, P.M., Li, W.H., Nucleic Acids Res. 15 (3),1987).
+              </p>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/e/e6/T--NAU-CHINA--basic-parts9.png" alt="Fig.10. Codon quality plot">
+                <h6>Fig.10. Codon quality plot</h6>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/3/31/T--NAU-CHINA--basic-part10cp.png" alt="Fig.11. Optimized codon quality plot">
+                <h6>Fig.11. Optimized codon quality plot</h6>
+              </div>
+               <div class="clearfix"></div><!--两个col高度一致-->
+               <p>
+                 The plots show the quality of the used codon at the indicated codon position.
+               </p>
+
+            </div>
+
+<div class="row general_info_element">
+<h4>References</h4>
+      <div class="col-md-12 col-sm-12 reference" style="margin-top: 40px">
+      	
+         <ul>
+          <li><span>[1]</span> <a > Hwang Hee Jin,Lee Sang Yup,Lee Pyung Cheon. Engineering and application of synthetic nar promoter for fine-tuning the expression of metabolic pathway genes in Escherichia coli [J]. Biotechnology for biofuels,2018,11.</a></li>
+          <li><span>[2]</span> <a >  Wang Xi, Lu Wenliang, Yao Mingze, et al. Heterologous expression and purification of the phytase phy (ycD) gene from <i>Bacillus subtilis</i> in Escherichia coli [J]. Applied and Environmental Biology,2014,20(02):295-299.</a></li>
+          <li><span>[3]</span> <a>  Carrier T A , Keasling J D. Library of Synthetic 5' Secondary Structures To Manipulate mRNA Stability in Escherichia coli[J]. Biotechnology Progress, 2010,15(1):58-64.
+</a></li>
+
+          
+         </ul>         
+      </div>          
+        </div>
+        </div>
+      </div>
+
+    </div>
+	    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/Parts/Basic-Parts-js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

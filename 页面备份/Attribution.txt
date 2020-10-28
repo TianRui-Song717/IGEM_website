@@ -1,0 +1,551 @@
+
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/attribution.css}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+
+
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<style>
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/5/5d/T--NAU-CHINA--notebookbig.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url("https://2020.igem.org/wiki/images/2/21/T--NAU-CHINA--attributiondewz.png");
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+</style>
+
+</head>
+<body>
+
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">Team Members</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Advisors</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Instructors</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Principle Investigators</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Other Experts</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">Special Acknowledgement</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+           <div class="row general_info_element" id="general_info_ele_1">
+              <h3 style="border: none; border: none;position: relative;">Team Members</h3>
+              <h4>Team Leaders</h4>
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/f/fa/T--NAU-CHINA--teammembersgl.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 20px;"><b>GuoLong Shi</b></p>
+              <p style="margin-top: 0px">As the leader of NAU-CHINA 2020, main responsibilities of Guolong Shi are to design the project, experiments and interact with other iGEM teams. He presided over the weekly group meeting, checked team members' work at the meeting, and issued new tasks.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2019.igem.org/wiki/images/e/e8/T--NAU-CHINA--cz.png" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 20px;"><b>Zhen Cao</b></p>
+              <p style="margin-top: 0px">Communicating with the school for allowance to participating iGEM; guiding and redirecting the brainstorm and early project design; organizing introductory training of information collection; helping collaboration among different groups.</p>
+              </div>
+            </div>
+
+              
+              <div class="row general_info_element">
+<h4>Wet Lab</h4>
+                <div class="col-md-2 col-sm-12">
+                  <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                    <img src="https://2020.igem.org/wiki/images/b/bc/T--NAU-CHINA--teammembercy.jpg" style="border-radius:50%; overflow:hidden;">
+                    <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                  <!-- </div> -->
+                </div>
+                <div class="col-md-10 col-sm-12">
+                  <p style="margin-bottom: 0;margin-top: 30px;"><b>Yu Cao</b></p>
+                <p style="margin-top: 0px">Responsible for the design of the gene circuit and the design wiki, modified the details of the circuit and designed experiments to verify the feasibility of the whole circuit.</p>
+                </div>
+              </div>
+              <div class="row general_info_element">
+                <div class="col-md-2 col-sm-12">
+                  <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                    <img src="https://2020.igem.org/wiki/images/d/d3/T--NAU-CHINA--teammemberyfz.jpg" style="border-radius:50%; overflow:hidden;">
+                    <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                  <!-- </div> -->
+                </div>
+                <div class="col-md-10 col-sm-12">
+                  <p style="margin-bottom: 0;margin-top: 30px;"><b>Fengzhi Yuan</b></p>
+                <p style="margin-top: 0px">Responsible for the design of the gene circuit and the engineering success wiki, researched and chose the parts used in the gene circuit.</p>
+                </div>
+              </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/e/e3/T--NAU-CHINA--teammemberwxl.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Xiuli Wang</b></p>
+              <p style="margin-top: 0px">Responsible for the design of the gene circuit, searched materials and designed experiments to verify the effects of each part. Responsible for the design in the presentation video.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/d/dc/T--NAU-CHINA--teammembercp.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 20px;"><b>Peng Chen</b></p>
+              <p style="margin-top: 0px">A wet lab member, participated in the construction, added information to parts and wrote team wiki. Also responsible for part registry, improvement and helped HP write the promotion song. Responsible for the expected results in the presentation video.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/6/6f/T--NAU-CHINA--teammembersjx.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Jiaxing Sun</b></p>
+              <p style="margin-top: 0px">One of the experimental group members, took part in experimental design, added new information to existing parts, helped with modeling work.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/e/e7/T--NAU-CHINA--teammemberzyf.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Yifei Zhao</b></p>
+              <p style="margin-top: 0px">As a wet lab member, collected information, helped with experimental design and part registry, also pushed the offline promotion.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/b/ba/T--NAU-CHINA--teammembersyt.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Yuting Sun</b></p>
+              <p style="margin-top: 0px">One of the wet lab members, gathered information, responsible for finding the appropriate application environment for the project and participating in writing team wiki.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/3/3b/T--NAU-CHINA--teammemberlyn.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Yunong Li</b></p>
+              <p style="margin-top: 0px">Participated in project design and found the way to immobilize lead ions based on literature, and helped with experiment design, also responsible for overall coordination of Wiki materials. Responsible for the background in the presentation video.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/c/ca/T--NAU-CHINA--teammemberzrj.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Ruijie Zhang</b></p>
+              <p style="margin-top: 0px">In charge of "Safety and Security" of the project and completed the content of the project implementation page.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/5/54/T--NAU-CHINA--teammemberlzy.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 50px;"><b>Ziye Lv</b></p>
+
+              <p style="margin-top: 0px">Responsible for the security and implementation and participated in the editing of the wiki.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/e/e4/T--NAU-CHINA--teammembercsp.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Shangping Chen</b></p>
+              <p style="margin-top: 0px">A wet lab member, responsible for writing abstract, project description part and thinking project title. Meanwhile, helped to seek for the information of promoter nar.</p>
+              </div>
+            </div>
+
+              
+            <div class="row general_info_element">
+<h4>Model</h4>
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/a/a1/T--NAU-CHINA--teammemberlyx.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 50px;"><b>Hongyan Liu</b></p>
+              <p style="margin-top: 0px">Dry Team Member, Model team, writing model wiki and presentation materials and participating in Kill Switch Model.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/d/de/T--NAU-CHINA--teammemberlhy.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 50px;"><b>Yixing Li</b></p>
+              <p style="margin-top: 0px">Dry Team Member, Model team, responsible for Kill Switch Model, commentator in presentation video.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/a/aa/T--NAU-CHINA--teammemberjxr.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Xinran Jiang</b></p>
+              <p style="margin-top: 0px">Dry Team Member, Model team, responsible for Cellular Automaton Model and participating in editing model wiki.</p>
+              </div>
+            </div>
+
+              
+            <div class="row general_info_element">
+<h4>Human Practices</h4>
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/0/06/T--NAU-CHINA--teammemberyjm.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Jiamao Yang</b></p>
+              <p style="margin-top: 0px">Dry Team Member, HP team, in charge of Integrated Human Practices, consultations with experts and stakeholders. Responsible for the human practices in the presentation video.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/3/39/T--NAU-CHINA--teammemberflj.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Lijun Fan</b></p>
+              <p style="margin-top: 0px">Dry Team Member, HP team, in charge of Science Communication, collaboration with iGEM teams and associations.</p>
+              </div>
+            </div>
+
+              
+            <div class="row general_info_element">
+<h4>WiKi and Design</h4>
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/7/77/T--NAU-CHINA--teammembercyc.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 20px;"><b>Yucheng Chen</b></p>
+              <p style="margin-top: 0px">A member of wiki group, editor of the wiki web page, participated in the design of wiki web page framework and structure. Finished part of the code writing. Uploaded the wiki page and related pictures. Built poster page.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/4/47/T--NAU-CHINA--teammemberstr.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 20px;"><b>Tianrui Song</b></p>
+              <p style="margin-top: 0px">A member of wiki group, editor of the wiki web page, participated and implemented in the design of wiki framework and home page. Finished part of the code writing. Typed related javascript code. Designed and built poster page.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/d/d6/T--NAU-CHINA--teammemberjxy.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Xinyue Jiang</b></p>
+              <p style="margin-top: 0px">Art designer of wiki page. She is our photographer of team photos and responsible for the making of popularing decorations. Poster designer and presentation video maker.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+              <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/c/cc/T--NAU-CHINA--teammemberzr.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Ran Zhang</b></p>
+              <p style="margin-top: 0px">Art designer of wiki page. Poster designer and presentation video maker. Responsible for the overall artistic design and web style.</p>
+              </div>
+            </div>
+
+
+
+            
+
+          
+      <div class="row general_info_element" id="general_info_ele_2">
+        <h3>Advisors</h3>
+      <div class="row general_info_element">
+        <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/c/c7/T--NAU-CHINA--teammemberhyy.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 20px;"><b>Yingying Han</b></p>
+              <p style="margin-top: 0px">One of our project's advisors, especially in the aspect of mathematical model. Responsible for providing suggestions for specific problems. Answered team members' questions, came up with new questions and discussed with team members on every-week presentation.</p>
+              </div>
+            </div>
+            <div class="row general_info_element">
+        <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2019.igem.org/wiki/images/a/a5/T--NAU-CHINA--fcz.png" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Chengzhu Fang</b></p>
+              <p style="margin-top: 0px">A student consultant of our team. She participated in the design of our project and conducted the whole experiment guidance. Guided project presentation.</p>
+              </div>
+            </div>
+
+      </div>
+
+      <div class="row general_info_element" id="general_info_ele_3">
+        <h3 style="border: none; border: none;position: relative;">Instructors</h3>
+        <div class="row general_info_element">
+        <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/b/bf/T--NAU-CHINA--wjflaoshi.png" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+        </div>
+      
+
+        <div class="row general_info_element">
+        <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 50px;"><b>Jufang Wang</b></p>
+              <p style="margin-top: 0px">Assisted in the design of Science Communication, and directed the writing of our wiki pages.</p>
+        </div>
+        <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/9/92/T--NAU-CHINA--memberwznew.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+        </div>
+        <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Zhe Wang</b></p>
+              <p style="margin-top: 0px">Took care of our daily lives, provided us with a conference room and helped us contact with other teams.</p>
+        </div>
+      </div>
+      <div class="row general_info_element">
+        <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/0/06/T--NAU-CHINA--memberliatenew.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+        </div>
+        <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 50px;"><b>Ate Li</b></p>
+              <p style="margin-top: 0px">Gave us mental health counseling and helped us build our team.</p>
+        </div>
+      </div>
+      <div class="row general_info_element">
+        <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/a/af/T--NAU-CHINA--memberwjnew.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+        </div>
+        <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 40px;"><b>Prof.Jin Wang</b></p>
+              <p style="margin-top: 0px">Provided us with experimental training and guided us to conduct experiments safely.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="row general_info_element" id="general_info_ele_4">
+        <h3>Principle investigators</h3>
+        <div class="row general_info_element">
+                <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/e/eb/T--NAU-CHINA--memberjjdnew.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+        </div>
+        <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 50px;"><b>Prof. Jiandong Jiang</b></p>
+              <p style="margin-top: 0px">Provided us with financial support.</p>
+        </div>
+      </div>
+      <div class="row general_info_element">
+                <div class="col-md-2 col-sm-12">
+                <!-- <div style="border-radius:50%; overflow:hidden;"> -->
+                  <img src="https://2020.igem.org/wiki/images/8/8e/T--NAU-CHINA--membercxnew.jpg" style="border-radius:50%; overflow:hidden;">
+                  <!-- <p style="margin-top: 0;margin-left: 10px">Guolong Shi</p> -->
+                <!-- </div> -->
+        </div>
+        <div class="col-md-10 col-sm-12">
+                <p style="margin-bottom: 0;margin-top: 50px;"><b>Prof. Xi Chen</b></p>
+              <p style="margin-top: 0px">Provided us with experimental design guidance.</p>
+        </div>
+
+      </div>
+      <div class="row general_info_element" id="general_info_ele_5">
+          <h3 style="border: none; border: none;position: relative;">Other Experts</h3>
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Dr. Bennie I. Osburn</b></p>
+              <p style="margin-top: 0px">Provided and introduced the concept of One Health and assisted in the integration of the concept of One Health to our project.</p>
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Christie Marie Brunner</b></p>
+              <p style="margin-top: 0px">Assisted in the integration of the concept of One Health to our project and recommended the professor, Dr. Jorge L. Mazza Rodrigues shared useful information.</p>
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Dr. Joseph Bressler</b></p>
+              <p style="margin-top: 0px">Introduced the professional knowledge of blood lead and provided advice and insight on the project.</p>
+   
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Dr. Jorge L. Mazza Rodrigues</b></p>
+              <p style="margin-top: 0px">Provided insight and advice on soil microbe and Gave the informative questions.</p>
+ 
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Prof.Ningyue Xu</b></p>
+              <p style="margin-top: 0px">Provided advice and insight on the project and shared some data from controlling of soil risk management in agricultural land.</p>
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Prof.Guo Xianhua</b></p>
+              <p style="margin-top: 0px">Provided advice and insight on the project and shared other ways of heavy metal comtamination.</p>
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Prof.Zhen Li</b></p>
+              <p style="margin-top: 0px">Provided advice and insight on the project.</p>
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Peixiang Zhou</b></p>
+              <p style="margin-top: 0px">Provided advice and insight on the project.</p>
+
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Haiyan Pei</b></p>
+              <p style="margin-top: 0px">Provided advice and insight on the project and Introduced current situation of chinese farmers.</p>
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Yuan Xiao</b></p>
+              <p style="margin-top: 0px">Provided advice and insight on the project.</p>
+
+
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>Prof.Yan Huang</b></p>
+              <p style="margin-top: 0px">Helped us with construction of 3D model of protein.</p>
+
+
+
+                <p style="margin-bottom: 0;margin-top: 30px;"><b>PhD Xinwang Yan</b></p>
+              <p style="margin-top: 0px">Gave us a lot of advice about our gene circuit.</p>
+
+          
+          <!-- </div> -->
+      </div>
+
+      <div class="row general_info_element" id="general_info_ele_6">
+          <h3 style="border: none; border: none;position: relative;">Special Acknowledgement</h3>
+          <ul >
+          	<li style="text-align: left; font-size: 18px;margin-top: 20px">Yiqin Zhang provided some advice for our wiki.</li>
+<li style="text-align: left; font-size: 18px;margin-top: 20px">Zitong Yang provided some advice for our wiki design.</li>
+            <li style="text-align: left; font-size: 18px;margin-top: 20px">Lizhen Yang and Zelin Zhu provided some advice for our model at the end of competition.</li>
+            
+            <li style="text-align: left; font-size: 18px;margin-top: 20px">Feeling extremely lucky, I become a member of NAU-CHINA.</li>
+            <li style="text-align: left; font-size: 18px;margin-top: 20px">Thanks for every hard-working teammate. Always remember the sweat, tears and smile of struggle.</li>
+            <li style="text-align: left; font-size: 18px;margin-top: 20px">Thanks to all our teammates, classmates, friends, teachers, and seniors who have always cared and encouraged us.</li>
+            <li style="text-align: left; font-size: 18px;margin-top: 20px">We want to share the joy of success with you all.</li>
+            <li style="text-align: left; font-size: 18px;margin-top: 20px">Once iGEMer, forever iGEMer.</li>
+            <li style="text-align: left; font-size: 18px;margin-top: 20px">And we are ready for the next journey!</li>
+
+          </ul>
+          <!-- </div> -->
+      </div>
+
+ 
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+	    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+ <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/attributionjs?action=raw&ctype=text/javascript"></script>
+
+</body>
+
+</html>
+{{NAU-CHINA/sponsor}}

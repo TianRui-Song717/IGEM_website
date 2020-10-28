@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">First</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Second</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Third</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Fourth</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Fifth</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3 style="border: none;">DISCOVER</h3>
+              <h4>The birth of SLIM</h4>
+              <p>It was just a casual conversation with a relative of our group member who is a peasant. It was just a casual glimpse of a news about lead poisoning. Maybe at that time, the seed of SLIM was sowed and was born in this world quietly.</p>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/farmer_color.png" data-toggle="modal" data-target="#Larger_img_modal">
+                <h6>img_title_1</h6>
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <h5 class="hp_info_title" >Peasant Wang Ping</h5>
+                <p>We called Wang Ping, he said there was a coating factory near his house.He alsofound that there were indeed fewer earthworms in the earth. Though vegetables seemed to grow faster due to the application of fertilizer, they were also easier to be attacked by pests. That’s why  he has been suffering from the loss of it. He thought there must be some relations among factory, earth and crops, which inspired us to use earthworms to protect the heavy metal contaminate
+                d farmlands. We do really want to help peasant like Wang Ping reduce the loss.</p>
+              </div>
+            </div>
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>SUB TITLE ONE</h3>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/1.jpg" data-toggle="modal" data-target="#Larger_img_modal">
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+                <h4>sub sub title</h4>
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+              </div>
+            </div>
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>SUB TITLE TWO</h3>
+              <div class="col-md-8 col-sm-12">
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+                <h4>sub sub title</h4>
+                <p>some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion
+                some inforamtion some inforamtion some inforamtion some inforamtion some inforamtion</p>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <video src="../../video/home_OK.mp4" playsinline autoplay muted loop></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+
+    <!--放大图片处-->
+    <!-- Modal -->
+    <style type="text/css">
+      .modal-backdrop.in{
+        z-index:1;
+      }
+      .modal{
+        background-color: rgba(0,0,0,0.5);
+      }
+    </style>
+    <script type="text/javascript">
+      $(function(){
+        $("img").click(function(){
+          if($(this).attr("data-target") == "#Larger_img_modal"){
+            var img_src = $(this).attr("src");
+            $("#Larger_img_modal").children().children().find("img").attr("src",img_src);
+            var img_tit = $(this).next().text();
+            // alert(img_tit);
+            $("#Larger_img_modal").children().children().find("h6").text(img_tit);
+          }
+        });
+      })
+    </script>
+    <div class="modal fade" id="Larger_img_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:70vw;left:-15vw;top:2vh;display:inline-block;">
+          <img style="width:100%;border-radius:2px 2px 0px 0px;" src="">
+          <h6 style="text-align: center;"></h6>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

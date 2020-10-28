@@ -1,0 +1,43 @@
+function y=model_calculate_2(a1,a2)
+% trRNA:tigger mRNA
+% tsRNA:Toehold switch mRNA
+% tr_tsRNA:intermediate complex
+% tr_tsRNA/trRNA_f/tsRNA_f=2.822e-5;
+% trRNA_f+tr_tsRNA=trRNA
+% tsRNA_f+tr_tsRNA=tsRNA
+
+% 求解方程组: 
+% tr_tsRNA=x1;
+% trRNA_f=x2;
+% tsRNA_f=x3;
+% trRNA=x4;
+% tsRNA=x5;
+% k1=2.822e-5;
+% x1+x2=x4;
+% x1+x3=x5;
+% x1/x2/x3=2.822e-5;
+
+    % 声明符号变量
+    syms x1 x2 x3;
+    % 定义方程
+    eq1 = x1+x2-a1;
+    eq2 = x1+x3-a2;
+    eq3 = x1/x2/x3-1e5;
+    % 调用solve求解方程组
+    sol = solve(eq1, eq2, eq3);
+    x1 = sol.x1;
+    x2 = sol.x2;
+    x3 = sol.x3;
+	
+    % 使用double将符号解转换为数值解
+     R1 = double(x1); 
+     R2 = double(x2); 
+     R3 = double(x3); 
+	 
+     ind = find(R1>0&R2>0&R3>0);
+     R1_end = R1(ind); 
+     R2_end = R2(ind);
+     R3_end = R3(ind); 
+
+     y=R1_end*6.02e23*1e-15/1e6;
+     return

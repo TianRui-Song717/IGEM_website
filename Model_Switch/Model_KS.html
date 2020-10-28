@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Model_Toehold</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen and (min-width:300px)">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+    MathJax.Hub.Config({ TeX: {
+    extensions: ["extpfeil.js"]
+
+    }});
+
+    MathJax.Hub.Config({
+      "HTML-CSS": {
+        preferredFont: "STIX",
+        fonts: ["TeX", "STIX"]
+      }
+    });
+  </script>
+
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+	<style>
+		.change_a_color{
+		 color:#f2a8cb;
+		}
+
+		.change_a_color:hover{
+			color: mediumpurple;
+			text-decoration: none;
+		}
+	</style>
+
+</head>
+<body>
+    <!--导航栏-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-static navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--隐藏式导航栏按钮-->
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo_chara.png" class="logo_container">
+          </a>
+          <a class="nav_bar_logo" href="#">
+            <img src="logo_pic.png" class="logo_container" id="slim_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="nav_text" href="#">HOME</a>
+            </li>
+            <li class="dropdown">
+              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop1">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Attributions</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PROJECT
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop2">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Demonstration</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Parternship</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Part</a></li>
+                <li><a href="#">Composite Part</a></li>
+                <li><a href="#">Part Collection</a></li>
+                <li><a href="#">Improvements</a></li>
+              </ul>
+            </li>
+            <li>
+              <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <!-- <span class="caret"></span> -->
+              </a>
+            </li>
+            <li class="dropdown">
+              <a id="drop5" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                HUMAN PRACTICES
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop5">
+                <li><a href="#">Human Practices</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Implementation</a></li>
+                <li><a href="#">Education</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li id="fat-menu" class="dropdown">
+              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="drop3">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">Q&A</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Abstract</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Background</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Hypothesis</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Symbolic Description</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">Model</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_7" class="general_sidenav_a" id="sidenav_7">Results & Analysis</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_8" class="general_sidenav_a" id="sidenav_8">Sensitivity Analysis</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_9" class="general_sidenav_a" id="sidenav_9">Evaluation</a></li>
+								<li class="general_sidenav_li"><a href="#general_info_ele_10" class="general_sidenav_a" id="sidenav_10">Reference</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1.Q&A-->
+            <style type="text/css">
+              .general_info_element h4{
+                float: none;
+              }
+            </style>
+            <div class="row general_info_element" id="general_info_ele_1">
+              <img style="width:20%;display: block;float:none;" src="img/Q&A-1.png" align="left"/>
+              <h4>1. How to control the amount of CI protein?</h4>
+              <p>
+                The amount of CI protein is controllable. We can change RBS strength to change mRNA translation rate or add degradation label to change the degradation rate.
+              </p>
+              <h4>2. How to explain the effectiveness of the kill switch?</h4>
+              <p>
+                The modified <i>Bacillus subtilis</i> did not commit suicide in the laboratory and in the intestine of earthworms because the CI protein bound to the DNA inhibition site to prevent the Toehold Switch from being produced. The kill switch cannot be turned on.
+              </p>
+              <h4>3. Which is the best RBS and degradation rate combination?</h4>
+              <p>
+                In the intestine of earthworms, the production of MazF is the key. Due to the possibility of leakage, the production of MazF is not always set at 0. We simulated the leakage of MazF in the intestinal environment to find the combination that generated the least MazF leakage. If the combinations were not unique, considering that we hoped the kill switch could be turned on as soon as possible after the engineered bacteria were discharged out of the intestine, the RBS and a faster degradation rate combination was considered to be the best combination.
+              </p>
+            </div>
+
+            <!--2. ABSTRACT -->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>Abstract</h3>
+              <p>
+                To avoid biological pollution，we modified the gene pathway of Bacillus subtilis by introducing kill switch making that the engineered bacteria do not commit suicide in the intestine, but switch on the suicide mode after it was expelled out of the intestine. To verify the feasibility of the kill switch, we built the Kill Switch model, which combined the degradation rate of CI protein with different strength RBS. After we quantitatively simulated the effect of the kill switch under various combinations, the best degradation rate and the combination of RBS are given. By adding <b>the LVA tag</b> and selecting <b>B0034</b>, the kill switch can operate effectively.
+              </p>
+            </div>
+
+            <!--3. BACKGROUND-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>Background</h3>
+              <p>
+                The level of MazF is directly affected by the RBS and the degradation rate of CI protein, so we chose to adjust the two to find the best combination. There are three stages involved in CI protein concentration and MazF.
+              </p>
+              <h4>Laboratory Culture Phase</h4>
+              <p>
+                Add IPTG to induce the production of enough CI protein, no MazF.
+              </p>
+              <h4>In the Intestine of an Earthworm</h4>
+              <p>
+                The accumulated CI protein induced in laboratory degraded, and in the absence of oxygen, Bacillus subtilis express CI protein and Trigger RNA, maybe MazF because of leakage.
+              </p>
+              <h4>External Environment</h4>
+              <p>
+                When <i>Bacillus subtilis</i> is expelled out of the intestine. CI protein and Trigger RNA are no longer produced and are always degraded. As the concentration of CI decreases and the number of free inhibition sites increases, more and more Toehold Switches are produced, which can combine with Trigger RNA to produce more and more MazF.
+              </p>
+            </div>
+
+            <!--4. MODEL HYPOTHESIS-->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <h3>Model Hypothesis</h3>
+              <ul>
+                <li>The degradation rate of mRNA is a constant.</li>
+                <li>The mRNA is generated at a constant constitutive transcription rate.</li>
+                <li>The copy number of plasmids is kept as a constant.</li>
+                <li>Other species such as RNAP polymerases and ribosomes are kept constant as well.</li>
+                <li>Reactions are at equilibrium, steady state, or quasi-steady state<sup>[1]</sup>.</li>
+                <li>Each RBS part has a native strength irrespective of the promoter and protein-coding part it can be used with, and the translation rate with same RBS has a linear relationship with the mRNA length<sup>[1]</sup>.</li>
+								<li>Toehold Switch will not be generated only when both inhibition sites are occupied.</li>
+								<li>Since the probability of gene mutation is very small, our model did not consider gene mutation.</li>
+              </ul>
+            </div>
+
+            <!-- 5. SYMBOLIC DESCRIPTION-->
+            <div class="row general_info_element" id="general_info_ele_5">
+              <h3>Symbolic Description</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Variables</th>
+                    <th>Explanation</th>
+                    <th>Value</th>
+                    <th>Units</th>
+                  </tr>
+                </thead>
+                <tbody>
+									<tr>
+									  <th scope="row">$$ CI-1 $$</th>
+									  <td>
+									    CI protein induced in laboratory
+									  </td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ CI-2 $$</th>
+									  <td>
+									    CI protein produced in earthworm intestine
+									  </td>
+										<td></td>
+										<td></td>
+									</tr>
+                  <tr>
+                    <th scope="row">$$ K_{mRNA-CI} $$</th>
+                    <td>
+                      The transcriptional rate of DNA-CI
+                    </td>
+                    <td>5</td>
+                    <td>$$ min^{-1} $$</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">$$ K_{mRNA-TS} $$</th>
+                    <td>The degradation rate of mRNA <sub>TS</sub></td>
+                    <td>5</td>
+                    <td>$$ min^{-1} $$</td>
+                  </tr>
+                   <tr>
+                    <th scope="row">$$ K_{CI-2} $$</th>
+                    <td>The rate of translation of mRNA<sub>CI</sub>} in the intestine of earthworms</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+									<tr>
+									  <th scope="row">$$ d_{mRNA-TS} $$</th>
+									  <td>The degradation rate of mRNA <sub> TS </sub></td>
+									  <td>0.3</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ d_{mRNA- CI} $$</th>
+									  <td>The degradation rate of mRNA<sub> CI</sub></td>
+									  <td>0.3</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ d_{TS} $$</th>
+									  <td>The degradation rate of Toehold Switch</td>
+									  <td>0.3</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ d_{CI-1} $$</th>
+									  <td>The degradation rate of CI induced in laboratory</td>
+									  <td></td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ d_{CI-2} $$</th>
+									  <td>The degradation rate of CI produced in earthworm intestine</td>
+									  <td></td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ G_{CI} $$</th>
+									  <td>CI encoding sequence concentration constant</td>
+									  <td>$$ 2.54\times 10^{-9} $$</td>
+									  <td>$$ M $$</td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ G_{TS} $$</th>
+									  <td>Toehold Switch encoding sequence concentration constant</td>
+									  <td>$$ 2.54\times 10^{-9} $$</td>
+									  <td>$$ M $$</td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ V_{mRNA-CI} $$</th>
+									  <td>The formation rate of mRNA <sub> CI</sub></td>
+									  <td></td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ V_{CI} $$</th>
+									  <td>The formation rate of CI</td>
+									  <td></td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ V_{mRNA-TS} $$</th>
+									  <td>The formation rate of mRNA <sub> TS</sub></td>
+									  <td></td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row">$$ V_{TS} $$</th>
+									  <td>The formation rate of Toehold Switch</td>
+									  <td></td>
+									  <td></td>
+									</tr>
+									<tr style="border-bottom:2px solid #eee">
+									  <th scope="row">$$ \varepsilon _{1} $$</th>
+									  <td>The coefficient of CI protein and inhibitory site binding</td>
+									  <td></td>
+									  <td></td>
+									</tr>
+                </tbody>
+              </table>
+              <h6 style="text-align:left;">Note 1: Calculation method of transcription rate: The general transcription rate is 40~80 nt/s. We took 80nt/s as the standard to calculate the transcription rate according to the length of NDA sequence.</h6>
+              <h6 style="text-align:left;">Note 1: Calculation method of translation rate: The general translation rate range is 10~20 aa/s. Except for CI proteins, 20 aa /s was used as the standard to calculate the translation rate according to the mRNA sequence length. The CI protein translation rate at the highest RBS strength was set as 20 aa /s, and the translation rates at other RBS strengths were calculated in turn according to the intensity ratio.</h6>
+            </div>
+
+            <!--6.Design-->
+            <div class="row general_info_element" id="general_info_ele_6">
+              <h3>Design</h3>
+							<p>
+							 By regulating the amount of CI protein, we can control the kill switch. In the laboratory, we selected the concentration of IPTG which could produce the most CI protein. After entering the intestine, RBS strength and CI protein degradation rate were adjusted by using our model to achieve the minimum amount of MazF.
+              </p>
+							<!--5.1-->
+              <h4>RBS and Degradation Tag</h4>
+							<!--5.1.1-->
+              <h5>RBS Selection</h5>
+              <p>
+                RBS sequence, also called SD ( <i>Shine-Dalgarno</i> ) sequence, is a key controlling the initiation of translation and the expression of proteins, so it determines the level of translation, increasing yield of target product <sup>[3]</sup>. We can change the amount of CI protein produced by selecting suitable RBS strength.
+              </p>
+              <p>
+                To select a more suitable RBS, we selected RBS with different strengths for the test, as shown in <b>Table 5.1.1</b>.
+              </p>
+
+							<h6>Table 5.1.1  Four types of RBS</h6>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>RBS Name</th>
+                    <th>Strength</th>
+                    <th>Translation rate(min<sup>-1</sup>)</th>
+                    <th>Sequence</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">B0035</th>
+                    <td>
+                      53071.18
+                    </td>
+                    <td>0.932205213</td>
+                    <td>TCTAGAGATTAAAGAGGAGAATACTAGATG</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">B0064</th>
+                    <td>29421.18</td>
+                    <td>0.516788535</td>
+                    <td>TCTAGAGAAAGAGGGGAAATACTAGATG</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">B0031</th>
+                    <td>8301.68</td>
+                    <td>0.145820563</td>
+                    <td>TCTAGAGTCACACAGGAAACCTACTAGATG</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">B0029</th>
+                    <td>5060.21</td>
+                    <td>0.088883536</td>
+                    <td>TCTAGAGTTCACACAGGAAACCTACTAGATG</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!--5.1.2-->
+              <h5>CI Degradation Tags</h5>
+              <p>
+                The exact rate of protein degradation depends on a number of factors: the concentration of CLPXP and ClpAP protease and SspB medium; the stability of the protein; the km with the protease binds; the temperature, etc. But we can change the rate of degradation by adding tags. The tags can be recognized by the CLPX foldase and forms a complex with the ClpP protease. The last three residues of the tag determine the strength of the interaction with Clpx, thus determining the ultimate protein degradation rate.
+              </p>
+              <p>
+                We chose four tags: <b>LAA</b>, <b>LVA</b>, <b>AAV</b> and <b>ASV</b>. Under the LAA tag and LVA tag, the degradation rate of CI reached 0.018min<sup>-1</sup> , and the degradation rate reached 0.012 min<sup>-1</sup> and 0.0062 min<sup>-1</sup> due to AAV and ASV tag<sup>[4]</sup>.
+              </p>
+              <p>
+                <i>Bacillus subtilis</i> expresses CI protein both in the laboratory and in the gut of earthworms. We can control the degradation rate of both stages at the same time, and choose two degradation tags for the two stages. Respectively, we got three different degradation rate effects,  as shown in <b>Table 5.1.2</b>.
+              </p>
+
+              <!-- 表格 -->
+							<h6>Table 5.1.2  C1 degradation rate combinations</h6>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1462 388" style="enable-background:new 0 0 1462 388;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{display:none;}
+                  .st1{fill:#C6C6C6;}
+                  .st2{fill:none;}
+                  .st3{fill:#FFFFFF;}
+                  .st4{font-family:'Rubrik-SemiBold';}
+                  .st5{font-size:24px;}
+                  .st6{font-size:13px;}
+                </style>
+                <g id="图层_1" class="st0">
+                  <image style="display:inline;overflow:visible;" width="803" height="217" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAJwAnAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+                      EAMCAwYAAAcJAAARuwAAME7/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
+                      Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
+                      JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIANwDLAMBIgACEQEDEQH/
+                      xAC2AAEAAwEBAQAAAAAAAAAAAAAAAgMEBQEGAQEBAQAAAAAAAAAAAAAAAAAAAQIQAAEEAgEDBAIC
+                      AgEFAAAAAAQAAhIDARMFIDARQDMUNDIVEGBQkHAhMSIjJBEAAgECAgcECQIEBQMDBQEAAQIDABES
+                      MiExQZGS0gQTk9M0IDBRYXGxInIFgRRAoUIzENFSgiNgYnNQYyRw4UOUFSUSAAAHAQAAAAAAAAAA
+                      AAAAAABAATGRAjKQ/9oADAMBAAIRAxEAAAD6e/pA5fp03Okb2Ab2Ab2Ab2Ab2Ck6rn+m9zZm9gG9
+                      zpG9gG9gG9gG9gG9gG9gF0a2pYrFisbZYGbvYBvYBvc6RvYBvYBvYBvYBvYBvYBvYBvYBvYBvYBv
+                      YBvc6RvYBvYBvYBvYBvYBvYBvYBvYBvYBvYBvYBvUWEwAAYJRkQ8sFawVz9gTVixWMlPU9MVl9BD
+                      YAEZRkAAAARcXKfSe/M9c3OdkO1Z8v1zoqrQAACMoyAAAAEefzD6GXzO47PubSAAAARlGQAAAAhj
+                      5R3rOFedf3LqAAAAI6/LQAADBKuRLi9iBh6Nect05rySIkiPIzEUh5KMC5SLJZ7iSIkiJIiSI8l4
+                      ParB74HvsRJESREkRJEJVyJIiSIkiJIiXng9eCSIkiJIiSIkiEq5EkRJESREkRLzwe+xEkRJESRE
+                      kRJEararQAADBKMgAAVFqgXo1F6rObXnhIAEd+DeAAAACkuZ6TcxWGlVaAAAAV2V2AAAyGtnpNzL
+                      aWqaDaxTNTFpLAAAV2V2AAAxG1lpOgyRNqGI6DNWbWLSWPPQADNZm1kwAAYJRkAAOL2h8559IOc6
+                      HpxafoBzd8wABHfg3gAAADn9AcWrvjhR74zaQAAAArsrsAAHJ6w4F/YHG1b4mLm/Qj57o9AfM9fe
+                      AAAK7K7AAB8/9AONj+lHym/uDnYO9I4se4PnOl0RGQAAV2V2AAAGP3WMjWMjWMjWMjWMjWMjWMjW
+                      MjWMjWMeiwVrBWsFawVrBWsFawVrBWsFawVrBWsFawUysFawVrBWsFawVrBWsFawVrBWsFawVrBT
+                      KwVrBWsFawVrBWsFawVrBWsFawVrBWsEJgAVxPPNAyKpkkRJESREkRJESREkRJESREle4ytQytQy
+                      tQytQytQytQytQytQytQytQytQytQyrrDK1DK1DK1DK1DK1DK1DK1DK1DK1DK1DK1DKusMrUMrUM
+                      rUMrUMrUMrUMrUMrUMrUMrUMrUKHsiDQMPu0AYJRkAAAKrfmD6J87Yd6zLeWAAAjvwbwAADzN7yD
+                      qz4XSNF3zvUNcufhOz7hznbly+gXgAArsrsAAAAMk+HpOi5Uzsyw7CYAAAK7K7AADzNd8+dlw5nb
+                      jxNR2Ks1R0qORpOhbyLTqTpuAAMOvywAAAwSrkSREkRJESREkRJESREkRJEN/O2lisWKxYrFisWK
+                      xZWFisWKxYrFisWKxYrCzPYWKxYrFisWKxYrFisWKxYrFisWKxYrCzPYWKxYrFisWKxYrCysWKxY
+                      rFisWKxYrCyq0AAAwSjIAAAGQ1sY2KbT0AAEd+DeAAAGL02Of4dFR4aHN9Oi5lpuYNJcAACuyuwA
+                      AI4ToObcbGC80MsDa5cjpMNppV2AAFdldgAAAKC9kzHUcy03Md5aAAADBfK4AAAwSjIAAAcLujiW
+                      9YZdPoAAAjvwbwAADmZ+2Obi745enWOC7w4MfoBw+jrAAAFdldgABTyu2OD0Nw42jojn4+4ODH6A
+                      fP7ukK7AAArsrsAAAGLaOVi+iHz/AJ9COR0LwAAABXZXYAAAY/dYyNYyNYyNYyNYyNYyNYyNYyNY
+                      yNYx6LBWsFawVrBWsFawVrBWsFawVrBWsFawVrBTKwVrBWsFawVrBWsFawVrBWsFawVrBWsFMrBW
+                      sFawVrBWsFawVrBWsFawVrBWsFawY5tJRfm0gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                      AAAAAAAAAGG64ZdnnoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//2gAI
+                      AQIAAQUA9FN6m9Tf/q2//9oACAEDAAEFAPRRaotUW/6tv//aAAgBAQABBQDln5uyWWI8X/BP43jn
+                      u/V8Yv1fGL9Xxi/V8Yv1fGKuuupn+da3GGSHTW0OWqpaqlqqWqpaqlqqWqpaqlqqWqpV3AW4xXTn
+                      GqpP+MzOqpaqlqqVldeGaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqp
+                      aqlqqWqpaqlXXXmvVUtVS1VLVUtVS1VLVUtVS1VLVUtVS1VLVUtVS1VLVUtVS1VLVUtVS1VLVUtV
+                      SrrrzXqqWqpaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqpaqlqqWqpUvawaq1l1
+                      fVV7SdVW5acYXi/C2W4W9ia9runmtmePvyBZxYx4dQXzMPIYMU5v82+32WPZY1tlb8tsrc5zmtbm
+                      yvGG2Mc7BFGW5zjCxnGcddXtdnOcYwx7LGYIoc3NjMP8489mr2u022p9dZgluNjJ+ceeywS2x1FO
+                      KKuqr2up1Vblp8LxfhbLMLfWmua7+HVsesgUZM6Lfb7PEckEPxPGFWglceVdUdy2cXM5t9dTDy8D
+                      Ensdl9BdxtQ1bqqeur2uzzxD6wKuRtBBopsbSFdaaqKrt/Zq9rs84TYPxwuttE8mBBW2lNppu+R2
+                      RvY66va/i5oZvI1upr5u2xtVY5fyenx5Tqa3LTlq/wDfhbXYWLq8rGcZ/m32+zpq85a1yy1ucfFq
+                      +U5rX4wxmMYxjCxjGMdir2uznGM5yxuc+MecYw3Haq9rs5xjKy1uctYxuMYxjHaG9jrrsZivYxbG
+                      LLRnPywXL2gBVIRvx6djFsYtjFsYtjFsYtjFsYtjFl9eVlo+V/0wttmE8jEMPblTaptU2qbVNqm1
+                      TaptU2qbVNqm1TaptU2qbVNqm1TaptU2qbVNqm1VPbrm1TaptU2qbVNqm1TaptU2qbVNqm1TaptU
+                      2qbVNqm1TaptU2qbVU9uubVNqm1TaptU2qbVNqm1TaptU2qbVNqm1TaptU2qbVNqm1TaptQ3sddX
+                      tejs/D1I/wBf04/1/T13NbUNdm+nqq9rqHIqJZQaNfew0awq21lNVhtFdDCqXku5cBtTnNa2uxlj
+                      Oiz8O0STSLSIcOXWPzAJF1XLAXDCH0GJpFT7eyP9fqN5MUHNxo1IuOZA+LdyFFVIxFJVFJNNzxuW
+                      CKvI5YIa/HIiONr5YOwmy+qp3UP9fqs5YKoks8cPNvN8fVVdyQ1VlvKiUk22Mpq/dgbTDxwmv5jj
+                      2VFcqGJdbfVSzGcZx0sAHuVdbKmdVXtdQJNoooY3LA3UDcvTdyuMkv5xljhOQcVa4rjDb7gmn300
+                      Vaq+iz8O1zFVrx6M3ufx1RFlxApTgARS7HUjWsu7I/1+o/No3IOqKpCoputHIIMFAquF47hwArKe
+                      MFwTjF7CXZsot/biimYPqCJy3qH+v1XUEStItbyAw5fHYu4woZhF1hXIctnN2CByPN91zTPhEs4X
+                      lxibD6wjXNa2Lekf2eur2uzBk+zZ+HqR/r9p9bLG9wf6/b1sy/tj+z1tHIa3QQtBC0ELQQtBC0EL
+                      QQtBC0ELQQtBC0ELQQtBC0ELQQtBC0ELQQnDkObIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIh
+                      SIUiFIhSIUiFIhSIUiFIhV4IZXIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFI
+                      hSIVeCGVyIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFU3LK/7TbdrzusW
+                      WGeYHKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkK
+                      ZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpk
+                      KZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCmQpkKZCw03
+                      OIHKBygcr8GMt3kfzVjGrxheMLxheMLxheMLxheMLxheMLxheMLxheMLxheMLxheMLxhWYxCLVFq
+                      i1RaotUWqLVFqi1RaotUWqLVFqi1RaotUWqLVFqi1RaotUWqLUO1uiLVFqi1RaotUWqLVFqi1Rao
+                      tUWqLVFqi1RaotUWqLVFqi1RaotQ7W6ItUWqLVFqi1RaotUWqLVFqi1RaotUWqLVFqi1RaotUWqL
+                      VFqi1VWYbRRdi+rqq9rsPKHrIuLHosrJotdUTRcO1zXt6rPw685w3AnJBGOfygDCWHCWEj8mCTde
+                      RSOws4UJuSxmjVcpx9tLuSCaLQTQTTVdVdjqH+v2beTBqKLOFCa/kgGInkwhbbLa62Yzh2OwP9fp
+                      /wCyH5MEq67lAB73cmC0tp4ryhuTCLtuIpoaZyAgWHkj10M5bj3j28iHVRURTfTXZXa3pYDXbmqp
+                      lNfVV7XYP/Z3lci0/lbiLCL85oIbdRVmqnqs/Dr5Ct9oIxlO9+fNb6845vhcWfNIy4vmOQtYHy2c
+                      Pr4QCBR1Bz+P4EOh2BxaH046h/r9kjGcZvOobyTRbKuH5Y2mwpw5lllTNdfYH+v0kNc+gG9mEY6d
+                      VmMuXHbaCuJLo5Ey7/6uXPuYJyeJ18PRhhTnnuB4wIdzaRaXUVdI/s9dXtejs/DuMoqrf3B/r+nH
+                      +v266Kq39sf2eut/iuampqampqampqampqampqampqasf/4bluW5bluW5bluW5bluW5bluW5bluW
+                      5bluW5bluW5blRb4o3Lcty3Lcty3Lcty3Lcty3Lcty3Lcty3Lcty3LcqLfFG5bluW5bluW5bluW5
+                      bluW5bluW5bluW5bluW5bkP7HXV7Xo7Pw9SP9f04/wBf0+Tqq2hWPsG6qva7BPJUDF28jlpOOTox
+                      XgnHx25w5vVZ+HWbyOBbH8nQ0GvlmOofy7MChlMMGHLYRaPzNV5B3M1h2Xc3TVezksWmV8nnJeSW
+                      Yt6h/r9Nj211ics0i8jmaqLm8jW7kWcm75hpbA6DDvjOr5Qd/H45ytrcc3Tij55PxxTqihaLm319
+                      I/1+wYVWGOEf8p9XOjvso5umx1HI2XUhcg0pV3tss7A7G6+ur2uwZxHJG2lj8lajuNIu5DIOHWNx
+                      hreqz8Os+gxhzgD2BBjE5zdxheQBdvF8NxgzhgxgOQY0kTlLW2cac1zOHvYWKOeRdQA2rPUP9fpK
+                      p+QNRRyeXXAchYrRrs8uCzkHnXYyXy/IUktLxx/Ifr7gOQLtv4wsnOBOUHHH4/GWU0tor6R/r9jl
+                      hbSwR2chgtnDm3UO4zkDaqg+SHwIDY8egVlLuwP7PXV7Xo7Pw9SP9f04/wBf04/s9bRyGt0ELQQt
+                      BC0ELQQtBC0ELQQtBC0ELQQtBC0ELQQtBC0ELQQtBC0EJw5DmyIUiFIhSIUiFIhSIUiFIhSIUiFI
+                      hSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIVeCGVyIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiF
+                      IhSIUiFIhSIUiFXghlciFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhSIUiFIhVFZa
+                      35b1STi1/wDYw/4Z9/8AsY5NFTvnCKi2u03+xxaoNWMYx/yh/9oACAECAgY/ACWrSNWkatPLb//a
+                      AAgBAwIGPwAkyBkDJy2//9oACAEBAQY/AIV6TqI4jDKHdXUnSrXuLeypFRw0rgA2UgsQR/6GXfpY
+                      WdiSzGNSSTrJNq8nB3Sf5V5ODuk/yrycHdJ/lXk4O6T/ACrycHdJ/lQjjUIi6FVQAAPcB/68p7IM
+                      MI0i19Xvr6kC/Fa+kIfgBWRdwrIu4VkXcKyLuFZF3Csi7hWRdwrIu4VkXcKyLuFO0TxOI/7hUqwX
+                      7raqBCqQdRAFZF3CgrhQW0KCBprIu4VkXcKyLuFMQgBt7BWRdwrIu4VkXcKyLuFZF3Csi7hWRdwr
+                      Iu4VkXcKyLuFZF3Csi7hWRdwrIu4VkXcKyLuFZF3Csi7hWRdwrIu4VkXcKyLuFZF3Csi7hWRdwpC
+                      UBJA2D2VkXcKyLuFZF3Csi7hWRdwrIu4VkXcKyLuFZF3Csi7hWRdwrIu4VkXcKyLuFZF3Csi7hWR
+                      dwrIu4VkXcKyLuFZF3Csi7hWRdwpCUBJA2D2VkXcKyLuFZF3Csi7hWRdwrIu4VkXcKyLuFZF3Csi
+                      7hWRdwrIu4VkXcKyLuFZF3Csi7hWRdwrIu4VkXcKyLuFZF3Csi7hWRdwpCdi3sNJ0ewUJEytqvo9
+                      NPtHy/w0qDX0sy/rcbjWhg3xFvlX1R3+03+dq+q6/EGvpIPwN/RdYwxVnjWbBcsITIomIA05L11M
+                      sPTlVZGjUdkwZiqsEsmHFb6tFxUDTTLAGUACY9kbroOiTCaHTxgEPH2iSggqdmylEsgsGxEW06/b
+                      f0G+HqsUbB1O1TcaPhTBGDFDZgCDhPsNMisC6WxqCCVvquNlFmIVVFyToAA2mlJdQHICEkWYnUB7
+                      b0yqwLIQHUEEqSLi/s0GlYSIVkOFDiFmI2D26quauNI9Qn2j5equdAFCSNg6MLqym4IO0EUriRCs
+                      hwowYWZtP0j2nQaEZYYyLhb6SBttVr6Rs9Un2j5er7VHVorXxggrYbb6qDRTxuGbCpV1ILa8Isdd
+                      dniHaWxYL/Vb22q1xf2eqjlWZkXswAFto3jbSxglgu06/TT7R8vT0qL+2vpdl/W4/nWhg3xFj/Kv
+                      qjP+03+dq03X4givpIPwN/8AD61DW1XF6XrLuJVXAAHYJh9mC+H0W+Hqjinj7SLtWaLEuPQzHLe9
+                      JL1cMvTp1sbNM8uEKZwTItsLN/SSNNtlQ9dNBLFH+QZ1mkcKEOMj9vazE6gBpA11F+OXS3WOFkHs
+                      gX6pT8Cow/rXRPIwjjXq4izMQqgfVrJpur6F1lH5OMdPG6EMv7pDhiN19zm/20Og6GCWZfxUKrE0
+                      WGwn+lxixMv9IG81FNCqtDLGDZjYXOYHRrFKjWuNg1eoT7R8vVGCIM8/WMOnjRLYyH/uFbkaVQMa
+                      67okieHqUf8A/wA+B7YyvUm0eEBiPpfFt1Cuq/FxwyQPCI+t/GJNhDFocOJRgZtGNdP3VN+UhW5Y
+                      LBFfYqf3CP8AeTRmkVVutjhNyT79Hqk+0fL1UggBPUz2g6dVtiMkn0gre2UXb9K6/wDESiToYQFn
+                      6XtQLrE5GLIzDCJQb6dTV1AjSJuo6Jkljm6cho5TGMX0+wkXFrmuo/KQrczERxX1iKPRcfFrmu2k
+                      VVutjhJJJ9+j1Uf2j1CfaPl/j1MPXuAkRSLp4WNrllDGRR7bm16aIS3ZoF+gtexDNqFNI1yFFyAL
+                      n9BSPEjLGcQfGMLBl2EelpUX9tfQ7D3HSK/pb+Rr6oyPhprXY+/RWg3+H+LfD1V8C3Os2FWYAj31
+                      YgWGoV+7sTNg7MEnQFJDGw95FWYBh7CL0AFAANwLajRIFr6T76sBYewepT7R8vVAkaRqPsrEQCRq
+                      NtNXtpGo1YCw9g9Wn2j5eqFxe2kfGrkAm1v09lWVQo9gFqsBYewerj+0eoQE7B8q11roSMimQanK
+                      3Yfrau0KL2n+vD9W+16dul/4ZmBAk+prX9zG1COSXtmBJxlcOv3Ctda611rrXWutda611p0/pXsP
+                      uuK+mUj46a1q28GiCpBI2aa27jW3ca27jW3ca27jW3ca27jW3ca27jW3ca27jW3ca27jW3ca27jW
+                      3ca27jW3ca27jW3ca27jW3ca27jW3ca27jSfaNh9lbdxrbuNbdxrbuNbdxrbuNbdxrbuNbdxrbuN
+                      bdxrbuNbdxrbuNbdxrbuNbdxrbuNbdxrbuNbdxrbuNbdxpPtGw+ytu41t3Gtu41t3Gtu41t3Gtu4
+                      1t3Gtu41t3Gtu41t3Gtu41t3Gtu41t3Gtu41t3Gtu41t3Gtu41t3Gtu41H9o9Qn2j5fwjfD+Ki+x
+                      fl/ERfYvy/iEQEGXBiCk2pZCMJOsa/TT7R8vTMkRuoYqTa2ldB11N08T4penIEq21FhcVJ0aveeJ
+                      QzrbYffTyyHDHGpZ2OwKLk1FPISqTNGiXU3xTEIgI1jS1SdKp/5oVV3Ugj6XvhI9uU1DM0hEfUSG
+                      KI4T9TAlb/bca9WqizGwGk0HQ3U6j6LfD1bTTGyL7BcknQAANJJppIiQIyVkV1KMjDTZlaxFdjG7
+                      BsLOhdWVXRDZmRmFmA91T9WkoPT9KSJZLEAYVDkj2jCwqQRh0eIgSRyo0brcXBKuAbGmhVryJmX1
+                      UX2L8vTVZsZZgWwxo0jBV1sQgNgPbQ6tnvCwBQqMRfFlCgaSTspuraQpGjFHV1KuHH9JQjFf3VFN
+                      hkkWcBo1ijaRypGLFhQE2qPqIGxxSqGRhtBqZIzc9O/ZyGxsGwh7A7dDCv28TNjILIWVlWRVNiY2
+                      IswHursJWbFdQ7BWZEL5Q7gWW/vr9ismLqMJcoATYLa9zq2iv2qlseIoHKMI2Zdaq9sJNKrtYubL
+                      8fTi+xfl6f7Z2bHiVC4VjGrtlRnthBPspFkxu73wxxI0jkDWcKAmwqObG0kcsfbgxoz4YhrkbCDh
+                      X3mkjGOV5FDhYUaUhDoDNgBsD7TS9PJjUs4jEnZt2WNhcKZLYb/rTyyHCkalmPsCi5pIsT/WVGPA
+                      2BWcXVXa1lJ9hpTNiZnJCJGpkc20myoCdFQytKMPUW7IAElrm2r3ba7GYtiADOVRmVATYF2UWX9a
+                      7SRrL7fjQI1HSPSSaQYiUAIudmrUaEcYwquoemn2j5enPD+2nM6tK6Dsnwtc/TZ7WrpermgVg4de
+                      pEJZ5LzHtAXXAMraNFQfkngUlpmeZVLGbs5vpwsmH+kBTr2VB+OU6J2xT/8AhTS4P3Zf1qJo0aQx
+                      9T00rKilmwRzI7EKNJsBUXXfjopRNKr9G4dGRlEmmOVlYA4Y3+Zp+m6WJF6XpemHSwNMzJ9TYXaR
+                      LI17YV0+29QyzEwSBMDoy6mXQ2sjQdhoR3xW26vRb4eriljQyHp5opmjUXZljYM2EbTauplHTyqv
+                      5CTBHdcJRVjP/JIDYqCdFfjY26eSEfjYik0jqVUuE7EKhOYG+K4r83GkRZuonYxqRpeNooUZk1XN
+                      g1vfXWmJp+ylMNpeqTBM7KGEiWsn0BcNtGvFXayy9o2HCPpw2F7+31UX2L8vTPUiCSeObp2hHZKX
+                      KvcEBgNQPtrpemPTyM3489PLIVGJXAP1rHbMVtX5HqOyaP8AdkmKNlKuQqYLlTpBJroeniilUyRq
+                      s00cTTNCERb/AEID9ROgX/8AtQmRJE6fpoiQkgKynDsKtY4mNdhKR+5mV3nYau2mu7/oGaw91dGp
+                      6WUN+Mik7W6EY2whQkROh8Vtldb0/wC2lLfkXikibCSqDCit2jalK4TrrpJApMccEqM9tAJMdh+t
+                      qjJWcSrPI8iOn/xUV9GONraT7PqoCae4D4iuHWb+2/pxfYvy9Pqvx4gkZup6pZ0mCkxCMhLsX1Ar
+                      gOjXUX5F+ln7IRzdMUWMvIGxqyvhS5wtg10zydNJK3VdJ2axxrjwSiWeXs3K6FH/ADgX1aKeEL1D
+                      9Z+26ePoZoS3ZrNEnZ3kKaLYwCcei2rbXY9ZF1C9N08i9kscLssrgA9o8gUgICdXuuTsqD8cubq3
+                      +v3RR2Z9+hf1rqfxywOT1HURyxzBSYhGGRyS+oEYbWqH8gelmMUXaQMgQtJoJCuFW5wtUUJjPamV
+                      ZDGukqC+L+QrqCFnAkSNYBAmKKQqbkTtY2sfeNFOJpgvaAYgq3Frahp0WoL7ABu9JPgPUJ9o+Xqu
+                      0wjHbDitpt7L+qb4fxUX2L8vV4JFDrcHCwBFwbjX7D62L7F+XrBIVGMCwa2kA7L+sT4D1AWyGwAv
+                      iOz/AG1qTiPLWpOI8tak4jy1qTiPLWpOI8tak4jy1qTiPLWpOI8tak4jy1qTiPLWpOI8tak4jy1q
+                      TiPLWpOI8tak4jy1qTiPLWpOI8tak4jy1qTiPLRFk0/9x5ayJxnkrInGeSsicZ5KyJxnkrInGeSs
+                      icZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJx
+                      nkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkpUwIcIAvjOwW/wBFZE4zyVkTjPJWROM8lZE4zyVk
+                      TjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM
+                      8lZE4zyVkTjPJWROM8lZE4zyVkTjPJSpgQ4QBfGdgt/orInGeSsicZ5KyJxnkrInGeSsicZ5KyJx
+                      nkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeS
+                      sicZ5KyJxnkrInGeSsicZ5KVTrAsbf8AVSrhZ2e4AW2wX/qIr+xJvj56OGWIDYDExNu9Ff3ou6bx
+                      a8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avM
+                      wd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHd
+                      nxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8a
+                      vMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzM
+                      Hdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z
+                      8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGr
+                      zMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB
+                      3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2f
+                      GrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8zB3Z8avMwd2fGrzMHdnxq8
+                      zB3Z8ariaIg6iIm8Wv70XdN4tf3ou6bxa/vRd03i1C7SIQC2kRObXG0CQ1/eT/8AXk8T/FNH9I+V
+                      aq1VqrVWqtVaq1VqrVWqtVaq1VqrVWqtVaqOjZWoVqFahWoVqFahWoVqFahWoVqFahWoVqFahWoV
+                      qFahWoVqFahWoVqFahWoVFoGRflWoVqFahWoVqFahWoVqFahWoVqFahWoVqFahWoVqFahWoVqFah
+                      WoVqFRaBkX5VqFahWoVqFahWoVqFahWoVqFahWoVqFahWoVqFahWoVqFahWoVqFahSAfU+G4Qaza
+                      lkAK4th1j00+0fL1MfTO4E0oJjTawXXUUc0gR52wRA/1N7KlVHBbp2wTDVhbCH03/wC1gaXqY2vA
+                      6h1exF1OkHTQZTdTpBHpt8PUFmNgNJJ1AUydNJjZNLAqym3tGMC494odI0tpiQtsLYcR1KXthB91
+                      6bpI5VaeNcToDfCAQNOzbTQQy4pFvowsAcJs2FmADWPsoSTNgUsqA6TdnYIosPaTSt1LlcZIUKrO
+                      xsLmyoGOiv3ZkX9vh7QS3upUi4I+NSTrMBHEcMhcGModgZXCkX2VH1faFoJgDGyqzlgdIsqqW/lS
+                      9RC4eJxdWHs/Wi0TBwDYke304vsX5eqXpJJbTsVULZioZ8qs4GEE7ATffSt1LlcZIUKrOxsLmyoG
+                      OioMU6f/ACsPYAG5fHlIA2H26qWKeQo7W/pYqMRsMTKpVf1NY5GCoP6jqoMDcHSD6mL7F+XpXNND
+                      BLikUE2sy3ANiVLABhf2UOnmlCysVW1mKgubKGYDCtzquaHRmX/nLYLWbDjIx4C9sIa2m170ekRy
+                      0y3DAKxUEC5BcLgv7r00MEmKRVx4SrLdb2xLjUYh7xStK2EOwRdZuzahooHqZMGK5ACs5sus2QE2
+                      Htr9y8gEAGLtNljT9V24WGM4XZwYyp9hVwG/lSdQ7nspdMZVWcsNeVVLfyoTxOGiYXDjVascbBlO
+                      oj0kmZm0oAQGI1eyxoRoLKuq+n00+0fL1PU9d0/S9onTSIIJS+FgITikwxlbnFe1TydH03aRxxKv
+                      TSs/ZmOY2lxhWXTYhajlgjZB+agSGYWIMUisFdvcRG78IoLEypCqBY1K3AA2a6WMm5UWvq9Nvh6j
+                      qI4xd2jYKPabaqi6tEfsuk6YRTEIbhyQMFrabVP+NKN+7m6sSxjCcjMrCTFq0AUXRNB6R9NtBbGm
+                      i9dIMbysizCaBkwr0uMl/pbCCfq+nSToqDptcHRj9zKf/dN0iU72b4gV03W9RcdN+3nhxgFsMjtE
+                      6iy3zKh3VB0TROJen/bdZLFhNhCvUrKyfcqqdFdf1kaE9NKsaIzLYSMi6WAb2av0r8coXBLIix43
+                      VisX03LMqi/6V046CbHAMRaRlN2kJOJiv07aftGDM7YiVGEbvTi+xfl6rrfxpRj1fVdXDLB9JIKf
+                      8J7TFq+js23V0/5CQOvSpF1XSl2RtEokj0WAJswjaxr8YjxFZV6iBilvqjVpceE+zCDR/Gzv+36e
+                      yPPJhZmk04gi2BA1aTUoWRViYAJdSRht8ddKl74QBf4epi+xfl6UiLmZWA+JFdAwRwfxvTMvV2Q3
+                      VggQpq0ktp0V+S6MIx6j8hIj9KMJyyIiK19mAi59lS/jsLfu2/JJ1CnCf7SzR9R2mLVYIuH+VQRp
+                      LMepE856+FsXZCE9owfDluWwWI0m/wAaTrpHwziJkg6UKy9lE7IzYyRpc4Fv7NXtqKHXH0S9q/8A
+                      5ZPpTct99J1PUKTA/TtGpClhjDXw6L5gag6B0cz9IkMsy4TbADpAO0j2V+T6uNb9PMirGSpGNkQg
+                      kA10MdsEky4O1ZWYRADSxCjdUC9BNi6ZVb62U6XOklh9OusDMGYksSBYafd6SfAeoT7R8v4Rvh62
+                      SRFCvKQZG2sQLD1sX2L8v4iL7F+XrJJEUK8pxSNtYgW0/oPWJ8B6hBhOobPdWVt1ZW3VlbdWVt1Z
+                      W3VlbdWVt1ZW3VlbdWVt1ZW3VlbdWVt1ZW3VlbdWVt1ZW3VlbdWVt1H6W1eysj7qyPurI+6sj7qy
+                      PurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7q
+                      jGBjZV0ge6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6
+                      sj7qyPurI+6sj7qyPuqMYGNlXSB7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6sj7qyPu
+                      rI+6sj7qyPurI+6sj7qyPurI+6sj7qyPurI+6k+A9Qn2j5fwjfD+Ki+xfl/ERfYvy/iF6cvgbBcv
+                      a+EnVopHkOJjrNrX9NPtHy9TB0sgOPqDoYal0hRi+LECm6eHp5JzEFaZkKgIGvbQxBbVsrrZHDIO
+                      gZhMG12VBLiHuKnRSzsjKSqu0etkxC9jb2UGGoi4/X02+HqFijhfqJipkMceEEIutjjIFJ1qhnSX
+                      D2aAfUzNoC6dtTyPBKkvTNhl6cDG4J1f28QIPtrpZ4oXlk623YwgqGylzcsQosB7aTqIwVV7/S2s
+                      FSVYH4EVPGim3TsI2fRYtbEQPhcVFF2LpD1JkXpuobDglaK5YAA4hoUkXGkDRUi9jJLH06rJ1cqY
+                      cMKOczYiCbAEkLfRToIZHghdIp+pXD2cbyWwjScRzDSBR6aGFpERikkwZFVWGsWZgzW9wpOmm6aS
+                      DtQxhkfDZwlr6FYldf8AUKSOxPaZXA+nf6cX2L8vSaRzZEBZj7ABc0kLwSQdshk6d3wkSKPZhJto
+                      02NOnYu8MLLHP1C4cEbPawIJxHXpsNFf/wA/s5A+BpBIy4UIUqDhJ15tlR9LN00kKzlxBK+HC7Rj
+                      ERZWLD6QSLjZXaspclkjRFtiZ5GCKBf3mookibqOonLdnEhUEhBdmJchQB8aPXkMkaA40I+tWU4S
+                      lhtvoqVZ+nkhnjwYYDhZpBLoQqVYjSffo21I8sTxTxSCFumOEvjIxKAVJXSum96WVeikaRiR2KvG
+                      SANpcPg/nSdTGCA4JCHNddBFqEiggHRY6Do9KL7F+XqX6iW5VLAKNJZmIVVHvLECpoXibp+o6cqJ
+                      InKkgOMSsChKkH41HjjeLp58f7fqWw4Jez0tYA4hoBIuNIoiaJ+nQxNPE8lrSRJmYYSSLew6akmX
+                      pZMKgGMYkLSYtX0qxK/7rVMskbdPN07BJYpCpIJAYaUJBuDTx4WVk13Fr39nqY3t9WG1/d6hPtHy
+                      9T1kvbJAJMKQIVxthj+pWDBxhu3uqOeHpmh/IGNQeojkQIrW0iVSfqUH2Am2qkaK37XqQi9dpt5d
+                      u0TRtx3Kn3VKzSPhk2A2/TVQUagLD9PTb4eoXrOlh/cEwtAyBlUrc4g31kaKh6RIlYdL2cyNjA7S
+                      QMWZLHVr111nUzx9lJ1dsMRIYqEXCtytxc1+NikhM69Ktp+njkEblsGEFXxLqP8A3UT1A+qEOyoD
+                      iKgklEuNZA0VGkn95ryTH/3HOJtxNq6PpnhAj/GPJLHLjW05wSxRKADddEn1XFdWi9OAfysEaStj
+                      Ujp5ChikxXILAA6MOuup6KKIN0vVTJKOpxL9CjAzqy3xE3XRYUFXpxiHVN1A6/EuLs2LN2evH/Va
+                      1rbaaT8h00iTuGRZw8RjhQnKiq5bTbSbUjM7syalJuo+GgenF9i/L0pYL27VGS/sxC1dPI/TBG6C
+                      FkjUuv8AzSYcAthJwrb211XTdiOy/ISJLJNjW0X0osi2viJ+nRYVD1areJOnljJuMzNGyi3+01+4
+                      /I9I5lu6xy44zDDGb2wIrlrsALm24VDD/wDi6Ff3D+wyyBo4h+i4jurpeu6eI9QYBLG8IZVYrMEO
+                      JS5A0GMbak6IxqDP2nUM+PQszSdqI7ez303XtB2U0QhWLp2dSXETM7XZSVF8Ztpp+um6cNI3ULKe
+                      iLL9UaR9jhLXwX/q12ox9N0xjh6iVnk6eF4w8UZGhULMEFzrtqqJgj9IqLhEAZSV/wBy4hp+NCNS
+                      SBtOk6fSi+xfl6l4obGVXimjUmwZoJEmC3/7sFql65umCN1TwxNEzrijhiD3kJW6k4nOgHVXR/j5
+                      4+yh/HiQL1GJW7W6PBHhUG4+lyTe2mkinjHTnpumkgRsYIkeQKMQwEkL9A16an6jouiXpZTFHEsI
+                      ZP8AkYN9cv0thvhOi5udtFHhl6aQv2kjyOjtM21mMZYUzBmdmtcub6v09SnwHqE+0fL+Eb4fxUX2
+                      L8v4iL7F+X8QnwHqAtkNgBfEdn+2tScR5a1JxHlrUnEeWtScR5a1JxHlrUnEeWtScR5a1JxHlrUn
+                      EeWtScR5a1JxHlrUnEeWtScR5a1JxHlrUnEeWtScR5a1JxHlrUnEeWtScR5aIsmn/uPLWROM8lZE
+                      4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjP
+                      JWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lKmBDhAF8Z2C3+isicZ
+                      5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkr
+                      InGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkrInGeSsicZ5KyJxnkpUwIcIAvjOwW/0VkTjPJWROM8l
+                      ZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkT
+                      jPJWROM8lZE4zyVkTjPJWROM8lZE4zyVkTjPJWROM8ldmIJHMZwMyBStxrtdhXlpty89NGY3jZRc
+                      hwNR+BP/AFJP/wCV/n/hJ9i/P/qSZZHCt2rmx+Nf3R/OpGjbEuBRcfH/AKk1CtQ3VoFv/qh//9k=" transform="matrix(1.8667 0 0 1.8667 27 53)">
+                  </image>
+                </g>
+                <g id="行1">
+                  <rect x="54.5" y="66.5" class="st1" width="1390" height="71"/>
+                </g>
+                <g id="行2">
+                  <rect x="54.5" y="137.5" class="st2" width="1390" height="73"/>
+                </g>
+                <g id="行3">
+                  <rect x="54.5" y="210.5" class="st1" width="1390" height="73"/>
+                </g>
+                <g id="行4">
+                  <rect x="54.5" y="283.5" class="st2" width="1390" height="73"/>
+                </g>
+                <g id="斜线">
+                  <g>
+                    <g>
+                      <path class="st3" d="M53.17,71.32c34.95,8.57,69.9,17.14,104.85,25.71c55.66,13.65,111.33,27.29,166.99,40.94
+                        c12.72,3.12,25.44,6.24,38.16,9.35c6.25,1.53,8.92-8.11,2.66-9.64c-34.95-8.57-69.9-17.14-104.85-25.71
+                        C205.31,98.33,149.65,84.68,93.99,71.03c-12.72-3.12-25.44-6.24-38.16-9.35C49.58,60.15,46.91,69.79,53.17,71.32L53.17,71.32z"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="C1-2">
+                  <text transform="matrix(1 0 0 1 101.6807 126.915)" class="st4 st5">CI</text>
+                  <text transform="matrix(1 0 0 1 125.5107 129.8936)" class="st4 st6">-2</text>
+                </g>
+                <g id="C1-1">
+                  <text transform="matrix(1 0 0 1 243.6807 94.915)" class="st4 st5">CI</text>
+                  <text transform="matrix(1 0 0 1 266.5107 97.8936)" class="st4 st6">-1</text>
+                </g>
+                <g id="LAA_x2F_LVA_竖">
+                  <text transform="matrix(1 0 0 1 164.8202 185.4683)" class="st4 st5">LAA/LVA</text>
+                </g>
+                <g id="LAA_x2F_LVA_横">
+                  <text transform="matrix(1 0 0 1 517.1811 113.4683)" class="st4 st5">LAA/LVA</text>
+                </g>
+                <g id="AAV_竖">
+                  <text transform="matrix(1 0 0 1 191.0155 256.6704)" class="st4 st5">AAV</text>
+                </g>
+                <g id="AAV横">
+                  <text transform="matrix(1 0 0 1 894.9131 113.4683)" class="st4 st5">AAV</text>
+                </g>
+                <g id="ASV_竖">
+                  <text transform="matrix(1 0 0 1 191.4836 326.4683)" class="st4 st5">ASV</text>
+                </g>
+                <g id="ASV_横">
+                  <text transform="matrix(1 0 0 1 1250.5936 113.4683)" class="st4 st5">ASV</text>
+                </g>
+                <g id="数字">
+                  <text transform="matrix(1 0 0 1 532.9606 184.8726)" class="st4 st5">0.018</text>
+                  <text transform="matrix(1 0 0 1 885.5776 256.7378)" class="st4 st5">0.012</text>
+                  <text transform="matrix(1 0 0 1 1230.1218 328.7378)" class="st4 st5">0.0062</text>
+                  <text transform="matrix(1 0 0 1 494.3815 256.7378)" class="st4 st5">0.018/0.012</text>
+                  <text transform="matrix(1 0 0 1 845.9182 184.6704)" class="st4 st5">0.012/0.018</text>
+                  <text transform="matrix(1 0 0 1 836.3303 328.7378)" class="st4 st5">0.012/0.0062</text>
+                  <text transform="matrix(1 0 0 1 1190.4634 184.6704)" class="st4 st5">0.0062/0.018</text>
+                  <text transform="matrix(1 0 0 1 1191.543 256.7378)" class="st4 st5">0.0062/0.012</text>
+                  <text transform="matrix(1 0 0 1 483.7135 328.7378)" class="st4 st5">0.018/0.0062</text>
+                </g>
+              </svg>
+
+
+              <!--5.2-->
+							<h4>5.2 CI Rules</h4>
+							<p>
+								Since CI proteins were produced to form dimer and inhibitory site binding, in this section we had formulated rules for such binding, with CI2 representing the dimer CI repressor and O<sup> CI-1 </sup>and O<sup> CI-2 </sup>representing the two CI suppressor sites <sup>[4] </sup>.
+							</p>
+							<h6> Dimer C1 repressor </h6>
+							<p>
+								$$ \left [ CI2_{f}\right ]+\left [ O_{CI-1_{f}}\right ]\rightleftharpoons \left [ CI2:O_{CI-1}\right ] $$
+								$$ \left [ CI2_{f}\right ]+\left [ O_{CI-2_{f}}\right ]\rightleftharpoons \left [ CI2:O_{CI-2}\right ] $$
+								$$ \left [ CI2:O_{CI-1}\right ]+\left [ O_{CI-2_{f}}\right ]\rightleftharpoons \left [ O_{CI-1}:CI2:O_{CI-2}\right ]\rightleftharpoons \left [ CI2:O_{CI-2}\right ]+\left [ O_{CI-1_{f}}\right ] $$
+								$$ \left [ CI2_{f}\right ]+\left [ D\right ]\rightleftharpoons\left [ CI2:D\right ] $$
+							</p>
+							<h6> Operating area 1 </h6>
+							<p>
+								$$ \left [ CI2_{f}\right ]+\left [ O_{CI-1_{f}}\right ]\rightleftharpoons \left [ CI2:O_{CI-1}\right ] $$
+								$$ \left [ CI2:O_{CI-1}\right ]+\left [ O_{CI-2_{f}}\right ]\rightleftharpoons \left [ O_{CI-1}:CI2:O_{CI-2}\right ]\rightleftharpoons \left [ CI2:O_{CI-2}\right ]+\left [ O_{CI-1_{f}}\right ] $$
+							</p>
+							<h6> Operating area 2 </h6>
+							<p>
+								$$ \left [ CI2_{f}\right ]+\left [ O_{CI-2_{f}}\right ]\rightleftharpoons \left [ CI2:O_{CI-2}\right ] $$
+								$$ \left [ CI2:O_{CI-1}\right ]+\left [ O_{CI-2_{f}}\right ]\rightleftharpoons \left [ O_{CI-1}:CI2:O_{CI-2}\right ]\rightleftharpoons \left [ CI2:O_{CI-2}\right ]+\left [ O_{CI-1_{f}}\right ] $$
+							</p>
+							<p><b>Relationship:</b></p>
+							<p>
+								$$ \left [ CI2\right ]=\left [ CI2_{f}\right ]+\left [ CI2:O_{CI-1}\right ]+\left [ CI2:O_{CI-2}\right ]+\left [ O_{CI-1}:CI2:O_{CI-2}\right ]+\left [ CI2:D\right ] $$
+								$$ \left [ O_{CI-1}\right ]=\left [ O_{CI-1_{f}}\right ]+\left [ CI2:O_{CI-1}\right ]+\left [ O_{CI-1}:CI2:O_{CI-2}\right ] $$
+								$$ \left [ O_{CI-2}\right ]=\left [ O_{CI-2_{f}}\right ]+\left [ CI2:O_{CI-2}\right ]+\left [ O_{CI-1}:CI2:O_{CI-2}\right ] $$
+							</p>
+							<p><b>Where:</b></p>
+							<p>
+								$$ \left [ CI2:O_{CI-1}\right ]=K_{CIo1}\cdot \left [ CI2_{f}\right ]\cdot \left [ O_{CI-1_{f}}\right ] $$
+								$$ \left [ CI2:O_{CI-2}\right ]=K_{CIo2}\cdot \left [ CI2_{f}\right ]\cdot \left [ O_{CI-2_{f}}\right ] $$
+								$$ \left [ O_{CI-1}:CI2:O_{CI-2}\right ]=K_{CIo2}\cdot \lambda _{12}\left [ CI2:O_{CI-1}\right ]\cdot \left [ O_{CI-2_{f}}\right ]=K_{CIo1}\cdot\left [ CI2:O_{CI-2}\right ]\cdot \left [ O_{CI-1_{f}}\right ] $$
+								$$ \left [ CI2；D\right ]=K_{CId}\cdot \left [ CI2_{f}\right ]\cdot \left [ D_{f}\right ] $$
+								$$ \left [ D\right ]=\left [ CI2:D\right ]+\left [ D_{f}\right ] $$
+							</p>
+            </div>
+
+            <!--7.Modeling-->
+            <div class="row general_info_element" id="general_info_ele_7">
+              <h3>Modeling</h3>
+              <!--7.1-->
+							<h4>In the intestine</h4>
+							<p>
+							 Constitutive expression, not affected by time, place, or environment, has no spatiotemporal specificity. The gene that encodes the protein is not dependent on any transcription factor, so it will continuously transcribe mRNA molecules, and then the translation of the protein will be out of control<sup>[2]</sup>. The expression of CI protein in the intestine of earthworm can be easily described in <b>Figure 6.1.</b> The process of generating Toehold Switch and Trigger RNA was similar to the process of producing mRNA<sub>CI</sub> in the figure.
+              </p>
+              <img src="https://2020.igem.org/wiki/images/3/3c/T--NAU-CHINA--Model_KS_5.3.svg">
+              <h6>Fig.6.1. Production of CI Protein</h6>
+
+              <p>
+                The CI protein, Toehold Switch and Trigger RNA expression can be simply translated into the following biochemical reactions,
+              </p>
+              <p>
+								$$ DNA_{CI}\xrightarrow[\quad\quad]{K_{mRNA-CI}}mRNA_{CI}$$
+								$$ mRNA_{CI}\xrightarrow[\quad\quad]{K_{CI}}CI$$
+								$$ mRNA_{CI}\xrightarrow[\quad\quad]{K_{mRNA-CI}}\phi$$
+								$$ CI\xrightarrow[\quad\quad]{d_{CI}}\phi$$
+                $$ DNA_{TR}\xrightarrow[\quad\quad]{K_{TR}}Trigger\quad RNA$$
+                $$ Trigger\quad RNA\xrightarrow[\quad\quad]{dTR}\phi$$
+                $$ DNA_{TS}\xrightarrow[\quad\quad]{K_{TS}}Tohold\quad Switch$$
+                $$ Tohold\quad Switch\xrightarrow[\quad\quad]{d_{TS}}\phi$$
+              </p>
+              <!--7.3.1-->
+              <h4> CⅠ Protein Production</h4>
+              <p>
+                Here, we use a differential equation to represent the concentration of each substance. The concentration of  mRNA<sub>CI</sub> can be expressed as follows:
+              </p>
+              <p>
+								$$ \frac{\mathrm{d}\left[mRNA_{CI}\right]}{\mathrm{d}t}={V_{mRNA-CI}}-\left [ mRNA_{CI}\right ]d_{mRNA-CI} $$
+							</p>
+              <p>
+                Where, d<sub>mRNA-CI</sub>(0.1386min<sup>-1</sup>) is the degradation rate of mRNA<sub>CI</sub> and V<sub>mRNA-CI</sub> is the generation rate of mRNA<sub>CI</sub>, which can be expressed as follows:
+              </p>
+              <p>
+								$$  V_{mRNA-CI}= K_{mRNA-CI}\left [ G_{CI}\right ] $$
+							</p>
+							<p>
+								Where, K<sub>mRNA-CI</sub> is the transcription rate, and K<sub>mRNA-CI</sub>=5.39 min<sup>-1</sup>. [G<sub>CI</sub>] is the copy number of plasmids.
+							</p>
+              <p>
+                Here's what follows:
+              </p>
+							<p>
+								$$ \frac{\mathrm{d}\left [ CI\right ]}{\mathrm{d}t}=V_{CI}-\left [ CI-2\right ]d_{CI-2}-\left [ CI-1\right ]d_{CI-1} $$
+							</p>
+							<p>
+								Here, d<sub>CI-1</sub> is the laboratory-induced degradation rate of CI protein, D<sub>CI-2</sub> is the degradation rate of CI protein produced by earthworm intestines, both of which can be adjusted, and V<sub>CI</sub> is the production rate:
+							</p>
+							<p>
+								$$ V_{CI}=K_{CI-2}\left [ mRNA_{CI-2}\right ] $$
+							</p>
+							<p>
+								K<sub>CI-2</sub> = 4.84min<sup>-1</sup> is the translation rate of CI generated in intestine, which could be changed by adjusting RBS. The total amount of CI in intestine was shown in <b>Figure 6.1.1.</b>
+							</p>
+							<img style="width:75%;" src="https://2020.igem.org/wiki/images/b/bf/T--NAU-CHINA--Model_KS_5.3.1.jpg">
+							<h6>Fig.6.1.1. The Total Amount of CI in Intestine</h6>
+
+
+              <!--6.1.2-->
+              <h4>Trigger RNA Production</h4>
+              <p>
+                Similarly, the concentration of Trigger RNA in the gut can be calculated:
+              </p>
+              <p>
+                $$ \frac{\mathrm{d}\left[mRNA_{TR}\right]}{\mathrm{d}t}={V_{mRNA-TR}}-\left [ mRNA_{TR}\right ]d_{mRNA-TR} $$
+              </p>
+              <p>
+                Where d<sub>mRNA-TR</sub> is constant, d<sub>mRNA-TR</sub> = 0.3 min <sup>-1</sup> and V<sub>mRNA-TR</sub> is generation rate of mRNA <sub> TR</sub>, given by the following formula:
+              </p>
+              <p>
+                $$ {V_{mRNA-TR}}={K_{mRNA-TR}}\left [ G_{TR}\right ] $$
+              </p>
+              <p>
+                K<sub>TR</sub> = 19.12min<sup>-1</sup>, [G<sub>TR</sub>] = 500. is the copy number of plasmids.
+              </p>
+              <img style="width:75%;" src="https://2020.igem.org/wiki/images/a/a2/T--NAU-CHINA--Model_KS_5.3.2.jpg">
+              <h6 style="color: red;">这个是否要加图</h6>
+              <p>
+                The amount of Trigger RNA in the intestine is shown in <b>Figure 6.1.2.</b>
+              </p>
+
+							<!--6.1.3-->
+							<h5>Toehold Switch Production</h5>
+							<p>
+								In order to solve the concentration problem of Toehold Switch, we also assumed:
+							</p>
+							<p>
+								$$ \frac{\mathrm{d}\left[mRNA_{TS}\right]}{\mathrm{d}t}={V_{mRNA-TS}}-\left [ mRNA_{TS}\right ]d_{mRNA-TS} $$
+							</p>
+							<p>
+								Where d<sub>mRNA-TS</sub> is constant, d<sub>mRNA-TS</sub> = 0.18 min <sup>-1</sup> and V<sub>mRNA-TS</sub> is generation rate of mRNA <sub> TS</sub>, given by the following formula:
+							</p>
+							<p>
+								$$ {V_{mRNA-TS}}={K_{mRNA-TS}}\varepsilon_{1}\left [ G_{TS}\right ] $$
+							</p>
+							<p>
+								K<sub>TS</sub>=2.52 min <sup>-1</sup> , [G<sub>TS</sub>]=500. ε<sub>1</sub> indicates the binding of CI and inhibition sites, which can be expressed as follows: <a href="https://2020.igem.org/wiki/images/d/d5/T--NAU-CHINA--Model_CA_code.zip" > model_Toehold_function </a>:
+							</p>
+              <p>
+                $$\varepsilon ^{_{1}}=\frac{\left [ O_{CI-1f}\right ]}{ O_{CI-1}}\left ( \frac{\left [ O_{CI-2f}\right ]}{ O_{CI-2}}\right)$$
+              </p>
+              <p>
+                The amount of Toehold Switch in intestine was shown in <b>Figure 6.1.3.</b>
+              </p>
+							<img style="width:75%;" src="https://2020.igem.org/wiki/images/a/a2/T--NAU-CHINA--Model_KS_5.3.2.jpg">
+							<h6>Fig.6.1.3. The Amount of Toehold Switch in Intestine</h6>
+
+              <!--MazF Production-->
+              <h5>MazF Production</h5>
+              <p>
+                The expression of MazF in the intestine of earthworm can be easily described in <b>Figure 6.1.4.1.</b>
+              </p>
+              <img style="width:75%;" src="https://2020.igem.org/wiki/images/7/79/T--NAU-CHINA--Model_KS_5.4.png">
+              <h6>Fig.6.1.4.1. The Production of MazF</h6>
+							<p>
+                The specific process of generating MazF is represented by the following formula,
+              </p>
+              <p>
+                $$ \left [trRNA \right ]+\left [ tsRNA\right ]\rightleftharpoons \left [ tr.tsRNA\right ] $$
+              </p>
+              <p>
+                $$ \left [tr.tsRNA\right ]\overset{K_{tr.ts}}{\rightarrow} \left [mazF\right] $$
+              </p>
+              <p>
+                Among them, K<sub>tr.ts</sub>  is the translation rate of generating MazF. The reaction equilibrium constant is described as follows,
+              </p>
+              <p>
+                $$ K_{1}=\frac{\left [ tr.tsRNA\right ]}{\left [ trRNA\right ]\left [ tsRNA\right ]} $$
+              </p>
+              <p>
+                The total amount of Trigger RNA and Toehold Switch are shown as follows,
+              </p>
+              <p>
+                $$ \left [ T_{tr}\right ]=\left [ trRNA\right ]+\left [ tr.tsRNA\right ] $$
+              </p>
+              <p>
+                $$ \left [ T_{ts}\right ]=\left [ tsRNA\right ]+\left [ tr.tsRNA\right ] $$
+              </p>
+              <p>
+                The amount of MazF in intestine was shown in <b>Figure 6.1.4.2.</b>
+              </p>
+
+              <!--Out the intestine-->
+              <h5>Out the Intestine</h5>
+              <p>
+                After the engineered bacteria were expelled out of the intestine, Trigger RNA and CI protein no longer produced and were always degraded. Toehold Switch was produced in the same way as in the intestine. And with the gradual degradation of CI, Trigger RNA and Toehold Switch would combine to produce MazF. The expression of CI protein, Trigger RNA , Toehold Switch and MazF were obtained by applying differential equations above, as shown below.
+              </p>
+              <img src="" alt="6.2.1">
+              <h6>Fig. 6.2.1．The Total Amount of CI out of Intestine</h6>
+              <img src="" alt="6.2.2.">
+              <h6>Fig.6.2.2. The Amount of Trigger RNA out of the Intestine</h6>
+              <img src="" alt="6.2.3">
+              <h6>Fig.6.2.3. The Amount of Toehold Switch out of Intestine</h6>
+              <img src="" alt="6.2.4">
+              <h6>Fig.6.2.4．The Amount of MazF out of Intestine</h6>
+            </div>
+
+            <!--8.results and Analysis-->
+            <div class="row general_info_element" id="general_info_ele_8">
+              <h3>Results & Analysis</h3>
+              <p>
+                MazF directly determined whether the engineered bacteria will commit suicide or not. In order to ensure the kill switch to work, we analyzed the concentration of MazF under different combinations in and out of the intestine <b>Figure 7.1.</b>
+              </p>
+              <img src="" alt="7.1">
+              <h6>Fig.7.1. MazF Under Different Combinations in and out of the Intestine</h6>
+              <p>
+                We found that under the threshold set by us, only three combinations can meet the requirement of MazF generated in earthworm intestines  less than the threshold of suicide, and far less than MazF generated out of intestine. In addition, MazF generated out of intestine is higher than the threshold, which can make the engineered bacteria commit suicide.
+              </p>
+              <p>
+                Considering the simplicity of the pathway design, we hope to add the same degradation tag for CI-1 and CI-2. Therefore, our choice was: Under this combination, the quantities of various substances are shown in <b>Figure 7.2.</b>
+              </p>
+              <img src="" alt="7.2">
+              <h6>Fig.7.2. Various Substances Concentration</h6>
+            </div>
+
+            <!--9. Sensitive Analysis-->
+            <div class="row general_info_element" id="general_info_ele_9">
+              <p>
+                In fact, data related to promoter strength is difficult to obtain, and the influence of promoter strength on CI is difficult to determine. Therefore, sensitivity analysis was performed on promoter strength, as shown in <b>Figure 8.1.</b>
+              </p>
+              <img src="https://2020.igem.org/wiki/images/c/cf/T--NAU-CHINA--Model_KS_7.1.png" alt="fig.8.1">
+              <h6>Fig.8.1. Sensitivity Analysis of Transcription Rate.</h6>
+              <p>
+                The engineered bacteria were induced to produce CI proteins by IPTG in the laboratory. we had selected the concentration of IPTG that could produce the most CI proteins to inhibit the production of Toehold Switch. And in order to explore the influence of CI-1 concentration on the subsequent generation of CI-2 concentration, we conducted a sensitivity analysis on the CI protein concentration of engineered bacteria when they entered the earthworm intestine, as shown in <b>Figure 8.2.</b>
+              </p>
+              <img src="https://2020.igem.org/wiki/images/c/ca/T--NAU-CHINA--Model_KS_7.2.png" alt="fig.8.2.">
+              <p>
+                Fig.8.2. Sensitivity Analysis of Initial Concentration.
+              </p>
+              <h4>References</h4>
+              <div class="col-md-12 col-sm-12 reference" style="margin-top: 40px">
+                 <ul>
+                   <li><span>[1]</span><a style="text-decoration: none;">Zheng Y , Sriram G . Mathematical Modeling: Bridging the Gap between Concept and Realization in Synthetic Biology[J]. Journal of Biomedicine and Biotechnology, 2010, 2010(1110-7243):541609.</a></li>
+                   <li><span>[2]</span><a style="text-decoration: none;">Luan Ming Moon. Efficient expression of Glutamate decarboxylase by RBS sequence and promoter strategy. Kangnam University, 2018:3-5.</a></li>
+                   <li><span>[3]</span><a style="text-decoration: none;">Andersen JB, Sternberg C, Poulsen LK, Bjorn SP, Givskov M, Molin S. New unstable variants of green fluorescent protein for studies of transient gene expression in bacteria. Appl Environ Microbiol. 1998 Jun;64(6):2240-6. doi: 10.1128/AEM.64.6.2240-2246.1998. PMID: 9603842; PMCID: PMC106306.</a></li>
+                   <li><span>[4]</span><a style="text-decoration: none;">KIM, J. G.; TAKEDA, Y.; MATTHEWS, B. W.; ANDERSON, W. F. Kinetic studies on Cro repressor-operator DNA interaction. J Mol Biol, 196, n. 1, p. 149-158, Jul 1987.</a></li>
+                 </ul>
+               </div>
+            </div>
+
+
+            <!--UNKNOWN-->
+           <!--  <div class="row general_info_element" id="general_info_ele_6">
+              --5.3.3-->
+							<!-- <h5>5.3.3 Trigger RNA Production</h5>
+							<p>
+								Similarly, the concentration of Trigger RNA in the gut can be calculated:
+							</p>
+							<p>
+								$$ \frac{\mathrm{d}\left[mRNA_{TR}\right]}{\mathrm{d}t}={V_{mRNA-TR}}-\left [ mRNA_{TR}\right ]d_{mRNA-TR} $$
+							</p>
+							<p>
+								Where d<sub>mRNA-TR</sub> is constant, d<sub>mRNA-TR</sub> = 0.3 min <sup>-1</sup> and V<sub>mRNA-TR</sub> is generation rate of mRNA <sub> TR</sub>, given by the following formula:
+							</p>
+							<p>
+								$$ {V_{mRNA-TR}}={K_{mRNA-TS}}\left [ G_{TR}\right ] $$
+							</p>
+							<p>
+								K<sub>mRNA-TR</sub>=5 min <sup>-1</sup> , [G_TS ]=2.54x10<sup>-9</sup> M
+							</p>
+							<p>
+								Finally, Trigger RNA concentration is represented by the following formula:
+							</p>
+							<p>
+								$$ \frac{\mathrm{d}\left [ TR\right ]}{\mathrm{d}t}=V_{TR}-\left [ TR\right ]d_{TR} $$
+							</p>
+							<p>
+								Where, d<sub>mRNA-TR</sub>=0.3 min <sup>-1</sup>,  V<sub>TR</sub>= K<sub> TR</sub>[ mRNA <sub> TR</sub>].
+							</p>
+							<p>
+								The amount of Trigger RNA in the intestine is shown in Figure 5.3.3.
+							</p> -->
+							<!--图片待修改-->
+							<!-- <img style="width:75%;" src="https://2020.igem.org/wiki/images/a/a2/T--NAU-CHINA--Model_KS_5.3.2.jpg">
+							<h6>Fig.5.3.3. The Amount of Trigger RNA in Intestine</h6>
+							</p>
+
+							<.4-->
+							<!-- <h4>5.4 Out of Intestine</h4>
+							<p>
+								AResults & Analysis were expelled out of the intestine, with the gradual degradation of CI, Trigger RNA and Toehold Switch combine to produce mazF (<b>Figure 5.4</b>).
+							</p>
+							<img style="width:75%;" src="https://2020.igem.org/wiki/images/7/79/T--NAU-CHINA--Model_KS_5.4.png">
+							<h6>Fig.5.4. Production of mazF</h6>
+							<p>
+								The specific process of generating mazF is represented by the following formula,
+							</p>
+							<p>
+								$$ \left [trRNA \right ]+\left [ tsRNA\right ]\rightleftharpoons \left [ tr.tsRNA\right ] $$
+							</p>
+							<p>
+								$$ \left [tr.tsRNA\right ]\overset{K_{tr.ts}}{\rightarrow} \left [mazF\right] $$
+							</p>
+							<p>
+								Among them, K<sub>tr.ts</sub> is the translation rate of generating mazF. The reaction equilibrium constant is described as follows,
+							</p>
+							<p>
+								$$ K_{1}=\frac{\left [ tr.tsRNA\right ]}{\left [ trRNA\right ]\left [ tsRNA\right ]} $$
+							</p>
+							<p>
+								The total amount of Trigger RNA and Toehold Switch are shown as follows,
+							</p>
+							<p>
+								$$ \left [ T_{tr}\right ]=\left [ trRNA\right ]+\left [ tr.tsRNA\right ] $$
+							</p>
+							<p>
+								$$ \left [ T_{ts}\right ]=\left [ tsRNA\right ]+\left [ tr.tsRNA\right ] $$
+							</p>
+            </div> -->
+
+            <!--7. RESULTS & ANALYSIS -->
+           <!--  <div class="row general_info_element" id="general_info_ele_7">
+              <h3>6 Results & Analysis</h3>
+              <p>
+						    According to different combinations of RBS and degradation rate, a total of 36 schemes were available.
+							</p>
+							<p>
+								After simulating each combination, the amount of Toehold Switch and the amount of CI protein in the earthworm intestinal tract could be obtained, and the results were shown as follows:
+							</p>
+							<img src="https://2020.igem.org/wiki/images/a/ad/T--NAU-CHINA--Model_KS_6.1.png">
+							<h6>Fig.6.1. </h6>
+            </div> -->
+
+						<!--8. SENSITIVITY ANALYSIS -->
+						<!-- <div class="row general_info_element" id="general_info_ele_8">
+						  <h3>7 Sensitivity Analysis</h3>
+							<p>
+                In fact, data related to promoter strength is difficult to obtain, and the influence of promoter strength on CI is difficult to determine. Therefore, sensitivity analysis was performed on promoter strength, as shown in <b>Figure 7.1</b>.
+							</p>
+							<img src="https://2020.igem.org/wiki/images/c/cf/T--NAU-CHINA--Model_KS_7.1.png">
+							<h6>Fig.7.1 Sensitivity Analysis of Transcription Rate</h6>
+							<p>
+								The engineered bacteria were induced to produce CI proteins by IPTG in the laboratory. we had selected the concentration of IPTG that could produce the most CI proteins to inhibit the production of Toehold Switch. And in order to explore the influence of CI-1 concentration on the subsequent generation of CI-2 concentration, we conducted a sensitivity analysis on the CI protein concentration of engineered bacteria when they entered the earthworm intestine, as shown in <b>Figure 7.2</b>.
+							</p>
+							<img src="https://2020.igem.org/wiki/images/c/ca/T--NAU-CHINA--Model_KS_7.2.png">
+							<h6>Fig.7.2. Sensitivity Analysis of Initial Concentration</h6>
+						</div> -->
+
+						<!--9. MODEL EVALUATION -->
+				<!-- 		<div class="row general_info_element" id="general_info_ele_9">
+						  <h3>8 Model Evaluation</h3>
+							<p>
+						    In order to prevent the engineered bacteria from committing suicide or to reduce the amount of suicide the engineered bacteria, and the engineering bacteria should be opened to commit suicide as soon as possible after they are excreted. Our criteria for selecting the best combination are:
+							</p>
+							<img src="8.1">
+							<h6>Fig.8.1. </h6>
+							<p>
+								The engineered bacteria were induced to produce CI proteins by IPTG in the laboratory. we had selected the concentration of IPTG that could produce the most CI proteins to inhibit the production of Toehold Switch. And in order to explore the influence of CI-1 concentration on the subsequent generation of CI-2 concentration, we conducted a sensitivity analysis on the CI protein concentration of engineered bacteria when they entered the earthworm intestine, as shown in <b>Figure 7.2</b>.
+							</p>
+							<ul>
+							  <li>The amount of Toehold Switch in the intestine of earthworms is the minimum.</li>
+							  <li>The amount of CI protein is as little as possible when the engineered bacteria are excreted.</li>
+							  <li>CI-1 protein degradation rate is as slow as possible, while, CI-2 protein degradation rate is as fast as possible.</li>
+							</ul>
+							<p>
+								 Based on the above principles, we first ruled out B0029_CI_LVA and B0033_CI_LVA promoter-related combinations. In the selection of the remaining 18 combinations, we needed to consider the effect of the amount of CI on the activation of the kill switch after the engineered bacteria were excreted out of the body.
+							</p>
+							<p>
+								Prior to the simulation, we found that CI-1 degradation rate had little effect on the generation of Toehold Switch, as shown in <b>Figure 8.1</b>.
+							</p>
+							<img src="8.2">
+							<h6>Fig.8.2. </h6>
+							<p>
+								At this point, we only needed to simulate the degradation of B0034_CI_LVA and B0064_CI_LVA RBS strength and three CI-2 degradation rate combination.
+							</p>
+						</div> -->
+
+						<a href="https://2020.igem.org/wiki/images/d/d5/T--NAU-CHINA--Model_CA_code.zip" target="_blank" rel="noopener noreferrer"> <img style="width:20%;" src="https://2020.igem.org/wiki/images/7/79/T--NAU-CHINA--download_code.png"/> </a>
+						<a href="https://2020.igem.org/wiki/images/d/d5/T--NAU-CHINA--Model_CA_code.zip" target="_blank" rel="noopener noreferrer"> <img style="width:20%;" src="https://2020.igem.org/wiki/images/f/f2/T--NAU-CHINA--download_pdf.png"/> </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="new_General_Sub.js"></script>
+</body>
+</html>

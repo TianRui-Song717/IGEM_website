@@ -94,6 +94,9 @@ Engineering Success(排版修改)
 
 	https://2020.igem.org/Template:NAU-CHINA/Project/Engineering-Success-js?action=raw&ctype=text/javascript
 
+Model KS
+	https://2020.igem.org/Template:NAU-CHINA/Model/KS-js?action=raw&ctype=text/javascript
+
 通用：
 	{{NAU-CHINA/oranjia-test-home.csschushihua}}
 	{{NAU-CHINA/ALL/bootstrap3.3.7}}

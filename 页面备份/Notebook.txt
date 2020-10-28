@@ -1,0 +1,191 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/notebook.css}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+<style>
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/5/5d/T--NAU-CHINA--notebookbig.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url('https://2020.igem.org/wiki/images/a/a4/T--NAU-CHINA--notebookzi.png');
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+</style>
+
+</head>
+<body>
+
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">March</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">April</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">May</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">June</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">July</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">August</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_7" class="general_sidenav_a" id="sidenav_7">September</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_8" class="general_sidenav_a" id="sidenav_8">October</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+           <div class="row general_info_element" id="general_info_ele_1">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #faafbf">March</h1>
+          <ul>
+            <li>
+              Set up NAU-CHINA 2020 team!
+            </li>
+          </ul>
+             </div>
+        </div>
+
+                   <div class="row general_info_element" id="general_info_ele_2">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa; padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #f57a64">April</h1>
+            <ul>
+              <li>Brainstormed and researched literature, found several directions which we were interested and conceived our projects.</li>
+              <li>Consulted relevant experts and selected the feasibility of our projects.</li>
+            </ul>
+             </div>
+        </div>
+
+                   <div class="row general_info_element" id="general_info_ele_3">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #e85e51">May</h1>
+          <ul>
+            <li>Determined the subject--SLIM and investigated the background of the subject.</li>
+            <li>Determined the <i>Bacillus subtilis</i> as engineered bacteria and earthworms as carrier.</li>
+            <li>Registered our team and determined our team members.</li>
+            <li>Exchanged with Nanjing University for the first time to discuss HP's stakeholders.</li>
+            <li>Opening festival.</li>
+            <li>Built earthworms immobilizing lead model.</li>
+          </ul>
+             </div>
+        </div>
+
+                   <div class="row general_info_element" id="general_info_ele_4">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #c96382">June</h1>
+          <ul>
+            <li>Determined functional elements, regulatory elements, and anaerobic regulatory elements and built gene circuit.</li>
+            <li>Meetup of South China.</li>
+            <li>Constructed the framework of wiki.</li>
+            <li>Cooperated with One Health International Association.</li>
+            <li>Interviewed experts on lead poisoning and soil environment.</li>
+          </ul>
+             </div>
+        </div>
+
+                   <div class="row general_info_element" id="general_info_ele_5">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #ba65aa">July</h1>
+          <ul>
+            <li>Optimized the design of gene circuit.</li>
+            <li>Designed experimental schemes and expected results.</li>
+            <li>Learnt to use SnapGene and used SnapGene to construct RFC10 standard plasmid.</li>
+            <li>Constructed the framework of wiki.</li>
+            <li>Interviewed agricultural economic experts.</li>
+            <li>Interviewed the stakeholders.</li>
+          </ul>
+             </div>
+        </div>
+
+                   <div class="row general_info_element" id="general_info_ele_6">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #9847c4">August</h1>
+          <ul>
+            <li>Attended the 7th CCiC.</li>
+            <li>Reconstructed gene circuit, added the kill switch and replaced functional elements with phytase (ycD).</li>
+            <li>Completed safety form & checked in form.</li>
+            <li>Global meet up!</li>
+            <li>Edited wiki.</li>
+            <li>Conducted science communication with Nanjing-China.</li>
+          </ul>
+             </div>
+        </div>
+
+                   <div class="row general_info_element" id="general_info_ele_7">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #7049ba">September</h1>
+          <ul>
+            <li>Redesigned the experimental scheme and added kill switch. </li>
+            <li>Made promotion video.</li>
+            <li>Held iGEM campus promotion (on the Yulan Road).</li>
+            <li>Edited wiki.</li>
+            <li>Completed the picture book The Adventure of Andrew.</li>
+            <li>Completed music creation.</li>
+          </ul>
+             </div>
+        </div>
+
+                   <div class="row general_info_element" id="general_info_ele_8">
+            <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;padding-top:5px">
+          <h1 class="display-4" style="font-size: 30px;color: #4458bd">October</h1>
+          <ul>
+            <li>Verified the overall gene circuit, simulation results.</li>
+            <li>Built two mathematical models: CA model and kill switch model.</li>
+            <li>Edited wiki.</li>
+            <li>Drew Poster.</li>
+            <li>Prepared for presentation video.</li>
+            <li>Held iGEM campus promotional activities.</li>
+            <li>Celebrated wiki freeze!</li>
+          </ul>
+             </div>
+        </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+ <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/notebook1js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>
+{{NAU-CHINA/sponsor}}

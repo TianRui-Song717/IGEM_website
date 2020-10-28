@@ -1,0 +1,420 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/Integrated-HP-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>Science Communication</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    .general_info_element h4{font-size:1.5em;}
+  </style>
+</head>
+<body>
+    <!--NAV-->
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image" style="background-image:url(https://2020.igem.org/wiki/images/3/3e/T--NAU-CHINA--Education-backimg.jpg);"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image" style="width:90%;margin-left:5%;background-size:contain;background-image:url(https://2020.igem.org/wiki/images/5/56/T--NAU-CHINA--Education-back.jpg);">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">A Song</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">A Comic</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Magazine</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Campaign</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Promotion</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">Competition</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--Intor-->
+            <div class="row general_info_element">
+              <p>
+                The SLIM project, like a seed, is gradually growing into a big tree. During this process, Science Communication, as the fertilizer, nourishes SLIM to be stronger. After carefully considering the biosafety of SLIM, we devoted to popularizing synthetic biology among people. 
+              </p>
+              <p>
+                Inspired by the concept of One Health, we “Push the Boundaries”(shown in Fig.1), and break the boundaries between Science, Education and Art .We publicize our project to different groups of the public by composing a song, drawing a comic, publishing monthly magazines, holding an online publicity campaign, holding a Yulan-Road promotion and NAU-iGEM campus competition and other activities. The multi-modal publicity not only promotes our project to the public, gives us a way to communicate with them, but also educates the public in diversified and attractive ways.
+              </p>
+              <img src="https://2020.igem.org/wiki/images/9/95/T--NAU-CHINA--Integrated-HP-Push-Boundaries.png" alt="push the boundaries">
+              <h6 style="text-align:center;width:100%;">Fig.1 Push the Boundaries</h6>
+            </div>
+
+            <!--Compose a song-->
+            <div class="row general_info_element" id="general_info_ele_1">
+              <h3>Compose a Song</h3>
+              <h4 style="color: #1d663d;">— "To save the earth, To love my world"</h4>
+              <p style="text-align: center;">
+                When we are chosen to become members of the iGEM team, our mission has already begun.<br>
+                Every forceful lyric expresses our sorry for heavy metal pollution in soil, and every melodious melody carries our appeal to protect the soil environment.<br>
+              </p>
+              <div class="video_container">
+                <video loop="" id="landing-page-video" playsinline="" controls="" style="width:100%;height:100%; object-fit: fill;">
+                    <source src="https://2020.igem.org/wiki/images/0/06/T--NAU-CHINA--HP.mp4
+" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+              </div>
+              <style type="text/css">
+                #general_info_ele_3 ul li{
+                  list-style: initial;
+                }
+              </style>
+              <ul>
+                <li>
+                  <h4>Why do we deliver our science communication activities?</h4>  
+                </li>
+                <p>
+                  When crops have been affected, earthworms have died, farmers' incomes have declined and children's health has been threatened..., we hope all can be restored to normal, and all can develop in a better direction via our project. With the rap, we will show our acquaintance with iGEM, expressing our team's firm belief, as well as the inner appeal.
+                </p>
+                <p>
+                  As a special format, music could record our project and be preserved for a long time as well. Meanwhile, music is the subjective resonance of people, which can break through the language restrictions, across the ages and classes, even across time and space, fully rich in power. Therefore, we want to compose a song, giving an accessible way for the public to learn more about heavy metal pollution and our project.
+                </p>
+                <p>
+                  After listening to this song, listeners will have a deep understanding of the impact of lead pollution to the soil environment and even the whole society, which can enhance their understanding of synthetic biology, strengthening their awareness of environmental protection.
+                </p>
+                <li>
+                  <h4>
+                    Who's our target audience?
+                  </h4>  
+                </li>
+                <p>
+                  The general public, especially someone who is attracted by music and artistic expressions.
+                </p>
+                <li>
+                  <h4>
+                    How did we deliver our science communication activities?
+                  </h4>  
+                </li>
+                <p>
+                  We posted the audio and video of the song on our social media accounts, such as BiliBili, QQ and WeChat, which are popular online platforms in China. At the same time, we contacted other colleges to help us promote them.
+                </p>
+                <li>
+                  <h4>
+                    What did we do?
+                  </h4>  
+                </li>
+                <p>
+                  We collaborated with rap association of Nanjing Agricultural University, and completed the lyrics and composition of the whole song. In addition, we shot a video to appeal the public for soil environmental protection. After the song demo was released, we collected feedback from the public. They said that this song allows them to clearly understand the background, purpose and implementation results of our project. Out of loving the beautiful melody, they are willing to sing and promote our song.
+                </p>
+              </ul>
+            </div>
+
+            <!--Draw a comic-->
+            <div class="row general_info_element" id="general_info_ele_2">
+              <h3>Draw a Comic</h3>
+              <h4 style="color: #1d663d;">— "A Prophet Came to a Village"</h4>
+              <p>
+                Overexploiting the mines, the evil forces had been unleashed.<br>
+                The inhabitants of the soil had lost their homeland and the villagers had been ill due to eating poisonous vegetables.<br>
+                If you were Andrew in the village, facing the three bottles of medicine potions from a prophet, which one would you choose?
+              </p>
+              <!--Banner-->
+              <style type="text/css">
+                .item{
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                }
+
+                .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+                  margin:0px;
+                  width:100%;
+                }
+              </style>
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol style="margin-left:-30%;" class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="14"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="15"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active" id="Banner_page_1">
+                    <img src="https://2020.igem.org/wiki/images/e/ed/T--NAU-CHINA--Science-communication-comic-front.jpeg" alt="Comic_Cover">
+                  </div>
+                  <div class="item" id="Banner_page_1">
+                    <img src="https://2020.igem.org/wiki/images/d/df/T--NAU-CHINA--Eduction-Comic-1.jpeg" alt="Comic_1">
+                  </div>
+                  <div class="item" id="Banner_page_2">
+                    <img src="https://2020.igem.org/wiki/images/4/45/T--NAU-CHINA--Eduction-Comic-2.jpeg" alt="Comic_2">
+                  </div>
+                  <div class="item" id="Banner_page_3">
+                    <img src="https://2020.igem.org/wiki/images/f/fa/T--NAU-CHINA--Eduction-Comic-3.jpeg" alt="Comic_3">
+                  </div>
+                  <div class="item" id="Banner_page_4">
+                    <img src="https://2020.igem.org/wiki/images/4/43/T--NAU-CHINA--Eduction-Comic-4.jpeg" alt="Comic_4">
+                  </div>
+                  <div class="item" id="Banner_page_5">
+                    <img src="https://2020.igem.org/wiki/images/7/75/T--NAU-CHINA--Eduction-Comic-5.jpeg" alt="Comic_5">
+                  </div>
+                  <div class="item" id="Banner_page_6">
+                    <img src="https://2020.igem.org/wiki/images/7/77/T--NAU-CHINA--Eduction-Comic-6.jpeg" alt="Comic_6">
+                  </div>
+                  <div class="item" id="Banner_page_7">
+                    <img src="https://2020.igem.org/wiki/images/2/23/T--NAU-CHINA--Eduction-Comic-7.jpeg" alt="Comic_7">
+                  </div>
+                  <div class="item" id="Banner_page_8">
+                    <img src="https://2020.igem.org/wiki/images/4/47/T--NAU-CHINA--Eduction-Comic-8.jpeg" alt="Comic_8">
+                  </div>
+                  <div class="item" id="Banner_page_9">
+                    <img src="https://2020.igem.org/wiki/images/8/88/T--NAU-CHINA--Eduction-Comic-9.jpeg" alt="Comic_9">
+                  </div>
+                  <div class="item" id="Banner_page_10">
+                    <img src="https://2020.igem.org/wiki/images/d/d6/T--NAU-CHINA--Eduction-Comic-10.jpeg" alt="Comic_10">
+                  </div>
+                  <div class="item" id="Banner_page_11">
+                    <img src="https://2020.igem.org/wiki/images/0/06/T--NAU-CHINA--Eduction-Comic-11.jpeg" alt="Comic_11">
+                  </div>
+                  <div class="item" id="Banner_page_12">
+                    <img src="https://2020.igem.org/wiki/images/1/18/T--NAU-CHINA--Eduction-Comic-12.jpeg" alt="Comic_12">
+                  </div>
+                  <div class="item" id="Banner_page_13">
+                    <img src="https://2020.igem.org/wiki/images/3/3e/T--NAU-CHINA--Eduction-Comic-13.jpeg" alt="Comic_13">
+                  </div>
+                  <div class="item" id="Banner_page_14">
+                    <img src="https://2020.igem.org/wiki/images/a/a6/T--NAU-CHINA--Eduction-Comic-14.jpeg" alt="Comic_14">
+                  </div>
+                  <div class="item" id="Banner_page_15">
+                    <img src="https://2020.igem.org/wiki/images/f/f1/T--NAU-CHINA--Science-communication-comic-end.jpeg" alt="Comic_End">
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="icon-prev" aria-hidden="true" style="font-size:1.5em;"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="icon-next" aria-hidden="true" style="font-size:1.5em;"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <ul>
+                <li>
+                  <h4>
+                    Why do we deliver our science communication activities?
+                  </h4>
+                </li>
+                <p>
+                  The seemingly boring synthetic biology content and scientific knowledge are presented by vivid comic images, which will undoubtedly arouse great interest among our audience. Meanwhile, the language used in the comic is relatively simple, so that pre-school kids will be interested in scientific knowledge, which has an educational significance. The more important is that science picture books in the form of comics can help children learn to actively observe the surrounding environment and find solutions to problems, which lays a good foundation for their future development.
+                </p>
+                <li>
+                  <h4>
+                    Who's our target audience?
+                  </h4>  
+                </li>
+                <p>
+                  The general public, especially young parents, educators, children literature writers , and even pre-school kids.
+                </p>
+                <li>
+                  <h4>
+                    How did we deliver our science communication activities?
+                  </h4>  
+                </li>
+                <p>
+                  We published the cartoon on the official microblog of our school and expanded its influence through forwarding and other ways. What's more, we also prepared some booklets for young parents, giving their children opportunities to learn more about synthetic biology in a light-hearted way.
+                </p>
+                <div class="col-md-6 col-sm-12">
+                  <img style="width:100%;" src="https://2020.igem.org/wiki/images/d/d3/T--NAU-CHINA--partnership1.jpg" alt="comic-propagation">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <img style="width:100%;" src="https://2020.igem.org/wiki/images/8/81/T--NAU-CHINA--partnership2.jpg">
+                </div>
+                <div class="clearfix"></div>
+                <li>
+                  <h4>
+                    What did we do?
+                  </h4>  
+                </li>
+                <p>
+                  In the preliminary stage, HP collected inspirations and wrote screenplays. Then, art designers drew and completed the comics.
+                </p>
+                <p>
+                  After giving out our samples, we collected readers' advice for the booklets, and made some improvements accordingly.
+                </p>
+              </ul>
+            </div>
+
+            <!--Monthly magazine-->
+            <div class="row general_info_element" id="general_info_ele_3">
+              <h3>Publish a Monthly Magazine</h3>
+              <h4 style="color: #1d663d;">— Cooperate with Jiangnan_China</h4>
+              <div class="col-md-6 col-sm-12">
+                <img style="width:100%;" src="https://2020.igem.org/wiki/images/1/14/T--NAU-CHINA--Education-Magazine1.jpg" alt="magazine_1">
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img style="width:100%;" src="https://2020.igem.org/wiki/images/f/f2/T--NAU-CHINA--Education-Magazine2.jpg" alt="magazine_2">
+              </div>
+              <div class="clearfix"></div>
+              <ul>
+                <li>
+                  <h4>Why do we deliver our science communication activities?</h4>  
+                </li>
+                  <p>
+                    During the exchanges with the Jiangnan_China, we had known that they issued monthly magazines to middle school students from four different provinces and areas in China. Happy to hear that, we expressed our willingness to cooperate with them and participated in the completion of their monthly magazine in October. It is hoped that middle school students can gain scientific knowledge while reading paper journals. At the same time, they can understand the seriousness of soil heavy metal pollution and have new thoughts on environmental protection.
+                  </p>
+                <li>
+                   <h4>Who's our target audience?</h4>  
+                </li>
+                <p>
+                  Middle school students from different provinces and areas, including Xinjiang, Jiangsu, Sichuan and Tianjin.
+                </p>
+                <li>
+                   <h4>What did we do?</h4>  
+                </li>
+                <p>
+                  Exchanging with Jiangnan_China，we reached a consensus. We presented our project's overview and concept in a readable and comprehensible language, and presented the future prospects of the project in the monthly magazine.
+                </p>
+              </ul>
+            </div>
+
+            <!--Online campaign-->
+            <div class="row general_info_element" id="general_info_ele_4">
+              <h3>Hold an Online Campaign</h3>
+              <h4 style="color: #1d663d;">— Cooperate with NJAU Horticulture Volunteer</h4>
+              <img style="float:left;width:49%;margin-right:2%;" src="https://2020.igem.org/wiki/images/d/db/T--NAU-CHINA--tuisonghahaha.png
+" alt="wechat_img">
+              <img style="float:right;width:49%;" src="https://2020.igem.org/wiki/images/b/b8/T--NAU-CHINA--tuisonghahaha2.png" alt="wechat_img">
+              <ul>
+                <li>
+                  <h4>
+                    Why do we deliver our science communication activities?
+                  </h4>  
+                </li>
+                <p>
+                  During the summer vacation, the Horticulture Volunteer of Nanjing Agricultural University learned that the children who experienced the 2020 flood in Anhui Province were psychologically and academically affected. They hoped to help them solve these problems through online counselings and lectures. We took this educational opportunity to work with them to open the door of synthetic biology to these children who might not have learnt that before.
+                </p>
+                <li>
+                   <h4>Who's our target audience?</h4>  
+                </li>
+                <p>
+                  Children from flood-stricken areas.
+                </p>
+                <li>
+                  <h4>What did we do?</h4>  
+                </li>
+                <p>
+                  The most direct way to promote synthetic biology is to “teach” it in class, that is to say, holding lectures. With the platform provided by the Horticulture Volunteer, we held a promotion campaign for our project in form of an online lecture to the students to help them gain a deeper understanding of our project. During this online lecture, some children raised some questions about synthetic biology, which showed that they gradually became interested in synthetic biology, and we responded to them in great detail.
+                </p>
+              </ul>
+            </div>
+
+            <!--Promotion-->
+            <div class="row general_info_element" id="general_info_ele_5">
+              <h3>Hold a Yulan-Road Promotion</h3>
+              <h4 style="color: #1d663d;">— A traditional publicity model of our team</h4>
+              <div class="col-md-6 col-sm-12">
+                <img style="width:100%;" src="https://2020.igem.org/wiki/images/a/a2/T--NAU-CHINA--cycandwxl1314.jpg
+" alt="Yulan promotion">
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img style="width:100%;" src="https://2020.igem.org/wiki/images/0/0a/T--NAU-CHINA--wxlandcyc1314.jpg" alt="Yulan promotion">
+              </div>
+              <div class="clearfix"></div>
+              <ul>
+                <li>
+                  <h4>
+                    Why do we deliver our science communication activities?
+                  </h4>  
+                </li>
+                <p>
+                  Yulan-Road is one of the main roads in Nanjing Agricultural University, which is always of high traffic of students from different disciplines. This is a good place not only for publicizing iGEM and our project, but also for popularizing synthetic biology in students. 
+                </p>
+                <p>
+                   If some students and professors show interests in the promotion, they may give us some advice that we could never think of, which may surprisingly benefit our project.
+                </p>
+                <li>
+                  <h4>Who's our target audience?</h4>  
+                </li>
+                <p>
+                  Students and professors from Nanjing Agricultural University.
+                </p>
+                <li>
+                  <h4>What did we do?</h4>  
+                </li>
+                <p>
+                  Our team members delivered presentations and explained more details about iGEM and our project on Yulan-Road. Besides, we gave an account of the questions from the students and professors about our project and had a brief conversation with them in their interested aspects.
+                </p>
+              </ul>
+            </div>
+
+
+            <!--NAU-iGEM Cmapus Competition-->
+            <div class="row general_info_element" id="general_info_ele_6">
+              <h3>Hold NAU-iGEM Campus Competition</h3>
+              <h4 style="color: #1d663d;">—— An iGEM-like contest</h4>
+              <div class="col-md-6 col-sm-12">
+                <img style="width:100%;" src="https://2020.igem.org/wiki/images/3/3b/T--NAU-CHINA--hphahaha.jpg" alt="our_online_conference">
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img  style="width:100%;" src="https://2020.igem.org/wiki/images/7/7f/T--NAU-CHINA--paippthahaha.jpg" alt="our_online_conference">
+              </div>
+              <div class="clearfix"></div>
+              <ul>
+                <li>
+                   <h4>Why do we deliver our science communication activities?</h4>   
+                </li>
+                <p>
+                  The NAU-iGEM Campus Competition is an iGEM-like contest organized for anyone who are interested in iGEM. The campus competition for the students interested in synthetic biology. It allows us to attract more partners who are willing to devote themselves to synthetic biology. Such a campus competition lets students thoroughly comprehend the field of synthetic biology, and understand deeply about synthetic biology on the previous cognition of the social influence and role, experiencing a model contest similar to the iGEM.
+                </p>
+                <li>
+                  <h4>
+                    Who's our target audience?
+                  </h4>  
+                </li>
+                <p>
+                  Students with an interest and passion in synthetic biology.
+                </p>
+                <li>
+                  <h4>
+                    What did we do?
+                  </h4>
+                </li>
+                <p>
+                  We, NAU-iGEM 2020 team members, held some specific lectures and trainings for the students. Each team was required to hand in one project design one month later. When they gave their final project presentation, we offered them some suggestions and graded their performance.
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/HP/Science_Communication-js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

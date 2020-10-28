@@ -1,0 +1,18 @@
+function dfdt = model_MazF_function(t,f,param6)
+%Abbreviations:
+
+    % p3:translation rate of  tr_tsmRNA
+    % dp3:degradation rate of MazF protein
+    % g: tr_tsmRNA  
+   
+p3  = param6(1);
+dp3 = param6(2); 
+g   = param6(3);
+% Differential equations:
+    %f(1): MazF protein  
+    
+df1  = p3*g-dp3*f(1);
+
+dfdt = df1;
+
+return

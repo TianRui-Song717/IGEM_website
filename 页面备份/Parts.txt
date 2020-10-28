@@ -1,0 +1,216 @@
+
+	{{NAU-CHINA/oranjia-test-home.csschushihua}}
+	{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/attribution.css}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/9/9a/T--NAU-CHINA--partsoverviewdt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url('https://2020.igem.org/wiki/images/6/6a/T--NAU-CHINA--partsdt.png');
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+</style>
+</head>
+<body>
+   
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">Overview</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Basic Parts</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Composite Parts</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Contribution</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+           <div class="row general_info_element" id="general_info_ele_1">
+              <h3 style="border: none;">Overview</h3>
+              <!-- <h4>The birth of SLIM</h4> -->
+              <img src="https://2020.igem.org/wiki/images/8/8c/T--NAU-CHINA--xindeparttonglu.png" style="width: 110%">
+              <p>We <b>add IPTG in our culture medium to express CⅠ protein</b> to suppress P<sub>CⅠ</sub>. So, there’s no <b>switch-mazF (BBa_K3408003)</b> expressed in <i>Bacillus subtilis</i>. Then we feed our earthworm with engineered bacteria.</p>
+              <P>When our engineered bacteria enter the intestine of earthworm, P<sub>nar</sub> (BBa_K3408000) will be activated by FNR in anaerobic condition, so phy(ycD) (BBa_K3408001), optimized CⅠ (BBa_K3408004) and trigger RNA (BBa_K3408002) will produce. Our engineered bacteria can secrete phytase but not suicide. After a period of time, engineered bacteria is discharged to the wormcast. In aerobic condition, P<sub>nar</sub> will be inhibited but P<sub>CⅠ</sub> will recover activity. Then switch RNA can be transcribed and combine with trigger RNA. Finally, MazF protein will be produced to kill our engineered bacteria.</P>
+
+      <div class="row general_info_element" id="general_info_ele_2">
+        <div class="jumbotron"  style="background-color: white; box-shadow: 0px 10px 30px #aaaaaa; margin-top: 30px">
+          <h1 class="display-4" style="font-size: 30px">Basic Parts</h1>
+
+          				<table class="table table-bordered">
+				<thead>
+			    <tr>
+			      <!-- <th scope="col">Part Number</th> -->
+			      <th scope="col" style="text-align: center;">Part Number</th>
+			      <th scope="col" style="text-align: center;">Name</th>
+			      <th scope="col" style="text-align: center;">Type</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408000">BBa_K3408000</a></td>
+			      <td>P<sub>nar</sub></td>
+			      <td>Promoter</td>
+			    </tr>
+			    <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408001">BBa_K3408001</a></td>
+			      <td>phy(ycD)</td>
+			      <td>Coding</td>
+			    </tr>
+			    <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408002">BBa_K3408002</a></td>
+			      <td>Trigger RNA</td>
+			      <td>RNA</td>
+			    </tr>
+			     <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408003">BBa_K3408003</a></td>
+			      <td>Switch RNA</td>
+			      <td>RNA</td>
+			    </tr>
+			      <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408004">BBa_K3408004</a></td>
+			      <td>Optimized CⅠ</td>
+			      <td>Coding</td>
+			    </tr>
+			     <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408005">BBa_K3408005</a></td>
+			      <td>Optimized DpnI</td>
+			      <td>Coding</td>
+			    </tr>
+
+			  </tbody>
+			</table>
+          <!-- <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+
+<a class="btn btn-primary btn-lg" href="https://2020.igem.org/Team:NAU-CHINA/BasicParts" role="button" style="color: white; background:#286090">Learn more</a>
+        </div>
+      </div>
+      <div class="row general_info_element" id="general_info_ele_3">
+        <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;">
+          <h1 class="display-4" style="font-size: 30px">Composite Parts</h1>
+
+              <table class="table table-bordered">
+				<thead>
+			    <tr>
+			      <!-- <th scope="col">Part Number</th> -->
+			      <th scope="col" style="text-align: center;">Part Number</th>
+			      <th scope="col" style="text-align: center;">Name</th>
+			      <th scope="col" style="text-align: center;">Type</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408006">BBa_K3408006</a></td>
+			      <td>P<sub>nar</sub>-B0034-GFP-B0015</td>
+			      <td>Composite</td>
+			    </tr>
+			    <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href=http://parts.igem.org/Part:BBa_K3408007#">BBa_K3408007</a></td>
+			      <td>P<sub>nar</sub>-B0034-phy(ycD)-B0015</td>
+			      <td>Composite</td>
+			    </tr>
+			    <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408008">BBa_K3408008</a></td>
+			      <td>P<sub>nar</sub>-B0034-CⅠ-B0015-P<sub>CⅠ</sub>-B0034-GFP-B0015</td>
+			      <td>Composite</td>
+			    </tr>
+			     <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408009">BBa_K3408009</a></td>
+			      <td>P<sub>liaG</sub>-trigger RNA-B0015-P<sub>CⅠ</sub>-switch RNA-GFP-B0015</td>
+			      <td>Composite</td>
+			    </tr>
+			     <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408010">BBa_K3408010</a></td>
+			      <td>P<sub>nar</sub>-trigger RNA-B0015-P<sub>CⅠ</sub>-switch RNA-mazF-B0015</td>
+			      <td>Composite</td>
+			    </tr>
+			     <tr>
+			      <!-- <th scope="row">1</th> -->
+			      <td><a href="http://parts.igem.org/Part:BBa_K3408011">BBa_K3408011</a></td>
+			      <td>P<sub>liaG</sub>-B0034-lacI-P<sub>grac</sub>-B0034-CⅠ-P<sub>CⅠ</sub>-B0034-GFP-B0015</td>
+			      <td>Composite</td>
+			    </tr>
+
+			  </tbody>
+			</table>
+          <!-- <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+          <a class="btn btn-primary btn-lg" href="https://2020.igem.org/Team:NAU-CHINA/Composite_Part" role="button" style="color: white; background:#286090">Learn more</a>
+        </div>
+             <!--  <P>Our composite parts include P<sub>nar</sub>-RBS-phy(ycD)-terminator(BBa_K3408006), P<sub>nar</sub>-RBS-CI-P<sub>CI</sub>-toehold switch-MazF-terminator-P<sub>nar</sub>- trigger RNA-terminator(BBa_K3408007) and P<sub>liaG</sub>-RBS-lacI- P<sub>grac</sub>- RBS-CI-terminator(BBa_K3408008).</P> -->
+      </div>
+
+      <div class="row general_info_element" id="general_info_ele_4">
+        <div class="jumbotron"  style="background-color: white;box-shadow: 0px 10px 30px #aaaaaa;">
+          <h1 class="display-4" style="font-size: 30px">Contribution</h1>
+          <p class="lead">We have found some new information about BBA_K525515, BBA_K1067006 and BBa_K1096001. We hope to help other teams to better understand the nature and characteristics of these parts and be able to use them more skillfully.</p>
+          <!-- <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+          <p class="lead">In order to better and more comprehensive understand our favorite reporter part whose name is BBa_E1010, this year NAU-CHINA uses SWISS MODEL <a href="https://swissmodel.expasy.org/"target="_blank">(https://swissmodel.expasy.org/)</a>to model and simulate the tertiary structure of protein. We hope that the prediction of the structure will help other teams to better understand the nature and characteristics of this part and be able to use the reporter gene more skillfully.</p>
+          <a class="btn btn-primary btn-lg" href="https://2020.igem.org/Team:NAU-CHINA/Contribution" role="button" style="color: white; background:#286090">Learn more</a>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+	    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/Parts_textnew4js11?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

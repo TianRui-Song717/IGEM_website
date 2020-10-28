@@ -1,0 +1,612 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/attribution.css}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>General Page</title>
+  <meta charset="utf-8">
+
+  <style type="text/css">
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+      border:none;text-align:center;
+    }
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/8/82/T--NAU-CHINA--protocoldt.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url('https://2020.igem.org/wiki/images/c/cd/T--NAU-CHINA--protocolzi.png');
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+
+#bodyContent h4{margin:10px !important;}
+
+  </style>
+</head>
+<body>
+   
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav" >
+            <div class="left_nav"style="margin-top:3vh;padding-top:0;">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">PCR</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Agarose Gel Electrophoresis</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Gel Extraction</a></li>
+              <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Enzyme Digestion System</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Ligation & Chemical Transformation</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">Colony PCR</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_7" class="general_sidenav_a" id="sidenav_7">Plasmid Extraction</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_8" class="general_sidenav_a" id="sidenav_8">Electro-transformation</a></li>
+              <li class="general_sidenav_li"><a href="#general_info_ele_9" class="general_sidenav_a" id="sidenav_9">Purification(phytase)</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_10" class="general_sidenav_a" id="sidenav_10">Western Blot</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_11" class="general_sidenav_a" id="sidenav_11">BCA Assay</a></li>
+               
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+
+           <div class="row general_info_element " id="general_info_ele_1">
+              <h3 style="border: none; border: none;position: relative;">PCR</h3>
+              <h4>Methods</h4>
+<div class="reference" style="margin-top: 60px">
+              <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Prepare the reaction system in a PCR tube on ice, thaw the components and mix well. After use, put them back in -20 ℃</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Gently centrifuge to collect the liquid at the bottom of the tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Transfer the PCR tube to the PCR machine, set the parameters and start the thermal cycle.</a></li>
+               
+              </ul>
+</div>
+
+
+              <!-- <img src="https://2020.igem.org/wiki/images/a/ad/T--NAU-CHINA--cyccontribution2.png" style="width: 100%;margin-top:0px"> -->
+    
+ <table class="table" align="center">
+    <thead>
+      <tr class="table-active text-center">
+        <th><b>Reagent</b></th>
+        <th><b>Volume/μL</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <tr>
+          <td>ddH<sub>2</sub>O</td>
+          <td>Up to 50</td>
+        </tr>
+        <tr>
+          <td>2 × Phanta Max Buffer</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>dNTP Mix(10 mM each)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Primer F(10 μM)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Primer R(10 μM)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Phanta Max Super-Fidelity DNA Polymerase</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>template DNA</td>
+          <td>X</td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 style="font-size: 23.4px;">Thermocycling Conditions for a Routine PCR:</h4>
+
+        <table class="table table-bordered" align="center">
+    <thead>
+      <tr class="table-active text-center">
+        <th><b>Step</b></th>
+        <th><b>Temperature (℃)</b></th>
+        <th><b>Time</b></th>
+        <th><b>Cycles</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <tr>
+          <td>Initial Denaturation</td>
+          <td>95</td>
+          <td>3 min</td>
+          <td>1</td>
+        </tr>
+        
+        <tr>
+          <td>Denaturation</td>
+          <td>95</td>
+          <td>15 s</td>
+          <td>25 - 35</td>
+        </tr>
+        <tr>
+          <td>Annealing</td>
+          <td>56 - 72</td>
+          <td>15 s</td>
+          <td>25 - 35</td>
+        </tr>
+        <tr>
+          <td>Extension</td>
+          <td>72</td>
+          <td>30-60 sec/kb</td>
+          <td>25 - 35</td>
+        </tr>
+        <tr>
+          <td>Final Extension</td>
+          <td>72</td>
+          <td>2 - 5 min</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Hold</td>
+          <td>16</td>
+          <td>Indefinitely</td>
+          <td>1</td>
+        </tr>
+       </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="row general_info_element reference" id="general_info_ele_2">
+<h3>Agarose Gel Electrophoresis</h3>
+              <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Place the gel tray in the appropriate position in the gel cartridge and place the comb in the correct position.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Measure 0.5 g agarose, put it in a 250 mL Erlenmeyer flask, add 50 mL 1 × TAE buffer and mix, then put the Erlenmeyer flask in the oven and heat to boil until the agarose is completely dissolved.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Add 5 μL GelRed to the solution.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Pour the solution into the gel casting tray</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">After the gel cools to solid, pull out the comb.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">Place the gel in the electrophoresis chamber with enough TAE buffer.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Add 10 × loading buffer to the sample and mix, then transfer the mixture to the well on the gel with a pipette.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>8.</span> <a style="color: black;padding-left: 1.2em;">Power on, run at 120 V for half an hour.</a></li>
+               
+              </ul>
+
+</div>
+
+<div class="row general_info_element " id="general_info_ele_3">
+  <h3>Gel Extraction</h3>
+  <h4>According to the E.Z.N.A. Gel Extraction kit:</h4>
+<div class="reference" style="margin-top: 60px">
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Perform agarose gel/ethidium bromide electrophoresis to fractionate DNA fragments. Any type or grade of agarose may be used. However, it is strongly recommended that fresh TAE buffer or TBE buffer be used as running buffer. Do not reuse running buffer as its pH will increase and reduce yields.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">When adequate separation of bands has occurred, carefully excise the DNA fragment of interest using a wide, clean, sharp scalpel. Minimize the size of the gel slice by removing extra agarose.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Determine the appropriate volume of the gel slice by weighing it in a clean 1.5 mL microcentrifuge tube. Assuming a density of 1 g/mL, the volume of gel is derived as follows: a gel slice of mass 0.3 g will have a volume of 0.3 mL.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Add 1 volume Binding Buffer (XP2).</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Incubate at 50-60 °C for 7 min or until the gel has completely melted. Vortex or shake the tube every 2-3 min.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">Insert a HiBind<sub>®</sub> DNA Mini Column in a 2 mL Collection Tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Add no more than 700 μL DNA/agarose solution from Step 5 to the HiBind<sub>®</sub> DNA Mini Column. Centrifuge at 10,000 rpm for 1 min at room temperature. Discard the ltrate and reuse collection tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>8.</span> <a style="color: black;padding-left: 1.2em;">Repeat Steps 7 until all of the sample has been transferred to the column.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>9.</span> <a style="color: black;padding-left: 1.2em;">Add 300 μL Binding Buffer (XP2). Centrifuge at maximum speed (≥13,000 rpm) for 1 min at room temperature. Discard the ltrate and reuse collection tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>10.</span> <a style="color: black;padding-left: 1.5em;">Add 700 μL SPW Wash Buffer. Centrifuge at maximum speed for 1 min at room temperature. Discard the ltrate and reuse collection tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>11.</span> <a style="color: black;padding-left: 1.5em;">Centrifuge the empty HiBind<sub>®</sub> DNA Mini Column for 2 min at maximum speed to dry the column matrix. Transfer the HiBind<sub>®</sub> DNA Mini Column to a clean 1.5 mL microcentrifuge tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>12.</span> <a style="color: black;padding-left: 1.5em;">Add 50 μL deionized water directly to the center of the column membrane. Centrifuge at maximum speed for 1 min.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>13.</span> <a style="color: black;padding-left: 1.5em;">Store DNA at -20 °C.</a></li>
+               
+              </ul>
+</div>
+
+</div>
+
+<div class="row general_info_element" id="general_info_ele_4">
+  <h3>The Double Enzyme Digestion System</h3>
+
+
+
+   <table class="table table-bordered" align="center">
+    <thead>
+      <tr class="table-active text-center">
+        <th><b>Components (50 μL)</b></th>
+        <th><b>Volume/μL</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <tr>
+          <td>10 rpmreen Buffer</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Enzyme I</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Enzyme II</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>DNA</td>
+          <td>1 - 2 μg</td>
+        </tr>
+        <tr>
+          <td>ddH<sub>2</sub>O</td>
+          <td>Add to 50 μL</td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+  <p style="text-align:center">Put the system into a 37 °C water bath for half an hour.</p>
+</div>
+
+<div class="row general_info_element" id="general_info_ele_5">
+  <h3>Ligation</h3>
+
+
+
+            <table class="table table-bordered" align="center">
+    <thead>
+      <tr class="table-active text-center">
+        <th><b>Components (10 μL)</b></th>
+        <th><b>Volume/μL</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <tr>
+          <td>T4 DNA Ligase</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>10 × T4 DNA Ligase Buffer</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Plasmid Skeleton</td>
+          <td>molar ratio of Vector: plasmid is 1:3</td>
+        </tr>
+        <tr>
+          <td>Insert Gene</td>
+          <td>molar ratio of Vector: plasmid is 1:3</td>
+        </tr>
+        <tr>
+          <td>Sterile Water</td>
+          <td>Up to 10 μL</td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+  <p style="text-align:center;">Overnight at 16 ℃.</p>
+</div>
+  <div class="row general_info_element reference">
+<h3>Chemical Transformation</h3>
+<ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Take competent cells (E.coli DH5α) from -80 °C refrigerator and put it on ice. （Set negative control by using chemically competent E.coli cells without plasmids）</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">When the competent cells dissolve (about 10min), add 10 μL DNA ligation product or 2 μL plasmid per tube, Place the mixture on ice for 30 min.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Heat shock at 42 °C for exactly 90 seconds.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Put the 1.5 mL tubes back on ice for 3-5 min.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Add 500 μL LB fluid medium without antibiotics into the 1.5 mL tubes and then culture in the shaker incubator at 37 °C for an hour.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">Extract 100-200 μL bacteria liquid, spread it on LB medium with relevant antibiotic.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Place plates upside down and incubate at 37 °C overnight.</a></li>
+
+               
+              </ul>
+</div>
+<div class="row general_info_element" id="general_info_ele_6">
+  <h3>Colony PCR</h3>
+  <h4>Using 2×Taq master Mix/2×Hieff PCR Master Mix:</h4>
+
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content" style="width:96%; font-size:1rem;">
+          <table class="table table-bordered" align="center">
+    <thead>
+      <tr class="table-active text-center">
+        <th><b>Reagent</b></th>
+        <th><b>Volume/μL</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <tr>
+          <td>2× Taq master Mix/2×Hieff PCR Master Mix</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>ddH<sub>2</sub>O</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Primer F(10 μM)</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>Primer R(10 μM)</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td><i>E. coli</i> colony</td>
+          <td>X</td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+  <h4 style="font-size: 23.4px;">Thermocycling conditions for a routine PCR:</h4>
+
+
+           <table class="table table-bordered" align="center">
+    <thead>
+      <tr class="table-active text-center">
+        <th><b>Step</b></th>
+        <th><b>Temperature (℃)</b></th>
+        <th><b>Time</b></th>
+        <th><b>Cycles</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <tr>
+          <td>Initial denaturation</td>
+          <td>95</td>
+          <td>3 min</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Denaturation</td>
+          <td>95</td>
+          <td>15 s</td>
+          <td>25 - 35</td>
+        </tr>
+        <tr>
+          <td>Annealing</td>
+          <td>56 - 72</td>
+          <td>15 s</td>
+          <td>25 - 35</td>
+        </tr>
+        <tr>
+          <td>Extension</td>
+          <td>72</td>
+          <td>30-60 sec/kb</td>
+          <td>25 - 35</td>
+        </tr>
+        <tr>
+          <td>Final extension</td>
+          <td>72</td>
+          <td>2-5 min</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Hold</td>
+          <td>16</td>
+          <td>Indefinitely</td>
+          <td>1</td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: black; text-align:center;">If loading on a gel, don’t need to add loading buffer to the mixture because Taq master Mix/Hieff PCR Master Mix contains loading dye.</p>
+
+</div>
+
+<div class="row general_info_element " id="general_info_ele_7">
+<h3>Plasmid Extraction</h3>
+<h4>According to the Plasmid Extraction Mini kit:</h4>
+<div class="reference" style="margin-top: 60px">
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Take 1-5 mL bacterial solution into a centrifuge tube, centrifuge at 12,000 rpm for 1 min and remove supernatant.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Add 250 μL SolutionⅠ in centrifuge tube, using the pipet or vortex oscillator to suspend the cells.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Add 250 μL Solution II in centrifuge tube and gently flip upside down for 6-8 times to make sure the germ is full cracked.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Add 350 μL Solution III, gently flip upside down for 6-8 times to mix until white, flocculent precipitate appears and centrifuge at 12,000 rpm for 10 min.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Add the supernatant to the adsorption column in step 5, centrifuge at 12,000 rpm for l min, discard the filtrate and reuse collection tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">Add 700 μL Wash solution to the adsorption column, centrifuge at 12,000 rpm for l min, discard the filtrate and reuse collection tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Add 500 μL Wash solution to the adsorption column, centrifuge at 12,000 rpm for l min, discard the filtrate and reuse collection tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>8.</span> <a style="color: black;padding-left: 1.2em;">Centrifuge the empty adsorption column at 12,000 rpm for 2 min to dry the column matrix. (Residual ethanol may impact downstream application)</a></li>
+                <li style="margin-bottom: 0.5em;"><span>9.</span> <a style="color: black;padding-left: 1.2em;">Transfer the adsorption column into a clean 1.5 mL centrifuge tube, add 50 -100 μL Elution buffer to the center of the column membrane, let sit at room temperature for 2 min and centrifuge at 12,000 rpm for l min, collect the plasmid solution in the centrifuge tube.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>10.</span> <a style="color: black;padding-left: 1.5em;">Store the plasmid at -20°C.</a></li>
+
+               
+              </ul>
+<div>
+
+
+<h4>LB Medium(For 100 mL)</h4>
+
+
+            <table class="table table-bordered" align="center">
+    <thead>
+      <tr class="table-active text-center">
+        <th><b>Component</b></th>
+        <th><b>Mass/g</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <tr>
+          <td>Tryptone</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Yeast Extract</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>NaCl</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Sterile water</td>
+          <td>to 100 ml</td>
+        </tr>
+      </tr>
+    </tbody>
+  </table>
+<p style="text-align: center;">Autoclave at 121 °C for 20 min.<br>
+(1.5 g agar should be added before autoclaving to make solid LB)
+
+</p>
+
+          </div>
+
+<div class="row general_info_element reference" id="general_info_ele_8">
+<h3>Electro-transformation</h3>
+<h4>Preparation of <i>Bacillus subtilis</i> WB800N competent cells</h4>
+<div class="clearfix"></div>
+<p>Medium A (LB + 0.5M sorbitol): Weigh 0.5g sodium chloride, 0.25g yeast extract, 0.5g tryptone, 4.5g sorbitol, and dissolve in 50mL ddH<sub>2</sub>O.</p>
+<p>Medium B (0.5M sorbitol, 0.5M mannitol, 10% glycerol): Weigh 4.56g of mannitol, 4.55g of sorbitol, add 5mL of 100% glycerol, and dilute to 50mL with ddH<sub>2</sub>O</p>
+<p>Electroporation medium (0.5M sorbitol, 0.5M trehalose, 0.5M mannitol, 10% glycerol): Weigh 0.45g sorbitol, 0.95g trehalose, 0.46g mannitol and add 0.5mL of 100% glycerol. Make the volume up to 50mL with ddH<sub>2</sub>O.</p>
+
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Pick a single colony of <i>Bacillus subtilis</i> WB800N, inoculate it in 5mL of LB medium, and culture it overnight with shaking in a water bath shaker at 37℃ , 220 rpm.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Take 2.5 mL of the overnight bacterial solution, inoculate them in 50 mL of medium A, culture them at 37℃ , 200 rpm with shaking for 4 hours (make the OD600 between 0.85 to 1.0).</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">The bacteria liquid is bathed in ice water for 10 min and centrifuged at 4℃, 5000 rpm for 5 min. Then discard the supernatant, and collect the precipitate.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Gently resuspend and wash the bacteria with 10 mL of Medium B which was in a water bath on ice. Centrifuge at 4℃, 5000 rpm for 5 min and remove the supernatant. Rinse 4 times.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Finally, resuspend the washed bacteria in 1mL of electroporation medium, and aliquot them into EP tubes. Aliquot 60μL per tube and store them at -80℃ .</a></li>
+                
+              </ul>
+
+<h4>Transformation of recombinant plasmids</h4>
+<div class="clearfix"></div>
+<p>Recovery medium (LB + 0.5M sorbitol + 0.38M mannitol): Weigh 0.1g tryptone, 0.9g sorbitol, 0.1g sodium chloride, 0.7g mannitol and 0.05g yeast extract. Dissolve them in 10mL ddH<sub>2</sub>O.</p>
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Take 2μL of the recombinant plasmid and add it to 60ul of <i>Bacillus subtilis</i> WB800N competent cells, mix thoroughly and gently, place on ice for 5 min, and add to a pre-cooled 2mm electro-rotor cup.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Dry the outer wall of the electro-rotor cup with ice water, turn on the switch of the electro-rotor, place the electro-rotor cup in the groove, and set the electro-transformation parameters: 2.0kv, 5mm, 1 shock.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">After the electric shock is completed, quickly take out the electro-rotor cup, immediately add 1 mL of resuscitation medium, and mix thoroughly.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Transfer the liquid in the electro-rotor cup to a 1.5mL sterile centrifuge tube, and shake at 37℃ at 200 rpm. Resuscitate the culture for 3 hours, spread the plate, invert the culture in a 37℃ incubator for 36 hours, and screen positive clones.</a></li>
+                
+                
+              </ul>
+
+</div>
+
+<div class="row general_info_element reference" id="general_info_ele_9">
+<h3>Purification(phytase)</h3>
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Inoculate recombinant <i>Bacillus subtilis</i> in 20 mL of LB liquid medium containing 10 μg/mL kanamycin, and cultivate them overnight at 37℃ with shaking at 180 rpm. Inoculate 2% of the overnight cultured bacteria in 100 mL of LB liquid medium containing 10μg/mL kanamycin, and culture them with shaking at 25℃ for 24 hours.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">The bacterial cultures were harvested and centrifuged at 12000 rpm for 10 min at 4℃.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">For each culture supernatant, 300 mL of them was concentrated using MilliporeSigmaTM AmiconTM Ultra Centrifugal Filter Units (3 kDa) to about 10 mL in total.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Wash the Ni-NTA column with 50 mL PBS.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Load the concentrated sample in the Ni-NTA column for several times.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">Wash the Ni-NTA column with 50 mL PBS.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Elute the Ni-NTA column with 200 mM 1.5mL 250 mM imidazole.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>8.</span> <a style="color: black;padding-left: 1.2em;">Wash the Ni-NTA column with 50 mL PBS and store it at 4℃ by adding 10 mL ethanol.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>9.</span> <a style="color: black;padding-left: 1.2em;">Store the purified protein at -20℃.</a></li>
+                
+              </ul>
+
+</div>
+<div class="row general_info_element " id="general_info_ele_10">
+<h3>Western Blot</h3>
+<h4>Running the SDS-PAGE Gel</h4>
+<div class="reference" style="margin-top: 60px">
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Wash glass plates and spacers, place rubber seal in bottom of gel kit and put the spacers in between the two pieces of glass, making sure they are level.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Add the clamps and plugs, dispense 12.5% separation gel. Shake well immediately after adding TEMED to fill the gel. When filling the gel, 5 mL of gel can be sucked out along the glass by the gun, and the gel surface can be raised to a height of 1 cm under the rubber comb. Then add a layer of ethanol to the gel, and the gelation after liquid sealing is faster.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Placed at room temperature for 30 min to be solidified, when there is a line of refraction between ethanol and gel, the gel has been condensed. When the gel is fully solidified, the upper layer of ethanol can be poured off and the ethanol is blotted dry with absorbent paper.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Dispense 5% concentrated gel. Immediately after adding TEMED, the mixture can be filled. Fill the remaining space with the concentrated gel and insert the comb into the concentrate. When filling the gel, the gel should also flow down along the glass plate to avoid bubbles in the gel. Keep the comb level when inserting the comb. Since the volume shrinks and shrinks when the gel solidifies, the loading volume of the sample hole is reduced, so the gel is often applied on both sides during the solidification process of the concentrated gel. After the gel has solidified, pinch the sides of the comb and pull them straight up.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Make up running buffer (1 in 10 dilution of stock). Need around a liter.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">Remove comb and place gel in opposite side of apparatus.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Load samples and molecular weight markers. 15 μL of protein with SDS-PAGE sample loading buffer(4X) from supernatant and 5 μL marker.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>8.</span> <a style="color: black;padding-left: 1.2em;">Put on grey plastic top (make sure rubber seal is in place).</a></li>
+                <li style="margin-bottom: 0.5em;"><span>9.</span> <a style="color: black;padding-left: 1.2em;">Add the plugs and slowly add running buffer.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>10.</span> <a style="color: black;padding-left: 1.5em;">Put on front plastic cover and run at 120V for 1 hour.</a></li>
+
+               
+              </ul>
+</div>
+
+<h4>Transferring the protein from the gel to the membrane</h4>
+<div class="reference" style="margin-top: 100px">
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Need 6 pieces of filter paper (11 x 14.5 cm) and 1 piece of Hybond-P PVDF membrane of the same size.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Hydrate Hybond-P by placing in methanol for 3 min and in transfer buffer for 10 min.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Remove gel from electrophoresis apparatus and cut to an appropriate size.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Place gel in transfer buffer for 10 min.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Assemble the transfer cassette as follows (black side down): fiber pad (pre-wet in transfer buffer), filter paper (x3, pre-wet), gel (no bubbles), Hybond-P PVDF membrane (non bubbles), filter paper (x3, pre-wet) and fiber pad (pre-wet).</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">Place cassette in transfer cell (black on black).</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Add transfer buffer to the electrophoresis tank.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>8.</span> <a style="color: black;padding-left: 1.2em;">Connect to powerpack and run at constant amps (250 mA) for 40 min, keep the temperature at 4℃.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>9.</span> <a style="color: black;padding-left: 1.2em;">Remove membrane and, if necessary, keep hydrated in TBS in the cold room until needed.</a></li>
+              
+
+               
+              </ul>
+</div>
+
+<h4>Blocking and antibody staining and development</h4>
+<div class="reference" style="margin-top: 60px">
+                <ul style="padding-left: 0em">
+                <li style="margin-bottom: 0.5em;"><span>1.</span><a style="color: black;padding-left: 1.2em;">Block the membrane for 1 h at room temperature or overnight at 4℃ using blocking buffer (3% BSA in PBS).</a></li>
+                <li style="margin-bottom: 0.5em;"><span>2.</span> <a style="color: black;padding-left: 1.2em;">Incubate the membrane with appropriate dilutions of primary antibody in blocking buffer. We recommend overnight incubation at 4℃.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>3.</span> <a style="color: black;padding-left: 1.2em;">Wash the membrane in six washes of TBST, 5 min each.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>4.</span><a style="color: black;padding-left: 1.2em;">Incubate the membrane with the recommended dilution of conjugated secondary antibody in blocking buffer at room temperature for 1 hour.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>5.</span> <a style="color: black;padding-left: 1.2em;">Wash the membrane in six washes of TBST, 5 min each.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>6.</span> <a style="color: black;padding-left: 1.2em;">For signal development, follow the kit manufacturer’s recommendations. Remove excess reagent and cover the membrane in transparent plastic wrap.</a></li>
+                <li style="margin-bottom: 0.5em;"><span>7.</span><a style="color: black;padding-left: 1.2em;">Acquire image using darkroom development techniques for chemiluminescence, or normal image scanning methods for colorimetric detection.</a></li>
+               
+              </ul>
+</div>
+
+</div>
+
+<div class="row general_info_element" id="general_info_ele_11">
+  <h3>BCA Assay</h3>
+<p>
+BCA reagent: Take 50 parts of BCA reagent A and 1 part of reagent B and mix well.<br>
+Standard protein solution: Weigh 0.5g bovine serum albumin, dissolve it in distilled water and dilute to 100mL to make a 5mg/mL solution. Dilute ten times when used.
+</p>
+<p>1.Draw a standard curve: Take a 96-well microtiter plate and add reagents in the following table.</p>
+<img src="https://2020.igem.org/wiki/images/d/d3/T--NAU-CHINA--biaobiaonew.jpg">
+<p>After the above reagents ware added, accurately pipet 20μL of sample solution and add 200μL of BCA reagent to the sample, gently shake, then add the above system to the microplate well, keep it at 37℃ for 30-60min, cool to room temperature, take the blank as a control, and place it on the microplate reader at 562nm. For colorimetry, draw a standard curve with the content of bovine serum albumin as the abscissa and absorbance as the ordinate. Take the blank of the standard curve as the control.</p>
+<p>2.Measure the absorbance value of the sample, do three sets of replicates for each sample. Find out the protein content of the sample from the standard curve according to the absorbance value of the sample.</p>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+      <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+      <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+ <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cycwxljs?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

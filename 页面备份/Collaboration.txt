@@ -1,0 +1,163 @@
+  {{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/attribution.css}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="new_General_Sub.css">
+  <style>
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/7/73/T--NAU-CHINA--collaborationdt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 80%;
+  margin-left:10%;
+  background-image:url('https://2020.igem.org/wiki/images/c/c5/T--NAU-CHINA--collaboration.png');
+  background-size:contain;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+
+#bodyContent h5 {
+    border-bottom: none;
+}
+</style>
+</head>
+<body>
+   
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">Overview</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">QHFZ-China</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">NWU-CHINA-B</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">NJTech_China</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">OUC-China</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">Jiangnan_China</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+
+      <div class="row general_info_element" id="general_info_ele_1">
+        <h3>Overview</h3>
+        <p>In order to improve our project and deepen communication with other iGEM teams, we cooperated with QHFZ-China, NWU-CHINA-B, NJTech_China, OUC-China and Jiangnan_China.</p>
+        <img src="https://2020.igem.org/wiki/images/a/a8/T--NAU-CHINA--nsuhfiuwegilgbeiwbgin.png"/ style="width:80%">
+      </div>
+      <div class="row general_info_element" id="general_info_ele_2">
+        <h3 style="border: none; border: none;position: relative; font-size: 35px;">Collaboration with QHFZ-China</h3>
+        <h4>Experimental design</h4>
+        <h5 style="text-align: center;"><b>Suggestions on Topic Selection</b></h5>
+        <p>In May, to select an appropriate topic, QHFZ-China had an online meeting to choose one from their four optional subjects. <b>They invited Chengzhu Fang, a senior student of NAU-China, to attend the meeting.</b> Chengzhu Fang gave them many tips. For example, she suggested that QHFZ-China should choose two topics among them and do a further research.</p>
+      </div>
+        
+      <div class="row general_info_element" id="general_info_ele_3">
+          <h3 style="border: none; border: none;position: relative;font-size: 35px;">Collaboration with NWU-CHINA-B</h3>
+          <h4>Human Practices</h4>
+          <h5 style="text-align: center;"><b>Discussion of Questionnaire</b></h5>
+          <p>In June, we discussed the questionnaire with NWU-CHINA-B. First of all, we thought <b>it was necessary to identify the target group</b>. If it is the public, the language structure of questionnaire should not be too complex, for at least 16-year-old high school students can read. In addition, when we use the survey data, we should ask the respondents' consent.</p>
+          <p>In August, we attended the Human Practices Lecture held by CCiC together. We learned from Joy Zhang that <b>we could obtain the consent of the respondents by issuing information sheets</b>.  Our questionnaire is mainly divided into three parts, including Information Sheet, Questionnaire and Findings.</p>
+
+          <!-- <div class="col-md-4 col-sm-9 general_right_info"> -->
+
+      </div>
+          <!-- </div> -->
+      
+
+      <div class="row general_info_element" id="general_info_ele_4">
+         <h3 style="border: none; border: none;position: relative;font-size: 35px;">Collaboration with NJTech_China</h3>
+         <h4>Human Practices</h4>
+         <h5 style="text-align: center;"><b>Choice of Interviewee</b></h5>
+         
+         <p>In July, we had an online meeting with NJTech_China. Regarding the genetic modification issues in their project, we thought that there should be further guarantees for biosafety and ethics. In addition, we provided suggestions to them that we can <b>adopt the mode of campus interviews</b> to <b>solicit the opinions of college students on genetic modification. </b>NJTech_China adopted our suggestions, carried out this activity, and fed back into their project.</p>
+
+          <h4 style="border: none; border: none;position: relative;">Model</h4>
+          <h5 style="text-align: center;"><b>Improvement of Direction of Model</b></h5>
+          <p>We had an online meeting with NWU-CHINA-B and NJTech_CHINA in September. In this communication, students from both universities offered some suggestions on earthworm release strategies and cost issues, and raised some questions about our model. Through the communication with the two schools, <b>we preliminarily determined the direction of the model improvement and we also got some ideas for the model optimization</b>.</p>
+          <!-- <div class="col-md-4 col-sm-9 general_right_info"> -->
+            
+          <!-- </div> -->
+      </div>
+
+
+      <div class="row general_info_element" id="general_info_ele_5">
+        <h3 style="border: none; border: none;position: relative;font-size: 35px;">Collaboration with OUC-China</h3>
+        <h4>Experimental design</h4>
+        <h5 style="text-align: center;"><b>Discussion of Part Optimization</b></h5>
+        <p>We hope to use earthworms and <b><i>Bacillus subtilis</b></i> to treat lead contaminated farmland. During this process, we added a kill switch to the engineered bacteria in order to ensure the biological safety. When the engineered bacteria are discharged into the environment, they will be killed. We used the toehold switch as an "AND" gate to realize the spatiotemporal specific expression of toxin proteins. In our design, we need a large amount of trigger RNA to be induced by anaerobic conditions in the intestine of earthworms to turn on the kill switch in the later stage. In this process, we need to <b>improve the stability of trigger RNA and extend its half-life.</b> Through team communication, we found that OUC-China’s design just met our needs. OUC team enhanced the stability of trigger RNA by adding hairpin structure at the 5' end of trigger RNA in September. We have carried out in-depth communication and cooperation with OUC-China, and referred to the hairpin sequence provided by them, and realized the optimized design of trigger RNA.</p>
+
+      </div>
+
+
+
+           <div class="row general_info_element" id="general_info_ele_6">
+              <h3 style="border: none; border: none;position: relative; font-size: 35px;">Collaboration with Jiangnan_China</h3>
+              <h4>Human Practices</h4>
+              <h5 style="text-align: center;"><b>Engagement in Various Activities</b></h5>
+              <p>We participated in the<b> "High School Drifting Booklet"</b> activity hosted by Jiangnan_China in September. During the activity, we received souvenirs from Jiangnan_China. We read about the ideas of Jiangnan_China group members on participating in iGEM in the Drifting Booklet. We empathized and wrote down our true feelings. After that we sent the Drifting Booklet and our souvenirs to NJMU_China. In this activity, we found that when the teams have heart-to-heart communication, we can feel that “as an iGEMer, we are all together”.</p>
+              
+              <!-- <h4>The birth of SLIM</h4> -->
+              <p>We also engaged in Jiangnan_China's <b>monthly magazine</b> activity. As the main manuscript team in October, we brought knowledge of synthetic biology to middle school students from Jiangsu, Sichuan, Xinjiang and Tianjin in China, and also promoted our project.</p>
+</div>
+
+
+          
+
+
+
+
+        
+
+      
+
+
+
+     
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+      <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+ <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/attributionjs?action=raw&ctype=text/javascript"></script>
+
+</body>
+</html>

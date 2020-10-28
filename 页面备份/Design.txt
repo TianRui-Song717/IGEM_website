@@ -1,0 +1,200 @@
+{{NAU-CHINA/oranjia-test-home.csschushihua}}
+{{NAU-CHINA/ALL/bootstrap3.3.7}}
+{{NAU-CHINA/ALL/generalpage-css}}
+{{NAU-CHINA/nav}}
+
+<html>
+<head>
+  <title>General Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+.reference{
+  text-align:justify; 
+  text-justify:inter-ideograph;
+}
+.reference ul{
+  list-style: none;
+}
+.reference ul li{
+  position: relative;
+  margin-top: 10px;
+}
+.reference ul li span{
+  position: absolute; 
+  height: 100%;
+  width: 20px;
+  display: inline-block;
+}
+.reference ul li a{
+  padding-left: 2em;
+  display: inline-block;
+  text-decoration: none;
+}
+.general_background_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://2020.igem.org/wiki/images/e/e3/T--NAU-CHINA--designdedatu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+/*********************************************************/
+/*覆盖第一页文字图片*/
+.general_cover_image{
+  display: block;
+  height: 60vh;
+  width: 100%;
+  background-image:url('https://2020.igem.org/wiki/images/1/1b/T--NAU-CHINA--designdewenzi.png');
+  background-size: 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+}
+</style>
+
+</head>
+<body>
+    
+
+    <!--主页面-->
+    <!--被覆盖的图片界面-->
+    <div class="general_background_image"></div>
+    <!--覆盖第一页的图片界面-->
+    <div class="container">
+        <div class="row general_cover_image">
+        </div>
+    </div>
+    <!--详细信息界面-->
+    <div class="info_section">
+      <div class="container general_info">
+        <div class="row" id="general_info_contain">
+          <!--左边的导航-->
+          <div class="col-md-3 col-sm-3 general_left_nav">
+            <div class="left_nav" style="margin-top:3vh;padding-top:0;">
+              <h4>Index</h4>
+              <ul>
+                <li class="general_sidenav_li"><a href="#general_info_ele_1" class="general_sidenav_a" id="sidenav_1">Overview</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_2" class="general_sidenav_a" id="sidenav_2">Oxygen-free Inducible System</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_3" class="general_sidenav_a" id="sidenav_3">Phytase(ycD)</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_4" class="general_sidenav_a" id="sidenav_4">Repressor Protein CⅠ</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_5" class="general_sidenav_a" id="sidenav_5">Toehold-mazF</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_6" class="general_sidenav_a" id="sidenav_6">Selection of Chassis</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_7" class="general_sidenav_a" id="sidenav_7">Gene Circuit</a></li>
+                <li class="general_sidenav_li"><a href="#general_info_ele_8" class="general_sidenav_a" id="sidenav_8">Application (Simulation)</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--右边的信息-->
+          <div class="col-md-8 col-sm-8 general_right_info">
+            <!--1. DISCOVER PART-->
+            <!--peasant-->
+           <div class="row general_info_element" id="general_info_ele_1">
+           	<h3>Overview</h3>
+           	<p>SLIM provides a new strategy to solve the problem of moderate and light lead pollution in cultivated lands. Considering the weakness of traditional methods in remedying soil lead pollution, we take advantage of synthetic biology to design the gene circuit, using earthworms as the mobile carrier of engineered bacteria and <i>Bacillus subtilis</i> as the chassises. Engineered bacteria in the intestine of earthworm transform lead ions into pyromorphite to purify the lead-contaminated soil. On the design page, we will focus on the four main parts of the gene circuit: oxygen-free inducible system, phytase, repressor protein CⅠ and Toehold-based kill switch: Toehold-mazF.</p>
+           </div>
+
+            <div class="row general_info_element" id="general_info_ele_2">
+            	<h3>Oxygen-free Inducible System</h3>
+                <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/6/68/T--NAU-CHINA--designANAEROBIC.png" style="width:80%;">
+              </div>
+              <div class="col-md-6 col-sm-12">
+              	<p>The expression of genes involved in aerobic and anaerobic respiration in <i>Bacillus subtilis</i> depends on the two-component regulatory system of ResD/E and the global regulator Nitrate Reductase Regulator (FNR). FNR controls genes that help to promote adaptive growth under oxygen limitation. Promoter P<sub>nar</sub> is activated by oxygen-free via the FNR. We rely on the promoter P<sub>nar</sub> to sense and response to the change of external oxygen concentrations, so that the engineered bacteria can "distinguish" the anaerobic environment in the intestine from the aerobic environment in vitro.</p>
+              </div>
+        	 </div>
+
+            <div class="row general_info_element" id="general_info_ele_3">
+<h3>Phytase(ycD)</h3>
+                <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/6/67/T--NAU-CHINA--_fcgygugyuygy.png" style="width: 110%;">
+              </div>
+              <div class="col-md-6 col-sm-12">
+              	<p>In order to obtain a large amount of phosphate, we selected the neutral phytase gene phy (ycD) from <i>Bacillus subtilis</i> YCD. Phy(ycD) is an ectoenzyme, which can be secreted by <i>Bacillus sp.</i> automatically. It can hydrolyze phytic acid or phytate to produce phosphate which can combine with lead ions and Cl<sup>-</sup>(or F<sup>-</sup>, OH<sup>-</sup>) to form insoluble compound pyromorphite (Pb<sub>5</sub>(PO<sub>4</sub>)<sub>3</sub>Cl(F,OH)). Pyromorphite is exceptionally stable, and the available state of lead cannot be extracted from it using TCLP (Toxicity Characteristic Leaching Procedure, TCLP, American EPA standard), so as to achieve the purpose of precipitating lead and purifying soil.</p>
+              </div>
+        	 </div>
+
+            <div class="row general_info_element" id="general_info_ele_4">
+             	<h3>Repressor Protein CⅠ</h3>
+                <div class="col-md-6 col-sm-12">
+                <img src="https://2020.igem.org/wiki/images/5/5c/T--NAU-CHINA--designnew.png" style="width:50%">
+              </div>
+<div class="col-md-6 col-sm-12">
+             	<p>CⅠis a repressor protein from lambda phage which can inhibit the transcription of downstream genes by interaction with the binding site of the promoter P<sub>CⅠ</sub>. As one of the regulatory elements in our gene circuit, we optimize the codon of part BBa_C0051 to make it more suitable to play a role in <i>Bacillus subtilis</i>.</p>
+                <p>Meanwhile, we change the degradation rate of CⅠ repressor protein by adding different degradation tags including LVA, AAV and ASV. Degradation tags can be recognized by the ClpX foldase and then form a complex with the ClpP protease. The last three residues of the tag determine the strength of the interaction with Clpx, thus determining the ultimate protein degradation rate.</p>
+</div>
+        	  </div>
+
+            <div class="row general_info_element" id="general_info_ele_5">
+            	<h3>Kill Switch:Toehold-mazF</h3>
+<img src="https://2020.igem.org/wiki/images/d/d6/T--NAU-CHINA--design3TOEHOLD.png" style="width: 80%;">
+            	<p>Toehold switch system consists of two RNA chains, including switch RNA and trigger RNA. We added a 5' hairpin to trigger RNA to make it more stable. We employed MazF as our suicide protein, which can cleave a single strand of mRNA at a specific sequence site and cause cell death. We skillfully integrated the two elements by adding the mazF gene downstream to the switch RNA sequence. </p>
+                <p>Based on this, the production of MazF is controlled by the toehold switch. Further, the toehold switch is comprised of switch RNA and trigger RNA. We use P<sub>CⅠ</sub> which can be inhibited specifically by CⅠ repressor protein to control the expression of switch RNA. So we can regulate the concentration of CⅠ repressor protein to control expression of MazF. The concentration of CⅠ repressor protein is mainly determined by two factors: translation rate of mRNA which can be adjusted according to strength of RBS and degradation rate of protein which can be changed by adding different degradation tag. Moreover, to ensure the effectiveness of kill switch in our project, we have established the mathematical model to guide us to obtain the most rational combination of RBS and degradation tag. More detailed information can be seen in our <a href="https://2020.igem.org/Team:NAU-CHINA/KS_Model" style="padding-right:0px;">Kill Switch Model</a>.
+</p>
+       		  </div>
+
+            <div class="row general_info_element" id="general_info_ele_6">
+             	<h3>Selection of Chassis</h3>
+
+             	<p><i>Bacillus subtilis</i> is finally chosen as our chassis for its unique ecological advantages, among which some relatively important ones are shown below: </p>
+             	<ul>
+             		<li>It is thoroughly studied and widely used in factories and laboratories. </li>
+             		<li>As the advantage flora in earthworms, it has certain growth advantages.</li>
+             		<li>It is a type of beneficial bacteria widely distributed in soil. </li>
+             		<li>It is not a type of pathogenic bacteria, and can ensure biosafety.</li>
+             	</ul>
+        	  </div>
+
+            <div class="row general_info_element" id="general_info_ele_7">
+            	<h3>Gene Circuit</h3>
+<img src="https://2020.igem.org/wiki/images/8/8c/T--NAU-CHINA--xindeparttonglu.png" style="width: 110%;">
+            	<p>From the cultivation in laboratory to discharge to external environment
+, our engineered bacteria go through three stages. Based on the design of the gene circuit, we hope that our engineered bacteria can perform functions effectively in three different stages:</p>
+            	<h4>Laboratory Cultivation</h4>
+            	<p>In order to ensure the normal survival of bacteria, we added IPTG to the medium to induce production of CⅠ, which can inhibit the opening of the kill switch. Meanwhile, oxygen switch turns off and phytase is not produced. More energy could be used for self-reproduction. </p>
+            	<h4>Earthworm Intestine</h4>
+            	<p>In the intestine of earthworm, oxygen switch turns on to produce CⅠto inhibit the opening of the kill switch again. At the same time, engineered bacteria accumulate trigger RNA and secrete phytase to hydrolyze phytate, which is ingested by earthworms to obtain phosphate and promote the formation of pyromorphite. In this stage, lead ion is immobilized while ensuring the survival of bacteria.</p>
+            	<h4>External Environment</h4>
+            	<p>In this stage, oxygen switch turns off, so phytase, CⅠand trigger RNA will not be produced. However, there is still trigger RNA which is accumulated in the last stage. At the same time, with the degradation of CⅠ, switch RNA is transcribed. So trigger RNA combines to switch RNA to turn the kill switch on. Engineered bacteria commit suicide to ensure biosafety maximally.</p>
+        	  </div>
+
+            <div class="row general_info_element" id="general_info_ele_8">
+             	<h3>Application(Simulation)</h3>
+             	<p>Due to the isolation during the epidemic and consideration of the rules of biosafety and iGEM policies, we have not conducted actual experiments, nor do we intend to feed our earthworms with engineered bacteria. But we simulated the impact of the whole circuit based on mathematical models and a large number of literatures. We established an improved cellular automata model to explore the best lead treatment effect and final earthworm releasing strategy. We also applied ordinary differential equations to verify the effect of kill switch. On the basis of the theoretical experimental design, a direction was given to further optimize the project design and the experimental focus.</p>
+              <p>Meanwhile, this year we pay significant attention to safety issues. Toehold-based kill switch is specially added to ensure that engineered bacteria will die within a short time after being discharged to the natural environment and avoid potential risks caused by gene drift.</p>
+        	  </div>
+
+<h4 style="  text-align:left;
+  margin: 0.5em 0px 0.5em 0px;
+  font-size: 1.8em;
+  letter-spacing:0.1em;
+  color:#145374;
+  float: left;
+  width: 100%;">References</h4>
+            <div class="col-md-12 col-sm-12 reference" style="margin-top:60px;">
+
+              <ul>
+                <li style="font-size:16.9px;"><span>[1]</span> <a> Nakano M M, Zuber P, Glaser P, Danchin A, Hulett F M. Two-component regulatory proteins ResD-ResE are required for transcriptional activation of fnr upon oxygen limitation in <i>Bacillus subtilis </i>[J]. Journal of bacteriology,1996,178(13):3796-3802.</a></li>
+                <li style="font-size:16.9px;"><span>[2]</span> <a> Michiko M Nakano, F.Marion Hulett. Adaptation of <i>Bacillus subtilis</i> to oxygen limitation[J]. FEMS Microbiology Letters,1997,157(1):1-7.</a></li>
+                <li style="font-size:16.9px;"><span>[3]</span> <a>  Xi Wang, Wenliang Lu, Mingze Yao, et al. Heterologous expression and purification of <i>Bacillus</i> phytase phy (ycD) Gene in <i>E.coli</i> [J]. Chinese Journal of Applied and Environmental Biology, 2014, 20(02):295-299.</a></li>
+                <li style="font-size:16.9px;"><span>[4]</span> <a> Green Alexander A, Silver Pamela A, Collins James J, Yin Peng. Toehold switches: de-novo-designed regulators of gene expression[J]. Cell,2014,159(4):1-15.</a></li>
+                <li style="font-size:16.9px;"><span>[5]</span> <a>  Wang Xi, Lu Wenliang, Yao Mingze, et al. Heterologous expression and purification of the phytase phy (ycD) gene from <i>Bacillus subtilis</i> in <i>Escherichia coli</i> [J]. Applied and Environmental Biology, 2014, 20(02):295-299.</a></li>
+                <li style="font-size:16.9px;"><span>[6]</span> <a>  Yamaguchi Y, Inouye M. Regulation of growth and death in <i>Escherichia coli</i> by toxin-antitoxin systems[J]. Nature Reviews Microbiology, 2011, 9 (11) :779-790.</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+     <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/notebook1js?action=raw&ctype=text/javascript"></script>
+</body>
+</html>

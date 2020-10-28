@@ -1,0 +1,576 @@
+
+	{{NAU-CHINA/oranjia-test-home.csschushihua}}
+	{{NAU-CHINA/ALL/bootstrap3.3.7}}
+	{{NAU-CHINA/index.css}}
+
+	{{NAU-CHINA/nav_success.css.css}}
+{{NAU-CHINA/nav}}
+
+	<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Home</title>
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet" type="text/css">
+
+
+	  <style type="text/css">
+	    .item{
+	      height: 100vh;
+	      background-image: url(https://2020.igem.org/wiki/images/4/4e/T--NAU-CHINA--wuduifnewu.jpg);
+	      background-position:center;
+	      background-size: cover;
+	      background-repeat: no-repeat;
+	    }
+
+	    #Banner_page_1{
+	    	background-image: url(https://2020.igem.org/wiki/images/4/4e/T--NAU-CHINA--wuduifnewu.jpg);
+	    }
+	    	    #Banner_page_2{
+	    	background-image: url(https://2020.igem.org/wiki/images/3/36/T--NAU-CHINA--teamwywz.jpg);
+	    }
+	    	    #Banner_page_3{
+	    	background-image: url(https://2020.igem.org/wiki/images/7/78/T--NAU-CHINA--lmx.jpg);
+	    }
+	    	    #Banner_page_4{
+	    	background-image: url(https://2020.igem.org/wiki/images/c/c4/T--NAU-CHINA--mgteeam.jpg);
+	    }
+	    	    #Banner_page_5{
+	    	background-image: url(https://2020.igem.org/wiki/images/4/47/T--NAU-CHINA--sdteeam.jpg);
+	    }
+	    .info header p{
+              width:100%;text-align:center!important;
+            }
+	  </style>
+
+
+	</head>
+
+	<body>
+
+	    
+
+	    <!--轮播图-->
+	    
+
+	    <!--轮播图-->
+	    <!--Banner-->
+	  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators" style="margin-left:-30%" >
+	      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+	    </ol>
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active" id="Banner_page_1">
+	        <!-- <img src="1-1.jpg" alt="..."> -->
+	        <div class="carousel-caption">
+
+	        </div>
+	      </div>
+	      <div class="item" id="Banner_page_2">
+	        <!-- <img src="1-1.jpg" alt="..."> -->
+	        <div class="carousel-caption">
+	          <!-- <h3>Second</h3> -->
+	          <!-- <p>second page</p> -->
+	        </div>
+	      </div>
+	      <div class="item" id="Banner_page_3">
+	        <!-- <img src="1-1.jpg" alt="..."> -->
+	        <div class="carousel-caption">
+	          <!-- <h3>Third</h3> -->
+	          <!-- <p>third page</p> -->
+	        </div>
+	      </div>
+	      <div class="item" id="Banner_page_4">
+	        <!-- <img src="1-1.jpg" alt="..."> -->
+	        <div class="carousel-caption">
+	          <!-- <h3>Fourth</h3> -->
+	          <!-- <p>fourth page</p> -->
+	        </div>
+	      </div>
+	      <div class="item" id="Banner_page_5">
+	        <!-- <img src="1-1.jpg" alt="..."> -->
+	        <div class="carousel-caption">
+	          <!-- <h3>Fifth</h3> -->
+	          <!-- <p>fifth page</p> -->
+	        </div>
+	      </div>
+	    </div>
+
+	    <!-- Controls -->
+	    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	      <span class="icon-prev" aria-hidden="true" style="font-size:1.5em;"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	      <span class="icon-next" aria-hidden="true" style="font-size:1.5em;"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	<!-- ------------------------------------------ -->
+
+	<div class="description">
+	  <div class="container_1">
+		  <div style="border-top: gray solid 3px; width: 30%; margin: 15px auto;">
+		  	
+		  </div>
+	<div class="container_1_title">
+	      <h3 style="padding-bottom:0px; padding-top:5px;margin-top: 0px; color:darkgoldenrod;font-family: Jura;"><strong>TEAM</strong></h3>
+	    </div>
+	    <div class="container_1_content">
+
+	<h5 style="text-align: center; margin: 0; color:darkgoldenrod;font-family: Jura;"> something about our team</h5>
+	</div>
+	</div>
+	</div>
+
+	<div class="catalogue">
+	<div class="container" style="width: 80%; margin: 0px 10%;">
+		<div class="padding-catalogue">
+
+
+							
+					
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">    <!-- ********** Team Member **********  -->
+						<div class="facts">
+							<div class="chairs">
+					
+								<div class="wrapper">
+									<ul class="stage clearfix" style="margin:0px !important">
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/f/fa/T--NAU-CHINA--teammembersgl.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Guolong Shi</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Synthetic biology is fascinating and I fell in love with it as soon as I touched it. As an iGEMer,I feel extremely happy.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;"><b>Guolong Shi</b></p><p style="text-align: center; margin-top: 10px"><b>Team leader</b></p>
+										</li>
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2019.igem.org/wiki/images/e/e8/T--NAU-CHINA--cz.png" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Zhen Cao</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Life is to live with no meaning exists, but we explore.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Zhen Cao</p><p style="text-align: center; margin-top: 10px">Team leader</p>
+										</li>
+										
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/b/bc/T--NAU-CHINA--teammembercy.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Yu Cao</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Beware beginnings.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Yu Cao</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+					
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/d/d3/T--NAU-CHINA--teammemberyfz.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Fengzhi Yuan</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">By other's faults, wise men correct their own.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Fengzhi Yuan</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/e/e3/T--NAU-CHINA--teammemberwxl.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Xiuli Wang</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Nothing is impossible to a willing heart.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Xiuli Wang</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>										
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/d/dc/T--NAU-CHINA--teammembercp.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Peng Chen</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Small body with energy. Love life without damage.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Peng Chen</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/6/6f/T--NAU-CHINA--teammembersjx.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Jiaxing Sun</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">
+																Follow your heart, love your life! We can make a change!
+															</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Jiaxing Sun</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>	                                    
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/e/e7/T--NAU-CHINA--teammemberzyf.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Yifei Zhao</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">Not all clouds have to be rain，not all clouds have to drop-down on the ground.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Yifei Zhao</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>	                                   
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/3/3b/T--NAU-CHINA--teammemberlyn.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Yunong Li</p>
+															<p style="margin-top: 20px; text-align:center;font-size: 18px;line-height: 20px">Carpe diem.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Yunong Li</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/c/ca/T--NAU-CHINA--teammemberzrj.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Ruijie Zhang</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">A bold attempt is half success.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Ruijie Zhang</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/5/54/T--NAU-CHINA--teammemberlzy.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 29px;margin-top: 10px">Ziye Lv</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 23px;line-height: 20px">She's OK.</p>
+													
+
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Ziye Lv</p>
+											<p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/e/e4/T--NAU-CHINA--teammembercsp.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Shangping Chen</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Rome was not built in a day.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Shangping Chen</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/b/ba/T--NAU-CHINA--teammembersyt.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Yuting Sun</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Doubt is the key to knowledge.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Yuting Sun</p><p style="text-align: center; margin-top: 10px">Wet lab</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/a/a1/T--NAU-CHINA--teammemberlyx.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Hongyan Liu</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Yesterday is history , tomorrow is a mistery. But today is a gift, that is why it is called the present.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Hongyan Liu</p><p style="text-align: center; margin-top: 10px">Model</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/d/de/T--NAU-CHINA--teammemberlhy.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Yixing Li</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">From small beginning come great things.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Yixing Li</p><p style="text-align: center; margin-top: 10px">Model</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/a/aa/T--NAU-CHINA--teammemberjxr.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Xinran Jiang</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Perseverance can overcome any obstacle. I'm ready for  any challenge!</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Xinran Jiang</p><p style="text-align: center; margin-top: 10px">Model</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/0/06/T--NAU-CHINA--teammemberyjm.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Jiamao Yang</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">If you love life, don't waste time, for time is what life is made up of. </p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Jiamao Yang</p><p style="text-align: center; margin-top: 10px">Human Practices</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/3/39/T--NAU-CHINA--teammemberflj.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Lijun Fan</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">Miracles sometimes occur, but you have to work terribly for them.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Lijun Fan</p><p style="text-align: center; margin-top: 10px">Human Practices</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/7/77/T--NAU-CHINA--teammembercyc.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Yucheng Chen</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">Lend the color of rainbow to life that is nothing but mist. Others have their pace, you have your own.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Yucheng Chen</p><p style="text-align: center; margin-top: 10px">Computer science</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/4/47/T--NAU-CHINA--teammemberstr.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Tianrui Song</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">The problem is not the problem. The problem is your attitude about the problem.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Tianrui Song</p><p style="text-align: center; margin-top: 10px">Computer science</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/d/d6/T--NAU-CHINA--teammemberjxy.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Xinyue Jiang</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">Stay hungry, stay foolish.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Xinyue Jiang</p><p style="text-align: center; margin-top: 10px">Art designer</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/c/cc/T--NAU-CHINA--teammemberzr.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Ran Zhang</p>
+															<p style="margin-top: 20px; text-align: justify;font-size: 16px;line-height: 20px">Drawing is a part of my life.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Ran Zhang</p><p style="text-align: center; margin-top: 10px">Art designer</p>
+										</li>
+	                                    
+														
+									</ul>
+								</div><!-- /wraspanper -->
+							  <div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>	
+			
+
+					
+	                
+				</div>
+			</div>
+		</div>
+	</div> 	<!-- Team Member Ends here -->
+
+	<div class="description">
+	  <div class="container_1">
+		  <div style="border-top: #000000 solid 3px; width: 30%; margin: 15px auto;">
+		  	
+		  </div>
+	<div class="container_1_title">
+	      <h3 style="padding-bottom:0px; padding-top:5px;margin-top: 0px; color:darkgoldenrod;font-family: Jura;"><strong>Advisors & PI</strong></h3>
+	    </div>
+	    <div class="container_1_content">
+
+	<h5 style="text-align: center; margin: 0; color:darkgoldenrod;font-family: Jura;"> something about our team</h5>
+	</div>
+	</div>
+	</div>
+
+	<div class="catalogue">
+	<div class="container" style="width: 80%; margin: 0px 10%;">
+		<div class="padding-catalogue">
+
+			<div class="sap_tabs">	
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+		 
+					<ul>
+						<!--<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Team Member</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Advisor</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Notebook</span></li>-->
+						<!--<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Acknowledgement</span></li>-->
+					</ul>		
+					
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">    <!-- ********** Team Member **********  -->
+						<div class="facts">
+							<div class="chairs">
+					
+								<div class="wrapper">
+									<ul class="stage clearfix" style="margin:0px;!important">
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/c/c7/T--NAU-CHINA--teammemberhyy.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Yingying Han</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">No zuo, no die.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Yingying Han</p><p style="text-align: center; margin-top: 10px">Advisor</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2019.igem.org/wiki/images/a/a5/T--NAU-CHINA--fcz.png" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Chengzhu Fang</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">By other's faults, wise men correct their own.</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Chengzhu Fang</p><p style="text-align: center; margin-top: 10px">Advisor</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/e/eb/T--NAU-CHINA--memberjjdnew.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 18px;margin-top: 10px;text-align: center;">Prof. Jiandong Jiang</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Environmental and soil microbiology</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Prof. Jiandong Jiang</p><p style="text-align: center; margin-top: 10px">PI</p>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="https://2020.igem.org/wiki/images/8/8e/T--NAU-CHINA--membercxnew.jpg" alt="image" style="padding:5px; height: 220px; width: 220px; border-radius:50%;"> </div>
+													<div class="info" style="background-color:#F7ADA0; ">
+														<header>
+															<p style="font-size: 24px;margin-top: 10px">Prof. Xi Chen</p>
+															<p style="margin-top: 20px; text-align: center;font-size: 16px;line-height: 20px">Biochemistry and Molecular Biology</p>
+														</header>
+													</div>
+													
+											</div>
+											<p style="font-size: 20px ;margin-top: 25px; text-align: center;">Prof. Xi Chen</p><p style="text-align: center; margin-top: 10px">PI</p>
+										</li>
+										
+	                                    
+														
+									</ul>
+								</div>
+							  
+							</div>
+						</div>
+					</div>	
+			
+
+					
+	                
+				</div>
+			</div>
+		</div>
+	</div>  
+	</div>		
+
+
+		
+
+	    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/teamjq351?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Team:NAU-CHINA/cdncycjs?action=raw&ctype=text/javascript"></script>
+	    <script type="text/javascript" src="https://2020.igem.org/Template:NAU-CHINA/successjs2?action=raw&ctype=text/javascript"></script>
+
+	</body>
+	</html>

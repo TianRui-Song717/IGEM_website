@@ -1,0 +1,4 @@
+{{NAU-CHINA/img-larger}}
+data-toggle="modal" data-target="#Larger_img_modal"
+
+基本就是通过BOOTSTRAP 的modal实现；
