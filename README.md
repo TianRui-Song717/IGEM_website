@@ -1,4 +1,4 @@
-# iGEM 2020 wiki
+# 🥈iGEM 2020 wiki - Team: NAU-CHINA
 
 This is raw files & codes of the iGEM2020 wiki of Team: ``NAU-CHINA`` (Sorry for the lack of organisation.)
 You can refer to this [link](https://2020.igem.org/Team:NAU-CHINA) for the final wikipage.
