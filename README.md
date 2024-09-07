@@ -4,6 +4,7 @@ This is raw files & codes of the iGEM2020 wiki of Team: ``NAU-CHINA`` (Sorry for
 You can refer to this [link](https://2020.igem.org/Team:NAU-CHINA) for the final wikipage.
 
 🥳 We won silver medal 🥈!
+
 ---
 
 See the awesome wiki pages of the junior students we mentor!
